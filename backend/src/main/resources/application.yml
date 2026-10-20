@@ -1,0 +1,47 @@
+server:
+  address: 127.0.0.1
+  port: ${PORT:8088}
+  error:
+    include-message: never
+    include-stacktrace: never
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://127.0.0.1:13306/rag_mvp?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC}
+    username: ${DB_USERNAME:rag}
+    password: ${DB_PASSWORD:}
+    hikari:
+      maximum-pool-size: 8
+      connection-timeout: 5000
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 21MB
+      file-size-threshold: 0
+  jackson:
+    deserialization:
+      fail-on-trailing-tokens: true
+      fail-on-reading-dup-tree-key: true
+rag:
+  chroma-base-url: ${CHROMA_BASE_URL:http://127.0.0.1:8000}
+  chroma-collection: rag_qwen_v4_1024
+  # Cloud model settings are read here; legacy CHAT_* / EMBEDDING_* app.env values are not used.
+  chat-base-url: https://api.deepseek.com
+  # Fill in the DeepSeek API key locally. Never commit/share this file or a JAR containing real keys.
+  chat-api-key: ""
+  chat-model: deepseek-v4-flash
+  embedding-base-url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  # Fill in the DashScope (Qwen embedding) API key locally; keep it server-side.
+  embedding-api-key: ""
+  embedding-model: text-embedding-v4
+  embedding-dimensions: 1024
+  timeout-seconds: ${MODEL_TIMEOUT_SECONDS:90}
+  chroma-timeout-seconds: ${CHROMA_TIMEOUT_SECONDS:20}
+  chat-max-output-tokens: ${CHAT_MAX_OUTPUT_TOKENS:700}
+  chat-context-budget: ${CHAT_CONTEXT_BUDGET:7000}
+  chunk-size: 800
+  chunk-overlap: 100
+  min-score: ${RETRIEVAL_MIN_SCORE:0.6}
+logging:
+  level:
+    dev.langchain4j: WARN
+    org.apache.pdfbox: ERROR
