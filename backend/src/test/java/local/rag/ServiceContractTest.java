@@ -64,8 +64,9 @@ class ServiceContractTest {
         mvc.perform(get("/api/knowledge/status")).andExpect(status().isOk()).andExpect(jsonPath("$.readyDocuments").value(0)).andExpect(jsonPath("$.modelConfigured").value(true));
         mvc.perform(get("/api/documents/missing")).andExpect(status().isNotFound()).andExpect(jsonPath("$.code").value("DOCUMENT_NOT_FOUND"));
     }
+    // Multi-chunk fixtures use real sentence boundaries; unsplittable sentences are tested by the parser suite.
     @Test void uploadReturns202ProcessingThenReadyAndPaginatedFullText() throws Exception {
-        var result=mvc.perform(multipart("/api/documents").file(file("source.txt","<b>"+"😀".repeat(1600))))
+        var result=mvc.perform(multipart("/api/documents").file(file("source.txt","<b>"+("😀".repeat(99)+"。").repeat(16))))
             .andExpect(status().isAccepted()).andExpect(jsonPath("$.status").value("PROCESSING")).andReturn();
         String id=json.readTree(result.getResponse().getContentAsString()).get("id").textValue();
         await().atMost(Duration.ofSeconds(5)).until(() -> repo.getDocument(id).status().equals("READY"));
@@ -105,7 +106,7 @@ class ServiceContractTest {
     }
     @Test void partialIndexFailureNotRetrievableAndAllStableIdsCleaned() {
         gateway.failIndex=true;
-        Document doc=service.upload(file("source.txt","a".repeat(1600)));
+        Document doc=service.upload(file("source.txt",("a".repeat(99)+"。").repeat(16)));
         await().atMost(Duration.ofSeconds(5)).until(() -> repo.getDocument(doc.id()).status().equals("FAILED"));
         await().atMost(Duration.ofSeconds(5)).until(() -> gateway.index.isEmpty());
         assertThat(repo.ready()).isZero(); assertThat(repo.getDocument(doc.id()).chunkCount()).isZero();
@@ -216,7 +217,7 @@ class ServiceContractTest {
         assertThat(error.status).isEqualTo(504); assertThat(error.getMessage()).doesNotContain("SECRET");
     }
     @Test void onlyActualCitationsReturnedNotAllRetrievedCandidates() {
-        ready("facts "+"a".repeat(1700));
+        ready("facts "+("a".repeat(99)+"。").repeat(17));
         assertThat(gateway.index).hasSizeGreaterThan(1);
         var answer=service.chat("q");
         assertThat(answer.sources()).hasSize(1);
@@ -236,7 +237,7 @@ class ServiceContractTest {
         assertThat(answer.sources()).allSatisfy(s -> assertThat(s.documentId()).isEqualTo(good.id()));
     }
     @Test void referencesOutsideActualContextRejectedEvenWhenChunkExists() throws Exception {
-        Document doc=ready("a".repeat(1600));
+        Document doc=ready(("a".repeat(99)+"。").repeat(16));
         List<Chunk> chunks=service.chunks(doc.id(),1,20).items();
         Source allowed=repo.readySource(chunks.get(0).id());
         String response=json.writeValueAsString(Map.of("answer","x","grounded",true,"citationIds",List.of(chunks.get(1).id())));

@@ -10,6 +10,8 @@ BASE = 'http://127.0.0.1:8088/api'
 ROOT = Path(__file__).resolve().parent
 created = []
 results = []
+CHUNK_SIZE = 800
+CHUNK_OVERLAP = 100
 
 def call(method, path, data=None, headers=None, expected=200):
     req = request.Request(BASE + path, data=data, headers=headers or {}, method=method)
@@ -86,7 +88,9 @@ def run():
     assert '林溪' in ''.join(c['text'] for c in pages['items']) and '2026' in ''.join(c['text'] for c in pages['items'])
     assert all(c['pageEnd'] >= c['pageStart'] for c in pages['items'])
     check('two-page text PDF with page metadata',lambda: None)
-    text = ''.join(f'第{i:04d}项，青禾的资料需要保留全文😀。\n' for i in range(270))
+    text = '\n\n'.join(''.join(f'第{i:04d}项，青禾的资料需要保留全文😀。'
+                                for i in range(group * 20, (group + 1) * 20))
+                       for group in range(30)) + '\n'
     big = processed(upload('integration-unicode.txt',text.encode()))
     first = call('GET',f"/documents/{big['id']}/chunks?page=1&pageSize=20")
     second = call('GET',f"/documents/{big['id']}/chunks?page=2&pageSize=20")
@@ -96,9 +100,14 @@ def run():
     while len(all_chunks) < first['total']:
         all_chunks.extend(call('GET',f"/documents/{big['id']}/chunks?page={page}&pageSize=20")['items'])
         page += 1
-    assert all(len(c['text']) <= 300 for c in all_chunks)
-    assert all(all_chunks[i]['text'][-50:] == all_chunks[i+1]['text'][:50] for i in range(len(all_chunks)-1))
-    reconstructed = all_chunks[0]['text'] + ''.join(c['text'][50:] for c in all_chunks[1:])
+    assert all(0 < len(c['text']) <= CHUNK_SIZE for c in all_chunks)
+    reconstructed = all_chunks[0]['text']
+    for previous, current in zip(all_chunks, all_chunks[1:]):
+        # Overlap may be shorter than its configured maximum. Match source suffix/prefix.
+        matches = [n for n in range(min(CHUNK_OVERLAP, len(previous['text']), len(current['text']) - 1), -1, -1)
+                   if previous['text'][len(previous['text']) - n:] == current['text'][:n]]
+        assert matches, 'Non-contiguous source chunks'
+        reconstructed += current['text'][matches[0]:]
     assert reconstructed == text, (len(reconstructed),len(text))
     check('Unicode chunk overlap, full reconstruction and pagination',lambda: None)
     answer = ask('青禾项目的负责人是谁？')
@@ -118,8 +127,13 @@ def run():
 
 def main():
     parser=argparse.ArgumentParser()
+    parser.add_argument('--chunk-size', type=int, default=800, help='Must match backend YAML')
+    parser.add_argument('--chunk-overlap', type=int, default=100, help='Must match backend YAML')
     parser.add_argument('--keep-demo',action='store_true')
     args=parser.parse_args()
+    global CHUNK_SIZE, CHUNK_OVERLAP
+    CHUNK_SIZE, CHUNK_OVERLAP = args.chunk_size, args.chunk_overlap
+    assert 0 <= CHUNK_OVERLAP < CHUNK_SIZE
     failure=None
     try:
         answer=run()

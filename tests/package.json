@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test:ui": "node browser.mjs"
+    "test:ui": "node browser.mjs",
+    "test:ui:memory": "node memory-ui.mjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

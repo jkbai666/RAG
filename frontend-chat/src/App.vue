@@ -46,6 +46,7 @@ function refreshOnFocus(): void {
 }
 
 onMounted(() => {
+  void session.initialize()
   void session.refreshStatus()
   window.addEventListener('focus', refreshOnFocus)
 })
@@ -65,6 +66,7 @@ onBeforeUnmount(() => {
         </span>
         <span>知识库问答<span class="brand-caption">让回答回到文档</span></span>
       </div>
+      <button class="text-button new-conversation" data-testid="new-conversation" type="button" :disabled="state.sending || state.sessionLoading" @click="session.newConversation">新对话</button>
       <a class="documents-link" :href="documentsLink" target="_blank" rel="noopener noreferrer" aria-label="打开文档管理（新标签页）">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H5v18h14V8zM14 3v5h5M8 12h8M8 16h5"/></svg>
         <span>文档管理</span>
@@ -93,6 +95,11 @@ onBeforeUnmount(() => {
       </section>
 
       <div class="status-notices" aria-live="polite" aria-atomic="true">
+        <section v-if="state.sessionLoading" class="notice" data-testid="session-loading"><p>正在恢复或创建会话…</p></section>
+        <section v-if="state.sessionError" class="notice notice-error" data-testid="session-error" aria-label="会话恢复失败">
+          <div><h2>会话暂不可用</h2><p>{{ state.sessionError }}</p><p>已保留当前会话标识，不会自动创建新会话。</p></div>
+          <button class="text-button" data-testid="restore-conversation" type="button" :disabled="state.sessionLoading || state.sending" @click="session.initialize(true)">重试恢复会话</button>
+        </section>
         <section v-if="state.statusError" class="notice notice-error" aria-label="状态获取失败">
           <div><h2>暂时无法确认知识库状态</h2><p>{{ state.statusError }}</p></div>
           <button class="text-button" type="button" :disabled="state.statusLoading" @click="session.refreshStatus">重试获取状态</button>
@@ -111,12 +118,12 @@ onBeforeUnmount(() => {
         <p class="eyebrow">你的文档 · 你的知识库</p>
         <h1 id="welcome-title">从文档出发，<br class="mobile-break" />找到有依据的回答。</h1>
         <p class="welcome-description">用自然语言提问，回答会附上实际引用的来源。<br />展开原文，了解每一个答案的依据。</p>
-        <div class="welcome-note"><span aria-hidden="true">↳</span> 每次提问独立处理，不记忆上下文。</div>
+        <div class="welcome-note"><span aria-hidden="true">↳</span> 当前会话会参考最近 5 轮问答，预算不足时会减少。</div>
       </section>
 
       <section v-else class="conversation" aria-labelledby="conversation-title" :aria-busy="state.sending">
-        <div class="conversation-heading"><h1 id="conversation-title">本页问答</h1><span>每次提问独立处理</span></div>
-        <article v-for="(message, index) in state.messages" :key="message.id" class="exchange" :aria-label="`第 ${index + 1} 次独立问答`">
+        <div class="conversation-heading"><h1 id="conversation-title">当前会话</h1><span>最多参考最近 5 轮问答</span></div>
+        <article v-for="(message, index) in state.messages" :key="message.id" class="exchange" :aria-label="`第 ${index + 1} 轮问答`">
           <div class="question-message"><p class="message-label">你的问题</p><p class="question-text">{{ message.question }}</p></div>
           <div class="answer-message">
             <div class="assistant-label"><span class="assistant-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4z"/></svg></span><span>知识库回答</span></div>
@@ -128,7 +135,7 @@ onBeforeUnmount(() => {
               <p v-if="!message.response.grounded" class="ungrounded-note">当前知识库没有足够依据回答这个问题。这不是服务错误；可以补充相关文档，或调整问题后再提问。</p>
               <details v-if="message.response.sources.length" class="sources">
                 <summary><span class="sources-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l2-2"/></svg>实际引用来源 <span class="source-count">{{ message.response.sources.length }}</span></span><span class="details-action">展开原文 <span class="chevron" aria-hidden="true">⌄</span></span></summary>
-                <p class="sources-note">以下原文为本次回答返回的来源快照，仅保留在当前页面。</p>
+                <p class="sources-note">以下为该轮回答生成时的历史来源快照，可能已被删除或更新；不代表本次提问的有效依据。</p>
                 <details v-for="(source, sourceIndex) in message.response.sources" :key="`${source.chunkId}-${sourceIndex}`" class="source-item">
                   <summary><span class="source-number" aria-hidden="true">{{ sourceIndex + 1 }}</span><span class="source-meta"><span class="source-filename">{{ source.fileName }}</span><span class="source-location">分块 {{ source.chunkIndex }}<template v-if="pageLabel(source.pageStart, source.pageEnd)"> · {{ pageLabel(source.pageStart, source.pageEnd) }}</template></span></span><span class="chevron" aria-hidden="true">⌄</span></summary>
                   <p class="source-text">{{ source.text }}</p>
@@ -143,7 +150,7 @@ onBeforeUnmount(() => {
 
     <div class="composer-area">
       <div class="composer-inner">
-        <p class="context-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v5M12 16h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>每次提问独立处理，不记忆上下文；刷新页面会清空本页消息。</p>
+        <p class="context-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8v5M12 16h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>会话会持久保存，刷新后可恢复；追问最多参考最近 5 轮完整问答，预算不足时会减少。新对话不携带旧记忆。</p>
         <form class="composer" :class="{ invalid: !!validation, busy: state.sending }" @submit.prevent="submit">
           <label for="question">向知识库提问</label>
           <textarea id="question" ref="textarea" v-model="state.draft" name="question" rows="3" placeholder="输入你想从文档中了解的问题…" :readonly="state.sending" :aria-invalid="!!validation" :aria-describedby="`question-hint question-count${validation ? ' question-validation' : ''}`" @keydown="onKeydown" @compositionstart="composing = true" @compositionend="composing = false"></textarea>

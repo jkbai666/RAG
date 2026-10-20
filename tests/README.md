@@ -14,14 +14,16 @@ npm run build --prefix frontend-chat
 npm run build --prefix frontend-docs
 ~~~
 
-后端新增云端配置与 HTTP 协议测试；本轮数量及结果见 UC-002 验证记录。此前 UC-001 后端通过 31 项、跳过 1 项，不代表新云端已联通。前端分别 19 和 14 项，以状态机与契约响应验证边界，不把它们视为完整浏览器验证。
+后端包含云端 HTTP 协议、H2 会话持久化、记忆预算、追问改写、幂等与并发、段落重叠和引用复核测试。当前数量及结果以 [UC-003 验证记录](../docs/02-需求实现/UC-003-会话记忆与段落切块/2026-10-20-03-verification.md) 为准；旧迭代统计不代表当前版本，也不证明真实云端联通。
 
 ## 2. 真实 API 回归
 
-先按根 README 填写两个有效云端 Key、启动所有服务，并确保知识库与当前向量配置一致。以下回归会发送测试文本给厂商并可能消耗额度，填写 Key 后由使用者按需运行；本轮没有 Key，不计为通过。下面的 python 要指向可用的 Python 3.12；本机若 PATH 中只有 WindowsApps 别名，可使用 setup.ps1 -PythonPath 指定的可执行文件。
+先按根 README 填写两个有效云端 Key、启动所有服务，并确保知识库与当前向量配置一致。以下回归会发送测试文本给厂商并可能消耗额度，填写 Key 后由使用者按需运行；UC-003 为避免付费与改动现有知识库没有执行，不计为通过。下面的 python 要指向可用的 Python 3.12；本机若 PATH 中只有 WindowsApps 别名，可使用 setup.ps1 -PythonPath 指定的可执行文件。
 
 ~~~powershell
 python tests/integration.py
+# 如修改过 YAML 分块参数，传入相同值
+# python tests/integration.py --chunk-size 800 --chunk-overlap 100
 # 完成后额外留下青禾样例，供页面体验
 python tests/integration.py --keep-demo
 # 后端附带的真实服务回归，也可独立执行
@@ -67,7 +69,22 @@ fixtures 下提供青禾 TXT、导入说明 MD、两页文本 PDF、无文本层
 
 [云端接入验证](../docs/02-需求实现/UC-002-云端模型接入/2026-10-20-03-verification.md) 记录本轮结果和限制；[UC-001 历史验证](../docs/02-需求实现/UC-001-最小可运行RAG/2026-10-20-03-verification.md) 属于旧本地模型配置。测试生成的数据、截图与日志不是源代码，均放在已忽略的 .local 中。
 
-## 6. 云端启动隔离检查
+## 6. 会话页面隔离验证（不调用模型）
+
+先构建问答前端并启动 5173 页面，在项目根目录运行：
+
+~~~powershell
+npm ci --prefix tests
+npm run test:ui:memory --prefix tests
+~~~
+
+`memory-ui.mjs` 复用 Playwright 与本机 Chrome，以真实 Vue 页面触发操作，但拦截所有 `/api/**` 请求。覆盖创建/恢复会话、追问、新对话隔离、发送中防重复、断线后同 ID 重试、刷新保留待确认请求、恢复失败不偷偷换会话、来源纯文本以及桌面/手机布局。所有测试状态留在浏览器上下文及内存替身中，不写真实知识库、不使用真实 Key。
+
+它不能证明 MySQL 持久化或真实模型理解能力；后端持久化由 H2 集成测试与记录在 UC-003 中的本机 MySQL 空会话重启检查分别验证。浏览器证据在 `.local/test-results/uc003-ui/`，结果 JSON 标明 `mocked-api-real-browser`。不要把此命令与会真实导入/提问的 `npm run test:ui --prefix tests` 混淆。
+
+既有 `browser.mjs` 已适配会话消息路由，`integration.py` 已适配可变段落边界、重叠重建和参数；本轮仅语法检查，未执行它们的真实云端链路。`resilience.py` 依赖旧本地模型服务，不适用于当前云端流程，不直接运行。
+
+## 7. 云端启动隔离检查
 
 ~~~powershell
 pwsh -NoProfile -File tests/cloud-startup.ps1

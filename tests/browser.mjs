@@ -13,6 +13,7 @@ const chat = await context.newPage();
 const errors = [];
 const cases = [];
 for (const page of [docs,chat]) page.on('pageerror',e=>errors.push(String(e)));
+const messageEndpoint = /\/api\/(?:chat|conversations\/[^/]+\/messages)$/;
 const wait = async (predicate,message) => { const end=Date.now()+150000; while(Date.now()<end) { if(await predicate()) return; await new Promise(r=>setTimeout(r,200)); } throw Error(message); };
 const pass = name => { cases.push({case:name,result:'PASS'}); console.log('PASS '+name); };
 let ownId;
@@ -46,7 +47,7 @@ try {
   await textarea.fill('青禾项目的负责人是谁？');
   await wait(async()=>!(await chat.getByRole('button',{name:'发送问题',exact:true}).isDisabled()),'Chat status not refreshed');
   let posted=0;
-  chat.on('request',r=>{if(r.url().endsWith('/api/chat')&&r.method()==='POST')posted++;});
+  chat.on('request',r=>{if(messageEndpoint.test(r.url())&&r.method()==='POST')posted++;});
   await textarea.press('Enter');
   await chat.getByText('正在检索并生成回答',{exact:true}).waitFor();
   assert.equal(await chat.getByRole('button',{name:'正在生成',exact:true}).isDisabled(),true);
@@ -64,13 +65,13 @@ try {
   await chat.locator('.ungrounded-note').waitFor({timeout:150000});
   pass('missing evidence displayed as a normal answer state');
   // Deliberately simulate only the browser transport failure, not a model outage.
-  await chat.route('**/api/chat',route=>route.abort('connectionfailed'));
+  await chat.route(messageEndpoint,route=>route.abort('connectionfailed'));
   await textarea.fill('请说明项目目标');
   await chat.getByRole('button',{name:'发送问题',exact:true}).click();
   await chat.getByRole('heading',{name:'这次未能获取回答'}).waitFor();
   assert.equal(await textarea.inputValue(),'请说明项目目标');
   await chat.getByRole('button',{name:'重新发送',exact:true}).waitFor();
-  await chat.unroute('**/api/chat');
+  await chat.unroute(messageEndpoint);
   pass('simulated browser transport failure preserves input and enables retry');
   await textarea.fill('问题第一行'); await textarea.press('Shift+Enter'); await textarea.type('第二行');
   assert.match(await textarea.inputValue(),/\n/);

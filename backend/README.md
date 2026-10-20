@@ -44,7 +44,7 @@ java -jar D:\BYS\RAG\backend\target\rag-backend-0.0.1-SNAPSHOT.jar
 | embedding-api-key | 空字符串，填写北京区域百炼 Key；其他区域须同步修改地址 |
 | embedding-dimensions | 1024，验证返回维度；float 编码，每个 HTTP 请求最多 8 段 |
 | chroma-collection | rag_qwen_v4_1024；显式 V2、default_tenant/default_database |
-| chunk-size / chunk-overlap | 800 / 100；Unicode code point 计数，重叠小于大小 |
+| chunk-size / chunk-overlap | 800 / 100；按段落/句子切块，总上限包含重叠；Unicode code point 计数，重叠小于大小 |
 
 DeepSeek 请求显式 thinking.type=disabled，并使用 response_format.type=json_object。兼容名称 deepseek-v4-flash 在 2026-10-20 官方文档中路由至 DeepSeek-V4.1-Flash-1017。百炼新账号如需业务空间专属域名，在 YAML 替换完整 base URL。
 
@@ -65,6 +65,16 @@ DeepSeek 请求显式 thinking.type=disabled，并使用 response_format.type=js
 - 无有效召回或模型声明证据不足时返回 grounded=false、sources=[]，使用统一的依据不足文案。技术异常不会伪装成此状态。
 - 问答持有读锁直到生成和最后校验结束，删除通过写锁串行化。已经开始的问答可以先于删除完成；删除成功后开始的问答不会使用已删文档。
 - 上游异常统一转换成不含 URL、密钥或响应体的中文信息；超时返回 504。HTTP 请求和模型响应日志默认关闭。
+
+## 会话与段落切块（UC-003）
+
+Flyway V2 增量创建 `rag_conversations`、`rag_conversation_exchanges`，不修改 V1，不迁移或清空文档与向量。`ConversationService` 用单进程内分段锁串行化同一会话；数据库唯一约束绑定会话和请求 UUID，已完成请求可幂等重放。失败占位不会作为成功历史恢复。成功记录按完成时间与稳定序号排序。
+
+`RagService.chat(question, history)` 最多携带最近 5 轮纯问答，改写独立检索问题；改写和最终生成都计入各自的输入、系统提示、JSON、输出预留预算，先移除旧整轮。历史回答不作为证据，新答案仍需当前 READY 分块和引用复核。原 `chat(question)` 与 `/api/chat` 保持单轮兼容。
+
+`DocumentParser` 依据标题、段落选择主体，长段按中英文句界拆分；重叠取同一文档紧邻主体之前的原文，不修改空白或文本顺序。列表尽量保留完整条目，代码围栏整体保留；PDF 软换行不直接当段落。超长且无安全边界的句子或代码块明确失败，不回退固定字符切分。英文缩写仅为有限规则，不是完整 Markdown 解析或模型语义切分。
+
+现有资料不重新索引；新旧策略可在同一个 collection 共存。历史记录在本机保存，必要问答会发送给 DeepSeek；有历史的追问可能多一次生成调用。仅支持单后端实例，不提供跨会话长期记忆或历史清理。
 
 ## 测试
 

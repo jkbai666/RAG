@@ -108,6 +108,10 @@ export async function askQuestion(question: string, signal?: AbortSignal): Promi
     body: JSON.stringify({ question }),
     signal,
   }, 180_000)
+  return parseAnswer(result)
+}
+
+function parseAnswer(result: unknown): ChatAnswer {
   if (!isRecord(result) || typeof result.answer !== 'string' || !result.answer.trim()
     || typeof result.grounded !== 'boolean' || !Array.isArray(result.sources)
     || !result.sources.every(isSource)
@@ -116,4 +120,48 @@ export async function askQuestion(question: string, signal?: AbortSignal): Promi
     throw new ApiError('回答或来源数据格式异常，请重新发送；本次不展示未经校验的回答。', 0, 'INVALID_RESPONSE')
   }
   return result as unknown as ChatAnswer
+}
+
+export interface StoredExchange {
+  requestId: string
+  question: string
+  response: ChatAnswer
+  createdAt: string
+}
+export interface Conversation {
+  id: string
+  exchanges: StoredExchange[]
+}
+export const UUID_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
+
+function parseConversation(result: unknown): Conversation {
+  if (!isRecord(result) || typeof result.id !== 'string' || !UUID_PATTERN.test(result.id) || !Array.isArray(result.exchanges)) {
+    throw new ApiError('会话数据格式异常，请重试恢复。', 0, 'INVALID_RESPONSE')
+  }
+  const seen = new Set<string>()
+  const exchanges = result.exchanges.map((value: unknown) => {
+    if (!isRecord(value) || typeof value.requestId !== 'string' || !UUID_PATTERN.test(value.requestId)
+      || seen.has(value.requestId) || typeof value.question !== 'string' || !value.question.trim()
+      || typeof value.createdAt !== 'string' || !Number.isFinite(Date.parse(value.createdAt))) {
+      throw new ApiError('问答历史格式异常，请重试恢复。', 0, 'INVALID_RESPONSE')
+    }
+    seen.add(value.requestId)
+    return { requestId: value.requestId, question: value.question, response: parseAnswer(value.response), createdAt: value.createdAt }
+  })
+  return { id: result.id, exchanges }
+}
+export async function createConversation(signal?: AbortSignal): Promise<Conversation> {
+  const result = parseConversation(await request('/api/conversations', { method: 'POST', signal }, 15_000))
+  if (result.exchanges.length) throw new ApiError('新会话返回了非空历史，请重试。', 0, 'INVALID_RESPONSE')
+  return result
+}
+export async function getConversation(id: string, signal?: AbortSignal): Promise<Conversation> {
+  const result = parseConversation(await request('/api/conversations/' + encodeURIComponent(id), { signal }, 15_000))
+  if (result.id !== id) throw new ApiError('会话标识不一致，请重试恢复。', 0, 'INVALID_RESPONSE')
+  return result
+}
+export async function sendMessage(id: string, question: string, requestId: string, signal?: AbortSignal): Promise<ChatAnswer> {
+  return parseAnswer(await request('/api/conversations/' + encodeURIComponent(id) + '/messages', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question, requestId }), signal,
+  }, 180_000))
 }

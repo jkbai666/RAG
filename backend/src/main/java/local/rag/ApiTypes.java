@@ -15,5 +15,9 @@ public final class ApiTypes {
     public record Source(String chunkId, String documentId, String fileName, int chunkIndex,
                          String text, Integer pageStart, Integer pageEnd) {}
     public record Answer(String answer, boolean grounded, List<Source> sources) {}
+    public record HistoryTurn(String question, String answer) {}
+    public record Message(String question, String requestId) {}
+    public record Exchange(String requestId, String question, Answer response, @com.fasterxml.jackson.annotation.JsonFormat(shape=com.fasterxml.jackson.annotation.JsonFormat.Shape.STRING) Instant createdAt) {}
+    public record Conversation(String id, List<Exchange> exchanges) {}
     public record Error(String code, String message) {}
 }

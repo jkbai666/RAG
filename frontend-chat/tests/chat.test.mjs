@@ -12,11 +12,14 @@ const deferred = () => {
   const promise = new Promise((yes, no) => { resolve = yes; reject = no })
   return { promise, resolve, reject }
 }
+const conversationId = '11111111-1111-4111-8111-111111111111'
 const makeSession = (overrides = {}) => createChatSession({
   getKnowledgeStatus: async () => ready,
-  askQuestion: async () => grounded,
+  createConversation: async () => ({ id: conversationId, exchanges: [] }),
+  getConversation: async id => ({ id, exchanges: [] }),
+  sendMessage: (_id, question, _requestId, signal) => (overrides.askQuestion || (async () => grounded))(question, signal),
   ...overrides,
-})
+}, { getItem: () => null, setItem: () => {} })
 
 test('以 Unicode 码点而非 UTF-16 单元计算长度，限制 2000 字符', () => {
   assert.equal(unicodeLength('中文😀'), 3)
@@ -45,6 +48,7 @@ test('未获取状态、空库、配置缺失均阻止发送', async () => {
   const session = makeSession({ askQuestion: async () => { calls++; return grounded } })
   session.state.draft = '有什么规定？'
   assert.equal(await session.send(), false)
+  await session.initialize()
   await session.refreshStatus()
   session.state.status = { ...ready, modelConfigured: false }
   assert.match(statusBlockReason(session.state), /模型尚未配置/)
@@ -58,6 +62,7 @@ test('未获取状态、空库、配置缺失均阻止发送', async () => {
 test('空白和过长问题不触发 API', async () => {
   let calls = 0
   const session = makeSession({ askQuestion: async () => { calls++; return grounded } })
+  await session.initialize()
   await session.refreshStatus()
   for (const draft of ['  ', '中'.repeat(2001)]) {
     session.state.draft = draft
@@ -67,10 +72,11 @@ test('空白和过长问题不触发 API', async () => {
   assert.equal(session.state.messages.length, 0)
 })
 
-test('等待期间阻止重复发送，成功才清空输入，独立提问不带历史', async () => {
+test('等待期间阻止重复发送，成功才清空输入，仅发送当前问题而不伪造浏览器历史', async () => {
   const wait = deferred()
   const calls = []
   const session = makeSession({ askQuestion: (question) => { calls.push(question); return wait.promise } })
+  await session.initialize()
   await session.refreshStatus()
   session.state.draft = '  文档中有什么规定？  '
   const pending = session.send()
@@ -95,6 +101,7 @@ test('失败保留原输入，同一问题重试复用失败项且能成功', as
     if (++calls === 1) throw new ApiError('模型不可用', 502, 'MODEL_ERROR')
     return grounded
   } })
+  await session.initialize()
   await session.refreshStatus()
   session.state.draft = ' 原问题\n第二行 '
   assert.equal(await session.send(), false)
@@ -114,6 +121,7 @@ test('失败后允许修改问题重新发送', async () => {
     if (questions.length === 1) throw new Error('服务失败')
     return grounded
   } })
+  await session.initialize()
   await session.refreshStatus()
   session.state.draft = '旧问题'
   await session.send()
@@ -125,6 +133,7 @@ test('失败后允许修改问题重新发送', async () => {
 
 test('grounded=false 是正常回答，不当作异常', async () => {
   const session = makeSession({ askQuestion: async () => noEvidence })
+  await session.initialize()
   await session.refreshStatus()
   session.state.draft = '文档以外的问题'
   assert.equal(await session.send(), true)
@@ -137,11 +146,13 @@ test('后续状态变化不删除消息，来源快照不随外部对象改变',
   const response = { ...grounded, sources: [{ ...source }] }
   let currentStatus = ready
   const session = makeSession({ getKnowledgeStatus: async () => currentStatus, askQuestion: async () => response })
+  await session.initialize()
   await session.refreshStatus()
   session.state.draft = '问题'
   await session.send()
   response.sources[0].text = '后续变化'
   currentStatus = { readyDocuments: 0, totalDocuments: 0, modelConfigured: false }
+  await session.initialize()
   await session.refreshStatus()
   assert.equal(session.state.messages.length, 1)
   assert.equal(session.state.messages[0].response.sources[0].text, source.text)
@@ -155,13 +166,16 @@ test('状态获取失败阻止沿用旧状态发送，重试恢复', async () =>
     if (fail) throw new Error('后端未启动')
     return ready
   } })
+  await session.initialize()
   await session.refreshStatus()
   fail = true
+  await session.initialize()
   await session.refreshStatus()
   session.state.draft = '问题'
   assert.equal(await session.send(), false)
   assert.equal(session.state.statusError, '后端未启动')
   fail = false
+  await session.initialize()
   await session.refreshStatus()
   assert.equal(session.state.statusError, '')
   assert.equal(await session.send(), true)
@@ -185,6 +199,7 @@ test('卸载时取消请求，不再写回结果', async () => {
   const wait = deferred()
   let signal
   const session = makeSession({ askQuestion: (_question, inputSignal) => { signal = inputSignal; return wait.promise } })
+  await session.initialize()
   await session.refreshStatus()
   session.state.draft = '问题'
   const pending = session.send()
@@ -202,6 +217,7 @@ test('空库或配置错误会自动重新查询状态', async () => {
     getKnowledgeStatus: async () => { calls++; return ready },
     askQuestion: async () => { throw new ApiError('空库', 409, 'EMPTY_KNOWLEDGE_BASE') },
   })
+  await session.initialize()
   await session.refreshStatus()
   session.state.draft = '问题'
   await session.send()
