@@ -1,0 +1,30 @@
+{
+  "schemaVersion" : 1,
+  "confirmed" : true,
+  "verifiedAt" : "2026-11-18",
+  "verification" : "Codex verified official pages using PowerShell Invoke-WebRequest on 2026-11-18.",
+  "currency" : "CNY",
+  "unit" : "per_million_tokens",
+  "sources" : [ "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/", "https://help.aliyun.com/zh/model-studio/text-embedding-v4" ],
+  "models" : {
+    "chat" : "deepseek-v4-flash",
+    "chatAliasTargetAtVerification" : "DeepSeek-V4.1-Flash-1017",
+    "embedding" : "text-embedding-v4"
+  },
+  "maxRates" : {
+    "deepseekInputCacheMiss" : 2,
+    "deepseekOutput" : 8,
+    "qwenInput" : 0.514
+  },
+  "qwenRegionalRates" : {
+    "beijing" : 0.5,
+    "singapore" : 0.514
+  },
+  "limits" : {
+    "stopNewRequestsRmb" : 16,
+    "totalCapRmb" : 20,
+    "deepseekRequests" : 400,
+    "qwenRequests" : 600
+  },
+  "policy" : "Peak/cache-miss rates; no cache discount assumed. Do not change the configured user alias. Missing usage and failed requests retain their worst-case reservation."
+}

@@ -9,6 +9,8 @@ export interface KnowledgeDocument {
   chunkCount: number
   createdAt: string
   errorMessage: string | null
+  chunkingStrategy?: 'LEGACY' | 'RULE' | 'LLM' | null
+  chunkingFallbackReason?: string | null
 }
 
 export interface DocumentChunk {

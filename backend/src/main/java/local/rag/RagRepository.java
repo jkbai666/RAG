@@ -18,7 +18,8 @@ public class RagRepository {
     public RagRepository(JdbcTemplate db, TransactionTemplate tx) { this.db = db; this.tx = tx; }
     private static final RowMapper<Document> DOCUMENT = (r,n) -> new Document(r.getString("id"),
             r.getString("file_name"), r.getString("format"), r.getLong("size_bytes"), r.getString("status"),
-            r.getInt("chunk_count"), r.getTimestamp("created_at").toInstant(), r.getString("error_message"));
+            r.getInt("chunk_count"), r.getTimestamp("created_at").toInstant(), r.getString("error_message"),
+            r.getString("chunking_strategy"), r.getString("chunking_fallback_reason"));
     private static final RowMapper<Chunk> CHUNK = (r,n) -> new Chunk(r.getString("id"),r.getString("document_id"),
             r.getInt("chunk_index"),r.getString("text"), nullableInt(r,"page_start"),nullableInt(r,"page_end"));
     private static Integer nullableInt(ResultSet r, String key) throws SQLException {
@@ -26,7 +27,7 @@ public class RagRepository {
     }
     public Document insertDocument(String id, String fileName, String format, long bytes) {
         Instant now = Instant.now();
-        db.update("INSERT INTO rag_documents(id,file_name,format,size_bytes,status,chunk_count,created_at) VALUES(?,?,?,?, 'PROCESSING',0,?)",
+        db.update("INSERT INTO rag_documents(id,file_name,format,size_bytes,status,chunk_count,created_at,chunking_strategy) VALUES(?,?,?,?, 'PROCESSING',0,?,NULL)",
                 id,fileName,format,bytes,Timestamp.from(now));
         return getDocument(id);
     }
@@ -37,6 +38,16 @@ public class RagRepository {
     public List<Document> listDocuments() { return db.query("SELECT * FROM rag_documents ORDER BY created_at DESC,id DESC",DOCUMENT); }
     public long total() { return db.queryForObject("SELECT COUNT(*) FROM rag_documents",Long.class); }
     public long ready() { return db.queryForObject("SELECT COUNT(*) FROM rag_documents WHERE status='READY'",Long.class); }
+    public void setChunking(String id, String strategy, String fallbackReason) {
+        if (!"RULE".equals(strategy) && !"LLM".equals(strategy))
+            throw new IllegalArgumentException("Invalid chunking strategy");
+        // Only bounded reason codes may be persisted; never store an upstream exception or response.
+        String safeReason = fallbackReason == null || fallbackReason.isBlank() ? null
+                : fallbackReason.matches("[A-Z][A-Z0-9_]{0,63}") ? fallbackReason : "AI_CHUNKING_FAILED";
+        int n = db.update("UPDATE rag_documents SET chunking_strategy=?,chunking_fallback_reason=? WHERE id=? AND status='PROCESSING'",
+                strategy,"RULE".equals(strategy) ? safeReason : null,id);
+        if (n != 1) throw new IllegalStateException("Invalid chunking transition");
+    }
     public void insertChunks(List<Chunk> chunks) {
         tx.executeWithoutResult(s -> db.batchUpdate("INSERT INTO rag_chunks(id,document_id,chunk_index,text,page_start,page_end) VALUES(?,?,?,?,?,?)",
             chunks,100,(p,c) -> { p.setString(1,c.id()); p.setString(2,c.documentId()); p.setInt(3,c.index());

@@ -1,0 +1,14 @@
+{
+  "chat": {
+    "identifiers": [
+      "deepseek-flash"
+    ],
+    "source": "SDK ChatResponse.modelName; generic alias, not a weights fingerprint"
+  },
+  "embedding": {
+    "identifier": "text-embedding-v4",
+    "source": "requested configuration alias; the LangChain4j embedding response does not expose response model identity here",
+    "actualResponseModel": null
+  },
+  "notes": "Do not interpret the embedding ledger responseModel field as an independently observed vendor model version."
+}

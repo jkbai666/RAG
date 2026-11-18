@@ -1,0 +1,78 @@
+{
+  "documentId" : "dev-03",
+  "split" : "dev",
+  "arm" : "B",
+  "status" : "ready",
+  "latencyMs" : 1430,
+  "coverageValid" : true,
+  "error" : null,
+  "strategy" : "LLM",
+  "fallbackReason" : null,
+  "chunks" : [ {
+    "id" : "3712fe5d-e387-4874-be9a-42062f213b43",
+    "documentId" : "dev-03",
+    "index" : 1,
+    "text" : "MORROW ACQUIRING | OPERATING NOTE M-4 | 2026-08-01\r\nFictional merchant settlement rules. Currency: CNY. A settlement batch and a dispute case\r\nhave different identifiers. A case reference is not a payout instruction. This note governs\r\nreserve movements, not cardholder credit limits.\r\nBATCH CLOCK\r\nTransactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters\r\nthe next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and\r\nthe published closed days are skipped. The examples below assume no closed days other than\r\nweekends.\r\nRESERVE MATRIX\r\nStandard merchant: withhold 6% of gross accepted sales.\r\nElevated merchant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. ",
+    "pageStart" : 1,
+    "pageEnd" : 1
+  }, {
+    "id" : "f7cefec4-72fc-4a4b-86c1-beede79a5602",
+    "documentId" : "dev-03",
+    "index" : 2,
+    "text" : "ant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve\r\nbase of the batch in which they are paid. Transaction fees are separate deductions and do\r\nnot reduce the reserve base either.\r\nLEDGER DISCIPLINE\r\nOperations reconcile accepted sale IDs to the terminal report before sending the batch for\r\nreview. A void made before acceptance never becomes a gross sale. A refund made after\r\nacceptance is a separate debit, even when its amount equals the original sale. Reviewers\r\nmay attach card scheme messages as context; those messages cannot replace a matched sale\r\nID. A manual note does not change an accepted timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves.\r\n",
+    "pageStart" : 1,
+    "pageEnd" : 1
+  }, {
+    "id" : "bd039f19-8d9c-41aa-8359-84c1408ee6a8",
+    "documentId" : "dev-03",
+    "index" : 3,
+    "text" : "d timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves.\r\nWORKED BATCH\r\nA Standard merchant has gross accepted sales of 50,000, refunds of 8,000, transaction fees\r\nof 500 and a matured old reserve release of 1,000. No other debit applies. Payout equals\r\ngross sales minus refunds, fees and the new reserve, plus the matured release. An unrelated\r\nopen dispute has no deduction until a provisional debit is posted.\r\nDISPUTE PATH\r\nA provisional dispute debit is posted when a case is opened with a scheme debit notice. The\r\nmerchant has 7 calendar days after notice to submit a matched receipt and delivery proof. A\r\nresponse with only a receipt is incomplete. ",
+    "pageStart" : 1,
+    "pageEnd" : 2
+  }, {
+    "id" : "4c6c2be3-193c-40ca-a177-f92f128203a7",
+    "documentId" : "dev-03",
+    "index" : 4,
+    "text" : "tice to submit a matched receipt and delivery proof. A\r\nresponse with only a receipt is incomplete. Winning a case reverses the provisional debit;\r\nit does not create another sale or reduce a reserve that was correctly withheld.\r\nRESERVE RELEASE\r\nEach reserve lot matures 90 calendar days after its batch date. Release requires maturity\r\nand no open dispute linked to that lot. An unlinked dispute does not block that lot. Lots\r\nare tracked separately: one blocked lot cannot justify retaining every other mature lot. No\r\ninterest is paid on held reserves under M-4.\r\nOUTAGE EXCEPTION\r\nA documented terminal clock outage may move an accepted transaction back by one batch only\r\nafter both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. ",
+    "pageStart" : 2,
+    "pageEnd" : 3
+  }, {
+    "id" : "871f92d0-822f-455a-a5e6-cfa499643f65",
+    "documentId" : "dev-03",
+    "index" : 5,
+    "text" : "er both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. The outage exception does not shorten T+2 settlement or the 90-day reserve\r\nmaturity period.\r\nVERSION REGISTER\r\nM-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.\r\nExisting M-3 reserve lots keep their original amounts; they are not topped up. The 90-day\r\nmaturity rule is unchanged. Do not recalculate an old lot using the current withholding\r\nrate.\r\nSCOPE LIMIT\r\nThis fictional note does not list actual merchant bank account numbers, the card scheme's\r\narbitration fee, or the issuer's internal fraud score. Those items cannot be derived from\r\nreserve percentages or settlement dates.\r\n",
+    "pageStart" : 3,
+    "pageEnd" : 3
+  } ],
+  "spans" : [ {
+    "chunkId" : "3712fe5d-e387-4874-be9a-42062f213b43",
+    "bodyStart" : 0,
+    "bodyEnd" : 770,
+    "start" : 0,
+    "end" : 770
+  }, {
+    "chunkId" : "f7cefec4-72fc-4a4b-86c1-beede79a5602",
+    "bodyStart" : 770,
+    "bodyEnd" : 1455,
+    "start" : 670,
+    "end" : 1455
+  }, {
+    "chunkId" : "bd039f19-8d9c-41aa-8359-84c1408ee6a8",
+    "bodyStart" : 1455,
+    "bodyEnd" : 2056,
+    "start" : 1355,
+    "end" : 2056
+  }, {
+    "chunkId" : "4c6c2be3-193c-40ca-a177-f92f128203a7",
+    "bodyStart" : 2056,
+    "bodyEnd" : 2737,
+    "start" : 1956,
+    "end" : 2737
+  }, {
+    "chunkId" : "871f92d0-822f-455a-a5e6-cfa499643f65",
+    "bodyStart" : 2737,
+    "bodyEnd" : 3364,
+    "start" : 2637,
+    "end" : 3364
+  } ]
+}

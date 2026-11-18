@@ -1,4 +1,4 @@
-"""Scan frontend assets/logs for private env and YAML credentials; never print values.
+"""Scan frontend assets, logs and evaluation reports for private credentials; never print values.
 
 The YAML source and backend JAR are intentional server-side credential locations,
 not leak targets. Do not share either after filling in real keys. --self-test uses
@@ -102,7 +102,8 @@ def scan(root):
         needles.add(secret.encode('utf-8'))
         needles.add(json.dumps(secret, ensure_ascii=True)[1:-1].encode('utf-8'))
     checked = 0
-    for folder in (root / 'frontend-chat/dist', root / 'frontend-docs/dist', root / '.local/logs'):
+    for folder in (root / 'frontend-chat/dist', root / 'frontend-docs/dist', root / '.local/logs',
+                   root / 'evaluation', root / 'docs/02-需求实现/UC-004-AI切块与量化评测'):
         for file in sorted(folder.rglob('*')):
             if not file.is_file():
                 continue
@@ -170,6 +171,15 @@ class SecurityCheckTests(unittest.TestCase):
         with self.assertRaises(SafeCheckError) as error:
             scan(self.root)
         self.assertNotIn('fixture-secret', str(error.exception))
+
+    def test_evaluation_reports_are_scanned_without_echo(self):
+        self.yaml.write_text('rag:\n  chat-api-key: fixture-server-key\n', encoding='utf-8')
+        report = self.root / 'evaluation/runs/offline/results.jsonl'
+        report.parent.mkdir(parents=True)
+        report.write_text('{"error":"fixture-server-key"}', encoding='utf-8')
+        with self.assertRaises(SafeCheckError) as error:
+            scan(self.root)
+        self.assertNotIn('fixture-server-key', str(error.exception))
 
     def test_missing_assets_are_not_a_vacuous_pass(self):
         self.asset.unlink()

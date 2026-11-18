@@ -1,0 +1,728 @@
+{
+  "documentId" : "dev-01",
+  "split" : "dev",
+  "arm" : "A",
+  "status" : "ready",
+  "latencyMs" : 2723,
+  "coverageValid" : true,
+  "error" : null,
+  "strategy" : "RULE",
+  "fallbackReason" : null,
+  "chunks" : [ {
+    "id" : "d53eb175-2be6-4d3d-97d0-bad2494a0e0b",
+    "documentId" : "dev-01",
+    "index" : 1,
+    "text" : "# 岚桥住房项目预售监管专户拨款细则\n\n版本 LQ-3，自2026年9月1日起用于岚桥东苑，不适用于物业维修金。项目标记为\uD83C\uDFD7️东苑。专户余额不等于可拨款余额；监管行不承诺工程收益，施工单位不得凭销售人员的口头确认提款。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "b3d8643e-de2f-4c99-9b13-cb0f36b4c568",
+    "documentId" : "dev-01",
+    "index" : 2,
+    "text" : "管专户拨款细则\n\n版本 LQ-3，自2026年9月1日起用于岚桥东苑，不适用于物业维修金。项目标记为\uD83C\uDFD7️东苑。专户余额不等于可拨款余额；监管行不承诺工程收益，施工单位不得凭销售人员的口头确认提款。\n\n## 内部办理札记 A：Building identity before progress review\n\nThe intake desk receives one folder bearing the marketing name East Court and another bearing the construction name East Block. The names alone do not establish whether the folders refer to the same building. The desk asks the construction party to provide the approved mapping between the project register and the building register, attaches that mapping without rewriting the source documents, and records who supplied it. A photograph with a visible tower label can help locate the building but cannot cure a missing mapping in the register.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "505e466f-3177-4de5-b3cc-a2384a83848a",
+    "documentId" : "dev-01",
+    "index" : 3,
+    "text" : "isible tower label can help locate the building but cannot cure a missing mapping in the register.\n\nThe progress reviewer then reads the building-specific certificates rather than applying the most advanced building's stage to the entire development. A shared crane, an access road and a common sales office are not proof that two towers have identical construction status. When a certificate covers several towers, the reviewer identifies which lines support the requested tower and marks the others as background. The archive retains the entire certificate so a later reviewer can see its original scope.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "9455079a-6dbc-49e0-b366-763e025ef73f",
+    "documentId" : "dev-01",
+    "index" : 4,
+    "text" : "ground. The archive retains the entire certificate so a later reviewer can see its original scope.\n\nA clerk once copied a completion note from the neighboring tower because both folders used the same contractor. The corrected file keeps the mistaken note, labels it superseded for this application, and links the replacement evidence. The correction is a document-association repair. It does not certify an engineering stage, raise the fixed regulatory base or authorize any payment.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "6ceda913-9168-4eac-9fba-fade3d076bbb",
+    "documentId" : "dev-01",
+    "index" : 5,
+    "text" : "t does not certify an engineering stage, raise the fixed regulatory base or authorize any payment.\n\n## 进度确认\n\n每次申请须同时具备监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "8d374b95-8157-4bf2-aa55-f46b4f40311e",
+    "documentId" : "dev-01",
+    "index" : 6,
+    "text" : "监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。\n\n## 内部办理札记 B：Cash snapshot and bank movements\n\nThe cash reviewer works from a dated account snapshot and its matching movement file. A promised purchaser payment stays on the forecast list until it is actually reflected in the account. A debit request awaiting bank execution is listed as an outstanding instruction rather than a completed disbursement. Review staff reconcile the snapshot time with the movement file so the same transfer is neither missed nor counted twice around the cut-off.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "36d44f4e-3ba5-4cc9-ac8d-0457e9856e4c",
+    "documentId" : "dev-01",
+    "index" : 7,
+    "text" : "ith the movement file so the same transfer is neither missed nor counted twice around the cut-off.\n\nIf an instruction was rejected for an invalid payee record, the failed attempt remains in the operational log. It does not become an actual payment merely because a confirmation screen was printed before execution failed. A later successful replacement receives a link to the failed attempt and its own execution evidence. Staff must not erase the failed attempt to make the history appear simpler, because that history explains why the file contains several apparently identical amounts.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "41db595a-d6ec-4817-a55f-840cc6a54c23",
+    "documentId" : "dev-01",
+    "index" : 8,
+    "text" : "simpler, because that history explains why the file contains several apparently identical amounts.\n\nThe weekly supervisor compares opening cash, completed credits and completed debits to closing cash. This reconciliation explains the balance, while the regulatory calculation independently determines how much may be approved. A reconciled balance is necessary accounting context, but cannot substitute for a progress certificate or the required reserve. A financial forecast may assist planning without becoming cash available for today's approval.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "ff75b1df-6ae8-4b0a-983f-bd292f4e0896",
+    "documentId" : "dev-01",
+    "index" : 9,
+    "text" : "ve. A financial forecast may assist planning without becoming cash available for today's approval.\n\n## 内部办理札记 C：Scope of the construction invoice\n\nA construction invoice may contain work on the requested tower, equipment stored for a later phase and consulting work for the developer's head office. The file should explain which items correspond to the submitted payment instruction. Intake staff may ask for an itemized schedule and the relevant contract reference; they cannot rewrite the invoice or invent a split that the construction party has not confirmed. The original invoice remains attached alongside the explanation.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "a06603be-b254-4f5c-88e4-bf6a47097e29",
+    "documentId" : "dev-01",
+    "index" : 10,
+    "text" : "truction party has not confirmed. The original invoice remains attached alongside the explanation.\n\nThe evidence team records delivery or service acceptance separately from the invoice date. A dated invoice does not prove that the work reached the regulatory milestone. Equally, a milestone certificate does not prove that every invoiced line belongs to this project. Those two questions are reviewed using different records, and a reviewer signs only the conclusion supported by the records assigned to that review role.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "55a8ffa8-91c1-4f7f-83d5-37494cfbc658",
+    "documentId" : "dev-01",
+    "index" : 11,
+    "text" : "s, and a reviewer signs only the conclusion supported by the records assigned to that review role.\n\nFor example, a supplier includes replacement fencing after a storm in the same invoice as ordinary site services. The construction party must identify whether a request is an ordinary progress payment or a documented hazard-removal request. Its description cannot silently move the entire invoice into the exceptional channel. The final file retains the classification, supporting evidence and approval route, without treating an accounting label as authorization.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "17d8ac47-8ca8-4cf8-a5d1-a618208bbbda",
+    "documentId" : "dev-01",
+    "index" : 12,
+    "text" : "on, supporting evidence and approval route, without treating an accounting label as authorization.\n\n## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "79e0fc10-4bd2-4c39-8d8e-83be7c1f46d0",
+    "documentId" : "dev-01",
+    "index" : 13,
+    "text" : "基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "99c425f1-1b02-4686-8028-f5c40dc3479e",
+    "documentId" : "dev-01",
+    "index" : 14,
+    "text" : "备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。\n\n## 内部办理札记 D：Photo index and site evidence\n\nThe photo index is an index, not a substitute for the images it names. Each entry should allow the reviewer to retrieve the image associated with the relevant building and inspection visit. An image of the sales exhibition model is useful publicity material but cannot show the site's actual structural condition. A general aerial image can establish context while a building-specific certificate establishes the stage used for the calculation.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "211f98e2-3244-4851-a42f-63409f7450b7",
+    "documentId" : "dev-01",
+    "index" : 15,
+    "text" : "lish context while a building-specific certificate establishes the stage used for the calculation.\n\nWhen an image is resubmitted after a labeling mistake, staff preserve the original image and the corrected label as separate items. They do not alter the photograph to draw in a date or a tower name that was never visible. The supervisor checks the explanation for the correction against the visit log. A legible caption is not evidence that the underlying visit actually occurred on the claimed date.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "77a9abac-a2c2-4bbe-8b4c-644e9b5c45f6",
+    "documentId" : "dev-01",
+    "index" : 16,
+    "text" : "A legible caption is not evidence that the underlying visit actually occurred on the claimed date.\n\nA common review problem is a folder of many photographs with no relationship to the payment application. More images do not necessarily add more support. The construction party prepares a cross-reference from the payment request to the relevant inspection and index entries. The reviewer records unresolved gaps explicitly. A request may remain incomplete even when its image folder is large, and a completed image check does not by itself change the approved engineering milestone.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "8b3e692a-a2d1-4443-a442-a76b7b9a7208",
+    "documentId" : "dev-01",
+    "index" : 17,
+    "text" : "s large, and a completed image check does not by itself change the approved engineering milestone.\n\n## 内部办理札记 E：Two applications on the same day\n\nTwo applications can refer to different invoices while drawing on the same regulatory account. The reviewer must know which approved instructions have actually been executed by the time the second calculation is prepared. The applications are not independent merely because they have different folder numbers. At the same time, an unexecuted request should not be misrepresented as an actual disbursement in the historical paid figure.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "715bbfa9-ad94-47fe-9994-87d196055e16",
+    "documentId" : "dev-01",
+    "index" : 18,
+    "text" : "uted request should not be misrepresented as an actual disbursement in the historical paid figure.\n\nThe queue report identifies each request as incomplete, under review, approved for execution, executed or returned. These operational labels help staff avoid promising the same cash twice. The cash desk checks the current position before execution and refers a changed position back for recalculation rather than relying on an outdated printout. A queue position never guarantees a particular amount of regulatory headroom.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "70d25d9a-b969-4130-b809-555780f0ca67",
+    "documentId" : "dev-01",
+    "index" : 19,
+    "text" : "n outdated printout. A queue position never guarantees a particular amount of regulatory headroom.\n\nIn a training incident, the morning reviewer printed an approval worksheet and the afternoon desk received a corrected bank statement. Staff retained both versions and recorded why the later worksheet replaced the earlier one before execution. They did not backdate the corrected snapshot. The purpose of versioning is to make the decision reproducible from the information available at the time, while leaving the core milestone and retention rules intact.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "42bd3371-8947-466f-af6b-14fb542962a0",
+    "documentId" : "dev-01",
+    "index" : 20,
+    "text" : "he information available at the time, while leaving the core milestone and retention rules intact.\n\n## 凭证归档与队列\n\n经办先给资料包编号，再把影像交给复核员；复核员查验签章、照片日期和备案回执是否对应同一楼栋。跨楼栋的照片可作背景附件，但不能替代目标楼栋凭证。退回补正保留原编号，重新排队以最后一项补正材料的登记时间为准。每周报表列示待复核金额，只用于在途追踪，不能计入已拨金额，也不改变累计比例。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "13c55f4a-78b3-4be7-9f71-d9d2e260becd",
+    "documentId" : "dev-01",
+    "index" : 21,
+    "text" : "一楼栋。跨楼栋的照片可作背景附件，但不能替代目标楼栋凭证。退回补正保留原编号，重新排队以最后一项补正材料的登记时间为准。每周报表列示待复核金额，只用于在途追踪，不能计入已拨金额，也不改变累计比例。\n\n## 内部办理札记 F：Returned applications and the correction trail\n\nA return notice identifies the missing or inconsistent items in one coherent list. It should distinguish a document that was never supplied from a document that was supplied but cannot be linked to the requested building. That distinction helps the applicant correct the file without replacing valid evidence unnecessarily. A desk note saying only incomplete does not explain what must be supplied or why the reviewer could not proceed.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "5ee83513-4d3a-4477-9f59-b94f6b3016c2",
+    "documentId" : "dev-01",
+    "index" : 22,
+    "text" : "ying only incomplete does not explain what must be supplied or why the reviewer could not proceed.\n\nWhen replacement material arrives, staff associate it with the original application identifier and record the registration time of the final correction. The preserved identifier supports audit continuity. It is not a promise that the application keeps its old queue priority. Staff must be able to reconstruct which material was available at the first submission and which only arrived after the return.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "59cbbdb6-0209-468c-8e43-067e53f03759",
+    "documentId" : "dev-01",
+    "index" : 23,
+    "text" : "ruct which material was available at the first submission and which only arrived after the return.\n\nAn applicant may withdraw a questionable certificate and supply a different certificate rather than editing the first one. The archive keeps the withdrawn certificate clearly labeled as unused in the final decision. This avoids a later reviewer accidentally relying on an obsolete attachment. The approval worksheet lists the evidence versions actually relied on, while the historical folder remains complete enough to explain the sequence of corrections.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "e4de28d2-8144-4849-a5c0-85c6029ae7f4",
+    "documentId" : "dev-01",
+    "index" : 24,
+    "text" : "ed on, while the historical folder remains complete enough to explain the sequence of corrections.\n\n## 留存与本次计算\n\n无论节点比例如何，拨后必须留存监管基数的20%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "87302f9b-6bb3-4b0b-ab96-daab364b805c",
+    "documentId" : "dev-01",
+    "index" : 25,
+    "text" : "0%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。\n\n## 内部办理札记 G：Hazard-removal work orders\n\nThe hazard-removal file describes the immediate site hazard, the work needed to remove it and the connection between that work and the requested payment. A contractor's general statement that all construction work improves safety does not distinguish emergency work from routine progress work. Staff ask for a specific work order and the relevant site record, preserving ordinary progress work as a separate request when the invoice contains both types.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "d925f2ff-b109-44bb-9a07-10976f2afaf5",
+    "documentId" : "dev-01",
+    "index" : 26,
+    "text" : "ord, preserving ordinary progress work as a separate request when the invoice contains both types.\n\nThe operational team assembles the supporting packet before routing it to the two named roles in the core exceptional procedure. One role's signature cannot be copied into the other role's approval box. A staff absence is addressed through a documented assignment to an authorized replacement, not by assuming the applicant can sign for the absent reviewer. The file should show whose decision was actually made and on which evidence.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "37877ee2-d024-4646-8019-6d9b7da76c04",
+    "documentId" : "dev-01",
+    "index" : 27,
+    "text" : " the absent reviewer. The file should show whose decision was actually made and on which evidence.\n\nAfter an emergency instruction is executed, the cash movement is linked back to that instruction and remains part of the account's paid history. The exceptional route changes which purpose may be considered during a stop-work situation; it does not create an account outside the regulatory calculation. Staff do not mark the payment invisible in cumulative reports simply because it passed through a different operational queue.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "c4f87963-9e6f-45c2-87fa-3907aa649b4d",
+    "documentId" : "dev-01",
+    "index" : 28,
+    "text" : "nt invisible in cumulative reports simply because it passed through a different operational queue.\n\n## 内部办理札记 H：Site resumption and administrative flags\n\nThe developer may notify the bank that work has resumed, while the regulatory system still shows a stop-work risk flag. The notification is filed promptly, but staff do not overwrite the flag merely to make the dashboard match the developer's announcement. The supporting resumption inspection record must be identifiable and associated with the same site before the operational record can support the required change.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "fb512df7-63ee-4349-8b1e-eee7c8b85db8",
+    "documentId" : "dev-01",
+    "index" : 29,
+    "text" : "e and associated with the same site before the operational record can support the required change.\n\nDifferent events can happen on different dates: physical workers return, a supervisor visits, a resumption record is issued, and a clerk registers the record. These dates should not be collapsed into one date chosen for convenience. A visit diary may explain the chronology, but it does not replace the formal record referred to by the core stop-work procedure. Reviewers record uncertainty instead of inferring that all administrative steps were complete on the earliest date.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "fa0303ba-13a2-4b3d-80b9-cda16a9f4677",
+    "documentId" : "dev-01",
+    "index" : 30,
+    "text" : "uncertainty instead of inferring that all administrative steps were complete on the earliest date.\n\nIf a dashboard has not yet refreshed after a valid update, the desk resolves the discrepancy through the responsible record owner and preserves the confirmation. It does not bypass the condition by taking a screenshot of a different environment. The approval file needs a traceable operational state, not merely a reassuring picture. This discipline prevents an ordinary progress payment from being accidentally processed under the emergency description.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "35280b92-bc90-440d-b085-d0ffbd4da7d5",
+    "documentId" : "dev-01",
+    "index" : 31,
+    "text" : "ts an ordinary progress payment from being accidentally processed under the emergency description.\n\n东苑演算台账：监管基数1000万元，当前专户现金700万元，已实际拨付200万元，封顶已备案，申请500万元。台账数字仅用于本细则演算，不代表任何真实项目。其他未付款工程合同不得先行冲减现金。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "51a9e156-649a-4810-9321-6db3764ec080",
+    "documentId" : "dev-01",
+    "index" : 32,
+    "text" : "\n\n东苑演算台账：监管基数1000万元，当前专户现金700万元，已实际拨付200万元，封顶已备案，申请500万元。台账数字仅用于本细则演算，不代表任何真实项目。其他未付款工程合同不得先行冲减现金。\n\n## 内部办理札记 I：Final approval and transfer execution\n\nAn approved amount and an executed amount can differ if an instruction fails before funds leave the account. The execution team returns the discrepancy to the reviewer and records the outcome. It cannot manufacture a completed movement by marking the approval form paid. A replacement instruction is checked against the current account position and linked to the original decision, so a failed transfer and a successful transfer are not both counted as cash leaving.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "22a94094-bb84-40be-a119-fd2b7bd020fe",
+    "documentId" : "dev-01",
+    "index" : 33,
+    "text" : "nal decision, so a failed transfer and a successful transfer are not both counted as cash leaving.\n\nBefore execution, staff compare the payee in the signed instruction with the verified contract record in the file. This casebook deliberately contains no actual payee account details. A request to change payee information requires supporting documentation and verification through the authorized business channel. A message attached to the application is context to be checked, rather than a self-authenticating command to redirect the payment.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "7e7966a3-6a1f-44d8-b5d3-cdb56a3ab61a",
+    "documentId" : "dev-01",
+    "index" : 34,
+    "text" : "ation is context to be checked, rather than a self-authenticating command to redirect the payment.\n\nAfter execution, the archive includes the bank movement reference and the amount actually transferred. The review worksheet remains a record of the calculation and approvals, while the execution evidence establishes what happened to cash. An auditor should be able to move from a report total to the underlying movement and then to the reviewed application without relying on a staff member's memory of an informal conversation.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "c80b42e2-7b31-4c6c-9322-1969143f0537",
+    "documentId" : "dev-01",
+    "index" : 35,
+    "text" : "o the reviewed application without relying on a staff member's memory of an informal conversation.\n\n## 内部办理札记 J：Project base and sales reporting\n\nSales staff maintain a running report of reservations, signed contracts and purchaser receipts. Those figures may change throughout the week and may help the project explain expected inflows. The fixed regulatory base used in the core rule is a different field in the project register. Staff should not copy the current sales report total into that field simply because both numbers are denominated in money and appear on the same dashboard.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "456cc728-209e-4c6a-9a87-68f3189055bf",
+    "documentId" : "dev-01",
+    "index" : 36,
+    "text" : " that field simply because both numbers are denominated in money and appear on the same dashboard.\n\nA canceled reservation does not by itself demonstrate that the regulatory base has been amended, just as a new receipt does not increase the base automatically. If the project register has an authorized administrative correction, the supporting correction record must be reviewed as such. This casebook does not create a new power to revise the base or a new formula for doing so. Unresolved base-record discrepancies are referred to the register owner before the calculation is signed.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "3f42666b-22df-4a67-8832-77f0802a509f",
+    "documentId" : "dev-01",
+    "index" : 37,
+    "text" : "ved base-record discrepancies are referred to the register owner before the calculation is signed.\n\nThe monthly pack places the sales forecast and the regulatory worksheet in separate sections. Each section states its measurement date and purpose. A comparison chart may show them side by side to explain liquidity pressure, but the chart must not imply that forecast sales are available cash or that the highest commercial estimate sets the regulatory threshold. Presentation convenience cannot alter the meaning of the source fields.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "67023f32-cb74-4b3c-bc71-f50696a3c34c",
+    "documentId" : "dev-01",
+    "index" : 38,
+    "text" : " the regulatory threshold. Presentation convenience cannot alter the meaning of the source fields.\n\n## 停工例外\n\n有有效停工风险标记时，普通进度款暂停；仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签。排险款仍计入累计已拨付，不豁免20%留存。停工标记解除须有复工查验记录，建设方自行宣布复工无效。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "1c722618-1af8-4f99-935a-865c3dd78b47",
+    "documentId" : "dev-01",
+    "index" : 39,
+    "text" : "有有效停工风险标记时，普通进度款暂停；仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签。排险款仍计入累计已拨付，不豁免20%留存。停工标记解除须有复工查验记录，建设方自行宣布复工无效。\n\n## 内部办理札记 K：Historical worksheets and current decisions\n\nA folder may contain an old worksheet prepared before the current edition took effect. Staff retain that worksheet to explain the historical decision. They label its edition and decision status instead of replacing its numbers with current values, because doing so would make the historical bank movement difficult to reconcile. A worksheet can remain historically accurate while being unsuitable for a new application.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "e7224f8d-757e-4d75-926a-9d4edf433fdd",
+    "documentId" : "dev-01",
+    "index" : 40,
+    "text" : "oncile. A worksheet can remain historically accurate while being unsuitable for a new application.\n\nThe reviewer of a current request identifies whether the packet contains a completed historical approval or material awaiting fresh approval after correction. A cover page saying originally submitted earlier is insufficient to settle that distinction. The relevant record is the decision event described by the core transition provision. A reopened document is not allowed to borrow the status of an unrelated completed approval simply because the amounts or contractor names happen to match.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "5920bab3-199f-4746-bec6-08953f44dcce",
+    "documentId" : "dev-01",
+    "index" : 41,
+    "text" : "of an unrelated completed approval simply because the amounts or contractor names happen to match.\n\nIn a training discussion, a staff member proposed updating every old spreadsheet to the new edition for visual consistency. The supervisor rejected that approach and required separate historical and current worksheets. The current worksheet states which source records were consulted, while the old worksheet keeps its original purpose. Neither edition is inferred from the date a file was copied to a new folder or from the software used to print it.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "fd90930f-a187-4e6b-ad4b-4844f6d6551f",
+    "documentId" : "dev-01",
+    "index" : 42,
+    "text" : "is inferred from the date a file was copied to a new folder or from the software used to print it.\n\n## 版本沿革\n\nLQ-2曾规定封顶累计70%、续建留存15%；LQ-3将两项分别改为65%和20%。2026年9月1日前已最终批准的单笔按原批准额执行，之后新申请及补正后重新审批的单笔均用LQ-3。旧版只用于解释历史回单，不得套用于新单。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "cc787823-80ce-4318-bc5e-a92e983891e5",
+    "documentId" : "dev-01",
+    "index" : 43,
+    "text" : "%、续建留存15%；LQ-3将两项分别改为65%和20%。2026年9月1日前已最终批准的单笔按原批准额执行，之后新申请及补正后重新审批的单笔均用LQ-3。旧版只用于解释历史回单，不得套用于新单。\n\n## 内部办理札记 L：First delivery and unresolved construction issues\n\nThe delivery file can contain invitation letters, key-collection appointments, handover records and defect lists. They are not interchangeable proof of the same event. Staff identify the event and record relevant to the core retention-release condition, rather than using the earliest promotional announcement as if it were completed delivery. This operational appendix does not replace the core elapsed-time or stop-work condition with a different threshold.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "099555bb-d754-4f2d-aac7-deb5564bd1b3",
+    "documentId" : "dev-01",
+    "index" : 44,
+    "text" : "appendix does not replace the core elapsed-time or stop-work condition with a different threshold.\n\nA defect list is recorded with its status and responsible party. The presence of a minor item on that list does not permit staff to invent a new universal release rule, and the absence of a complaint in the customer-service inbox does not establish that every regulatory condition has been met. The payment reviewer uses the documented conditions and their formal records, leaving technical defect judgments with the appropriate construction review function.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "1eb344c4-92b7-462b-8265-8a2355683994",
+    "documentId" : "dev-01",
+    "index" : 45,
+    "text" : "mal records, leaving technical defect judgments with the appropriate construction review function.\n\nWhen handover evidence is corrected, the chronology records both the originally reported event and the correction. Staff should explain whether the correction changes a date used in the current review or merely clarifies an address. An address clarification should not silently restart an elapsed period; conversely, a genuinely corrected event date cannot be ignored just to preserve the result on an earlier worksheet. The final approval cites the record actually used.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "c715c13c-4807-4583-818a-3b1b989a90ae",
+    "documentId" : "dev-01",
+    "index" : 46,
+    "text" : "to preserve the result on an earlier worksheet. The final approval cites the record actually used.\n\n## 内部办理札记 M：Read-only audit access\n\nAn internal auditor receives copies of the approved worksheet, supporting evidence index and movement reconciliation for a selected application. The audit copy is marked with its extraction time and source folder. Providing a copy does not grant authority to change the operational queue, sign a payment instruction or amend a construction certificate. Questions raised by the auditor are recorded as review findings rather than executed as direct banking instructions.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "53c72060-4d76-4417-b5a1-3f9545f3f00b",
+    "documentId" : "dev-01",
+    "index" : 47,
+    "text" : "y the auditor are recorded as review findings rather than executed as direct banking instructions.\n\nThe evidence index should contain enough information to locate a source without unnecessarily exposing unrelated commercial material. For example, a certificate covering several projects can be retained in full in the controlled archive while the audit working pack clearly identifies the section relevant to the selected project. The working pack must not pretend that an extract is the whole original or omit a qualification that changes the meaning of the selected section.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "979e6e0b-c0c1-4884-a622-9fc7ff46cb57",
+    "documentId" : "dev-01",
+    "index" : 48,
+    "text" : "ct is the whole original or omit a qualification that changes the meaning of the selected section.\n\nIf the auditor notices a missing execution reference, staff add a correction record linking the genuine bank movement. They do not write an invented reference to close the finding quickly. A finding remains open when evidence is unavailable, with the consequence for the decision stated honestly. The absence of an archive item cannot be cured by citing a summary report that was itself generated from the same incomplete file.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "c872a17b-52da-44e6-a99b-a7fcbca1b98a",
+    "documentId" : "dev-01",
+    "index" : 49,
+    "text" : "annot be cured by citing a summary report that was itself generated from the same incomplete file.\n\n## 可查资料边界\n\n本材料包含节点、留存、停工通道和示例台账，不含施工方银行账号、监管行柜员私人联系方式或任何真实项目的财务数据。业务联系须通过另行签署的监管协议。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "0bb9f544-a713-495d-ac4f-fa0b84263862",
+    "documentId" : "dev-01",
+    "index" : 50,
+    "text" : "omplete file.\n\n## 可查资料边界\n\n本材料包含节点、留存、停工通道和示例台账，不含施工方银行账号、监管行柜员私人联系方式或任何真实项目的财务数据。业务联系须通过另行签署的监管协议。\n\n## 内部办理札记 N：Handover between review teams\n\nDuring staff rotation, the outgoing reviewer prepares a handover note listing open applications, unresolved evidence issues and the latest reviewed account snapshot. The incoming reviewer checks the links and identifies which conclusions were already formally signed. A personal handover note can explain work in progress, but it cannot add an approval that is absent from the controlled record. The date of the handover is not substituted for the dates of the underlying business events.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "411243f4-05df-426e-aca4-ddf7fe150540",
+    "documentId" : "dev-01",
+    "index" : 51,
+    "text" : "cord. The date of the handover is not substituted for the dates of the underlying business events.\n\nThe note separates engineering questions, documentation questions and cash-reconciliation questions. This prevents a completed photograph check from being reported as completion of every review task. If a calculation was only a draft, the handover labels it draft and identifies its inputs. The new reviewer can reproduce or replace the draft while preserving it, and must review changed inputs before relying on it for a transfer.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "f9e84501-82e1-4971-b907-767216b6cb86",
+    "documentId" : "dev-01",
+    "index" : 52,
+    "text" : "the draft while preserving it, and must review changed inputs before relying on it for a transfer.\n\nA manager may reassign an incomplete application to balance workload. Reassignment is recorded so the archive explains who worked on the file. It does not change the application's last correction time or reserve a different place in the queue. The incoming team follows the same core conditions and uses the same source evidence standards. Operational convenience is not an independent basis for relaxing milestone, cash or retention requirements.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "ea0454d5-6a60-4731-841d-21c2028ea65b",
+    "documentId" : "dev-01",
+    "index" : 53,
+    "text" : "al convenience is not an independent basis for relaxing milestone, cash or retention requirements.\n\n## 内部办理札记 O：Report totals and exception narratives\n\nManagement reports often combine application counts, requested amounts, approved amounts and executed amounts. The report defines each column so readers do not add them together as though they were independent uses of cash. A request returned and later resubmitted is linked in the application history; the report explains whether its count measures submissions or distinct applications. Counting a resubmission for workload analysis does not mean cash was disbursed twice.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "5d8d9dd9-3b82-4126-95cd-7ab0e00785fe",
+    "documentId" : "dev-01",
+    "index" : 54,
+    "text" : "pplications. Counting a resubmission for workload analysis does not mean cash was disbursed twice.\n\nAn exception narrative states the particular reason a file took a different operational route. It should describe the supporting record and the authorized decision, not simply call the transaction special. The narrative cannot expand the legal purpose of a regulatory account or waive conditions that the core rule leaves in place. Reviewers should be able to understand which condition was checked, which route was used and which ordinary limits still applied.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "edc746bd-a66b-4b35-9899-bf1d2a163858",
+    "documentId" : "dev-01",
+    "index" : 55,
+    "text" : "erstand which condition was checked, which route was used and which ordinary limits still applied.\n\nFor reconciliation, management may compare the total executed during a period with the change in cumulative paid history. Differences can arise from timing corrections or a movement assigned to a different reporting date. Staff explain these differences using the movement file and preserved correction trail. They do not alter historical approvals to force two reports to agree. A clear explanation of a difference is better evidence than silently editing the underlying record.\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  } ],
+  "spans" : [ {
+    "chunkId" : "d53eb175-2be6-4d3d-97d0-bad2494a0e0b",
+    "bodyStart" : 0,
+    "bodyEnd" : 112,
+    "start" : 0,
+    "end" : 112
+  }, {
+    "chunkId" : "b3d8643e-de2f-4c99-9b13-cb0f36b4c568",
+    "bodyStart" : 112,
+    "bodyEnd" : 712,
+    "start" : 11,
+    "end" : 712
+  }, {
+    "chunkId" : "505e466f-3177-4de5-b3cc-a2384a83848a",
+    "bodyStart" : 712,
+    "bodyEnd" : 1220,
+    "start" : 612,
+    "end" : 1220
+  }, {
+    "chunkId" : "9455079a-6dbc-49e0-b366-763e025ef73f",
+    "bodyStart" : 1220,
+    "bodyEnd" : 1605,
+    "start" : 1120,
+    "end" : 1605
+  }, {
+    "chunkId" : "6ceda913-9168-4eac-9fba-fade3d076bbb",
+    "bodyStart" : 1605,
+    "bodyEnd" : 1723,
+    "start" : 1505,
+    "end" : 1723
+  }, {
+    "chunkId" : "8d374b95-8157-4bf2-aa55-f46b4f40311e",
+    "bodyStart" : 1723,
+    "bodyEnd" : 2218,
+    "start" : 1623,
+    "end" : 2218
+  }, {
+    "chunkId" : "36d44f4e-3ba5-4cc9-ac8d-0457e9856e4c",
+    "bodyStart" : 2218,
+    "bodyEnd" : 2708,
+    "start" : 2118,
+    "end" : 2708
+  }, {
+    "chunkId" : "41db595a-d6ec-4817-a55f-840cc6a54c23",
+    "bodyStart" : 2708,
+    "bodyEnd" : 3159,
+    "start" : 2608,
+    "end" : 3159
+  }, {
+    "chunkId" : "ff75b1df-6ae8-4b0a-983f-bd292f4e0896",
+    "bodyStart" : 3159,
+    "bodyEnd" : 3689,
+    "start" : 3059,
+    "end" : 3689
+  }, {
+    "chunkId" : "a06603be-b254-4f5c-88e4-bf6a47097e29",
+    "bodyStart" : 3689,
+    "bodyEnd" : 4112,
+    "start" : 3589,
+    "end" : 4112
+  }, {
+    "chunkId" : "55a8ffa8-91c1-4f7f-83d5-37494cfbc658",
+    "bodyStart" : 4112,
+    "bodyEnd" : 4578,
+    "start" : 4012,
+    "end" : 4578
+  }, {
+    "chunkId" : "17d8ac47-8ca8-4cf8-a5d1-a618208bbbda",
+    "bodyStart" : 4578,
+    "bodyEnd" : 4706,
+    "start" : 4478,
+    "end" : 4706
+  }, {
+    "chunkId" : "79e0fc10-4bd2-4c39-8d8e-83be7c1f46d0",
+    "bodyStart" : 4706,
+    "bodyEnd" : 4749,
+    "start" : 4606,
+    "end" : 4749
+  }, {
+    "chunkId" : "99c425f1-1b02-4686-8028-f5c40dc3479e",
+    "bodyStart" : 4749,
+    "bodyEnd" : 5238,
+    "start" : 4649,
+    "end" : 5238
+  }, {
+    "chunkId" : "211f98e2-3244-4851-a42f-63409f7450b7",
+    "bodyStart" : 5238,
+    "bodyEnd" : 5641,
+    "start" : 5138,
+    "end" : 5641
+  }, {
+    "chunkId" : "77a9abac-a2c2-4bbe-8b4c-644e9b5c45f6",
+    "bodyStart" : 5641,
+    "bodyEnd" : 6125,
+    "start" : 5541,
+    "end" : 6125
+  }, {
+    "chunkId" : "8b3e692a-a2d1-4443-a442-a76b7b9a7208",
+    "bodyStart" : 6125,
+    "bodyEnd" : 6608,
+    "start" : 6025,
+    "end" : 6608
+  }, {
+    "chunkId" : "715bbfa9-ad94-47fe-9994-87d196055e16",
+    "bodyStart" : 6608,
+    "bodyEnd" : 7033,
+    "start" : 6508,
+    "end" : 7033
+  }, {
+    "chunkId" : "70d25d9a-b969-4130-b809-555780f0ca67",
+    "bodyStart" : 7033,
+    "bodyEnd" : 7492,
+    "start" : 6933,
+    "end" : 7492
+  }, {
+    "chunkId" : "42bd3371-8947-466f-af6b-14fb542962a0",
+    "bodyStart" : 7492,
+    "bodyEnd" : 7646,
+    "start" : 7392,
+    "end" : 7646
+  }, {
+    "chunkId" : "13c55f4a-78b3-4be7-9f71-d9d2e260becd",
+    "bodyStart" : 7646,
+    "bodyEnd" : 8144,
+    "start" : 7546,
+    "end" : 8144
+  }, {
+    "chunkId" : "5ee83513-4d3a-4477-9f59-b94f6b3016c2",
+    "bodyStart" : 8144,
+    "bodyEnd" : 8549,
+    "start" : 8044,
+    "end" : 8549
+  }, {
+    "chunkId" : "59cbbdb6-0209-468c-8e43-067e53f03759",
+    "bodyStart" : 8549,
+    "bodyEnd" : 9006,
+    "start" : 8449,
+    "end" : 9006
+  }, {
+    "chunkId" : "e4de28d2-8144-4849-a5c0-85c6029ae7f4",
+    "bodyStart" : 9006,
+    "bodyEnd" : 9139,
+    "start" : 8906,
+    "end" : 9139
+  }, {
+    "chunkId" : "87302f9b-6bb3-4b0b-ab96-daab364b805c",
+    "bodyStart" : 9139,
+    "bodyEnd" : 9634,
+    "start" : 9039,
+    "end" : 9634
+  }, {
+    "chunkId" : "d925f2ff-b109-44bb-9a07-10976f2afaf5",
+    "bodyStart" : 9634,
+    "bodyEnd" : 10070,
+    "start" : 9534,
+    "end" : 10070
+  }, {
+    "chunkId" : "37877ee2-d024-4646-8019-6d9b7da76c04",
+    "bodyStart" : 10070,
+    "bodyEnd" : 10500,
+    "start" : 9970,
+    "end" : 10500
+  }, {
+    "chunkId" : "c4f87963-9e6f-45c2-87fa-3907aa649b4d",
+    "bodyStart" : 10500,
+    "bodyEnd" : 10974,
+    "start" : 10400,
+    "end" : 10974
+  }, {
+    "chunkId" : "fb512df7-63ee-4349-8b1e-eee7c8b85db8",
+    "bodyStart" : 10974,
+    "bodyEnd" : 11453,
+    "start" : 10874,
+    "end" : 11453
+  }, {
+    "chunkId" : "fa0303ba-13a2-4b3d-80b9-cda16a9f4677",
+    "bodyStart" : 11453,
+    "bodyEnd" : 11909,
+    "start" : 11353,
+    "end" : 11909
+  }, {
+    "chunkId" : "35280b92-bc90-440d-b085-d0ffbd4da7d5",
+    "bodyStart" : 11909,
+    "bodyEnd" : 12007,
+    "start" : 11809,
+    "end" : 12007
+  }, {
+    "chunkId" : "51a9e156-649a-4810-9321-6db3764ec080",
+    "bodyStart" : 12007,
+    "bodyEnd" : 12526,
+    "start" : 11907,
+    "end" : 12526
+  }, {
+    "chunkId" : "22a94094-bb84-40be-a119-fd2b7bd020fe",
+    "bodyStart" : 12526,
+    "bodyEnd" : 12972,
+    "start" : 12426,
+    "end" : 12972
+  }, {
+    "chunkId" : "7e7966a3-6a1f-44d8-b5d3-cdb56a3ab61a",
+    "bodyStart" : 12972,
+    "bodyEnd" : 13402,
+    "start" : 12872,
+    "end" : 13402
+  }, {
+    "chunkId" : "c80b42e2-7b31-4c6c-9322-1969143f0537",
+    "bodyStart" : 13402,
+    "bodyEnd" : 13891,
+    "start" : 13302,
+    "end" : 13891
+  }, {
+    "chunkId" : "456cc728-209e-4c6a-9a87-68f3189055bf",
+    "bodyStart" : 13891,
+    "bodyEnd" : 14379,
+    "start" : 13791,
+    "end" : 14379
+  }, {
+    "chunkId" : "3f42666b-22df-4a67-8832-77f0802a509f",
+    "bodyStart" : 14379,
+    "bodyEnd" : 14816,
+    "start" : 14279,
+    "end" : 14816
+  }, {
+    "chunkId" : "67023f32-cb74-4b3c-bc71-f50696a3c34c",
+    "bodyStart" : 14816,
+    "bodyEnd" : 14925,
+    "start" : 14716,
+    "end" : 14925
+  }, {
+    "chunkId" : "1c722618-1af8-4f99-935a-865c3dd78b47",
+    "bodyStart" : 14925,
+    "bodyEnd" : 15403,
+    "start" : 14825,
+    "end" : 15403
+  }, {
+    "chunkId" : "e7224f8d-757e-4d75-926a-9d4edf433fdd",
+    "bodyStart" : 15403,
+    "bodyEnd" : 15897,
+    "start" : 15303,
+    "end" : 15897
+  }, {
+    "chunkId" : "5920bab3-199f-4746-bec6-08953f44dcce",
+    "bodyStart" : 15897,
+    "bodyEnd" : 16350,
+    "start" : 15797,
+    "end" : 16350
+  }, {
+    "chunkId" : "fd90930f-a187-4e6b-ad4b-4844f6d6551f",
+    "bodyStart" : 16350,
+    "bodyEnd" : 16472,
+    "start" : 16250,
+    "end" : 16472
+  }, {
+    "chunkId" : "cc787823-80ce-4318-bc5e-a92e983891e5",
+    "bodyStart" : 16472,
+    "bodyEnd" : 16996,
+    "start" : 16372,
+    "end" : 16996
+  }, {
+    "chunkId" : "099555bb-d754-4f2d-aac7-deb5564bd1b3",
+    "bodyStart" : 16996,
+    "bodyEnd" : 17456,
+    "start" : 16896,
+    "end" : 17456
+  }, {
+    "chunkId" : "1eb344c4-92b7-462b-8265-8a2355683994",
+    "bodyStart" : 17456,
+    "bodyEnd" : 17929,
+    "start" : 17356,
+    "end" : 17929
+  }, {
+    "chunkId" : "c715c13c-4807-4583-818a-3b1b989a90ae",
+    "bodyStart" : 17929,
+    "bodyEnd" : 18436,
+    "start" : 17829,
+    "end" : 18436
+  }, {
+    "chunkId" : "53c72060-4d76-4417-b5a1-3f9545f3f00b",
+    "bodyStart" : 18436,
+    "bodyEnd" : 18914,
+    "start" : 18336,
+    "end" : 18914
+  }, {
+    "chunkId" : "979e6e0b-c0c1-4884-a622-9fc7ff46cb57",
+    "bodyStart" : 18914,
+    "bodyEnd" : 19343,
+    "start" : 18814,
+    "end" : 19343
+  }, {
+    "chunkId" : "c872a17b-52da-44e6-a99b-a7fcbca1b98a",
+    "bodyStart" : 19343,
+    "bodyEnd" : 19428,
+    "start" : 19243,
+    "end" : 19428
+  }, {
+    "chunkId" : "0bb9f544-a713-495d-ac4f-fa0b84263862",
+    "bodyStart" : 19428,
+    "bodyEnd" : 19961,
+    "start" : 19328,
+    "end" : 19961
+  }, {
+    "chunkId" : "411243f4-05df-426e-aca4-ddf7fe150540",
+    "bodyStart" : 19961,
+    "bodyEnd" : 20394,
+    "start" : 19861,
+    "end" : 20394
+  }, {
+    "chunkId" : "f9e84501-82e1-4971-b907-767216b6cb86",
+    "bodyStart" : 20394,
+    "bodyEnd" : 20843,
+    "start" : 20294,
+    "end" : 20843
+  }, {
+    "chunkId" : "ea0454d5-6a60-4731-841d-21c2028ea65b",
+    "bodyStart" : 20843,
+    "bodyEnd" : 21370,
+    "start" : 20743,
+    "end" : 21370
+  }, {
+    "chunkId" : "5d8d9dd9-3b82-4126-95cd-7ab0e00785fe",
+    "bodyStart" : 21370,
+    "bodyEnd" : 21833,
+    "start" : 21270,
+    "end" : 21833
+  }, {
+    "chunkId" : "edc746bd-a66b-4b35-9899-bf1d2a163858",
+    "bodyStart" : 21833,
+    "bodyEnd" : 22313,
+    "start" : 21733,
+    "end" : 22313
+  } ]
+}

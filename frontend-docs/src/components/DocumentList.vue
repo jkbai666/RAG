@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { formatDate, formatSize } from '../lib/display.ts'
+import { chunkingFallbackLabel, chunkingLabel, formatDate, formatSize } from '../lib/display.ts'
 import type { KnowledgeDocument } from '../lib/types.ts'
 
 defineProps<{
@@ -58,8 +58,10 @@ const statusText = { READY: '就绪', PROCESSING: '处理中', FAILED: '失败' 
         <dl class="document-meta">
           <div><dt class="sr-only">文件大小</dt><dd>{{ formatSize(doc.sizeBytes) }}</dd></div>
           <div><dt class="sr-only">分块数量</dt><dd>{{ doc.chunkCount }} 块</dd></div>
+          <div v-if="chunkingLabel(doc)" class="document-chunking"><dt class="sr-only">切块方式</dt><dd>{{ chunkingLabel(doc) }}</dd></div>
           <div class="document-time"><dt class="sr-only">导入时间</dt><dd><time :datetime="doc.createdAt">{{ formatDate(doc.createdAt) }}</time></dd></div>
         </dl>
+        <p v-if="chunkingFallbackLabel(doc)" class="chunking-fallback"><strong>AI 回退原因：</strong>{{ chunkingFallbackLabel(doc) }}</p>
         <p v-if="doc.status === 'PROCESSING'" :id="`processing-${doc.id}`" class="processing-hint">正在提取文本并建立索引，完成前无法查看分块或删除。</p>
         <p v-else-if="doc.status === 'FAILED'" :id="`failed-${doc.id}`" class="document-failure"><strong>失败原因：</strong>{{ doc.errorMessage || '服务端未提供具体原因，请检查后端服务。' }} 该文档不可查看分块。</p>
         <p v-if="deleteErrors[doc.id]" class="document-failure" role="alert"><strong>删除未完成，记录已保留：</strong>{{ deleteErrors[doc.id] }} 可再次删除。</p>

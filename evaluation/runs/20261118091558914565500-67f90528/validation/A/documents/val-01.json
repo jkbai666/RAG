@@ -1,0 +1,91 @@
+{
+  "documentId" : "val-01",
+  "split" : "validation",
+  "arm" : "A",
+  "status" : "ready",
+  "latencyMs" : 412,
+  "coverageValid" : true,
+  "error" : null,
+  "strategy" : "RULE",
+  "fallbackReason" : null,
+  "chunks" : [ {
+    "id" : "64e8fe52-8dc6-4c0b-8f10-cd8232bb61c3",
+    "documentId" : "val-01",
+    "index" : 1,
+    "text" : "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value.\r\nHAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds.\r\n",
+    "pageStart" : 1,
+    "pageEnd" : 1
+  }, {
+    "id" : "8d474ae0-dc79-4d35-a4b6-9c444b6acf2a",
+    "documentId" : "val-01",
+    "index" : 2,
+    "text" : "le, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds.\r\nVALUATION AND ROUNDING\r\nEach issue is valued separately: clean market value multiplied by one minus its total\r\nhaircut. Sum the issue values without intermediate rounding, then round the total down to\r\nthe nearest 1 thousand. Accrued bond coupon is excluded. Exposure, in contrast, includes\r\naccrued repo interest. The two kinds of accrued amounts must not be interchanged.\r\nMARKET RECORDS\r\nThe valuation analyst stores the quote time and source with the issue code. A dealer's\r\nindicative email may explain a price change, but is not a substitute for the approved\r\nclosing quote. A stale quote is treated under the missing-quote rule if it is outside the\r\npermitted feed window. ",
+    "pageStart" : 1,
+    "pageEnd" : 1
+  }, {
+    "id" : "2acad6e8-055e-4286-b203-74f8522e5cad",
+    "documentId" : "val-01",
+    "index" : 3,
+    "text" : " A stale quote is treated under the missing-quote rule if it is outside the\r\npermitted feed window. Custody receipts describe location and ownership; they do not\r\nestablish a market price. Reconciliation staff keep the exposure file separate from the\r\ncollateral file so that a coupon receipt cannot accidentally reduce repo principal.\r\nMARGIN CALL\r\nDeficit is exposure minus rounded collateral value. A call is issued only when the deficit\r\nis strictly greater than 20. A deficit equal to 20 is logged but not called. The transfer\r\ndue on a call is the entire deficit, not just the portion above 20. The minimum transfer\r\nthreshold is a trigger, not a deductible.\r\nVALUATION EXERCISE\r\nExposure is 1,000. ",
+    "pageStart" : 1,
+    "pageEnd" : 2
+  }, {
+    "id" : "3458aedd-bb8e-4d3e-afb6-8ce163fd6a39",
+    "documentId" : "val-01",
+    "index" : 4,
+    "text" : "minimum transfer\r\nthreshold is a trigger, not a deductible.\r\nVALUATION EXERCISE\r\nExposure is 1,000. Collateral consists of a long sovereign bond worth 500 and a\r\nwatch-listed approved corporate bond worth 500. Both have valid quotes. There are no other\r\nsecurities, cash credits or pending transfers. A transfer accepted after the call is\r\nreconciled as a new movement; it is not assumed in this snapshot.\r\nCALL TIMING\r\nA call delivered by 11:00 inclusive is due at 15:00 on the same business day. A later call\r\nis due at 10:00 on the next business day. Delivery means receipt in the agreed margin\r\ninbox, not when an analyst began drafting. A call disputed before its deadline remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads.\r\n",
+    "pageStart" : 2,
+    "pageEnd" : 2
+  }, {
+    "id" : "c447bd76-f2ee-413c-aeef-39d825474a75",
+    "documentId" : "val-01",
+    "index" : 5,
+    "text" : "ne remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads.\r\nSUBSTITUTION CONTROL\r\nA substitution requires prior counterparty consent and receipt of eligible replacement\r\ncollateral with adjusted value at least equal to the value released. The old security is\r\nreleased only after custody confirms receipt. An email promising delivery is insufficient.\r\nDuring a feed outage no substitution using an unquoted replacement is allowed, even if its\r\nface value exceeds the old security's value.\r\nVERSION CONTROL\r\nOR-5 used a flat 10% haircut on approved corporate bonds without a watch-list add-on. OR-6\r\nreplaces that rule for every valuation dated on or after 2026-10-01, including trades\r\nopened earlier. Sovereign haircuts are unchanged. ",
+    "pageStart" : 2,
+    "pageEnd" : 3
+  }, {
+    "id" : "4a5d03ab-9aa4-49d5-9f26-938818325903",
+    "documentId" : "val-01",
+    "index" : 6,
+    "text" : "n dated on or after 2026-10-01, including trades\r\nopened earlier. Sovereign haircuts are unchanged. An old trade date does not preserve the\r\nOR-5 corporate haircut.\r\nINFORMATION LIMIT\r\nThis schedule does not disclose actual security identifiers, the repo counterparty's legal\r\nentity code, or a forecast of tomorrow's bond price. The exercise is a closed fictional\r\nsnapshot and does not authorize real transfers.\r\n",
+    "pageStart" : 3,
+    "pageEnd" : 3
+  } ],
+  "spans" : [ {
+    "chunkId" : "64e8fe52-8dc6-4c0b-8f10-cd8232bb61c3",
+    "bodyStart" : 0,
+    "bodyEnd" : 736,
+    "start" : 0,
+    "end" : 736
+  }, {
+    "chunkId" : "8d474ae0-dc79-4d35-a4b6-9c444b6acf2a",
+    "bodyStart" : 736,
+    "bodyEnd" : 1416,
+    "start" : 636,
+    "end" : 1416
+  }, {
+    "chunkId" : "2acad6e8-055e-4286-b203-74f8522e5cad",
+    "bodyStart" : 1416,
+    "bodyEnd" : 2021,
+    "start" : 1316,
+    "end" : 2021
+  }, {
+    "chunkId" : "3458aedd-bb8e-4d3e-afb6-8ce163fd6a39",
+    "bodyStart" : 2021,
+    "bodyEnd" : 2696,
+    "start" : 1921,
+    "end" : 2696
+  }, {
+    "chunkId" : "c447bd76-f2ee-413c-aeef-39d825474a75",
+    "bodyStart" : 2696,
+    "bodyEnd" : 3372,
+    "start" : 2596,
+    "end" : 3372
+  }, {
+    "chunkId" : "4a5d03ab-9aa4-49d5-9f26-938818325903",
+    "bodyStart" : 3372,
+    "bodyEnd" : 3687,
+    "start" : 3272,
+    "end" : 3687
+  } ]
+}

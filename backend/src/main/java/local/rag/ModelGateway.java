@@ -10,4 +10,8 @@ public interface ModelGateway {
     List<String> retrieve(Embedding embedding);
     void remove(List<String> ids);
     String generate(String system, String user);
+    /** Chunking has its own output limit and remaining-deadline timeout. */
+    default String generateChunk(String system, String user, int maxOutputTokens, int timeoutSeconds) {
+        return generate(system, user);
+    }
 }

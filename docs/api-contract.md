@@ -4,7 +4,9 @@
 
 ## 文档
 
-文档对象：`{id: string, fileName: string, format: string, sizeBytes: number, status: "PROCESSING"|"READY"|"FAILED", chunkCount: number, createdAt: ISO8601 string, errorMessage: string|null}`。
+文档对象：`{id: string, fileName: string, format: string, sizeBytes: number, status: "PROCESSING"|"READY"|"FAILED", chunkCount: number, createdAt: ISO8601 string, errorMessage: string|null, chunkingStrategy: "LEGACY"|"RULE"|"LLM"|null, chunkingFallbackReason: string|null}`。
+
+UC-004 增量字段：`chunkingStrategy` 表示实际采用的策略，不是配置意图。V3 迁移前文档为 LEGACY，新任务尚未完成切块时为空；RULE 加非空 `chunkingFallbackReason` 表示整篇 AI 回退。原因是安全短代码，页面映射为中文；不包含模型原始错误/响应。LLM 和直接规则导入原因为空。PROCESSING 不展示最终策略判定。旧客户端可忽略新增字段。
 
 分块对象：`{id: string, documentId: string, index: number, text: string, pageStart: number|null, pageEnd: number|null}`。index 从 1 开始。
 
@@ -44,6 +46,10 @@
 ## 切块行为（UC-003）
 
 分块 HTTP 结构和分页不变。仅新导入采用标题、自然段和完整句子边界；`chunk-size` 是包含重叠的总长度上限，`chunk-overlap` 是原文重叠上限，默认 800 / 100 个 Unicode 码点。首块无重叠，前文不足时按实际长度取用；PDF 页码包含重叠范围。不能安全分割的超长句子或代码围栏使异步导入变为 FAILED，记录 `UNSPLITTABLE_TEXT` 对应的可读原因；上传接口已返回的 202 不会变成同步 422。既有文档不重切。
+
+## AI 切块（UC-004）
+
+`rag.chunking.strategy=LLM` 时，新文档由 DeepSeek 返回编号单元的结束边界，程序验证完整性和长度后提取原文并添加重叠。长文按请求预算分窗，任一窗口失败整篇退回 RULE；规则仍无法安全切分时任务 FAILED。默认 RULE，旧文档和分块不重建。800/100 码点及页码语义不变，公开分块对象、上传/分页/问答路径不变，不提供公开评测或检索调试 API。
 
 ## 前端约束
 

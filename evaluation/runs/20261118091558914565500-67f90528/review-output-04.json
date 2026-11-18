@@ -1,0 +1,2012 @@
+{
+  "reviewer": "blind-review-04",
+  "independent": true,
+  "items": [
+    {
+      "token": "902ff432ca254d5a80e896f5cee6e912",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 2,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "最多回移一个批次",
+          "correct": true,
+          "reason": "明确否定跨两个批次。"
+        },
+        {
+          "fact": "对账岗和风险岗共同批准",
+          "correct": true,
+          "reason": "明确要求双方批准，并保留故障有记录的前提。"
+        },
+        {
+          "fact": "不缩短结算或到期周期",
+          "correct": false,
+          "reason": "没有说明T+2结算和90日到期不变。"
+        }
+      ],
+      "notes": "主体限制和审批正确，但遗漏冻结gold要求的周期不变；两条引用联合已有该依据。 复核执行记录：agent ID=blind-review-04；评分指令SHA-256=9f31ab3f4366537e24ff84424ef33e8daeb6f2aae17f61699f80e36456e54dac；分配输入包文件SHA-256=0aa098858eca49beeacd8b7f36a3659156bf9f69f5ae3663d89dd3c9bcb4e8b4；底层精确模型版本及温度工具未暴露，均不可取得。",
+      "goldIssue": null
+    },
+    {
+      "token": "fc4c9520b2a944b89d1d82616704eb17",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "抵押品不含债券应计票息",
+          "correct": true,
+          "reason": "明确排除抵押债券应计票息。"
+        },
+        {
+          "fact": "敞口含回购应计利息",
+          "correct": true,
+          "reason": "明确计入回购应计利息，未混同两类应计额。"
+        }
+      ],
+      "notes": "两类应计额区分准确，引用直接支持全部要点；无条件和数值要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "29ac2777eacc41b9b45e999a7d633f5a",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供投资者代扣税率",
+          "correct": true,
+          "reason": "原文明确不提供税率，答复表示依据不足。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "没有由税款专户金额反算或臆造税率。"
+        }
+      ],
+      "notes": "简洁资料不足拒答符合原文边界，无须列出具体缺失字段；无正面引用和数值要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "38539c080b934685b59664c5d586a457",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "按估值日适用OR-6",
+          "correct": true,
+          "reason": "明确2026-10-01及以后估值含当日。"
+        },
+        {
+          "fact": "旧交易不保留10%",
+          "correct": true,
+          "reason": "明确此前开立交易亦适用新规则。"
+        },
+        {
+          "fact": "公司债9%并按名单加6个百分点",
+          "correct": true,
+          "reason": "9%与额外6个百分点正确，未混同乘法加成。"
+        }
+      ],
+      "notes": "版本日期、旧交易处理及公司债折扣均完整，三条引用分别支持规则和过渡条款。",
+      "goldIssue": null
+    },
+    {
+      "token": "854911e31ad846da9836a277440b6110",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "CE-9按分配期结束日",
+          "correct": true,
+          "reason": "明确适用于2026-09-01含当日结束的分派期。"
+        },
+        {
+          "fact": "旧资产也适用",
+          "correct": true,
+          "reason": "明确包括CE-8下发起的资产。"
+        },
+        {
+          "fact": "触发残余留非受限现金",
+          "correct": true,
+          "reason": "明确活动触发期间不向次级释放残余。"
+        }
+      ],
+      "notes": "日期归属和旧资产适用正确，补充不重开历史分派也有原文依据；日期属版本维度，数值运算不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "c48b88f33531422783fc108ecec0dffe",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "主权债480千元",
+          "correct": false,
+          "reason": "仅拒答，未用500×96%求值。"
+        },
+        {
+          "fact": "公司债425千元",
+          "correct": false,
+          "reason": "未合并9%与6个百分点折扣。"
+        },
+        {
+          "fact": "合计905千元",
+          "correct": false,
+          "reason": "未计算两债合计。"
+        },
+        {
+          "fact": "应补95千元",
+          "correct": false,
+          "reason": "未计算1000−905并判断补足全额。"
+        }
+      ],
+      "notes": "原文已有完整规则和演算输入，无根据拒答；没有实际引用。",
+      "goldIssue": null
+    },
+    {
+      "token": "12e735f7d29a48dbbdb4ded0a23af9b9",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "连续两个月不高于3%",
+          "correct": true,
+          "reason": "保留三月均值、连续两个月度观察日及≤3.0%边界。"
+        },
+        {
+          "fact": "单月2.8%不足",
+          "correct": true,
+          "reason": "明确一个月不能解除。"
+        },
+        {
+          "fact": "目标恢复40千元",
+          "correct": true,
+          "reason": "恢复40沿用本材料千元口径，未换算成错误单位。"
+        },
+        {
+          "fact": "超额释放仍须独立指令",
+          "correct": true,
+          "reason": "明确单独释放指令且不自动给次级。"
+        }
+      ],
+      "notes": "解除测试与释放权限完整；两条引用分别支持解除规则及释放不能自动执行。",
+      "goldIssue": null
+    },
+    {
+      "token": "96da47a657d54cbabc300bad643f2ca8",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "主权债480千元",
+          "correct": false,
+          "reason": "拒答未计算500×96%。"
+        },
+        {
+          "fact": "公司债425千元",
+          "correct": false,
+          "reason": "拒答未应用15%合计折扣。"
+        },
+        {
+          "fact": "合计905千元",
+          "correct": false,
+          "reason": "未给合计。"
+        },
+        {
+          "fact": "应补95千元",
+          "correct": false,
+          "reason": "未判断大于20门槛后全额补95。"
+        }
+      ],
+      "notes": "原文足以计算，资料不足拒答无根据，无引用。",
+      "goldIssue": null
+    },
+    {
+      "token": "6ef6f982103b4b408bae650a08c602b0",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "抵押品不含债券应计票息",
+          "correct": true,
+          "reason": "明确排除。"
+        },
+        {
+          "fact": "敞口含回购应计利息",
+          "correct": true,
+          "reason": "明确包含并禁止两者互换。"
+        }
+      ],
+      "notes": "回答和引用均完整区分两种应计额；无数值或条件要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "1c9506d3d1b44f5f912cf57d4ce62457",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "新留存3000元",
+          "correct": false,
+          "reason": "未以50000×6%计算。"
+        },
+        {
+          "fact": "出款39500元",
+          "correct": false,
+          "reason": "未计算销售减退款费用新留存加旧留存释放。"
+        },
+        {
+          "fact": "退款不减少留存基数",
+          "correct": false,
+          "reason": "拒答未说明退款口径。"
+        }
+      ],
+      "notes": "可答题的数值、基数及出款公式均在原文，无根据拒答。",
+      "goldIssue": null
+    },
+    {
+      "token": "6ff8902c0006409a967771bfad8f59c1",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "补提下限零",
+          "correct": true,
+          "reason": "明确零下限及不产生负补提。"
+        },
+        {
+          "fact": "超额不自动释放",
+          "correct": true,
+          "reason": "明确余额超目标不会据此增加分配。"
+        },
+        {
+          "fact": "独立释放指令",
+          "correct": false,
+          "reason": "没有说明可另经独立指令释放超额。"
+        }
+      ],
+      "notes": "没有错误声称永不释放，但遗漏独立释放机制；引用只到零下限，未覆盖独立释放条款。",
+      "goldIssue": null
+    },
+    {
+      "token": "28f39381a839481d83a589b86071f299",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供交易对手法人识别编码",
+          "correct": true,
+          "reason": "资料不足拒答与全文信息边界一致。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未捏造任何编码。"
+        }
+      ],
+      "notes": "不可答题拒答合格，无需逐字复述缺失字段；条件数值不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "a6d78646991f49cc82085554900fb6ee",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 1,
+        "conditions": 2,
+        "numbers": 2,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "旧批次不补扣",
+          "correct": true,
+          "reason": "明确保留原金额，禁止按现行比例重算。"
+        },
+        {
+          "fact": "8月1日及以后批次6%",
+          "correct": false,
+          "reason": "未说明新版适用的批次日期及Standard新比例。"
+        },
+        {
+          "fact": "90日不变",
+          "correct": false,
+          "reason": "未说明到期规则保持90日。"
+        }
+      ],
+      "notes": "旧批次处理正确，但遗漏gold要求的新批次日期及到期规则；引用本身完整覆盖这些条款。",
+      "goldIssue": null
+    },
+    {
+      "token": "4eced52714b5472cb0464edaa58692ff",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "15%",
+          "correct": true,
+          "reason": "9%加6个百分点为15%，没有乘算。"
+        },
+        {
+          "fact": "无报价不合格",
+          "correct": true,
+          "reason": "明确不能零折扣纳入。"
+        }
+      ],
+      "notes": "数值、加成单位及无报价资格规则均正确，引用完整。",
+      "goldIssue": null
+    },
+    {
+      "token": "2e44587238d64e65bc5fd819a21bad35",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供卡组织仲裁费",
+          "correct": true,
+          "reason": "资料不足拒答符合SCOPE LIMIT。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未把500元交易费当仲裁费。"
+        }
+      ],
+      "notes": "简洁拒答正确，未臆造费用；无条件数值评分要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "400ae1dd97f942259f84f7fed7763581",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "满90个自然日",
+          "correct": true,
+          "reason": "回答已满90天且到期，未改成工作日。"
+        },
+        {
+          "fact": "无关联未结争议",
+          "correct": true,
+          "reason": "承接题设该批次没有关联争议可作隐含限定，但没有独立说明一般释放条件。"
+        },
+        {
+          "fact": "无关争议不阻止释放",
+          "correct": false,
+          "reason": "用未入临时扣款解释不影响释放，混入了出款扣减规则；留存释放本身不因无关争议是否入账而受阻。"
+        }
+      ],
+      "notes": "应释放的结果正确，且无关联争议可承接题设；但以未入临时借记为由解释无关争议不影响放款，未表达批次释放独立于该入账状态的规则。若只看既定情形可认为结论足够，本次按必要解释及条件完整性判不通过。两条引用支持部分陈述，缺少RESERVE RELEASE的核心关联规则。",
+      "goldIssue": null
+    },
+    {
+      "token": "d4053a4c3d2a4e84800e76c44aefe461",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "12%",
+          "correct": true,
+          "reason": "明确总受理销售额的12%，一成二等价。"
+        },
+        {
+          "fact": "不叠加为18%",
+          "correct": true,
+          "reason": "双标只用Elevated，明确不按18%。"
+        }
+      ],
+      "notes": "比例、等价表达及双标优先级准确，两条引用均直接支持。",
+      "goldIssue": null
+    },
+    {
+      "token": "b2e08da3409d4dbfa335c7d664d4fc49",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供未来债券价格预测",
+          "correct": true,
+          "reason": "资料不足拒答与全文边界一致。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未拿演练市值冒充明日收盘价。"
+        }
+      ],
+      "notes": "不可答题处置正确，没有预测或伪造引用。",
+      "goldIssue": null
+    },
+    {
+      "token": "ae233915d77a4de3b0050a3550ddf89c",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "等于20千元不触发",
+          "correct": false,
+          "reason": "拒答未区分严格大于20与等于20。"
+        },
+        {
+          "fact": "21千元应全额补21千元",
+          "correct": false,
+          "reason": "未给触发后全额转款。"
+        }
+      ],
+      "notes": "MARGIN CALL已有完整边界和全额规则，此处拒答无根据。",
+      "goldIssue": null
+    },
+    {
+      "token": "059187af145745619d54d677d97bef75",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "只补优先本期利息短缺",
+          "correct": true,
+          "reason": "明确仅当期优先利息缺口，并说明费用步骤后现金状况。"
+        },
+        {
+          "fact": "不能付欠息次级或费用",
+          "correct": true,
+          "reason": "明确排除欠息次级，且仅当期利息的排他表述也排除费用。"
+        },
+        {
+          "fact": "受托人与监督岗双批",
+          "correct": false,
+          "reason": "只说两项批准分别记录，没有回答两位批准人的身份。"
+        }
+      ],
+      "notes": "用途限制基本准确，问题所问谁批准未回答；引用没有列出受托人与监督岗身份。条件维度扣除审批主体遗漏，数值不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "e252bd0d631d404493cbbeda863f3be9",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供交易对手法人识别编码",
+          "correct": true,
+          "reason": "依据不足的回答与全文未披露一致。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "没有编造编码。"
+        }
+      ],
+      "notes": "简洁拒答合格，无正面证据或数值要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "0fa9eb032c8b4edd8fdc96574a525ab9",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 1,
+        "conditions": 2,
+        "numbers": 2,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "旧批次不补扣",
+          "correct": true,
+          "reason": "明确保留原金额，不能按现行比例重算。"
+        },
+        {
+          "fact": "8月1日及以后批次6%",
+          "correct": false,
+          "reason": "未说明适用起始批次日期和新比例的适用对象。"
+        },
+        {
+          "fact": "90日不变",
+          "correct": false,
+          "reason": "未提到90日到期规则不变。"
+        }
+      ],
+      "notes": "旧批次结论正确但仅覆盖一项必要事实；实际引用覆盖完整版本条款，不能用引用替代回答遗漏。",
+      "goldIssue": null
+    },
+    {
+      "token": "7b2759ee9c6a4005bebdf0f330fff786",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "优先本期及欠息先于补储备",
+          "correct": true,
+          "reason": "明确补储备第3步在优先两类利息第2步之后。"
+        },
+        {
+          "fact": "补储备先于次级利息",
+          "correct": true,
+          "reason": "明确次级当期利息第4步在其后。"
+        }
+      ],
+      "notes": "优先顺序完整，步骤序号用于排序而非数值计算，数值维度不适用；引用直接支持。",
+      "goldIssue": null
+    },
+    {
+      "token": "0e7f1b1408114147b120570e12e68a42",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "下周一批次",
+          "correct": true,
+          "reason": "周五18:00后下一营业日为周一。"
+        },
+        {
+          "fact": "周三结算",
+          "correct": true,
+          "reason": "按周一批次T+2营业日正确推得周三。"
+        },
+        {
+          "fact": "18:00归下一工作日",
+          "correct": true,
+          "reason": "保留恰好18:00边界且跳过周末。"
+        }
+      ],
+      "notes": "题设没有额外休业日，批次和结算推导完整，引用保留所需时点和工作日规则。",
+      "goldIssue": null
+    },
+    {
+      "token": "1604ae4f327943a4894385f810b82931",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": null,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "未争议部分仍到期应付",
+          "correct": false,
+          "reason": "只拒答，未给不可全额停付的结论。"
+        },
+        {
+          "fact": "争议部分升级双方估值负责人",
+          "correct": false,
+          "reason": "未回答争议处理路径。"
+        }
+      ],
+      "notes": "CALL TIMING已披露两项规则，拒答无根据；没有数值要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "c2a57cef6938449f9dca4b72cf299ba1",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "新留存3000元",
+          "correct": false,
+          "reason": "未按总销售50000元的6%计算。"
+        },
+        {
+          "fact": "出款39500元",
+          "correct": false,
+          "reason": "未运用原文出款公式。"
+        },
+        {
+          "fact": "退款不减少留存基数",
+          "correct": false,
+          "reason": "没有回答退款对基数的影响。"
+        }
+      ],
+      "notes": "演练输入和规则均齐备，拒答不正确，亦无引用。",
+      "goldIssue": null
+    },
+    {
+      "token": "6fad714d7ef5464d98ac434f2350e3dc",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "补提下限零",
+          "correct": true,
+          "reason": "明确高于目标时补提零，不作负补提。"
+        },
+        {
+          "fact": "超额不自动释放",
+          "correct": true,
+          "reason": "明确不会因此增加分配。"
+        },
+        {
+          "fact": "独立释放指令",
+          "correct": false,
+          "reason": "未交代超额释放仍需另行授权指令。"
+        }
+      ],
+      "notes": "主结论正确但独立释放条件遗漏；引用截于零下限，未提供该释放条件。",
+      "goldIssue": null
+    },
+    {
+      "token": "8ed865fe1cd84a9bba2f5c456f35ede6",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "11:00收妥当日15:00",
+          "correct": false,
+          "reason": "未回答含11:00边界的到期时间。"
+        },
+        {
+          "fact": "11:01下一工作日10:00",
+          "correct": false,
+          "reason": "未回答较晚通知的到期时间。"
+        },
+        {
+          "fact": "收妥而非起草时间",
+          "correct": false,
+          "reason": "未说明约定邮箱收妥口径。"
+        }
+      ],
+      "notes": "完整原文明确给出时点规则，可答却无根据拒答。",
+      "goldIssue": null
+    },
+    {
+      "token": "ee1c894038e44778b3b856b0435bbf87",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "受理前撤销不入销售",
+          "correct": true,
+          "reason": "明确从不成为gross sale。"
+        },
+        {
+          "fact": "受理后退款独立借项",
+          "correct": true,
+          "reason": "明确单独借记并保留即使金额等于原销售的例外说明。"
+        }
+      ],
+      "notes": "前后时序和账务差异准确，引用直接完整；金额相等为条件说明，无需数值运算。",
+      "goldIssue": null
+    },
+    {
+      "token": "f1d1c6fe5782416494923c85a08af630",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "费用5千元",
+          "correct": false,
+          "reason": "拒答未应用费用上限5。"
+        },
+        {
+          "fact": "优先利息60千元",
+          "correct": false,
+          "reason": "未合并本期50与欠息10。"
+        },
+        {
+          "fact": "补储备55千元至70千元",
+          "correct": false,
+          "reason": "未判断4.2%触发及70−15。"
+        },
+        {
+          "fact": "次级实付0",
+          "correct": false,
+          "reason": "未回答触发状态下暂停次级。"
+        },
+        {
+          "fact": "留存30千元",
+          "correct": false,
+          "reason": "未以150−5−60−55算非受限留存。"
+        }
+      ],
+      "notes": "原文覆盖现金口径、顺序、触发与演算数值，拒答没有依据。",
+      "goldIssue": null
+    },
+    {
+      "token": "3f3d7887f8a54780a35e68fb646c51db",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "先获对手方同意",
+          "correct": true,
+          "reason": "明确事先取得同意。"
+        },
+        {
+          "fact": "替代券合格且折后价值足够",
+          "correct": true,
+          "reason": "要求收到合格替代品，调整后价值至少等于释放价值。"
+        },
+        {
+          "fact": "托管确认收妥后放旧券",
+          "correct": true,
+          "reason": "明确托管确认才可释放，承诺邮件不够。"
+        }
+      ],
+      "notes": "先后顺序、价值口径和无报价限制完整；单条实际引用已具足够语义支持，无数值计算要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "cf9eb0c18517441da6905f8bfb252399",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "等于20千元不触发",
+          "correct": false,
+          "reason": "拒答未给门槛边界。"
+        },
+        {
+          "fact": "21千元应全额补21千元",
+          "correct": false,
+          "reason": "拒答未给全额补款结论。"
+        }
+      ],
+      "notes": "原文明确规定严格大于20与全额缺口，拒答无根据。",
+      "goldIssue": null
+    },
+    {
+      "token": "efdc13ea0da142349a5178bcecfdbe2f",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "满90个自然日",
+          "correct": true,
+          "reason": "已满90天到期，未误写工作日。"
+        },
+        {
+          "fact": "无关联未结争议",
+          "correct": true,
+          "reason": "承接题设该批次没有关联争议可作隐含限定，但没有独立说明一般释放条件。"
+        },
+        {
+          "fact": "无关争议不阻止释放",
+          "correct": false,
+          "reason": "以临时借记入账前不扣款为理由，给释放混入不属于该规则的入账限定。"
+        }
+      ],
+      "notes": "应释放的结果正确，且无关联争议可承接题设；但以未入临时借记为由解释无关争议不影响放款，未表达批次释放独立于该入账状态的规则。若只看既定情形可认为结论足够，本次按必要解释及条件完整性判不通过。两条引用支持部分陈述，缺少RESERVE RELEASE的核心关联规则。",
+      "goldIssue": null
+    },
+    {
+      "token": "79c339fe0c3c4f8ba1d88540f76ea8a4",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "费用5千元",
+          "correct": false,
+          "reason": "没有应用5千元上限。"
+        },
+        {
+          "fact": "优先利息60千元",
+          "correct": false,
+          "reason": "没有计算50加10。"
+        },
+        {
+          "fact": "补储备55千元至70千元",
+          "correct": false,
+          "reason": "没有给出触发目标或补提额。"
+        },
+        {
+          "fact": "次级实付0",
+          "correct": false,
+          "reason": "没有说明暂停次级。"
+        },
+        {
+          "fact": "留存30千元",
+          "correct": false,
+          "reason": "未算留存非受限现金30。"
+        }
+      ],
+      "notes": "全文已有完整演算条件，无依据拒答，不是正确的资料不足处置。",
+      "goldIssue": null
+    },
+    {
+      "token": "04d247051fcb467abc7ffea646659e1b",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "7个自然日",
+          "correct": false,
+          "reason": "未给通知后7个自然日。"
+        },
+        {
+          "fact": "匹配收据和交付证明",
+          "correct": false,
+          "reason": "未回答必须两项材料及仅收据不完整。"
+        },
+        {
+          "fact": "胜诉冲回预扣而非新增销售",
+          "correct": false,
+          "reason": "未回答冲回及不影响正确留存。"
+        }
+      ],
+      "notes": "DISPUTE PATH已明确三项问题，拒答无根据。",
+      "goldIssue": null
+    },
+    {
+      "token": "5f245fc9d7fb4801bb8405a3054aa0c8",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供未来设备出售价格",
+          "correct": true,
+          "reason": "资料不足拒答符合BOUNDARY与设备销售状态章节。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未以30千元未收款伪造最终出售价格。"
+        }
+      ],
+      "notes": "不可答处置正确；原文中已签但未收款的示例不构成未来最终售价预测。",
+      "goldIssue": null
+    },
+    {
+      "token": "2799684c506846b490ccc723d67e05b9",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "CE-9按分配期结束日",
+          "correct": true,
+          "reason": "明确2026-09-01及之后结束的分配期。"
+        },
+        {
+          "fact": "旧资产也适用",
+          "correct": true,
+          "reason": "明确包括CE-8发起资产。"
+        },
+        {
+          "fact": "触发残余留非受限现金",
+          "correct": true,
+          "reason": "明确触发时不再释放给次级。"
+        }
+      ],
+      "notes": "版本适用事件及残余去向完整，引用直接支持；日期属版本要求，无数值计算。",
+      "goldIssue": null
+    },
+    {
+      "token": "a4024dccb018443791d2b86f1df80760",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "受理前撤销不入销售",
+          "correct": true,
+          "reason": "明确不会成为gross sale。"
+        },
+        {
+          "fact": "受理后退款独立借项",
+          "correct": true,
+          "reason": "明确独立借记，即使与销售额相同。"
+        },
+        {
+          "fact": "退款不降低支付批次留存基数",
+          "correct": true,
+          "reason": "补充陈述与实际引用中的reserve base规则一致。"
+        }
+      ],
+      "notes": "必要区别及附加基数说明均准确，引用同时覆盖两章节；数值不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "92b1ecc93574425c97ff65e2952f5078",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供投资者代扣税率",
+          "correct": true,
+          "reason": "明确资料不足，与全文税务边界一致。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未用税款专户20反算税率。"
+        }
+      ],
+      "notes": "不可答题简洁拒答正确，无伪造正面证据。",
+      "goldIssue": null
+    },
+    {
+      "token": "5028d02b2c024f7888b8f30b84e39bb1",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "优先本期及欠息先于补储备",
+          "correct": true,
+          "reason": "第2步优先两类利息在第3步之前。"
+        },
+        {
+          "fact": "补储备先于次级利息",
+          "correct": true,
+          "reason": "第3步在次级当期第4步之前。"
+        }
+      ],
+      "notes": "顺序关系完整且无混淆，单条引用足够；步骤编号不视为数值计算。",
+      "goldIssue": null
+    },
+    {
+      "token": "c75d16865d454da69db823909fd98aa5",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供真实商户银行账号",
+          "correct": true,
+          "reason": "资料不足拒答与SCOPE LIMIT一致。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未编造收款账号。"
+        }
+      ],
+      "notes": "不可答题处置正确，条件及数值不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "4818f1c75bd8474b88c0969a33b676a7",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "严格高于4%才触发",
+          "correct": true,
+          "reason": "明确刚好4.0%不新触发。"
+        },
+        {
+          "fact": "次级利息和残余暂停",
+          "correct": true,
+          "reason": "明确已触发时两项均暂停。"
+        },
+        {
+          "fact": "余款留非受限现金",
+          "correct": true,
+          "reason": "明确步骤1至3后余款的归属。"
+        }
+      ],
+      "notes": "严格边界及触发后的分配处置完整，并区分新触发与已生效状态；引用支持全部要点。",
+      "goldIssue": null
+    },
+    {
+      "token": "1c090b5449e04adf8e9a08849cd22187",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "11:00收妥当日15:00",
+          "correct": false,
+          "reason": "未给当日截止时点。"
+        },
+        {
+          "fact": "11:01下一工作日10:00",
+          "correct": false,
+          "reason": "未给下一工作日截止时点。"
+        },
+        {
+          "fact": "收妥而非起草时间",
+          "correct": false,
+          "reason": "未说明约定邮箱收妥口径。"
+        }
+      ],
+      "notes": "原文CALL TIMING充分可答，资料不足拒答不成立。",
+      "goldIssue": null
+    },
+    {
+      "token": "05084687f9b64e4491b485803cd247c4",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 2,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "最多一个批次",
+          "correct": true,
+          "reason": "明确不能跨两批，只能回移一批。"
+        },
+        {
+          "fact": "对账岗和风险岗共同批准",
+          "correct": true,
+          "reason": "明确两个岗位均批准，并保留故障有记录。"
+        },
+        {
+          "fact": "不缩短结算或到期周期",
+          "correct": false,
+          "reason": "没有说明T+2与90日不缩短。"
+        }
+      ],
+      "notes": "主问题两点正确，但冻结gold要求的周期限制未回答；实际引用联合具备该依据。",
+      "goldIssue": null
+    },
+    {
+      "token": "1729996552154da49e374654ecd1e470",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "按估值日适用OR-6",
+          "correct": true,
+          "reason": "明确2026-10-01含当日起所有估值。"
+        },
+        {
+          "fact": "旧交易不保留10%",
+          "correct": true,
+          "reason": "明确此前开立交易不能沿用OR-5。"
+        },
+        {
+          "fact": "公司债9%并按名单加6个百分点",
+          "correct": true,
+          "reason": "新基础比例及观察名单加成准确。"
+        }
+      ],
+      "notes": "版本、对象与数值齐全；第二引用虽未含最后一句，已完整说明包括旧交易，语义充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "a4299bb264d94b39a13155341ab3f686",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 1,
+        "conditions": 2,
+        "numbers": null,
+        "disposition": 2,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "只补优先本期利息短缺",
+          "correct": true,
+          "reason": "请求限定为具体当期优先利息缺口，保留费用步骤之后。"
+        },
+        {
+          "fact": "不能付欠息次级或费用",
+          "correct": false,
+          "reason": "以未明确允许代替明确禁付，且没有完整交代费用禁付；全文RESERVE DRAW已有明确排除。"
+        },
+        {
+          "fact": "受托人与监督岗双批",
+          "correct": false,
+          "reason": "只说明两项审批记录要求，未说批准人身份。"
+        }
+      ],
+      "notes": "回答有部分正确操作要求，但对禁付结论过度保留且漏答谁批准；两条引用支持当期缺口及分类记录，缺少明确禁付与批准主体条款。数值不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "4255d05bf0e34ce79231dbdfdcd8adfd",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "严格高于4%才触发",
+          "correct": true,
+          "reason": "恰好4.0%不激活，严格大于边界正确。"
+        },
+        {
+          "fact": "次级利息和残余暂停",
+          "correct": true,
+          "reason": "明确已激活时两项均暂停。"
+        },
+        {
+          "fact": "余款留非受限现金",
+          "correct": true,
+          "reason": "明确前3步后余款归属。"
+        }
+      ],
+      "notes": "数值门槛、激活状态与分配处置均完整，引用支持全部必要事实。",
+      "goldIssue": null
+    },
+    {
+      "token": "aece1da580574c69b329610b9d941691",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "7个自然日",
+          "correct": false,
+          "reason": "未给通知后7个自然日期限。"
+        },
+        {
+          "fact": "匹配收据和交付证明",
+          "correct": false,
+          "reason": "未回答两项证明及单收据不合格。"
+        },
+        {
+          "fact": "胜诉冲回预扣而非新增销售",
+          "correct": false,
+          "reason": "拒答未解释冲回与销售、留存的区别。"
+        }
+      ],
+      "notes": "原文有明确证据，无根据拒答。",
+      "goldIssue": null
+    },
+    {
+      "token": "7865e897643449968d6ae14d8b9717f5",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "下周一批次",
+          "correct": true,
+          "reason": "明确周五18:00归下周一。"
+        },
+        {
+          "fact": "周三结算",
+          "correct": true,
+          "reason": "周一T+2营业日算到下周三。"
+        },
+        {
+          "fact": "18:00归下一工作日",
+          "correct": true,
+          "reason": "保留恰好18:00边界并跳过周末。"
+        }
+      ],
+      "notes": "题设无其他休业日，日期和营业日推导准确，引用充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "ea184b918992463ca16e42b8a3dfac9f",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        false,
+        false
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 1,
+        "conditions": 1,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "未争议部分仍到期应付",
+          "correct": true,
+          "reason": "最后一句给出按期支付未争议部分、不能全部停付的结论。"
+        },
+        {
+          "fact": "争议部分升级双方估值负责人",
+          "correct": false,
+          "reason": "遗漏双方估值负责人升级处理。"
+        },
+        {
+          "fact": "将担保款退回及违约抵扣用于本补仓",
+          "correct": false,
+          "reason": "引入与Oriole原文不符的担保款没收、退款、责任上限规则。"
+        }
+      ],
+      "notes": "最终未争议部分仍付这一点正确，但解释引用的是担保款退款材料，无法支持本题补仓制度；两段均不是本sourceRef原文，亦不支持核心适用关系。未据此寻找其它文件，gold本身无问题。",
+      "goldIssue": null
+    },
+    {
+      "token": "0dc84ce380c6457193cc21339c772757",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "15%",
+          "correct": true,
+          "reason": "基础9%加6个百分点得到15%。"
+        },
+        {
+          "fact": "无报价不合格",
+          "correct": true,
+          "reason": "明确不能零折扣纳入。"
+        }
+      ],
+      "notes": "折扣加成与资格规则均正确，引用充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "5e3fd2086cb54382a612ae29c97edff3",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供真实商户银行账号",
+          "correct": true,
+          "reason": "资料不足拒答符合信息边界。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "无任何捏造账号。"
+        }
+      ],
+      "notes": "不可答题正确拒答；条件及数值不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "60a1e145cf4c474591341bc1da057d50",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供卡组织仲裁费",
+          "correct": true,
+          "reason": "资料不足拒答与全文明确未披露一致。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未将交易费冒充仲裁费。"
+        }
+      ],
+      "notes": "不可答题处置合格，无须复述字段，无伪造证据。",
+      "goldIssue": null
+    },
+    {
+      "token": "708d7052770e416c8b89b9ccb83a0ef9",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": 0,
+        "disposition": 2,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "150千元",
+          "correct": false,
+          "reason": "未计算原文已给的140+10，反称没有具体金额。"
+        },
+        {
+          "fact": "排除税款专户20千元",
+          "correct": false,
+          "reason": "正确排除该类资金，但遗漏演算已给20千元。"
+        },
+        {
+          "fact": "排除未收销售款30千元",
+          "correct": false,
+          "reason": "正确排除未收款，但遗漏演算已给30千元。"
+        },
+        {
+          "fact": "税款专户与未收销售款均排除的原则",
+          "correct": true,
+          "reason": "规则表述正确，签约不等于收款亦正确。"
+        },
+        {
+          "fact": "原文未给具体金额",
+          "correct": false,
+          "reason": "DISTRIBUTION EXERCISE明确列出140、10、20和30。"
+        }
+      ],
+      "notes": "口径问题回答正确，但以不存在金额为由未完成可计算的演算；引用只支持原则与专户排除，缺少演算数值。",
+      "goldIssue": null
+    },
+    {
+      "token": "4547e0a8c4db455c8eaea36158539467",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "先获对手方同意",
+          "correct": true,
+          "reason": "明确需事先同意。"
+        },
+        {
+          "fact": "替代券合格且折后价值足够",
+          "correct": true,
+          "reason": "要求收到合格替代担保品，调整后价值不低于释放价值。"
+        },
+        {
+          "fact": "托管确认收妥后放旧券",
+          "correct": true,
+          "reason": "明确确认收到后才释放，邮件承诺不足。"
+        }
+      ],
+      "notes": "换券先决条件及先后顺序完整，无报价中断例外也准确；无需数值计算，引用充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "abe93bc543854d23a77de8619bf9dc71",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "连续两个月不高于3%",
+          "correct": true,
+          "reason": "保留连续月度观察及三个月均值≤3.0%。"
+        },
+        {
+          "fact": "单月2.8%不足",
+          "correct": true,
+          "reason": "明确单月不能清除触发。"
+        },
+        {
+          "fact": "目标恢复40千元",
+          "correct": true,
+          "reason": "40常规目标沿用本材料千元口径，没有错误单位换算。"
+        },
+        {
+          "fact": "超额释放仍须独立指令",
+          "correct": true,
+          "reason": "明确单独释放指令，不会自动给次级。"
+        }
+      ],
+      "notes": "解除边界、连续观察、目标和独立释放条件完整；两条引用支持解除与实际释放的区分。",
+      "goldIssue": null
+    },
+    {
+      "token": "3e9d952130104bb5bf33aeaf0f3c7004",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供未来债券价格预测",
+          "correct": true,
+          "reason": "资料不足拒答符合全文未披露明日价格。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "没有把演练市值当未来报价。"
+        }
+      ],
+      "notes": "不可答题正确拒答，无需复述缺失字段。",
+      "goldIssue": null
+    },
+    {
+      "token": "5734bbecdc0749a8a2ba9b431ca28bb1",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "12%",
+          "correct": true,
+          "reason": "毛受理销售额12%与一成二等价。"
+        },
+        {
+          "fact": "不叠加为18%",
+          "correct": true,
+          "reason": "双标只用Elevated，不相加。"
+        }
+      ],
+      "notes": "适用优先级、基数及比例正确，两条实际引用支持必要事实。",
+      "goldIssue": null
+    },
+    {
+      "token": "1bbbefea3fb147cb85b27976b3fb634e",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供未来设备出售价格",
+          "correct": true,
+          "reason": "资料不足拒答符合全文价格预测边界。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "没有用30千元未收款猜测最终售价。"
+        }
+      ],
+      "notes": "不可答题正确拒答；已签未收款不构成未来设备售价预测。",
+      "goldIssue": null
+    },
+    {
+      "token": "0777973bfbaa4f859673f0299c682d87",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": 0,
+        "disposition": 2,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "150千元",
+          "correct": false,
+          "reason": "未以140+10计算，声称原文没有具体金额。"
+        },
+        {
+          "fact": "排除税款专户20千元",
+          "correct": false,
+          "reason": "排除类别正确，但没有说明演算20千元。"
+        },
+        {
+          "fact": "排除未收销售款30千元",
+          "correct": false,
+          "reason": "排除类别正确，但没有说明演算30千元。"
+        },
+        {
+          "fact": "税款专户与未收销售款均排除的原则",
+          "correct": true,
+          "reason": "正确区分签约与收款，排除原则完整。"
+        },
+        {
+          "fact": "原文未给具体金额",
+          "correct": false,
+          "reason": "全文DISTRIBUTION EXERCISE已有演算输入，可得150千元。"
+        }
+      ],
+      "notes": "原则问题有回答，演算金额未作答且对原文信息是否存在判断错误；两条引用只覆盖口径与专户，不能联合支持全部必要数值。",
+      "goldIssue": null
+    }
+  ]
+}

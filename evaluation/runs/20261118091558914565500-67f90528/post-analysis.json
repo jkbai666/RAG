@@ -1,0 +1,1278 @@
+{
+  "schemaVersion": 1,
+  "normalizedQuestionLatencyExcludingSharedQueryEmbedding": {
+    "A": {
+      "n": 120,
+      "p50Ms": 1096.42,
+      "p95Ms": 1577.4872
+    },
+    "B": {
+      "n": 120,
+      "p50Ms": 1081.0,
+      "p95Ms": 1573.45
+    }
+  },
+  "latencyMethod": "Subtract measured reserve-to-settle query embedding duration from each raw answer latency. A fills the shared cache; B hits it. This is a post-hoc approximation, not randomized performance testing.",
+  "comparisonLimitations": [
+    "Fixed A-then-B order can be affected by provider caching and network variation.",
+    "Evidence gold spans are paragraph-level; interval completeness is stricter than semantic support alone.",
+    "Only 8 fictional holdout documents; no claim of real financial-domain generalization."
+  ],
+  "goldIssues": [],
+  "failureCounts": {
+    "improved": 8,
+    "regressed": 3,
+    "both_incorrect": 29
+  },
+  "cases": [
+    {
+      "questionId": "dev-01-q03",
+      "split": "dev",
+      "documentId": "dev-01",
+      "question": "按东苑演算台账，封顶备案后本次申请最多批准多少万元？说明两道限制。",
+      "category": "arithmetic",
+      "requiredFacts": [
+        "节点余量450万元",
+        "现金扣留存后500万元",
+        "本次最多450万元"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "按东苑演算台账，封顶备案后累计可拨付上限为监管基数的65%，即1000×65%=650万元；已实际拨付200万元，因此累计口径下最多还可批准450万元。同时受专户现金700万元限制，本次申请500万元未超过现金余额，故两道限制取较小值，本次最多批准450万元。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "citedEvidenceRecall": 0.3333333333333333,
+        "reviewNotes": "题目要求解释两道限制，第二道必须是现金减留存；只说明申请未超700万元现金不能替代500万元的可用现金限制。引用1支持台账，引用2支持65%节点，均未提供留存和取小规则；最终金额碰巧正确仍不通过。"
+      },
+      "B": {
+        "answer": "按东苑演算台账，本次申请最多批准300万元。两道限制：一是累计上限，主体封顶且备案完成可累计拨付监管基数的65%，即1000×65%=650万元；二是扣减已实际拨付200万元，650−200=450万元，而本次申请500万元超过该额度，故最多批准450万元？需核对：台账中监管基数1000万元、已实际拨付200万元、封顶已备案、申请500万元。按累计上限65%计算可累计650万元，减去已拨200万元，剩余可拨450万元，因此本次最多批准450万元，而非300万元。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "citedEvidenceRecall": 0.3333333333333333,
+        "reviewNotes": "仍缺题目要求的第二道现金减留存限制，答案整体不正确。保留判定口径：已明确撤回300万元，故不把它当最终数值；但前后自纠增加阅读歧义，不能掩盖必要解释缺失。引用1支持台账输入、引用2支持65%节点，均缺留存与取小规则，联合支持不足。"
+      }
+    },
+    {
+      "questionId": "dev-01-q05",
+      "split": "dev",
+      "documentId": "dev-01",
+      "question": "东苑在2026年9月2日补正后重新审批的封顶申请，用70%还是65%，留存多少？",
+      "category": "version",
+      "requiredFacts": [
+        "LQ-3",
+        "封顶累计65%",
+        "留存20%"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "根据提供的原文，主体封顶且备案完成对应的累计拨付上限为监管基数的65%，累计上限表中没有70%这一档。原文未提及“2026年9月2日补正后重新审批”的具体规则，也未说明留存比例，因此无法回答留存多少。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "仅正确给出65%，没有完成题目要求的版本与留存判断。2026年9月1日后补正重审用LQ-3，留存20%在完整原文明确；两条引用仅支持比例表，缺过渡和留存证据。"
+      },
+      "B": {
+        "answer": "根据现有原文，主体封顶且备案完成对应的可累计拨付比例为65%，不是70%；该表是累计比例，不是本次申请比例。原文未说明补正后重新审批时具体留存多少，因此留存金额无法据此确定。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "正确65%不足以回答版本和留存问题。未披露具体项目留存金额不妨碍回答规定的20%比例；不能将问题转为金额后拒答。引用仅支持累计比例表，未联合支持过渡条款与留存。"
+      }
+    },
+    {
+      "questionId": "dev-01-q07",
+      "split": "dev",
+      "documentId": "dev-01",
+      "question": "一笔东苑拨款申请最初必须同时提交哪些进度证明资料？",
+      "category": "fact",
+      "requiredFacts": [
+        "监理签章进度表",
+        "建设方付款指令",
+        "现场照片索引"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "完整原文明确每次申请须同时具备三项资料；以依据不足整体拒答不符合可答题要求，也未保留缺一不可条件。无引用、无数值要求，数值维度不适用。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "进度确认段逐字列明每次申请同时具备的三项资料，可答而整体拒答。三项缺一不可的条件亦未保留，且没有任何引用；无数值要求，数值维度不适用。"
+      }
+    },
+    {
+      "questionId": "dev-02-q01",
+      "split": "dev",
+      "documentId": "dev-02",
+      "question": "苔原额度快照中还有多少万元可用？哪些金额不占额？",
+      "category": "arithmetic",
+      "requiredFacts": [
+        "占额90万元",
+        "可用30万元",
+        "应计利息与未承兑订单不占额"
+      ],
+      "classification": "improved",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.6666666666666666,
+        "contextEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "完整原文已给足总额、快照和占额规则，无根据拒答；无引用覆盖任何必要结论。"
+      },
+      "B": {
+        "answer": "根据额度快照记录：本金余额60万元、已承兑未到期票面30万元，占额合计90万元；授信总额120万元，因此可用额为120-90=30万元。应计利息0.2万元和未承兑订单10万元不占额。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 0.6666666666666666,
+        "contextEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "reviewNotes": "规则、授信总额与独立快照输入由两段引用联合覆盖，未叠加另一借款演练。"
+      }
+    },
+    {
+      "questionId": "dev-03-q01",
+      "split": "dev",
+      "documentId": "dev-03",
+      "question": "Morrow演练商户的新留存与最终出款各是多少元？退款是否降低留存基数？",
+      "category": "arithmetic",
+      "requiredFacts": [
+        "新留存3000元",
+        "出款39500元",
+        "退款不减少留存基数"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "可答题的数值、基数及出款公式均在原文，无根据拒答。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "演练输入和规则均齐备，拒答不正确，亦无引用。"
+      }
+    },
+    {
+      "questionId": "dev-03-q04",
+      "split": "dev",
+      "documentId": "dev-03",
+      "question": "Morrow争议应答期限是多久？只交收据是否合格，胜诉会怎样处理预扣？",
+      "category": "procedure",
+      "requiredFacts": [
+        "7个自然日",
+        "匹配收据和交付证明",
+        "胜诉冲回预扣而非新增销售"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "DISPUTE PATH已明确三项问题，拒答无根据。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "原文有明确证据，无根据拒答。"
+      }
+    },
+    {
+      "questionId": "dev-03-q05",
+      "split": "dev",
+      "documentId": "dev-03",
+      "question": "Morrow一个已满90天的留存批次，没有与其关联的争议，但商户另有无关争议，应否放款？",
+      "category": "cross-section",
+      "requiredFacts": [
+        "满90个自然日",
+        "无关联未结争议",
+        "无关争议不阻止释放"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "应放款。已满90天的留存批次到期后应释放；与批次无关的未决争议在正式临时扣款入账前不产生扣减，因此不影响该批次放款。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "应释放的结果正确，且无关联争议可承接题设；但以未入临时借记为由解释无关争议不影响放款，未表达批次释放独立于该入账状态的规则。若只看既定情形可认为结论足够，本次按必要解释及条件完整性判不通过。两条引用支持部分陈述，缺少RESERVE RELEASE的核心关联规则。"
+      },
+      "B": {
+        "answer": "应放款。已满90天的留存批次到期后应释放；与批次无关的未决争议在临时借记入账前不产生扣款，因此不影响该批次放款。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "应释放的结果正确，且无关联争议可承接题设；但以未入临时借记为由解释无关争议不影响放款，未表达批次释放独立于该入账状态的规则。若只看既定情形可认为结论足够，本次按必要解释及条件完整性判不通过。两条引用支持部分陈述，缺少RESERVE RELEASE的核心关联规则。"
+      }
+    },
+    {
+      "questionId": "dev-03-q06",
+      "split": "dev",
+      "documentId": "dev-03",
+      "question": "Morrow终端时钟故障可将交易跨两个批次回移吗？谁须审批？",
+      "category": "exception",
+      "requiredFacts": [
+        "最多一个批次",
+        "对账岗和风险岗共同批准",
+        "不缩短结算或到期周期"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "不可以跨两个批次回移。有记录的终端时钟故障只能将已受理交易回移一个批次，且须经对账官和风险官双方批准。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "reviewNotes": "主体限制和审批正确，但遗漏冻结gold要求的周期不变；两条引用联合已有该依据。 复核执行记录：agent ID=blind-review-04；评分指令SHA-256=9f31ab3f4366537e24ff84424ef33e8daeb6f2aae17f61699f80e36456e54dac；分配输入包文件SHA-256=0aa098858eca49beeacd8b7f36a3659156bf9f69f5ae3663d89dd3c9bcb4e8b4；底层精确模型版本及温度工具未暴露，均不可取得。"
+      },
+      "B": {
+        "answer": "不可以跨两个批次回移。有记录的终端时钟故障只能将已受理交易回移一个批次，且须经对账岗和风险岗两名人员均批准。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "reviewNotes": "主问题两点正确，但冻结gold要求的周期限制未回答；实际引用联合具备该依据。"
+      }
+    },
+    {
+      "questionId": "dev-03-q07",
+      "split": "dev",
+      "documentId": "dev-03",
+      "question": "Morrow八月新版生效后，七月M-3已留存批次是否补扣到6%？",
+      "category": "version",
+      "requiredFacts": [
+        "旧批次不补扣",
+        "8月1日及以后批次6%",
+        "90日不变"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "不补扣。M-3已留存批次保留原金额，不会补足到6%；旧批次也不得按当前扣留率重新计算。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "旧批次结论正确但仅覆盖一项必要事实；实际引用覆盖完整版本条款，不能用引用替代回答遗漏。"
+      },
+      "B": {
+        "answer": "不补扣。M-3已留存批次保留原金额，不会补足到6%；旧批次不得按当前扣留率重新计算。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "旧批次处理正确，但遗漏gold要求的新批次日期及到期规则；引用本身完整覆盖这些条款。"
+      }
+    },
+    {
+      "questionId": "dev-04-q04",
+      "split": "dev",
+      "documentId": "dev-04",
+      "question": "蒲灯投保时只有天气预警，之后才宣布航段延误，是否当然落入已知延误除外？",
+      "category": "exception",
+      "requiredFacts": [
+        "天气预警不等于已宣布航段延误",
+        "不能当然排除",
+        "仍须核验其他条件"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "不是当然落入。条款规定，投保时承运人已公开宣布该航段延误的，才不承担该次延误责任；普通天气预警本身不等于承运人宣布航段延误。因此，投保时只有天气预警、之后才宣布航段延误的情形，不能仅凭天气预警就认定为已知延误除外，仍需看投保时承运人是否已公开宣布该航段延误。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "未承诺必赔，但遗漏金标准要求的其他条件审核；“仍需看”所指仍是同一个宣布条件，不能等同其他条件。引文含登记核验及除外规则，足以支持应继续审核的必要结论，故引用联合完整与答案遗漏分别评价。"
+      },
+      "B": {
+        "answer": "不是当然落入。条款规定，投保时承运人已公开宣布该航段延误的，才不承担该次延误责任；普通天气预警本身不等于承运人宣布航段延误。因此，投保时只有天气预警、之后才宣布航段延误的情形，不能仅凭天气预警就认定为已知延误除外，关键要看投保时承运人是否已公开宣布该航段延误。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "结论正确但必要的其他条件审核遗漏；没有据此断言保证赔付。引用同时包含定额上限、登记及除外规则，联合足以支持必要条件说明，答案仍未表达这一要点。"
+      }
+    },
+    {
+      "questionId": "dev-04-q07",
+      "split": "dev",
+      "documentId": "dev-04",
+      "question": "蒲灯延误申请需哪些材料，仅订票截图够吗？",
+      "category": "procedure",
+      "requiredFacts": [
+        "登机凭证",
+        "承运人最终起飞证明",
+        "保单号",
+        "订票截图不足"
+      ],
+      "classification": "improved",
+      "A": {
+        "answer": "仅凭订票截图不够。原文明确说明“只有订票截图不足以证明完成登机”，申请材料中提到了保单号，并说明理赔员会先检查航段号再检查时间，且不能用同一天其他航班的运行记录代替。此外，航段完成后30个自然日内提交申请，缺件时一次告知，客户需在告知后10个自然日内补齐。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "必要的两类材料遗漏，补充申请时限不能替代材料清单。引用1支持保单号、截图不足及核验流程，引用2支持补充期限；两者均未含缺失材料。数值不属于本题必要要求，记null。"
+      },
+      "B": {
+        "answer": "根据原文，出险登记时需上传登机凭证、承运人出具的最终起飞证明及保单号；只有订票截图不足以证明完成登机，因此仅凭订票截图不够。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "三类登记材料及截图限制均完整，引用出险登记段直接支持；无必要数值要求。"
+      }
+    },
+    {
+      "questionId": "val-01-q01",
+      "split": "validation",
+      "documentId": "val-01",
+      "question": "Oriole演算两只债券的折后价值、总价值和应补金额各为多少？",
+      "category": "arithmetic",
+      "requiredFacts": [
+        "主权债480千元",
+        "公司债425千元",
+        "合计905千元",
+        "应补95千元"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.25,
+        "contextEvidenceRecall": 0.25,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "原文已有完整规则和演算输入，无根据拒答；没有实际引用。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.25,
+        "contextEvidenceRecall": 0.25,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "原文足以计算，资料不足拒答无根据，无引用。"
+      }
+    },
+    {
+      "questionId": "val-01-q02",
+      "split": "validation",
+      "documentId": "val-01",
+      "question": "Oriole缺口恰好20千元需要发补仓通知吗？若21千元应转多少？",
+      "category": "condition",
+      "requiredFacts": [
+        "等于20千元不触发",
+        "21千元应全额补21千元"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "MARGIN CALL已有完整边界和全额规则，此处拒答无根据。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "原文明确规定严格大于20与全额缺口，拒答无根据。"
+      }
+    },
+    {
+      "questionId": "val-01-q04",
+      "split": "validation",
+      "documentId": "val-01",
+      "question": "Oriole在11:00收妥补仓通知和11:01收妥，截止时点分别是什么？",
+      "category": "procedure",
+      "requiredFacts": [
+        "11:00收妥当日15:00",
+        "11:01下一工作日10:00",
+        "收妥而非起草时间"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "原文CALL TIMING充分可答，资料不足拒答不成立。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "完整原文明确给出时点规则，可答却无根据拒答。"
+      }
+    },
+    {
+      "questionId": "val-01-q06",
+      "split": "validation",
+      "documentId": "val-01",
+      "question": "Oriole对补仓有异议，是否可以暂不付全部金额？",
+      "category": "exception",
+      "requiredFacts": [
+        "未争议部分仍到期应付",
+        "争议部分升级双方估值负责人"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "CALL TIMING已披露两项规则，拒答无根据；没有数值要求。"
+      },
+      "B": {
+        "answer": "根据原文，担保款不足时不足额仍应补付，不以没收担保款作为责任上限；有挂起争议的，保留争议部分，未争议余额按期退回。因此，对补仓有异议时，仅可保留争议部分，未争议部分仍应按期支付，不能因此暂不支付全部金额。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "最终未争议部分仍付这一点正确，但解释引用的是担保款退款材料，无法支持本题补仓制度；两段均不是本sourceRef原文，亦不支持核心适用关系。未据此寻找其它文件，gold本身无问题。"
+      }
+    },
+    {
+      "questionId": "val-02-q01",
+      "split": "validation",
+      "documentId": "val-02",
+      "question": "澄屿订单甲100800元、净值1.2500，费用和确认份额是多少？",
+      "category": "arithmetic",
+      "requiredFacts": [
+        "0.8%",
+        "净申购100000元",
+        "费用800元",
+        "80000.00份"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "完整原文的费率表和订单甲演练条件已足够，仍全部拒答。没有错误金额输出，但所有必要数值、计费口径及证据都缺失。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "订单甲金额、T日净值及常规不受限购条件均在原文，全部拒答无根据。无任何引用；未给错值不等于已完成可答题。"
+      }
+    },
+    {
+      "questionId": "val-02-q02",
+      "split": "validation",
+      "documentId": "val-02",
+      "question": "澄屿同一客户同日两笔独立60万元申请可合成120万元用0.5%吗？",
+      "category": "cross-section",
+      "requiredFacts": [
+        "独立申请分别计费",
+        "各60万元用0.8%",
+        "不能合并成120万元"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "不能。原文说明订单乙和丙是同一天、同一客户的两个独立申请编号，各申请60万元，三单独立演算；限购时也应按每个有效申请分别计算获配金额并重选费率档，而不是把两笔合并成120万元套用0.5%。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "不能合并的主结论正确，但必要的各0.8%档未答。引用支持独立订单及逐申请处理，却没有费率表；引入限购规则亦不能补足所问具体费率。"
+      },
+      "B": {
+        "answer": "不能。原文说明订单乙和丙是同一天、同一客户的两个独立申请编号，各申请60万元，且这三单独立演算；同时限购日应先对每个有效申请计算获配申请金额，再按获配金额重选费率档，而不是按原申请全额合并计算。因此不能把两笔独立申请合成120万元套用0.5%费率。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "独立申请不合并的结论正确，但缺必要的各笔0.8%档。引用支持独立编号和逐申请处理，却未含费率表；引用联合亦不能确定0.8%。附加限购规则没有补足此缺项。"
+      }
+    },
+    {
+      "questionId": "val-02-q04",
+      "split": "validation",
+      "documentId": "val-02",
+      "question": "澄屿CY-7原申请120万元，限购后获配60万元，按哪档收费？未获配部分收费吗？",
+      "category": "exception",
+      "requiredFacts": [
+        "按60万元获配额选档",
+        "0.8%",
+        "未获配部分不收费并原路退回"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "按CY-7规则，限购时应先计算获配申请金额，再按获配金额重新选择费率档并计算份额；因此该笔应按获配的60万元对应档位收费，而不是按原申请120万元选档。未获配部分原路退回，不收申购费。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.5,
+        "reviewNotes": "CY-7获配口径和退费处理正确，但没有回答具体0.8%档。引用1支持获配重选及退款，引用2支持CY-7分版；两者均缺费率表，完整支持为false。"
+      },
+      "B": {
+        "answer": "按CY-7口径，限购时应先计算获配申请金额，再按获配金额重新选择费率档并计算份额；因此原申请120万元、获配60万元时，应按60万元对应的费率档收费，而不是按原申请120万元选档。未获配部分原路退回，不收申购费。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.5,
+        "reviewNotes": "获配口径和未获配退款正确，但0.8%必要费率缺失。引用1支持限购处理，引用2支持CY-7按获配额选档，两者都没有具体费率表，联合不足。"
+      }
+    },
+    {
+      "questionId": "val-02-q06",
+      "split": "validation",
+      "documentId": "val-02",
+      "question": "澄屿正常申购何时确认、何时开始收益权益？扣款成功可立即赎回吗？",
+      "category": "procedure",
+      "requiredFacts": [
+        "T+1开放日确认",
+        "登记确认日为收益起点",
+        "确认前不可赎"
+      ],
+      "classification": "regressed",
+      "A": {
+        "answer": "正常申购的确认时点为T+1（遇非开放日顺延），收益起点是登记确认日，而非银行扣款日。扣款成功不代表登记已确认，不能立即赎回；确认份额与可赎份额之间存在时间差，用于防止尚未核准的申请被提前赎回，待定期间也不先给出可赎份额。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.5,
+        "reviewNotes": "答案的T+1、收益起点及确认前不可赎均正确。引用1支持支付与确认分离；引用2虽切掉确认段首句，仍载明T+1非开放日顺延及收益起点；引用3另有“T+1确认时点”及待定期不可赎，联合能够补足确认时点，故完整支持为true。"
+      },
+      "B": {
+        "answer": "根据原文，正常申购的确认时点与收益权益起始时点未作明确说明；原文仅说明扣款成功不代表登记已确认，且待定期间不先给出可赎份额，因此不能认定扣款成功后可立即赎回。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.5,
+        "reviewNotes": "仅正确回答不能因扣款立即赎回，正常确认和收益起点均有据却未答。引用1支持支付与确认分离；引用2虽支持待定期不可赎，却同时含“T+1确认时点”，与其否认明确时点的核心陈述冲突，故该项为false。联合引用缺登记确认日为收益起点，完整支持为false。"
+      }
+    },
+    {
+      "questionId": "val-02-q07",
+      "split": "validation",
+      "documentId": "val-02",
+      "question": "澄屿单笔申请恰好500万元，净申购金额用哪个公式？",
+      "category": "table",
+      "requiredFacts": [
+        "固定费1000元",
+        "净申购4999000元"
+      ],
+      "classification": "regressed",
+      "A": {
+        "answer": "单笔申请金额A恰好500万元时，适用“A≥500万元，每笔1000元固定费”这一档，净申购金额=A−1000元。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "问题询问用哪个公式，已明确边界归档及正确代入公式；接受以已知A表示的等值表达，不因未再打印4999000而扣分。唯一引用同时含费率表和固定费公式，完整支持。"
+      },
+      "B": {
+        "answer": "原文只给出通用口径：净申购金额=A÷(1+费率)，申购费=A−净申购金额；固定费档则净申购金额=A−1000元。原文未单独说明“恰好500万元”这一金额应适用哪一档或哪个公式，需结合对应费率档判断。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "原文表格A≥500万元明确包含等于边界，不能以“未单独说明”拒绝选档。引用支持复述的通用两类公式，但缺费率表，不能支持本题边界选择；少量公式正确不能替代具体作答。"
+      }
+    },
+    {
+      "questionId": "val-02-q08",
+      "split": "validation",
+      "documentId": "val-02",
+      "question": "澄屿系统暂停确认时，客户已扣款是否可当作已确认并换日补建订单？",
+      "category": "fact",
+      "requiredFacts": [
+        "进入待定队列",
+        "扣款不等于确认",
+        "不换日重建原单",
+        "不给可赎份额"
+      ],
+      "classification": "improved",
+      "A": {
+        "answer": "不可以。登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "前三项正确，漏掉gold要求的不给可赎份额，故answerCorrect=false。唯一引用真实且完整覆盖四项规则，所以引用充分性为true、引用维度4；答案遗漏与证据充分分别判断。无数值要求。"
+      },
+      "B": {
+        "answer": "不可以。登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "四项必要处理及恢复后按公告处理均完整。唯一引用含暂停与已受理单的整段规则，可支持全部事实，未把扣款当确认；无数值要求，数值维度不适用。"
+      }
+    },
+    {
+      "questionId": "val-03-q02",
+      "split": "validation",
+      "documentId": "val-03",
+      "question": "砾舟演练原单的10.4万美元发票与11.44万美元保险符合金额和保险生效条件吗？",
+      "category": "cross-section",
+      "requiredFacts": [
+        "发票在9.5万至10.5万美元内",
+        "保险110%即11.44万美元",
+        "生效不迟于9月10日"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "原文仅记载演练单据组中发票金额为10.4万美元、保险金额为11.44万美元且于9月10日生效，但未给出信用证金额上限、发票金额与保险金额之间的比例要求或保险生效条件，因此无法判断是否符合金额和保险生效条件。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "citedEvidenceRecall": 0.3333333333333333,
+        "reviewNotes": "原文明确有容差、110%投保及生效期限，声称未提供与全文矛盾。引用真实支持其复述的演练输入，因此该条citationSupported为true；不支持其核心无法判断理由，也不足联合支持三个必要结论。"
+      },
+      "B": {
+        "answer": "符合。原单发票金额为10.4万美元；保险金额11.44万美元，正好是发票金额的110%，且币种相同，保险于9月10日生效，不迟于装船批注日，满足信用证关于按发票金额110%投保、保险生效不迟于装船批注日的要求。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "citedEvidenceRecall": 0.3333333333333333,
+        "reviewNotes": "保险部分正确，但问题还要求发票金额符合性，缺少必要容差范围，笼统“符合”不足替代。引文1支持保险要求，引文2支持演练金额和生效日期；两条均未提供金额容差规则，联合不充分。"
+      }
+    },
+    {
+      "questionId": "val-03-q03",
+      "split": "validation",
+      "documentId": "val-03",
+      "question": "砾舟只将演练发票改成10.6万美元，可凭正负5%容差通过吗？",
+      "category": "condition",
+      "requiredFacts": [
+        "最高10.5万美元",
+        "10.6万美元超限"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "原文明确载明容差及修订金额，资料不足拒答不成立；无引用，也未提供任一必要结论。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "完整原文明确给出容差和修订单金额，拒答无依据；无引用，不能支持必要结论。"
+      }
+    },
+    {
+      "questionId": "val-03-q04",
+      "split": "validation",
+      "documentId": "val-03",
+      "question": "砾舟审查发现不符时可否等待申请人同意后再算五日？通知须包含什么？",
+      "category": "procedure",
+      "requiredFacts": [
+        "收单后5个银行工作日",
+        "征求意见不延长",
+        "一次列全不符点",
+        "说明保管或退还方式"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "不可以。向申请人征求接受不符点意见不延长5日审查期限。发现不符时应一次列全已识别不符点，发出拒付通知并说明单据保管或退还方式。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "通知内容和不可延长结论正确，但必要期限口径不完整。引用从发现不符开始，不含收单后5个银行工作日的定义，不能弥补该缺项。"
+      },
+      "B": {
+        "answer": "不可以。向申请人征求接受不符点意见不延长5日审查期限。发现不符应一次列全已识别不符点，发出拒付通知并说明单据保管或退还方式。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "主处置正确，但完整必要期限未回答。所引片段从“发现不符”开始，未含收单后5个银行工作日的定义；不能仅凭5日推定单位。"
+      }
+    },
+    {
+      "questionId": "val-04-q01",
+      "split": "validation",
+      "documentId": "val-04",
+      "question": "绛帆演算甲应清偿多少，最终退投保人多少元？",
+      "category": "arithmetic",
+      "requiredFacts": [
+        "清偿8420元",
+        "退投保人580元"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "甲应清偿额为未偿本金8000元＋截至结算日利息120元＋固定解约手续费300元，合计8420元。保险人实收退费9000元，依次抵扣已发生利息120元、手续费300元、未偿本金8000元后，剩余160元退投保人。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "三条引用分别支持输入、清偿组成和抵扣顺序，均有实际局部支持；联合不能支持错误的160元退款，按正确口径应退580元。"
+      },
+      "B": {
+        "answer": "甲应清偿额为8000元本金＋120元已发生利息＋300元固定解约手续费＝8420元。保险人实收退费9000元，依次抵扣后剩余600元，因此最终退投保人600元。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "三条引文有清偿组成、演算输入及退余额规则的实际局部支持，但无法支持600元退款；核心减法错误。"
+      }
+    },
+    {
+      "questionId": "val-04-q02",
+      "split": "validation",
+      "documentId": "val-04",
+      "question": "绛帆演算乙退费7600元后，还欠多少？款项先后抵什么？",
+      "category": "arithmetic",
+      "requiredFacts": [
+        "先利息120元再手续费300元再本金",
+        "抵本金7180元",
+        "补齐820元"
+      ],
+      "classification": "improved",
+      "A": {
+        "answer": "演算乙未偿本金8000元、截至结算日利息120元，实收退费7600元。按退费流向，款项依次抵扣已发生利息120元、300元手续费、未偿本金，合计需清偿8420元；7600元不足，尚欠820元，由投保人补齐。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "顺序和最终欠款正确，未给冻结要求的7180元本金抵扣额；该值可由所给数据推出，存在将隐含推导视作充分的评判分歧，本次按必要数值未表达记缺失。引用联合足以支持全部正确计算所需规则和输入。"
+      },
+      "B": {
+        "answer": "演算乙中，未偿本金为8000元，截至结算日利息为120元，固定解约手续费为300元，应清偿总额为8420元。实收退费7600元后，尚欠820元，由投保人补齐。款项依次抵扣：先抵已发生利息120元，再抵300元手续费，最后抵未偿本金；因此7600元中先抵利息120元、手续费300元，余下7180元抵本金，本金尚余820元。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "总应清偿8420元、本金抵扣和剩余欠款均正确，两段引用覆盖演算输入与抵扣规则。"
+      }
+    },
+    {
+      "questionId": "val-04-q03",
+      "split": "validation",
+      "documentId": "val-04",
+      "question": "绛帆解约时可收未来未发生利息、重复退保损失或管理费吗？",
+      "category": "fact",
+      "requiredFacts": [
+        "不收未来利息",
+        "不重复扣退保损失",
+        "不重复收管理费"
+      ],
+      "classification": "improved",
+      "A": {
+        "answer": "不可以。解约结算仅包括截至结算日已发生的融资利息和固定解约手续费300元；未发生的未来利息不提前收取；保单退保损失已体现在保险人退费净额中，融资方不得以同一名目再扣一次；正常分期的账户管理费不在解约结算中重复征收。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "三项所问禁收规则均答对，但“仅包括”造成实质清偿范围错误；引文支持禁收规则和300元，不能支持排除本金。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。"
+      },
+      "B": {
+        "answer": "不可以。解约应清偿额仅由未偿融资本金、截至结算日已发生的融资利息和固定解约手续费300元构成；未发生的未来利息不提前收取，保单退保损失已体现在保险人退费净额中，融资方不得以同一名目再扣一次，正常分期的账户管理费也不在解约结算中重复征收。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "清偿额列入本金、已发生利息和300元手续费，三项禁止重复或提前收费均完整且有引用。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。"
+      }
+    },
+    {
+      "questionId": "val-04-q04",
+      "split": "validation",
+      "documentId": "val-04",
+      "question": "绛帆客户收到保险试算书但退费还没到账，是否已经降低融资本金？",
+      "category": "cross-section",
+      "requiredFacts": [
+        "未实收不算还本",
+        "7.2%年单利",
+        "实际天数/360"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "没有。退费未实收前只登记预计款，不能当作本金已经偿还；且试算书可能因结算日期变动而变化，不得提前制作“结清”证明。因此收到保险试算书但退费尚未到账，不能视为融资本金已经降低。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.6666666666666666,
+        "contextEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "reviewNotes": "核心未还本判断正确，但漏两项冻结必要事实；两条引文支持该判断及试算书限制，均未覆盖继续计息条款。"
+      },
+      "B": {
+        "answer": "没有。退费未实收前只登记预计款，不能当作本金已经偿还；保险人的试算书可能因结算日期变动而变化，也不得提前制作“结清”证明。因此仅收到试算书、退费尚未到账时，未偿融资本金并未降低。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "reviewNotes": "未降低本金的主结论正确，但遗漏冻结必要计息事实；唯一引用也止于操作核对段，未含利息口径。"
+      }
+    },
+    {
+      "questionId": "val-05-q02",
+      "split": "validation",
+      "documentId": "val-05",
+      "question": "栖衡少交演练接受950吨，货款、违约赔偿、担保外补赔各多少？",
+      "category": "cross-section",
+      "requiredFacts": [
+        "货款76000元",
+        "赔偿600元",
+        "担保外补赔100元",
+        "担保不自动抵正常货款"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "根据原文，少交演练的合同名义为1000吨、单价80元/吨，交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨；卖方已缴担保款500元，没有迟延费。原文未给出货款、违约赔偿及担保外补赔的具体计算公式或金额，因此无法据此算出各项数额。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.25,
+        "reviewNotes": "引文支持所复述的演练输入，但不能支持“原文无公式”的拒答理由；完整原文充分可答，且引用缺货款、差额平仓及担保划付条款。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "完整原文具备所有输入、计算和担保规则，无根据拒答，必要事实与引用均缺失。"
+      }
+    },
+    {
+      "questionId": "val-06-q01",
+      "split": "validation",
+      "documentId": "val-06",
+      "question": "Cedar演算中可分配现金多少？税款专户与未收销售款算吗？",
+      "category": "arithmetic",
+      "requiredFacts": [
+        "150千元",
+        "排除税款专户20千元",
+        "排除未收销售款30千元"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "原文只给出可分配现金的计算口径：以期初非受限现金余额加当期收款为起点，并明确排除税款专户中的资金和未收到的销售款；已签署的设备销售合同不等于已收现金。原文未给出Cedar的具体金额，因此无法计算具体数额。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "口径问题回答正确，但以不存在金额为由未完成可计算的演算；引用只支持原则与专户排除，缺少演算数值。"
+      },
+      "B": {
+        "answer": "原文未给出Cedar可分配现金的具体金额，只说明了计算口径：以期间收款加上期初未受限现金余额为起点，并明确排除税款专户中的资金和未收到的销售款；已签署的设备销售合同不等于已收现金。因此税款专户与未收销售款均不计入可分配现金。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "原则问题有回答，演算金额未作答且对原文信息是否存在判断错误；两条引用只覆盖口径与专户，不能联合支持全部必要数值。"
+      }
+    },
+    {
+      "questionId": "val-06-q02",
+      "split": "validation",
+      "documentId": "val-06",
+      "question": "Cedar演算最终费用、优先利息、补储备、次级实付和留存现金各是多少？",
+      "category": "cross-section",
+      "requiredFacts": [
+        "费用5千元",
+        "优先利息60千元",
+        "补储备55千元至70千元",
+        "次级实付0",
+        "留存30千元"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "全文已有完整演算条件，无依据拒答，不是正确的资料不足处置。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "原文覆盖现金口径、顺序、触发与演算数值，拒答没有依据。"
+      }
+    },
+    {
+      "questionId": "val-06-q05",
+      "split": "validation",
+      "documentId": "val-06",
+      "question": "Cedar储备金临时动用能付优先欠息或次级利息吗，谁批准？",
+      "category": "exception",
+      "requiredFacts": [
+        "只补优先本期利息短缺",
+        "不能付欠息次级或费用",
+        "受托人与监督岗双批"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "根据原文，储备金动用请求必须针对具体的当期优先利息缺口，并需展示受托人费用步骤后的现金状况；仅笼统称信托需要流动性不足以构成允许用途，审查人应核查请求用途而非假定任何标注为优先的金额都可获资金。原文还明确，治愈本身不会把此前被暂停的次级利息转为优先欠息。因此，储备金临时动用不能用于支付优先欠息或次级利息，只能用于当期优先利息缺口。批准方面，原文要求两项批准作为不同决定分别记录，并注明各审查人所审阅的包版本，准备人不能把一项批准复制到另一角色的字段中。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "用途限制基本准确，问题所问谁批准未回答；引用没有列出受托人与监督岗身份。条件维度扣除审批主体遗漏，数值不适用。"
+      },
+      "B": {
+        "answer": "根据原文，储备金动用请求必须针对具体的当期优先利息缺口（current senior interest shortfall），并需展示受托人费用步骤后的现金状况；仅笼统称信托需要流动性不足以构成允许用途。审核人应核查请求用途，而不能假定任何标注为“优先”的金额都可动用。原文未明确允许用储备金支付优先欠息或次级利息；相反，它区分了当期利息、结转欠息和资本余额，且资本金额不能插入当期利息行。批准方面，原文要求两项必需批准分别记录为不同决定，并注明各审核人所看的包版本；准备人不能把一项批准复制到另一角色的字段。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "回答有部分正确操作要求，但对禁付结论过度保留且漏答谁批准；两条引用支持当期缺口及分类记录，缺少明确禁付与批准主体条款。数值不适用。"
+      }
+    },
+    {
+      "questionId": "val-06-q08",
+      "split": "validation",
+      "documentId": "val-06",
+      "question": "Cedar储备余额已高于目标，补储备步骤会自动产生负补提并增加分配吗？",
+      "category": "table",
+      "requiredFacts": [
+        "补提下限零",
+        "超额不自动释放",
+        "独立释放指令"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "不会。补储备按当前储备余额与适用目标之间的差额计算，并以零为下限；因此当余额高于目标时，补提额为零，不会形成负补提，也不会因此增加分配。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "主结论正确但独立释放条件遗漏；引用截于零下限，未提供该释放条件。"
+      },
+      "B": {
+        "answer": "不能。补储备使用当前储备余额与适用目标之间的差额，并以零为下限；因此余额高于目标时不会产生负补提，也不会据此增加分配。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "没有错误声称永不释放，但遗漏独立释放机制；引用只到零下限，未覆盖独立释放条款。"
+      }
+    },
+    {
+      "questionId": "val-07-q01",
+      "split": "validation",
+      "documentId": "val-07",
+      "question": "汀禾SHA演算的本行手续费、电讯费、客户人民币总支出和学校美元实收各是多少？",
+      "category": "arithmetic",
+      "requiredFacts": [
+        "手续费72元",
+        "电讯费80元",
+        "总支出72152元",
+        "学校实收9985美元"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "本题的费用规则、承担方式与全部输入均在完整原文；整体以依据不足拒答不正确。没有引用支持任何必要结果。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "完整原文提供SHA费用承担、本行费率和演算输入，可答却整体拒答；四项必要事实及引用均缺失。未编造金额，但不构成正确作答。"
+      }
+    },
+    {
+      "questionId": "val-07-q02",
+      "split": "validation",
+      "documentId": "val-07",
+      "question": "汀禾同额BEN演算，本行费用折美元扣多少，学校实收多少？",
+      "category": "cross-section",
+      "requiredFacts": [
+        "本行费152元",
+        "折21.11美元",
+        "实收9963.89美元"
+      ],
+      "classification": "regressed",
+      "A": {
+        "answer": "按文中同额BEN演算：本金10000美元、购汇价7.20，汇出手续费为10000×7.20×0.1%=72元，未低于50元、也未超过260元；加电讯费80元，本行人民币费用合计152元，按同一成交价折回美元为152÷7.20≈21.11美元，到分四舍五入后从本金扣除。中间行实费15美元也从本金扣除，学校收款行未另扣费，因此学校实收约为10000−21.11−15=9963.89美元。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 0.6666666666666666,
+        "contextEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "reviewNotes": "BEN扣本金、手续费上下限及四舍五入口径均正确。引用1提供本金、成交价与中间行费，引用2提供本行费率和扣费规则，联合充分；未混用SHA实收。"
+      },
+      "B": {
+        "answer": "按文中同额BEN演算：本金10000美元、购汇价7.20元/美元。本行费用为汇出手续费加电讯费：手续费按10000×7.20×0.1%＝72元，电讯费80元，合计152元；按同一成交价折回美元为152÷7.20≈21.11美元，从本金扣除。学校实收还需扣除中间行费用；文中该笔BEN演算未给出中间行扣费金额，因此无法据此算出学校实收的具体数额。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.6666666666666666,
+        "contextEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "reviewNotes": "本行费用计算正确，但声称BEN未给中间行扣费与原文及引用2的“相同中间行扣费”矛盾。引用1、3支持折汇和扣本金额规则；引用2虽有部分正确输入，却反驳其拒算核心理由，故该项为false。三片段联合实际包含全部计算依据，completeCitationSupport为true；这不使错误拒算变正确。"
+      }
+    },
+    {
+      "questionId": "val-07-q03",
+      "split": "validation",
+      "documentId": "val-07",
+      "question": "汀禾OUR的260元手续费上限包含中间行实费吗，能保证入账速度吗？",
+      "category": "table",
+      "requiredFacts": [
+        "260元不含中间行实费",
+        "向汇款人按实追收",
+        "不保证入账速度"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "不包含。OUR另有中间行实费，不在260元上限内；同时OUR只约定费用承担，不承诺中间行路径和学校入账速度。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.5,
+        "reviewNotes": "上限范围及到账不保证均正确，缺必要的向汇款人按实追收。引用片段未包含OUR费用承担表行，只载明另有实费和不保速度，因此支持已答断言但不足以覆盖全部必要事实。"
+      },
+      "B": {
+        "answer": "不包含。OUR另有中间行实费，不在260元上限内；同时OUR只约定费用承担，不承诺中间行路径和学校入账速度。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.5,
+        "reviewNotes": "漏掉必要的中间行实费承担方和按实追收规则。唯一引用确实支持上限范围和不保速度，但从BEN行附近开始，缺OUR承担方式表行，联合支持不足。"
+      }
+    },
+    {
+      "questionId": "val-08-q01",
+      "split": "validation",
+      "documentId": "val-08",
+      "question": "砚汐演练在集中度限制前，甲乙丙各有多少合格净额，全池多少？",
+      "category": "arithmetic",
+      "requiredFacts": [
+        "甲45万元",
+        "乙30万元",
+        "丙25万元",
+        "全池100万元"
+      ],
+      "classification": "improved",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "完整原文提供了演练全部输入与净额规则，资料不足拒答无依据；无引用且四项必要金额均缺失。"
+      },
+      "B": {
+        "answer": "集中度限制前：甲为45万元（60万－已确认折让10万－已回款5万）；乙为30万元（35万－逾期91日的5万）；丙为25万元；全池合计100万元。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "所引片段同时含净额扣除规则及演练输入，计算及单位正确，未提前应用集中度。"
+      }
+    },
+    {
+      "questionId": "val-08-q02",
+      "split": "validation",
+      "documentId": "val-08",
+      "question": "砚汐演练执行集中度后可融资产基数与新增融资上限是多少万元？",
+      "category": "cross-section",
+      "requiredFacts": [
+        "单买方上限40万元",
+        "甲剔除5万元",
+        "集中度后95万元",
+        "新增融资36万元",
+        "不循环重算分母"
+      ],
+      "classification": "improved",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.5,
+        "contextEvidenceRecall": 0.5,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "完整原文有全部输入及规则，可作答却无依据拒答，无引用且必要事实全缺。"
+      },
+      "B": {
+        "answer": "按演练数据：买方甲合格净额为60−10−5=45万元；买方乙35万元中剔除逾期91日的5万元，留池30万元；买方丙25万元。集中度前全池合格净额为45+30+25=100万元，单一买方上限为40万元。买方甲超出5万元、买方乙不超、买方丙不超，故集中度后可融资产基数为100−5=95万元。新增融资上限=95×80%−40=36万元。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "完整展示先净额、后集中度、再融资扣本金的计算链；接受单次固定分母的实际推导为不循环重算的语义表达，未要求逐字复述。引用涵盖所有规则和输入。"
+      }
+    },
+    {
+      "questionId": "val-08-q05",
+      "split": "validation",
+      "documentId": "val-08",
+      "question": "砚汐入池后新折让使融资超额，何时重算、向谁通知、多久补足？未来订单能补池吗？",
+      "category": "procedure",
+      "requiredFacts": [
+        "发现当日重算",
+        "通知保理风控岗",
+        "两个工作日内补款或合格替代应收",
+        "未确认未来订单不能补池"
+      ],
+      "classification": "improved",
+      "A": {
+        "answer": "新折让发生后应重算对应发票净额并通知保理风控岗；若因此造成融资超额，须在两个工作日内补款或补入经审核合格的替代应收。未经确认的未来订单不能补池，替代应收仍须通过交付、确权、逾期和集中度检查。",
+        "grounded": true,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "问题明确问何时重算，“发生后”不足以替代“发现当日”。引用从“算对应发票净额”开始，恰好缺该时限，其余处置及替代资产检查有支持。"
+      },
+      "B": {
+        "answer": "核定后新增折让，须在发现当日重算对应发票净额，并通知保理风控岗；若因此造成融资超额，应在两个工作日内补款或补入经审核合格的替代应收。未经确认的未来订单不能补池；替代应收仍须经过交付、确权、逾期和集中度检查。",
+        "grounded": true,
+        "answerCorrect": true,
+        "evidenceRecall": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "reviewNotes": "重算起点、通知对象、补足方式和期限均完整，额外的替代应收检查也正确；引用含全部处置要求。"
+      }
+    },
+    {
+      "questionId": "val-08-q08",
+      "split": "validation",
+      "documentId": "val-08",
+      "question": "砚汐买方误付卖方普通账户，卖方可先扣自家费用吗？多久划转？",
+      "category": "condition",
+      "requiredFacts": [
+        "次工作日",
+        "全额划至保理专户",
+        "原始收款凭证",
+        "不能先扣自家费用"
+      ],
+      "classification": "both_incorrect",
+      "A": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "原文回款异常处置已完整载明，拒答无依据，全部必要事实缺失且无引用。"
+      },
+      "B": {
+        "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+        "grounded": false,
+        "answerCorrect": false,
+        "evidenceRecall": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "reviewNotes": "完整原文已提供四项处置要求，无依据拒答不正确；无任何引用。"
+      }
+    }
+  ]
+}

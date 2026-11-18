@@ -13,3 +13,5 @@ target/
 
 __pycache__/
 *.pyc
+evaluation/dataset/.work/
+evaluation/runs/.cost-ledger.lock

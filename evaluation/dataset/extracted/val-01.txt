@@ -1,0 +1,54 @@
+ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01
+All entities and trades in this schedule are fictional. Currency amounts are in thousands
+of CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.
+Collateral value is the clean market value after the applicable haircut; it is not the
+security's face value.
+HAIRCUT SCHEDULE
+Sovereign bonds with remaining maturity up to 1 year: 2%.
+Sovereign bonds with remaining maturity above 1 year: 4%.
+Approved corporate bonds: 9%.
+A corporate issue on the watch list receives an additional 6 percentage points. A missing
+quote makes that issue ineligible, rather than assigning a zero haircut. The watch-list
+add-on never applies to sovereign bonds.
+VALUATION AND ROUNDING
+Each issue is valued separately: clean market value multiplied by one minus its total
+haircut. Sum the issue values without intermediate rounding, then round the total down to
+the nearest 1 thousand. Accrued bond coupon is excluded. Exposure, in contrast, includes
+accrued repo interest. The two kinds of accrued amounts must not be interchanged.
+MARKET RECORDS
+The valuation analyst stores the quote time and source with the issue code. A dealer's
+indicative email may explain a price change, but is not a substitute for the approved
+closing quote. A stale quote is treated under the missing-quote rule if it is outside the
+permitted feed window. Custody receipts describe location and ownership; they do not
+establish a market price. Reconciliation staff keep the exposure file separate from the
+collateral file so that a coupon receipt cannot accidentally reduce repo principal.
+MARGIN CALL
+Deficit is exposure minus rounded collateral value. A call is issued only when the deficit
+is strictly greater than 20. A deficit equal to 20 is logged but not called. The transfer
+due on a call is the entire deficit, not just the portion above 20. The minimum transfer
+threshold is a trigger, not a deductible.
+VALUATION EXERCISE
+Exposure is 1,000. Collateral consists of a long sovereign bond worth 500 and a
+watch-listed approved corporate bond worth 500. Both have valid quotes. There are no other
+securities, cash credits or pending transfers. A transfer accepted after the call is
+reconciled as a new movement; it is not assumed in this snapshot.
+CALL TIMING
+A call delivered by 11:00 inclusive is due at 15:00 on the same business day. A later call
+is due at 10:00 on the next business day. Delivery means receipt in the agreed margin
+inbox, not when an analyst began drafting. A call disputed before its deadline remains due
+for its undisputed amount; the disputed part is escalated to both valuation leads.
+SUBSTITUTION CONTROL
+A substitution requires prior counterparty consent and receipt of eligible replacement
+collateral with adjusted value at least equal to the value released. The old security is
+released only after custody confirms receipt. An email promising delivery is insufficient.
+During a feed outage no substitution using an unquoted replacement is allowed, even if its
+face value exceeds the old security's value.
+VERSION CONTROL
+OR-5 used a flat 10% haircut on approved corporate bonds without a watch-list add-on. OR-6
+replaces that rule for every valuation dated on or after 2026-10-01, including trades
+opened earlier. Sovereign haircuts are unchanged. An old trade date does not preserve the
+OR-5 corporate haircut.
+INFORMATION LIMIT
+This schedule does not disclose actual security identifiers, the repo counterparty's legal
+entity code, or a forecast of tomorrow's bond price. The exercise is a closed fictional
+snapshot and does not authorize real transfers.

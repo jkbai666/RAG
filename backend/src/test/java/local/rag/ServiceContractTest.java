@@ -46,7 +46,10 @@ class ServiceContractTest {
     }
     @BeforeEach void setup() throws Exception {
         var ds=new JdbcDataSource(); ds.setURL("jdbc:h2:mem:"+UUID.randomUUID()+";MODE=MySQL;DB_CLOSE_DELAY=-1");
-        try(var c=ds.getConnection()) { ScriptUtils.executeSqlScript(c,new ClassPathResource("db/migration/V1__initial.sql")); }
+        try(var c=ds.getConnection()) {
+            ScriptUtils.executeSqlScript(c,new ClassPathResource("db/migration/V1__initial.sql"));
+            ScriptUtils.executeSqlScript(c,new ClassPathResource("db/migration/V3__document_chunking_metadata.sql"));
+        }
         repo=new RagRepository(new JdbcTemplate(ds),new TransactionTemplate(new DataSourceTransactionManager(ds)));
         gateway=new FakeGateway();
         service=new RagService(repo,configured(),new DocumentParser(),gateway,json); service.recover();

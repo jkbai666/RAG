@@ -1,0 +1,177 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 1673 >>
+stream
+BT /F1 10 Tf 48 788 Td 13 TL
+(MORROW ACQUIRING | OPERATING NOTE M-4 | 2026-08-01) Tj
+T*
+(Fictional merchant settlement rules. Currency: CNY. A settlement batch and a dispute case) Tj
+T*
+(have different identifiers. A case reference is not a payout instruction. This note governs) Tj
+T*
+(reserve movements, not cardholder credit limits.) Tj
+T*
+() Tj
+T*
+(BATCH CLOCK) Tj
+T*
+(Transactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters) Tj
+T*
+(the next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and) Tj
+T*
+(the published closed days are skipped. The examples below assume no closed days other than) Tj
+T*
+(weekends.) Tj
+T*
+() Tj
+T*
+(RESERVE MATRIX) Tj
+T*
+(Standard merchant: withhold 6% of gross accepted sales.) Tj
+T*
+(Elevated merchant: withhold 12% of gross accepted sales.) Tj
+T*
+(A merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve) Tj
+T*
+(base of the batch in which they are paid. Transaction fees are separate deductions and do) Tj
+T*
+(not reduce the reserve base either.) Tj
+T*
+() Tj
+T*
+(LEDGER DISCIPLINE) Tj
+T*
+(Operations reconcile accepted sale IDs to the terminal report before sending the batch for) Tj
+T*
+(review. A void made before acceptance never becomes a gross sale. A refund made after) Tj
+T*
+(acceptance is a separate debit, even when its amount equals the original sale. Reviewers) Tj
+T*
+(may attach card scheme messages as context; those messages cannot replace a matched sale) Tj
+T*
+(ID. A manual note does not change an accepted timestamp. Archived batch reports retain the) Tj
+T*
+(original risk flag to explain historical reserves.) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 1229 >>
+stream
+BT /F1 10 Tf 48 788 Td 13 TL
+(WORKED BATCH) Tj
+T*
+(A Standard merchant has gross accepted sales of 50,000, refunds of 8,000, transaction fees) Tj
+T*
+(of 500 and a matured old reserve release of 1,000. No other debit applies. Payout equals) Tj
+T*
+(gross sales minus refunds, fees and the new reserve, plus the matured release. An unrelated) Tj
+T*
+(open dispute has no deduction until a provisional debit is posted.) Tj
+T*
+() Tj
+T*
+(DISPUTE PATH) Tj
+T*
+(A provisional dispute debit is posted when a case is opened with a scheme debit notice. The) Tj
+T*
+(merchant has 7 calendar days after notice to submit a matched receipt and delivery proof. A) Tj
+T*
+(response with only a receipt is incomplete. Winning a case reverses the provisional debit;) Tj
+T*
+(it does not create another sale or reduce a reserve that was correctly withheld.) Tj
+T*
+() Tj
+T*
+(RESERVE RELEASE) Tj
+T*
+(Each reserve lot matures 90 calendar days after its batch date. Release requires maturity) Tj
+T*
+(and no open dispute linked to that lot. An unlinked dispute does not block that lot. Lots) Tj
+T*
+(are tracked separately: one blocked lot cannot justify retaining every other mature lot. No) Tj
+T*
+(interest is paid on held reserves under M-4.) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 993 >>
+stream
+BT /F1 10 Tf 48 788 Td 13 TL
+(OUTAGE EXCEPTION) Tj
+T*
+(A documented terminal clock outage may move an accepted transaction back by one batch only) Tj
+T*
+(after both reconciliation and risk officers approve. It cannot move a transaction across) Tj
+T*
+(two batches. The outage exception does not shorten T+2 settlement or the 90-day reserve) Tj
+T*
+(maturity period.) Tj
+T*
+() Tj
+T*
+(VERSION REGISTER) Tj
+T*
+(M-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.) Tj
+T*
+(Existing M-3 reserve lots keep their original amounts; they are not topped up. The 90-day) Tj
+T*
+(maturity rule is unchanged. Do not recalculate an old lot using the current withholding) Tj
+T*
+(rate.) Tj
+T*
+() Tj
+T*
+(SCOPE LIMIT) Tj
+T*
+(This fictional note does not list actual merchant bank account numbers, the card scheme's) Tj
+T*
+(arbitration fee, or the issuer's internal fraud score. Those items cannot be derived from) Tj
+T*
+(reserve percentages or settlement dates.) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000133 00000 n 
+0000000230 00000 n 
+0000001955 00000 n 
+0000002081 00000 n 
+0000003362 00000 n 
+0000003488 00000 n 
+0000004532 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+4658
+%%EOF

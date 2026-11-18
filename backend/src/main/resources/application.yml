@@ -40,6 +40,15 @@ rag:
   chat-context-budget: ${CHAT_CONTEXT_BUDGET:7000}
   chunk-size: 800
   chunk-overlap: 100
+  # UC-004: experimental AI chunking; RULE stays default until evaluation gates pass.
+  chunking:
+    strategy: RULE
+    context-budget: 16000
+    max-output-tokens: 2048
+    max-units-per-window: 120
+    max-calls-per-document: 24
+    request-timeout-seconds: 60
+    deadline-seconds: 300
   min-score: ${RETRIEVAL_MIN_SCORE:0.6}
 logging:
   level:

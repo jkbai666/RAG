@@ -1,0 +1,111 @@
+{
+  "command" : "mvn test",
+  "startedAt" : "2026-11-18T09:15:40.8791901Z",
+  "skipped" : 1,
+  "finishedAt" : "2026-11-18T09:15:55.6239900Z",
+  "tests" : 198,
+  "schemaVersion" : 1,
+  "failures" : 0,
+  "passed" : true,
+  "realApiTestsDisabled" : true,
+  "errors" : 0,
+  "suites" : [ {
+    "failures" : 0,
+    "tests" : 5,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "0441efe030853032fbb623b13efc71d6246a7151c5fe08bb5aa2b28330acd8c5",
+    "name" : "local.rag.ChunkingImportMetadataTest"
+  }, {
+    "failures" : 0,
+    "tests" : 7,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "1ed3c0dbe12309333e06b6658f6a29a308ebeadda5e5afe3d7e8aa01620d8166",
+    "name" : "local.rag.ChunkingMetadataTest"
+  }, {
+    "failures" : 0,
+    "tests" : 60,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "e23295a6e30783e2c62e7d0fb7777a97393a69420b0f63fb42f060942a4202ca",
+    "name" : "local.rag.ChunkingServiceTest"
+  }, {
+    "failures" : 0,
+    "tests" : 2,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "dab096591b1199c7eb7cc1c7e45de7cad3be043aa3b5b3c01d041237ca19f96f",
+    "name" : "local.rag.CloudModelConfigurationTest"
+  }, {
+    "failures" : 0,
+    "tests" : 15,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "a7eec476123e21645e4a787821d25c0109cb73c54eafc5d1424c4fa0779f106c",
+    "name" : "local.rag.CloudModelProtocolTest"
+  }, {
+    "failures" : 0,
+    "tests" : 1,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "eca4401a17efc2901d90a52fded6dcbf72f3918e65937ab654033cb1202a8025",
+    "name" : "local.rag.CloudModelStartupTest"
+  }, {
+    "failures" : 0,
+    "tests" : 18,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "3b2ade301acd4fcb580fb4794e4a425a4e8cecdec8f4dda079709c2eae0a30d5",
+    "name" : "local.rag.ConversationIntegrationTest"
+  }, {
+    "failures" : 0,
+    "tests" : 45,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "6b583cd22f45be67a825904b0fe9c60f685c1fe3dd3fe370b3da7548cdf8d6dd",
+    "name" : "local.rag.DocumentParserTest"
+  }, {
+    "failures" : 0,
+    "tests" : 12,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "f28606d160fbc53e8a645be060644276d98041ac51f295bfffacb21aa05952f1",
+    "name" : "local.rag.EvaluationBudgetTest"
+  }, {
+    "failures" : 0,
+    "tests" : 3,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "56afee76d0e0c99aa48cfa6c67dc92ae9f55c672725eaae51827c2ec9a8f9e72",
+    "name" : "local.rag.EvaluationConfigTest"
+  }, {
+    "failures" : 0,
+    "tests" : 4,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "567a2ee64c6ea7651329485c9d04df72fe389cf55063c338a87fec3cb6a9106b",
+    "name" : "local.rag.EvaluationMetricsTest"
+  }, {
+    "failures" : 0,
+    "tests" : 1,
+    "skipped" : 1,
+    "errors" : 0,
+    "sha256" : "fbd26ef06f330055ff114b1e456256b9d779c5c0755823d9da0a8235b43ad32f",
+    "name" : "local.rag.RealServicesIntegrationTest"
+  }, {
+    "failures" : 0,
+    "tests" : 2,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "150244452cea59fa521a69bdf5745bfffce0cbf66247faf33cead6086922aaeb",
+    "name" : "local.rag.RetrievalTraceTest"
+  }, {
+    "failures" : 0,
+    "tests" : 23,
+    "skipped" : 0,
+    "errors" : 0,
+    "sha256" : "43ba52e2d07d80fb4106c745092efc7847f3fcf0e1d061126b5fc9ef167dd2e2",
+    "name" : "local.rag.ServiceContractTest"
+  } ]
+}

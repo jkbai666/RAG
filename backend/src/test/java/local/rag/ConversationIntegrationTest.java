@@ -198,17 +198,19 @@ class ConversationIntegrationTest {
         assertThat(lastAnswerPrompt().path("context").get(0).path("id").textValue()).isEqualTo("other-chunk");
         assertThat(lastAnswerPrompt().path("history").toString()).doesNotContain("当前有效文档原文","sources");
     }
-    @Test void v2UpgradesExistingV1WithoutChangingKnowledgeDocumentsOrChunks() {
+    @Test void v2AndV3UpgradeExistingV1WithoutChangingKnowledgeDocumentsOrChunks() {
         var existing=new JdbcDataSource(); existing.setURL("jdbc:h2:mem:"+UUID.randomUUID()+";MODE=MySQL;DB_CLOSE_DELAY=-1");
         Flyway.configure().dataSource(existing).locations("classpath:db/migration").target("1").load().migrate();
         var oldDb=new JdbcTemplate(existing);
         var oldTx=new TransactionTemplate(new DataSourceTransactionManager(existing));
         var oldDocs=new RagRepository(oldDb,oldTx);
-        oldDocs.insertDocument("preserved","preserved.txt","txt",5);
+        oldDb.update("INSERT INTO rag_documents(id,file_name,format,size_bytes,status,chunk_count,created_at) VALUES('preserved','preserved.txt','txt',5,'PROCESSING',0,CURRENT_TIMESTAMP)");
         oldDocs.insertChunks(List.of(new Chunk("preserved-chunk","preserved",1,"旧原文",null,null))); oldDocs.markReady("preserved",1);
-        var before=oldDocs.getDocument("preserved"); var beforeChunks=oldDocs.chunks("preserved",0,10);
+        var before=oldDb.queryForMap("SELECT * FROM rag_documents WHERE id='preserved'"); var beforeChunks=oldDocs.chunks("preserved",0,10);
         Flyway.configure().dataSource(existing).locations("classpath:db/migration").load().migrate();
-        assertThat(oldDocs.getDocument("preserved")).isEqualTo(before);
+        assertThat(oldDb.queryForMap("SELECT * FROM rag_documents WHERE id='preserved'")).containsAllEntriesOf(before);
+        assertThat(oldDocs.getDocument("preserved").chunkingStrategy()).isEqualTo("LEGACY");
+        assertThat(oldDocs.getDocument("preserved").chunkingFallbackReason()).isNull();
         assertThat(oldDocs.chunks("preserved",0,10)).isEqualTo(beforeChunks);
         var migrated=new ConversationRepository(oldDb,oldTx,json);
         assertThat(migrated.get(migrated.create().id()).exchanges()).isEmpty();

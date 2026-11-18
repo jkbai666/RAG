@@ -45,6 +45,10 @@ java -jar D:\BYS\RAG\backend\target\rag-backend-0.0.1-SNAPSHOT.jar
 | embedding-dimensions | 1024，验证返回维度；float 编码，每个 HTTP 请求最多 8 段 |
 | chroma-collection | rag_qwen_v4_1024；显式 V2、default_tenant/default_database |
 | chunk-size / chunk-overlap | 800 / 100；按段落/句子切块，总上限包含重叠；Unicode code point 计数，重叠小于大小 |
+| chunking.strategy | RULE（默认）或 LLM；只影响新导入，不触发重索引 |
+| chunking.context-budget / max-output-tokens | 16000 / 2048；切块专用，独立于问答参数 |
+| chunking.max-units-per-window / max-calls-per-document | 120 / 24 |
+| chunking.request-timeout-seconds / deadline-seconds | 60 / 300；以剩余整篇时限进一步限制请求超时 |
 
 DeepSeek 请求显式 thinking.type=disabled，并使用 response_format.type=json_object。兼容名称 deepseek-v4-flash 在 2026-10-20 官方文档中路由至 DeepSeek-V4.1-Flash-1017。百炼新账号如需业务空间专属域名，在 YAML 替换完整 base URL。
 
@@ -77,6 +81,10 @@ Flyway V2 增量创建 `rag_conversations`、`rag_conversation_exchanges`，不�
 现有资料不重新索引；新旧策略可在同一个 collection 共存。历史记录在本机保存，必要问答会发送给 DeepSeek；有历史的追问可能多一次生成调用。仅支持单后端实例，不提供跨会话长期记忆或历史清理。
 
 ## 测试
+
+UC-004 将提取、规则/AI 边界选择和原文物化分开。AI 只返回连续单元的结束编号，不接受模型重写的正文；窗口末组带入下一窗口，整篇校验后才写分块。任何窗口失败整篇退回规则。V3 增量记录实际策略及安全回退代码，旧文档是 LEGACY；不修改历史分块、向量或会话。默认 RULE，实验启用须编辑 YAML 并重建、重启，不从 `.local/app.env` 加载该选项。本轮独立配对评测已完成，但验证集 AI 成功率 75% 未达到 90%，没有切换默认策略；详见 UC-004 验证记录。
+
+隔离量化评测入口及预算要求见 [evaluation/README](../evaluation/README.md)。它使用 H2 和独立 Chroma 集合，复用生产问答路径；真实付费运行必须显式启用，不是普通 `mvn test` 的一部分。
 
 新增云端 HTTP 协议测试通过本机服务捕获真实 LangChain4j 请求，验证路径、鉴权、模型名、维度、float、批次、thinking 和 JSON 参数；不调用真实云端厂商。
 

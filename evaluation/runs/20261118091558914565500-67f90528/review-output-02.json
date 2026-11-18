@@ -1,0 +1,2048 @@
+{
+  "reviewer": "blind-review-02",
+  "independent": true,
+  "items": [
+    {
+      "token": "291c89b355db40a6ada61bdda9a17103",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "按保单航段判断",
+          "correct": true,
+          "reason": "以被放弃的原航段及经确认的替代航段为判断对象，按航段处理的语义成立。"
+        },
+        {
+          "fact": "替代须承运人确认",
+          "correct": true,
+          "reason": "明确须承运人确认替代原航段后才沿用原计划时点。"
+        },
+        {
+          "fact": "自行放弃无确认不视为达标",
+          "correct": true,
+          "reason": "明确自行放弃且无替代确认不满足给付条件。"
+        }
+      ],
+      "notes": "按航段判断接受上下文中的等价表达，未要求复述“保单列明”。引文支持替代确认和放弃后果，但缺保障对象为保单列明单次航段的范围依据；4小时仅为题设，不涉及金额计算。 执行记录：agent ID=blind-review-02；评分指令SHA-256=9f31ab3f4366537e24ff84424ef33e8daeb6f2aae17f61699f80e36456e54dac；输入part-02.json SHA-256=58cc605b7ad859861d82b5462f57726df10274651533acef5d05af3f6e36b6a5；底层精确模型版本和温度工具未暴露，不可取得。",
+      "goldIssue": null
+    },
+    {
+      "token": "8e88297a903b420ebd129b048f14c4eb",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "最高10.5万美元",
+          "correct": false,
+          "reason": "未计算10万美元上浮5%的10.5万美元上限。"
+        },
+        {
+          "fact": "10.6万美元超限",
+          "correct": false,
+          "reason": "未判断10.6万美元超过10.5万美元。"
+        }
+      ],
+      "notes": "完整原文明确给出容差和修订单金额，拒答无依据；无引用，不能支持必要结论。",
+      "goldIssue": null
+    },
+    {
+      "token": "010e4095f2494937b3578e93ad4525a9",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供货物实际质量",
+          "correct": true,
+          "reason": "简洁资料不足拒答符合原文不提供实物质量的范围。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "没有由单据合规推断货物完好，也未猜测。"
+        }
+      ],
+      "notes": "不可答题，通用资料不足表述足够，无须复述缺失字段；无伪造正面引用。",
+      "goldIssue": null
+    },
+    {
+      "token": "b203260b914e45e79a26295ed957cd21",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "年度余量300元",
+          "correct": true,
+          "reason": "1800元减1500元得到300元年度余量。"
+        },
+        {
+          "fact": "航段定额700元",
+          "correct": true,
+          "reason": "260完整分钟落入240分钟及以上的700元档。"
+        },
+        {
+          "fact": "实付300元",
+          "correct": true,
+          "reason": "取700元与300元较小值，实付300元。"
+        }
+      ],
+      "notes": "两条引用分别提供定额及年度限额、已赔条件与取小规则，联合完整；未累加档位或重置保单年度余量。",
+      "goldIssue": null
+    },
+    {
+      "token": "6e7322193a03423fa1bbfbda867f7305",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "已签署商业发票两份",
+          "correct": true,
+          "reason": "明确已签署商业发票两份，签署和份数均保留。"
+        },
+        {
+          "fact": "全套清洁已装船海运提单",
+          "correct": true,
+          "reason": "明确全套、清洁、已装船的海运提单。"
+        },
+        {
+          "fact": "保险单正本",
+          "correct": true,
+          "reason": "明确保险单正本。"
+        }
+      ],
+      "notes": "三类文件及商业发票份数完整，引文含交单清单；未以照片替代提单。条件维度评价单据限定，数值维度评价两份。",
+      "goldIssue": null
+    },
+    {
+      "token": "8350fc19a3ca46e38d71abc6b1ca6d6f",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "最终实际起飞减计划起飞",
+          "correct": true,
+          "reason": "明确最终实际起飞时间减保单记载计划起飞时间。"
+        },
+        {
+          "fact": "完整分钟",
+          "correct": true,
+          "reason": "明确按完整分钟计算。"
+        },
+        {
+          "fact": "不用初步估计或到达时间",
+          "correct": true,
+          "reason": "明确排除到达时间差及首次延误估计。"
+        }
+      ],
+      "notes": "核心口径及补充的证明、复核处置均有对应引用支持；无具体数值运算要求，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "e8c8e2a950a7480b8294cd7cd10b2430",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "争议发票整笔挂起",
+          "correct": true,
+          "reason": "明确争议发票整笔挂起核查。"
+        },
+        {
+          "fact": "未确认争议不当作确认折让",
+          "correct": true,
+          "reason": "明确不能把口头争议金额当已确认折让部分扣除后继续融资。"
+        }
+      ],
+      "notes": "正确区分未经确认争议与已确认折让，引用包含完整规则，无数值要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "615a98d27a664daeb363efe98d30401e",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "30个自然日申请",
+          "correct": true,
+          "reason": "航段完成后30个自然日内申请。"
+        },
+        {
+          "fact": "10个自然日补件",
+          "correct": true,
+          "reason": "收到缺件告知后10个自然日内补齐。"
+        },
+        {
+          "fact": "重开仍须审核",
+          "correct": true,
+          "reason": "逾期关闭，可说明申请重开，重开仍核验航段和年度余量。"
+        }
+      ],
+      "notes": "保留两项期限起点及自然日口径，也未将重开等同获赔；两条引用各含所需时限规则。",
+      "goldIssue": null
+    },
+    {
+      "token": "102e727e417146a79f18272eb7752aae",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "甲45万元",
+          "correct": true,
+          "reason": "60−10−5=45万元，扣已确认折让与已回款。"
+        },
+        {
+          "fact": "乙30万元",
+          "correct": true,
+          "reason": "35−5=30万元，排除逾期91日发票。"
+        },
+        {
+          "fact": "丙25万元",
+          "correct": true,
+          "reason": "丙无折让和逾期，25万元。"
+        },
+        {
+          "fact": "全池100万元",
+          "correct": true,
+          "reason": "45+30+25=100万元，为集中度前全池净额。"
+        }
+      ],
+      "notes": "所引片段同时含净额扣除规则及演练输入，计算及单位正确，未提前应用集中度。",
+      "goldIssue": null
+    },
+    {
+      "token": "9c778bd3d2784930b81f3b4ad2e107b8",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "11月9日",
+          "correct": true,
+          "reason": "2026年9月10日后60个自然日为11月9日。"
+        },
+        {
+          "fact": "装船日不计",
+          "correct": true,
+          "reason": "明确装船当日不计，从9月11日开始。"
+        },
+        {
+          "fact": "周末计入",
+          "correct": true,
+          "reason": "连续计算自然日语义已包含周末，不要求另复述“周末”。"
+        }
+      ],
+      "notes": "起算与日期正确；连续自然日接受为周末计入的等价表达，两条引用含明确周末规则；未自行顺延。",
+      "goldIssue": null
+    },
+    {
+      "token": "5cfa68d581e44c7d80e7989c81828d2b",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "仅保单列明买方破产信用风险",
+          "correct": true,
+          "reason": "明确无追索仅覆盖保单列明买方破产信用风险。"
+        },
+        {
+          "fact": "交付瑕疵仍追索卖方",
+          "correct": true,
+          "reason": "明确交付瑕疵等除外风险仍向卖方追索。"
+        }
+      ],
+      "notes": "未把无追索扩大为全部风险买断；两条引用均有追索边界条款，无数值要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "1b9a7c8f74f74921a48ef90dfc6d8178",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "PD-4",
+          "correct": true,
+          "reason": "明确继续适用PD-4。"
+        },
+        {
+          "fact": "到达时点",
+          "correct": true,
+          "reason": "明确以到达时点计算延误。"
+        },
+        {
+          "fact": "签发时间和原有效期决定旧单适用",
+          "correct": true,
+          "reason": "保留6月1日前签发且仍在原有效期内的适用条件。"
+        }
+      ],
+      "notes": "版本按签发时间及有效期判断，未按7月出险时间套新版；引文完整，日期仅作版本条件，数值运算不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "3f4982298ded431ab98d2b2c7cc71144",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "21日窗口到10月1日",
+          "correct": true,
+          "reason": "9月10日不计，9月11日起21个自然日到10月1日。"
+        },
+        {
+          "fact": "最终9月30日",
+          "correct": true,
+          "reason": "受信用证到期日约束，最终9月30日。"
+        },
+        {
+          "fact": "取较早日期",
+          "correct": true,
+          "reason": "明确21日窗口与到期日两者取早。"
+        }
+      ],
+      "notes": "给出窗口及最终日期并解释两道约束；引用包含装船日口径、到期日和取早规则。",
+      "goldIssue": null
+    },
+    {
+      "token": "600d5f84b4c14eaa9551a24522c6207d",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供取消险赔偿额",
+          "correct": true,
+          "reason": "资料不足拒答与原文明示不包含取消险赔偿额一致。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未套用700元延误定额，也未编造取消险赔偿。"
+        }
+      ],
+      "notes": "不可答题，简洁拒答正确，无伪造引用；未提供金额不能算数值错误，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "8c215e95cb7f4d2b97f03812e6ee9283",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "次工作日",
+          "correct": false,
+          "reason": "没有给出次工作日划转期限。"
+        },
+        {
+          "fact": "全额划至保理专户",
+          "correct": false,
+          "reason": "没有给出全额划至保理专户的要求。"
+        },
+        {
+          "fact": "原始收款凭证",
+          "correct": false,
+          "reason": "遗漏提交原始收款凭证。"
+        },
+        {
+          "fact": "不能先扣自家费用",
+          "correct": false,
+          "reason": "未回答不得先扣自家费用。"
+        }
+      ],
+      "notes": "原文回款异常处置已完整载明，拒答无依据，全部必要事实缺失且无引用。",
+      "goldIssue": null
+    },
+    {
+      "token": "4fb03062cc6d4c64a0c2321f0228ac41",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供实时航班动态",
+          "correct": true,
+          "reason": "原文只载虚构保障规则，不提供实时航班动态；资料不足拒答合适。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "没有编造今日实际起飞时间。"
+        }
+      ],
+      "notes": "通用拒答足够；问题无可核实的实时数据，无需联网或猜测日期时间，无引用合理。",
+      "goldIssue": null
+    },
+    {
+      "token": "c186c303fe154cdb8c04c5a9b3ce7747",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 3,
+        "conditions": 2,
+        "numbers": 2,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "收单后5个银行工作日",
+          "correct": false,
+          "reason": "只说“5日审查期限”，遗漏收单起算及银行工作日单位。"
+        },
+        {
+          "fact": "征求意见不延长",
+          "correct": true,
+          "reason": "明确征求申请人意见不延长期限。"
+        },
+        {
+          "fact": "一次列全不符点",
+          "correct": true,
+          "reason": "明确一次列全已识别不符点。"
+        },
+        {
+          "fact": "说明保管或退还方式",
+          "correct": true,
+          "reason": "明确通知说明单据保管或退还方式。"
+        }
+      ],
+      "notes": "主处置正确，但完整必要期限未回答。所引片段从“发现不符”开始，未含收单后5个银行工作日的定义；不能仅凭5日推定单位。",
+      "goldIssue": null
+    },
+    {
+      "token": "e7739a861da743d5ba2b0d61dc93332a",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 1,
+        "conditions": 0,
+        "numbers": 1,
+        "disposition": 0,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "发票在9.5万至10.5万美元内",
+          "correct": false,
+          "reason": "未判断10.4万美元位于9.5万至10.5万美元范围，反称无上限依据。"
+        },
+        {
+          "fact": "保险110%即11.44万美元",
+          "correct": false,
+          "reason": "未说明110%比例和11.44万美元的符合性，反称未给出比例。"
+        },
+        {
+          "fact": "生效不迟于9月10日",
+          "correct": false,
+          "reason": "虽复述9月10日生效，却未结合不迟于装船日要求判断符合。"
+        }
+      ],
+      "notes": "原文明确有容差、110%投保及生效期限，声称未提供与全文矛盾。引用真实支持其复述的演练输入，因此该条citationSupported为true；不支持其核心无法判断理由，也不足联合支持三个必要结论。",
+      "goldIssue": null
+    },
+    {
+      "token": "00b4853cbf844f2689f532adc6e328e9",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "按保单航段判断",
+          "correct": true,
+          "reason": "回答围绕被放弃原航段及承运人确认替代航段作判断，按航段语义成立。"
+        },
+        {
+          "fact": "替代须承运人确认",
+          "correct": true,
+          "reason": "明确改签须承运人确认替代原航段。"
+        },
+        {
+          "fact": "自行放弃无确认不视为达标",
+          "correct": true,
+          "reason": "明确自行放弃且无替代确认不满足给付条件。"
+        }
+      ],
+      "notes": "接受按原航段判断的上下文表达；第一条引用还提供保单列明单次航段的范围，第二条支持确认及放弃后果，联合充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "2597aa971f5a4168b038af6097f398a1",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "登机凭证",
+          "correct": false,
+          "reason": "未列明应上传登机凭证；“不足以证明完成登机”不等于列出该必需材料。"
+        },
+        {
+          "fact": "承运人最终起飞证明",
+          "correct": false,
+          "reason": "未列明承运人出具的最终起飞证明。"
+        },
+        {
+          "fact": "保单号",
+          "correct": true,
+          "reason": "明确提到申请材料中的保单号。"
+        },
+        {
+          "fact": "订票截图不足",
+          "correct": true,
+          "reason": "明确仅订票截图不够。"
+        }
+      ],
+      "notes": "必要的两类材料遗漏，补充申请时限不能替代材料清单。引用1支持保单号、截图不足及核验流程，引用2支持补充期限；两者均未含缺失材料。数值不属于本题必要要求，记null。",
+      "goldIssue": null
+    },
+    {
+      "token": "687dfec5843f4e69884efc21745c97d1",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 3,
+        "conditions": 2,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "发现当日重算",
+          "correct": false,
+          "reason": "只说新折让发生后重算，未回答发现当日这一明确时限。"
+        },
+        {
+          "fact": "通知保理风控岗",
+          "correct": true,
+          "reason": "明确通知保理风控岗。"
+        },
+        {
+          "fact": "两个工作日内补款或合格替代应收",
+          "correct": true,
+          "reason": "明确两个工作日内补款或补经审核合格的替代应收。"
+        },
+        {
+          "fact": "未确认未来订单不能补池",
+          "correct": true,
+          "reason": "明确未经确认的未来订单不能补池。"
+        }
+      ],
+      "notes": "问题明确问何时重算，“发生后”不足以替代“发现当日”。引用从“算对应发票净额”开始，恰好缺该时限，其余处置及替代资产检查有支持。",
+      "goldIssue": null
+    },
+    {
+      "token": "e4986a97ec8a486ca08342e7d93c59bc",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "登机凭证",
+          "correct": true,
+          "reason": "列明登机凭证。"
+        },
+        {
+          "fact": "承运人最终起飞证明",
+          "correct": true,
+          "reason": "列明承运人出具的最终起飞证明。"
+        },
+        {
+          "fact": "保单号",
+          "correct": true,
+          "reason": "列明保单号。"
+        },
+        {
+          "fact": "订票截图不足",
+          "correct": true,
+          "reason": "明确仅订票截图不足以证明完成登机。"
+        }
+      ],
+      "notes": "三类登记材料及截图限制均完整，引用出险登记段直接支持；无必要数值要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "a3f9b816ad54415e86ebc85b436c1f48",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 3,
+        "conditions": 2,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "天气预警不等于已宣布航段延误",
+          "correct": true,
+          "reason": "明确天气预警不等于承运人已宣布该航段延误。"
+        },
+        {
+          "fact": "不能当然排除",
+          "correct": true,
+          "reason": "明确不能仅凭天气预警认定已知延误除外。"
+        },
+        {
+          "fact": "仍须核验其他条件",
+          "correct": false,
+          "reason": "末句只重复核查投保时是否已宣布，没有保留其他给付条件仍须审核。"
+        }
+      ],
+      "notes": "未承诺必赔，但遗漏金标准要求的其他条件审核；“仍需看”所指仍是同一个宣布条件，不能等同其他条件。引文含登记核验及除外规则，足以支持应继续审核的必要结论，故引用联合完整与答案遗漏分别评价。",
+      "goldIssue": null
+    },
+    {
+      "token": "9d24902cbc614ac4b3dd09b48be3dcb6",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "LZ-8按收单日适用",
+          "correct": true,
+          "reason": "明确LZ-8按2026年8月20日起收到的单据适用，旧开证日不豁免。"
+        },
+        {
+          "fact": "不能电话先承兑",
+          "correct": true,
+          "reason": "明确取消电话先承兑、次日补签的旧便利。"
+        },
+        {
+          "fact": "需最终授权",
+          "correct": true,
+          "reason": "明确必须完成最终授权后承兑。"
+        }
+      ],
+      "notes": "收单时点与开证时点区分正确，两条引用覆盖新旧版本和授权条件；无数值计算要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "5620e984fb9a43d0b28495f07f79062d",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "最高10.5万美元",
+          "correct": false,
+          "reason": "没有算出证额10万美元上浮5%为10.5万美元。"
+        },
+        {
+          "fact": "10.6万美元超限",
+          "correct": false,
+          "reason": "没有判断修订发票10.6万美元超限。"
+        }
+      ],
+      "notes": "原文明确载明容差及修订金额，资料不足拒答不成立；无引用，也未提供任一必要结论。",
+      "goldIssue": null
+    },
+    {
+      "token": "9a67fffa96c94f01ac95ec3cbe113bc2",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 3,
+        "conditions": 2,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "天气预警不等于已宣布航段延误",
+          "correct": true,
+          "reason": "明确普通天气预警不等于已公开宣布航段延误。"
+        },
+        {
+          "fact": "不能当然排除",
+          "correct": true,
+          "reason": "明确不能仅凭天气预警认定已知延误除外。"
+        },
+        {
+          "fact": "仍须核验其他条件",
+          "correct": false,
+          "reason": "只说关键看投保时宣布情况，未提及仍需审核其他给付条件。"
+        }
+      ],
+      "notes": "结论正确但必要的其他条件审核遗漏；没有据此断言保证赔付。引用同时包含定额上限、登记及除外规则，联合足以支持必要条件说明，答案仍未表达这一要点。",
+      "goldIssue": null
+    },
+    {
+      "token": "3e2fcacd5bcd437e9afb1405ecc3e503",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "仅保单列明买方破产信用风险",
+          "correct": true,
+          "reason": "明确无追索仅覆盖保单列明的买方破产信用风险。"
+        },
+        {
+          "fact": "交付瑕疵仍追索卖方",
+          "correct": true,
+          "reason": "明确交付瑕疵、贸易纠纷、卖方欺诈仍追索卖方。"
+        }
+      ],
+      "notes": "正确回答不能把交付瑕疵风险转嫁为全由保理方承担；引用含完整追索边界。",
+      "goldIssue": null
+    },
+    {
+      "token": "6a52b5f4446a4292a7bb1313dbaf8ed0",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "单买方上限40万元",
+          "correct": true,
+          "reason": "集中度前45+30+25=100万元，40%对应40万元。"
+        },
+        {
+          "fact": "甲剔除5万元",
+          "correct": true,
+          "reason": "甲45万元超40万元上限，剔除5万元。"
+        },
+        {
+          "fact": "集中度后95万元",
+          "correct": true,
+          "reason": "集中度后100−5=95万元。"
+        },
+        {
+          "fact": "新增融资36万元",
+          "correct": true,
+          "reason": "95×80%−40=36万元，已扣已占用本金。"
+        },
+        {
+          "fact": "不循环重算分母",
+          "correct": true,
+          "reason": "计算全程仅用100万元分母确定一次40万元上限，未用95万元再次计算，推导已体现不循环重算。"
+        }
+      ],
+      "notes": "完整展示先净额、后集中度、再融资扣本金的计算链；接受单次固定分母的实际推导为不循环重算的语义表达，未要求逐字复述。引用涵盖所有规则和输入。",
+      "goldIssue": null
+    },
+    {
+      "token": "f398f69473074816b5761a99d937b2da",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供货物实际质量",
+          "correct": true,
+          "reason": "资料不足拒答符合完整原文不提供货物实际质量的范围。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未推断实物无损或虚构验货结果。"
+        }
+      ],
+      "notes": "不可答，简洁拒答成立，无伪造正面支持；条件与数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "3cf41970967f487e83d3db070bfc4420",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "700元",
+          "correct": true,
+          "reason": "明确恰好240分钟属240及以上档，定额700元。"
+        },
+        {
+          "fact": "不累加300元",
+          "correct": true,
+          "reason": "明确档位互斥、不再另加300元。"
+        }
+      ],
+      "notes": "包含边界及不累加规则完整，两个引用均直接支持。补充取年度余量较小值符合全文，未把未触上限误说成重置额度；引用已联合支持本题必要结论。",
+      "goldIssue": null
+    },
+    {
+      "token": "fde9f7c98c6d4857880b59155981df9f",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 3,
+        "conditions": 2,
+        "numbers": 2,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "发票在9.5万至10.5万美元内",
+          "correct": false,
+          "reason": "仅复述发票10.4万美元，未说明其位于9.5万至10.5万美元容差范围。"
+        },
+        {
+          "fact": "保险110%即11.44万美元",
+          "correct": true,
+          "reason": "明确11.44万美元等于10.4万美元的110%，且同币种。"
+        },
+        {
+          "fact": "生效不迟于9月10日",
+          "correct": true,
+          "reason": "明确保险9月10日生效不迟于装船批注日。"
+        }
+      ],
+      "notes": "保险部分正确，但问题还要求发票金额符合性，缺少必要容差范围，笼统“符合”不足替代。引文1支持保险要求，引文2支持演练金额和生效日期；两条均未提供金额容差规则，联合不充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "b2e3f1b4b0ad4099b8a172d2a5e82df3",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "90日可留池",
+          "correct": true,
+          "reason": "明确恰好逾期90日仍可留池。"
+        },
+        {
+          "fact": "91日起排除",
+          "correct": true,
+          "reason": "明确逾期91日起排除，并扣除超过90日余额。"
+        },
+        {
+          "fact": "到期次日为第1日",
+          "correct": true,
+          "reason": "明确合同付款到期日次日算逾期第1日。"
+        }
+      ],
+      "notes": "90/91日边界、计时起点均正确，引文完整支持；没有把到期日计作逾期第1日。",
+      "goldIssue": null
+    },
+    {
+      "token": "6581129980a944c9aa043d4b370f5771",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供破产等待期",
+          "correct": true,
+          "reason": "资料不足拒答符合原文等待期另约且未给出的说明。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未把90日逾期或两个工作日补足期限误当理赔等待期。"
+        }
+      ],
+      "notes": "不可答题，简洁拒答正确，无伪造引用；无可用等待期数值，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "8b2920c67cc045b89ece4e366bde3628",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "21日窗口到10月1日",
+          "correct": true,
+          "reason": "装船日不计，从9月11日起21个自然日到10月1日。"
+        },
+        {
+          "fact": "最终9月30日",
+          "correct": true,
+          "reason": "明确最终可交单到2026年9月30日。"
+        },
+        {
+          "fact": "取较早日期",
+          "correct": true,
+          "reason": "明确受信用证到期限制，两日期取较早者。"
+        }
+      ],
+      "notes": "正确区分窗口截止与最终可交日，引用完整覆盖时间链，未用打印日计算。",
+      "goldIssue": null
+    },
+    {
+      "token": "bc448817f6af4fabbb83757a31f37234",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "11月9日",
+          "correct": true,
+          "reason": "名义到期日2026年11月9日正确。"
+        },
+        {
+          "fact": "装船日不计",
+          "correct": true,
+          "reason": "明确9月10日装船当日不计，从9月11日起算。"
+        },
+        {
+          "fact": "周末计入",
+          "correct": true,
+          "reason": "连续计算60个自然日已表达周末计入的语义。"
+        }
+      ],
+      "notes": "接受连续自然日为周末计入的等价表达；对支付顺延保持文档未规定的边界，引用含全部规则和演练日期。",
+      "goldIssue": null
+    },
+    {
+      "token": "b8becbf3baa84376a42a9b88b302c7cb",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "YX-6",
+          "correct": true,
+          "reason": "所援引2026年11月1日起的手册及规则唯一指向YX-6，版本语义明确。"
+        },
+        {
+          "fact": "40%",
+          "correct": true,
+          "reason": "明确11月2日重核用40%，不用50%。"
+        },
+        {
+          "fact": "重新核定日决定",
+          "correct": true,
+          "reason": "依据11月1日适用起点判断11月2日重核，表达按核定日期决定。"
+        }
+      ],
+      "notes": "答案已对旧合同重核作出正确适用判断，不要求逐字写YX-6。但引用仅有开头的一般核定适用及40%规则，没有后文明确涵盖旧入池存续发票的版本衔接说明，对本题关键的旧合同不锁定旧比例支持不完整。",
+      "goldIssue": null
+    },
+    {
+      "token": "195e780b58384159bc206d463006e20d",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "一般天气备注不当然不清洁",
+          "correct": true,
+          "reason": "明确港口一般天气备注不自动构成不清洁。"
+        },
+        {
+          "fact": "包装破损不属清洁",
+          "correct": true,
+          "reason": "明确包装破损记载使提单不视为清洁。"
+        }
+      ],
+      "notes": "两类备注区别及“不自动”限定均保留，没有扩张为任意备注都不清洁；引文直接支持。",
+      "goldIssue": null
+    },
+    {
+      "token": "a50068155203428f8573202033e0a645",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "PD-4",
+          "correct": true,
+          "reason": "明确仍按PD-4。"
+        },
+        {
+          "fact": "到达时点",
+          "correct": true,
+          "reason": "明确以到达时点计算。"
+        },
+        {
+          "fact": "签发时间和原有效期决定旧单适用",
+          "correct": true,
+          "reason": "明确6月1日前签发且原有效期内不因6月后出险换版。"
+        }
+      ],
+      "notes": "签发日期与有效期条件完整，未混淆出险日期；两条引用均含旧单说明，无数值运算要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "58e62eb6d435440db9870981116d1ff4",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "单买方上限40万元",
+          "correct": false,
+          "reason": "未计算100万元集中度前净额对应的40万元单买方上限。"
+        },
+        {
+          "fact": "甲剔除5万元",
+          "correct": false,
+          "reason": "未说明甲45万元应剔除5万元。"
+        },
+        {
+          "fact": "集中度后95万元",
+          "correct": false,
+          "reason": "未给出集中度后95万元基数。"
+        },
+        {
+          "fact": "新增融资36万元",
+          "correct": false,
+          "reason": "未给出95×80%−40=36万元。"
+        },
+        {
+          "fact": "不循环重算分母",
+          "correct": false,
+          "reason": "未说明或展示分母只确定一次。"
+        }
+      ],
+      "notes": "完整原文有全部输入及规则，可作答却无依据拒答，无引用且必要事实全缺。",
+      "goldIssue": null
+    },
+    {
+      "token": "e1bae23b4d9b42dd98d36c3ee8750dff",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "最终实际起飞减计划起飞",
+          "correct": true,
+          "reason": "明确最终实际起飞减保单记载计划起飞。"
+        },
+        {
+          "fact": "完整分钟",
+          "correct": true,
+          "reason": "明确按完整分钟计算。"
+        },
+        {
+          "fact": "不用初步估计或到达时间",
+          "correct": true,
+          "reason": "明确不使用到达时间差或机场首次延误估计。"
+        }
+      ],
+      "notes": "核心口径完整，补充异议复核、待定及不预付也与第二条引用一致；无必要具体数值。",
+      "goldIssue": null
+    },
+    {
+      "token": "11eab7022d0b4a809261a0af65565af3",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供节假日支付顺延安排",
+          "correct": true,
+          "reason": "原文明确未规定到期遇当地节假日的支付顺延安排，资料不足拒答符合范围。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未自行假定下一工作日或编造支付日期。"
+        }
+      ],
+      "notes": "不可答题，简洁拒答正确，无伪造引用；没有可用顺延计算规则，条件和数值维度记null。",
+      "goldIssue": null
+    },
+    {
+      "token": "827285e622d04f6ea5a771feff187af7",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "90日可留池",
+          "correct": true,
+          "reason": "明确恰好逾期90日仍可留池。"
+        },
+        {
+          "fact": "91日起排除",
+          "correct": true,
+          "reason": "明确91日起排除。"
+        },
+        {
+          "fact": "到期次日为第1日",
+          "correct": true,
+          "reason": "明确从合同付款到期日次日算第1日。"
+        }
+      ],
+      "notes": "边界和计时起点完整，所引片段虽从前句中部开始，但包含全部必要规则，语义支持充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "98ec522698f946d99b22457d940e4dc0",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "次工作日",
+          "correct": false,
+          "reason": "未回答次工作日这一明确划转期限。"
+        },
+        {
+          "fact": "全额划至保理专户",
+          "correct": false,
+          "reason": "未回答须全额划至保理专户。"
+        },
+        {
+          "fact": "原始收款凭证",
+          "correct": false,
+          "reason": "未提提交原始收款凭证。"
+        },
+        {
+          "fact": "不能先扣自家费用",
+          "correct": false,
+          "reason": "未回答不能先扣自家费用。"
+        }
+      ],
+      "notes": "完整原文已提供四项处置要求，无依据拒答不正确；无任何引用。",
+      "goldIssue": null
+    },
+    {
+      "token": "a8db3f8aeeb045759fcc02e48f84e3a1",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供无追索保单赔偿比例",
+          "correct": true,
+          "reason": "资料不足拒答与原文明示赔偿比例另约未披露相符。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未把80%融资比例当作保险赔偿比例，也未猜测百分数。"
+        }
+      ],
+      "notes": "不可答题通用拒答足够，无伪造正面支持；缺失比例不要求进行数值运算，记null。",
+      "goldIssue": null
+    },
+    {
+      "token": "57da9ef0b97843d3b5d9c16204da2186",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "年度余量300元",
+          "correct": true,
+          "reason": "年度上限1800元减已给付1500元，余量300元。"
+        },
+        {
+          "fact": "航段定额700元",
+          "correct": true,
+          "reason": "260分钟处于240及以上档，定额700元。"
+        },
+        {
+          "fact": "实付300元",
+          "correct": true,
+          "reason": "取700与300元较小者，实付300元。"
+        }
+      ],
+      "notes": "金额、档位及年度约束完整；引用1给出取小规则和示例条件，引用2给出定额与年度上限，联合支持所有必要事实。",
+      "goldIssue": null
+    },
+    {
+      "token": "fd228ed686e04716a8ad16774529855f",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供节假日支付顺延安排",
+          "correct": true,
+          "reason": "资料不足拒答与全文不载支付顺延安排一致。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "没有用一般工作日习惯自行补齐实际付款日期。"
+        }
+      ],
+      "notes": "不可答，简洁拒答正确，无伪造引用；不把名义到期日当成已知的实际顺延日期。",
+      "goldIssue": null
+    },
+    {
+      "token": "a9a42120767641599e7517271d744500",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "700元",
+          "correct": true,
+          "reason": "明确240分钟及以上给付700元，并结合题设给出700元结论。"
+        },
+        {
+          "fact": "不累加300元",
+          "correct": true,
+          "reason": "明确达到240分钟只给700元，不再加300元。"
+        }
+      ],
+      "notes": "保留恰好240分钟边界、档位互斥及年度余量约束；两条引用分别支持定额和取小规则。",
+      "goldIssue": null
+    },
+    {
+      "token": "ce2d12f48b2042529dc3851758494f7d",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供实时航班动态",
+          "correct": true,
+          "reason": "资料不足拒答符合材料不包含实时航班动态的范围。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未把虚构示例当成今日真实运行记录，也未编造起飞时间。"
+        }
+      ],
+      "notes": "不可答题，简洁拒答合格，无伪造引用；条件、数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "0c63b350f50448978dcb1508eb73fc03",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "发现当日重算",
+          "correct": true,
+          "reason": "明确发现当日重算对应发票净额。"
+        },
+        {
+          "fact": "通知保理风控岗",
+          "correct": true,
+          "reason": "明确通知保理风控岗。"
+        },
+        {
+          "fact": "两个工作日内补款或合格替代应收",
+          "correct": true,
+          "reason": "明确两个工作日内补款或补经审核合格的替代应收。"
+        },
+        {
+          "fact": "未确认未来订单不能补池",
+          "correct": true,
+          "reason": "明确未经确认未来订单不能补池。"
+        }
+      ],
+      "notes": "重算起点、通知对象、补足方式和期限均完整，额外的替代应收检查也正确；引用含全部处置要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "88f5aadf31f441c4a0b7818f1f66363f",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "已签署商业发票两份",
+          "correct": true,
+          "reason": "明确商业发票已签署，后句补充两份，合并阅读满足要点。"
+        },
+        {
+          "fact": "全套清洁已装船海运提单",
+          "correct": true,
+          "reason": "明确全套清洁已装船海运提单。"
+        },
+        {
+          "fact": "保险单正本",
+          "correct": true,
+          "reason": "明确保险单正本。"
+        }
+      ],
+      "notes": "三类文件和份数完整；签署、全套清洁已装船、正本等限定未遗漏，引用直接支持交单清单。",
+      "goldIssue": null
+    },
+    {
+      "token": "ebfabb038c324642b7fb07b115094732",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "甲45万元",
+          "correct": false,
+          "reason": "未算出甲60−10−5=45万元。"
+        },
+        {
+          "fact": "乙30万元",
+          "correct": false,
+          "reason": "未排除乙逾期91日的5万元以得到30万元。"
+        },
+        {
+          "fact": "丙25万元",
+          "correct": false,
+          "reason": "未给出丙25万元。"
+        },
+        {
+          "fact": "全池100万元",
+          "correct": false,
+          "reason": "未给出全池45+30+25=100万元。"
+        }
+      ],
+      "notes": "完整原文提供了演练全部输入与净额规则，资料不足拒答无依据；无引用且四项必要金额均缺失。",
+      "goldIssue": null
+    },
+    {
+      "token": "45ce658479424b55bfe66a0cd139c867",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "一般天气备注不当然不清洁",
+          "correct": true,
+          "reason": "明确一般性天气备注不自动导致提单不清洁。"
+        },
+        {
+          "fact": "包装破损不属清洁",
+          "correct": true,
+          "reason": "明确有包装破损记载的提单不视为清洁。"
+        }
+      ],
+      "notes": "正确区分一般天气与货物包装破损，保留不自动的限定；两条引用均直接支持两项结论。",
+      "goldIssue": null
+    },
+    {
+      "token": "a211c572af0045169129d1d87c2e30c9",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供取消险赔偿额",
+          "correct": true,
+          "reason": "资料不足拒答符合材料明确不含取消险赔偿额的范围。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未把延误700元档位套用到取消险，也未猜测。"
+        }
+      ],
+      "notes": "不可答题，通用拒答足够，无伪造引用；条件和数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "b4cd77f717164c88a4b7745901f1f858",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "LZ-8按收单日适用",
+          "correct": true,
+          "reason": "明确LZ-8适用2026年8月20日起收到的单据，原开证日不豁免。"
+        },
+        {
+          "fact": "不能电话先承兑",
+          "correct": true,
+          "reason": "明确不能电话同意先承兑后补签。"
+        },
+        {
+          "fact": "需最终授权",
+          "correct": true,
+          "reason": "明确须先完成最终授权。"
+        }
+      ],
+      "notes": "适用时点和先授权后承兑顺序完整，未保留旧证便利；两条引用分别支持版本衔接及禁止电话先承兑。",
+      "goldIssue": null
+    },
+    {
+      "token": "807602049b9b47bd9457fc4903d95438",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "30个自然日申请",
+          "correct": true,
+          "reason": "明确航段完成后30个自然日内提交。"
+        },
+        {
+          "fact": "10个自然日补件",
+          "correct": true,
+          "reason": "明确补件告知后10个自然日内补齐。"
+        },
+        {
+          "fact": "重开仍须审核",
+          "correct": true,
+          "reason": "明确逾期关闭，可说明申请重开，但重开仍需核验原航段条件和年度余量。"
+        }
+      ],
+      "notes": "起算点、自然日单位、重开与赔付的区别均正确；两条引用均含完整申请与复核时限。",
+      "goldIssue": null
+    },
+    {
+      "token": "d5684fdc2aaa4a0880af2ed9ec967d31",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 3,
+        "conditions": 2,
+        "numbers": 2,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "收单后5个银行工作日",
+          "correct": false,
+          "reason": "回答仅说5日审查期限，遗漏收单后起算和银行工作日单位。"
+        },
+        {
+          "fact": "征求意见不延长",
+          "correct": true,
+          "reason": "明确征求申请人意见不延长审查期限。"
+        },
+        {
+          "fact": "一次列全不符点",
+          "correct": true,
+          "reason": "明确一次列全已识别不符点。"
+        },
+        {
+          "fact": "说明保管或退还方式",
+          "correct": true,
+          "reason": "明确说明单据保管或退还方式。"
+        }
+      ],
+      "notes": "通知内容和不可延长结论正确，但必要期限口径不完整。引用从发现不符开始，不含收单后5个银行工作日的定义，不能弥补该缺项。",
+      "goldIssue": null
+    },
+    {
+      "token": "c72f071e8a5b407ebda4c686f55f72f2",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供无追索保单赔偿比例",
+          "correct": true,
+          "reason": "资料不足拒答与原文未披露无追索保单赔偿比例一致。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未编造赔偿百分数，亦未混用80%的融资比例。"
+        }
+      ],
+      "notes": "不可答题简洁拒答正确，无伪造正面引用；无可计算保险比例，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "9b9f771ff39340448750947503a230b1",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "争议发票整笔挂起",
+          "correct": true,
+          "reason": "明确对争议发票整笔挂起核查。"
+        },
+        {
+          "fact": "未确认争议不当作确认折让",
+          "correct": true,
+          "reason": "明确未确认口头争议不能当已确认折让扣部分后继续融资。"
+        }
+      ],
+      "notes": "完整保留先整笔挂起的处置条件，没有把争议金额当确认折让；所引片段直接支持。",
+      "goldIssue": null
+    },
+    {
+      "token": "23715721971d4bf2bb64b70440a96996",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "YX-6",
+          "correct": true,
+          "reason": "明确援用11月1日起每次重核的40%规则，语义对应YX-6，不要求逐字复述版本号。"
+        },
+        {
+          "fact": "40%",
+          "correct": true,
+          "reason": "明确11月2日重核使用40%。"
+        },
+        {
+          "fact": "重新核定日决定",
+          "correct": true,
+          "reason": "明确以重新核定日决定，旧合同和此前已入池存续发票不锁定50%。"
+        }
+      ],
+      "notes": "版本规则和旧资产衔接完整，两条引用均包含重新核定用40%的规则，第一条还明确标示YX-6；未回溯要求已结清历史核定重做。",
+      "goldIssue": null
+    },
+    {
+      "token": "13c7974299a74cff86a0809d32581bd3",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供破产等待期",
+          "correct": true,
+          "reason": "资料不足拒答符合原文破产等待期另行约定且未给出的事实。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未以90日逾期或两个工作日补足期限冒充等待期。"
+        }
+      ],
+      "notes": "不可答题通用拒答足够，无伪造引用，也未猜测天数；条件和数值维度不适用。",
+      "goldIssue": null
+    }
+  ]
+}

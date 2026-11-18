@@ -1,0 +1,1848 @@
+{
+  "schemaVersion": 1,
+  "blindPackageSha256": "bea8d62bdcf047e08fdd83cccb3cb6267d93bd6ee5395a367e3debf7dbf74a10",
+  "instructions": "Review only this bundle and frozen rubric. No strategy, split or arm mapping is supplied.",
+  "sources": {
+    "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de": "# 汀禾留学汇款 TH-3\n\n2026年7月1日起受理的新指令适用。名称和案例均为虚构，不代表真实银行报价。客户以人民币购入美元并汇给学校，购汇成交和汇款发送是两个状态；购汇成功不保证学校已收款。本文只提供演练汇率，不能用作即时报价。\n\n## 费用承担方式\n\n| 方式 | 汇出手续费 | 本行电讯费 | 中间行扣费 |\n| --- | --- | --- | --- |\n| OUR | 汇款人付 | 汇款人付 | 本行按实向汇款人追收 |\n| SHA | 汇款人付 | 汇款人付 | 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。\n\n## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。\n\n## 指令登记\n\n经办核验录取或缴费材料上的学校名称、收款账户和学生关联信息。学校通知的应缴学费不是客户账户余额，不能把材料上的金额直接当作可用资金。收款账号或学校名称更正应在原指令下留存修改轨迹，不得新建一笔相同金额指令再把旧单视为自动取消。若客户提供两封不同日期的学校邮件，先核实哪封为有效收款指示，不能从两封里各抄一部分拼接账户。客户在确认前可查看费用方式和购汇成交信息，点击确认表示提交指令，不代表已经完成国际清算。\n\n## 演算\n\n一笔汇款本金10000美元，实际购汇价7.20人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。\n\n## 撤回状态\n\n待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。\n\n## 退汇及重新换汇\n\n退汇先退美元实收净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。\n\n## 本行录入错误\n\n若已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。\n\n## 版本沿革\n\nTH-2把召回电讯费包含在原汇款电讯费中；TH-3对2026年7月1日起受理的新指令单列80元召回费。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2不另收本行召回电讯费。其他已发送后不退原手续费的规则未变。\n\n## 内容边界\n\n本约定不提供学校真实收款账号、银行实时外汇牌价、实际中间行路径或确保到账的时刻。演练15美元不是对所有路径的中间行收费承诺。\n",
+    "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a": "# 岚桥住房项目预售监管专户拨款细则\n\n版本 LQ-3，自2026年9月1日起用于岚桥东苑，不适用于物业维修金。项目标记为🏗️东苑。专户余额不等于可拨款余额；监管行不承诺工程收益，施工单位不得凭销售人员的口头确认提款。\n\n## 内部办理札记 A：Building identity before progress review\n\nThe intake desk receives one folder bearing the marketing name East Court and another bearing the construction name East Block. The names alone do not establish whether the folders refer to the same building. The desk asks the construction party to provide the approved mapping between the project register and the building register, attaches that mapping without rewriting the source documents, and records who supplied it. A photograph with a visible tower label can help locate the building but cannot cure a missing mapping in the register.\n\nThe progress reviewer then reads the building-specific certificates rather than applying the most advanced building's stage to the entire development. A shared crane, an access road and a common sales office are not proof that two towers have identical construction status. When a certificate covers several towers, the reviewer identifies which lines support the requested tower and marks the others as background. The archive retains the entire certificate so a later reviewer can see its original scope.\n\nA clerk once copied a completion note from the neighboring tower because both folders used the same contractor. The corrected file keeps the mistaken note, labels it superseded for this application, and links the replacement evidence. The correction is a document-association repair. It does not certify an engineering stage, raise the fixed regulatory base or authorize any payment.\n\n## 进度确认\n\n每次申请须同时具备监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。\n\n## 内部办理札记 B：Cash snapshot and bank movements\n\nThe cash reviewer works from a dated account snapshot and its matching movement file. A promised purchaser payment stays on the forecast list until it is actually reflected in the account. A debit request awaiting bank execution is listed as an outstanding instruction rather than a completed disbursement. Review staff reconcile the snapshot time with the movement file so the same transfer is neither missed nor counted twice around the cut-off.\n\nIf an instruction was rejected for an invalid payee record, the failed attempt remains in the operational log. It does not become an actual payment merely because a confirmation screen was printed before execution failed. A later successful replacement receives a link to the failed attempt and its own execution evidence. Staff must not erase the failed attempt to make the history appear simpler, because that history explains why the file contains several apparently identical amounts.\n\nThe weekly supervisor compares opening cash, completed credits and completed debits to closing cash. This reconciliation explains the balance, while the regulatory calculation independently determines how much may be approved. A reconciled balance is necessary accounting context, but cannot substitute for a progress certificate or the required reserve. A financial forecast may assist planning without becoming cash available for today's approval.\n\n## 内部办理札记 C：Scope of the construction invoice\n\nA construction invoice may contain work on the requested tower, equipment stored for a later phase and consulting work for the developer's head office. The file should explain which items correspond to the submitted payment instruction. Intake staff may ask for an itemized schedule and the relevant contract reference; they cannot rewrite the invoice or invent a split that the construction party has not confirmed. The original invoice remains attached alongside the explanation.\n\nThe evidence team records delivery or service acceptance separately from the invoice date. A dated invoice does not prove that the work reached the regulatory milestone. Equally, a milestone certificate does not prove that every invoiced line belongs to this project. Those two questions are reviewed using different records, and a reviewer signs only the conclusion supported by the records assigned to that review role.\n\nFor example, a supplier includes replacement fencing after a storm in the same invoice as ordinary site services. The construction party must identify whether a request is an ordinary progress payment or a documented hazard-removal request. Its description cannot silently move the entire invoice into the exceptional channel. The final file retains the classification, supporting evidence and approval route, without treating an accounting label as authorization.\n\n## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。\n\n## 内部办理札记 D：Photo index and site evidence\n\nThe photo index is an index, not a substitute for the images it names. Each entry should allow the reviewer to retrieve the image associated with the relevant building and inspection visit. An image of the sales exhibition model is useful publicity material but cannot show the site's actual structural condition. A general aerial image can establish context while a building-specific certificate establishes the stage used for the calculation.\n\nWhen an image is resubmitted after a labeling mistake, staff preserve the original image and the corrected label as separate items. They do not alter the photograph to draw in a date or a tower name that was never visible. The supervisor checks the explanation for the correction against the visit log. A legible caption is not evidence that the underlying visit actually occurred on the claimed date.\n\nA common review problem is a folder of many photographs with no relationship to the payment application. More images do not necessarily add more support. The construction party prepares a cross-reference from the payment request to the relevant inspection and index entries. The reviewer records unresolved gaps explicitly. A request may remain incomplete even when its image folder is large, and a completed image check does not by itself change the approved engineering milestone.\n\n## 内部办理札记 E：Two applications on the same day\n\nTwo applications can refer to different invoices while drawing on the same regulatory account. The reviewer must know which approved instructions have actually been executed by the time the second calculation is prepared. The applications are not independent merely because they have different folder numbers. At the same time, an unexecuted request should not be misrepresented as an actual disbursement in the historical paid figure.\n\nThe queue report identifies each request as incomplete, under review, approved for execution, executed or returned. These operational labels help staff avoid promising the same cash twice. The cash desk checks the current position before execution and refers a changed position back for recalculation rather than relying on an outdated printout. A queue position never guarantees a particular amount of regulatory headroom.\n\nIn a training incident, the morning reviewer printed an approval worksheet and the afternoon desk received a corrected bank statement. Staff retained both versions and recorded why the later worksheet replaced the earlier one before execution. They did not backdate the corrected snapshot. The purpose of versioning is to make the decision reproducible from the information available at the time, while leaving the core milestone and retention rules intact.\n\n## 凭证归档与队列\n\n经办先给资料包编号，再把影像交给复核员；复核员查验签章、照片日期和备案回执是否对应同一楼栋。跨楼栋的照片可作背景附件，但不能替代目标楼栋凭证。退回补正保留原编号，重新排队以最后一项补正材料的登记时间为准。每周报表列示待复核金额，只用于在途追踪，不能计入已拨金额，也不改变累计比例。\n\n## 内部办理札记 F：Returned applications and the correction trail\n\nA return notice identifies the missing or inconsistent items in one coherent list. It should distinguish a document that was never supplied from a document that was supplied but cannot be linked to the requested building. That distinction helps the applicant correct the file without replacing valid evidence unnecessarily. A desk note saying only incomplete does not explain what must be supplied or why the reviewer could not proceed.\n\nWhen replacement material arrives, staff associate it with the original application identifier and record the registration time of the final correction. The preserved identifier supports audit continuity. It is not a promise that the application keeps its old queue priority. Staff must be able to reconstruct which material was available at the first submission and which only arrived after the return.\n\nAn applicant may withdraw a questionable certificate and supply a different certificate rather than editing the first one. The archive keeps the withdrawn certificate clearly labeled as unused in the final decision. This avoids a later reviewer accidentally relying on an obsolete attachment. The approval worksheet lists the evidence versions actually relied on, while the historical folder remains complete enough to explain the sequence of corrections.\n\n## 留存与本次计算\n\n无论节点比例如何，拨后必须留存监管基数的20%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。\n\n## 内部办理札记 G：Hazard-removal work orders\n\nThe hazard-removal file describes the immediate site hazard, the work needed to remove it and the connection between that work and the requested payment. A contractor's general statement that all construction work improves safety does not distinguish emergency work from routine progress work. Staff ask for a specific work order and the relevant site record, preserving ordinary progress work as a separate request when the invoice contains both types.\n\nThe operational team assembles the supporting packet before routing it to the two named roles in the core exceptional procedure. One role's signature cannot be copied into the other role's approval box. A staff absence is addressed through a documented assignment to an authorized replacement, not by assuming the applicant can sign for the absent reviewer. The file should show whose decision was actually made and on which evidence.\n\nAfter an emergency instruction is executed, the cash movement is linked back to that instruction and remains part of the account's paid history. The exceptional route changes which purpose may be considered during a stop-work situation; it does not create an account outside the regulatory calculation. Staff do not mark the payment invisible in cumulative reports simply because it passed through a different operational queue.\n\n## 内部办理札记 H：Site resumption and administrative flags\n\nThe developer may notify the bank that work has resumed, while the regulatory system still shows a stop-work risk flag. The notification is filed promptly, but staff do not overwrite the flag merely to make the dashboard match the developer's announcement. The supporting resumption inspection record must be identifiable and associated with the same site before the operational record can support the required change.\n\nDifferent events can happen on different dates: physical workers return, a supervisor visits, a resumption record is issued, and a clerk registers the record. These dates should not be collapsed into one date chosen for convenience. A visit diary may explain the chronology, but it does not replace the formal record referred to by the core stop-work procedure. Reviewers record uncertainty instead of inferring that all administrative steps were complete on the earliest date.\n\nIf a dashboard has not yet refreshed after a valid update, the desk resolves the discrepancy through the responsible record owner and preserves the confirmation. It does not bypass the condition by taking a screenshot of a different environment. The approval file needs a traceable operational state, not merely a reassuring picture. This discipline prevents an ordinary progress payment from being accidentally processed under the emergency description.\n\n东苑演算台账：监管基数1000万元，当前专户现金700万元，已实际拨付200万元，封顶已备案，申请500万元。台账数字仅用于本细则演算，不代表任何真实项目。其他未付款工程合同不得先行冲减现金。\n\n## 内部办理札记 I：Final approval and transfer execution\n\nAn approved amount and an executed amount can differ if an instruction fails before funds leave the account. The execution team returns the discrepancy to the reviewer and records the outcome. It cannot manufacture a completed movement by marking the approval form paid. A replacement instruction is checked against the current account position and linked to the original decision, so a failed transfer and a successful transfer are not both counted as cash leaving.\n\nBefore execution, staff compare the payee in the signed instruction with the verified contract record in the file. This casebook deliberately contains no actual payee account details. A request to change payee information requires supporting documentation and verification through the authorized business channel. A message attached to the application is context to be checked, rather than a self-authenticating command to redirect the payment.\n\nAfter execution, the archive includes the bank movement reference and the amount actually transferred. The review worksheet remains a record of the calculation and approvals, while the execution evidence establishes what happened to cash. An auditor should be able to move from a report total to the underlying movement and then to the reviewed application without relying on a staff member's memory of an informal conversation.\n\n## 内部办理札记 J：Project base and sales reporting\n\nSales staff maintain a running report of reservations, signed contracts and purchaser receipts. Those figures may change throughout the week and may help the project explain expected inflows. The fixed regulatory base used in the core rule is a different field in the project register. Staff should not copy the current sales report total into that field simply because both numbers are denominated in money and appear on the same dashboard.\n\nA canceled reservation does not by itself demonstrate that the regulatory base has been amended, just as a new receipt does not increase the base automatically. If the project register has an authorized administrative correction, the supporting correction record must be reviewed as such. This casebook does not create a new power to revise the base or a new formula for doing so. Unresolved base-record discrepancies are referred to the register owner before the calculation is signed.\n\nThe monthly pack places the sales forecast and the regulatory worksheet in separate sections. Each section states its measurement date and purpose. A comparison chart may show them side by side to explain liquidity pressure, but the chart must not imply that forecast sales are available cash or that the highest commercial estimate sets the regulatory threshold. Presentation convenience cannot alter the meaning of the source fields.\n\n## 停工例外\n\n有有效停工风险标记时，普通进度款暂停；仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签。排险款仍计入累计已拨付，不豁免20%留存。停工标记解除须有复工查验记录，建设方自行宣布复工无效。\n\n## 内部办理札记 K：Historical worksheets and current decisions\n\nA folder may contain an old worksheet prepared before the current edition took effect. Staff retain that worksheet to explain the historical decision. They label its edition and decision status instead of replacing its numbers with current values, because doing so would make the historical bank movement difficult to reconcile. A worksheet can remain historically accurate while being unsuitable for a new application.\n\nThe reviewer of a current request identifies whether the packet contains a completed historical approval or material awaiting fresh approval after correction. A cover page saying originally submitted earlier is insufficient to settle that distinction. The relevant record is the decision event described by the core transition provision. A reopened document is not allowed to borrow the status of an unrelated completed approval simply because the amounts or contractor names happen to match.\n\nIn a training discussion, a staff member proposed updating every old spreadsheet to the new edition for visual consistency. The supervisor rejected that approach and required separate historical and current worksheets. The current worksheet states which source records were consulted, while the old worksheet keeps its original purpose. Neither edition is inferred from the date a file was copied to a new folder or from the software used to print it.\n\n## 版本沿革\n\nLQ-2曾规定封顶累计70%、续建留存15%；LQ-3将两项分别改为65%和20%。2026年9月1日前已最终批准的单笔按原批准额执行，之后新申请及补正后重新审批的单笔均用LQ-3。旧版只用于解释历史回单，不得套用于新单。\n\n## 内部办理札记 L：First delivery and unresolved construction issues\n\nThe delivery file can contain invitation letters, key-collection appointments, handover records and defect lists. They are not interchangeable proof of the same event. Staff identify the event and record relevant to the core retention-release condition, rather than using the earliest promotional announcement as if it were completed delivery. This operational appendix does not replace the core elapsed-time or stop-work condition with a different threshold.\n\nA defect list is recorded with its status and responsible party. The presence of a minor item on that list does not permit staff to invent a new universal release rule, and the absence of a complaint in the customer-service inbox does not establish that every regulatory condition has been met. The payment reviewer uses the documented conditions and their formal records, leaving technical defect judgments with the appropriate construction review function.\n\nWhen handover evidence is corrected, the chronology records both the originally reported event and the correction. Staff should explain whether the correction changes a date used in the current review or merely clarifies an address. An address clarification should not silently restart an elapsed period; conversely, a genuinely corrected event date cannot be ignored just to preserve the result on an earlier worksheet. The final approval cites the record actually used.\n\n## 内部办理札记 M：Read-only audit access\n\nAn internal auditor receives copies of the approved worksheet, supporting evidence index and movement reconciliation for a selected application. The audit copy is marked with its extraction time and source folder. Providing a copy does not grant authority to change the operational queue, sign a payment instruction or amend a construction certificate. Questions raised by the auditor are recorded as review findings rather than executed as direct banking instructions.\n\nThe evidence index should contain enough information to locate a source without unnecessarily exposing unrelated commercial material. For example, a certificate covering several projects can be retained in full in the controlled archive while the audit working pack clearly identifies the section relevant to the selected project. The working pack must not pretend that an extract is the whole original or omit a qualification that changes the meaning of the selected section.\n\nIf the auditor notices a missing execution reference, staff add a correction record linking the genuine bank movement. They do not write an invented reference to close the finding quickly. A finding remains open when evidence is unavailable, with the consequence for the decision stated honestly. The absence of an archive item cannot be cured by citing a summary report that was itself generated from the same incomplete file.\n\n## 可查资料边界\n\n本材料包含节点、留存、停工通道和示例台账，不含施工方银行账号、监管行柜员私人联系方式或任何真实项目的财务数据。业务联系须通过另行签署的监管协议。\n\n## 内部办理札记 N：Handover between review teams\n\nDuring staff rotation, the outgoing reviewer prepares a handover note listing open applications, unresolved evidence issues and the latest reviewed account snapshot. The incoming reviewer checks the links and identifies which conclusions were already formally signed. A personal handover note can explain work in progress, but it cannot add an approval that is absent from the controlled record. The date of the handover is not substituted for the dates of the underlying business events.\n\nThe note separates engineering questions, documentation questions and cash-reconciliation questions. This prevents a completed photograph check from being reported as completion of every review task. If a calculation was only a draft, the handover labels it draft and identifies its inputs. The new reviewer can reproduce or replace the draft while preserving it, and must review changed inputs before relying on it for a transfer.\n\nA manager may reassign an incomplete application to balance workload. Reassignment is recorded so the archive explains who worked on the file. It does not change the application's last correction time or reserve a different place in the queue. The incoming team follows the same core conditions and uses the same source evidence standards. Operational convenience is not an independent basis for relaxing milestone, cash or retention requirements.\n\n## 内部办理札记 O：Report totals and exception narratives\n\nManagement reports often combine application counts, requested amounts, approved amounts and executed amounts. The report defines each column so readers do not add them together as though they were independent uses of cash. A request returned and later resubmitted is linked in the application history; the report explains whether its count measures submissions or distinct applications. Counting a resubmission for workload analysis does not mean cash was disbursed twice.\n\nAn exception narrative states the particular reason a file took a different operational route. It should describe the supporting record and the authorized decision, not simply call the transaction special. The narrative cannot expand the legal purpose of a regulatory account or waive conditions that the core rule leaves in place. Reviewers should be able to understand which condition was checked, which route was used and which ordinary limits still applied.\n\nFor reconciliation, management may compare the total executed during a period with the change in cumulative paid history. Differences can arise from timing corrections or a movement assigned to a different reporting date. Staff explain these differences using the movement file and preserved correction trail. They do not alter historical approvals to force two reports to agree. A clear explanation of a difference is better evidence than silently editing the underlying record.\n",
+    "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b": "# 澄屿稳衡基金登记说明 CY-7\n\n本材料及基金名称均为虚构，适用于2026年10月10日起受理的申购单。本基金实行未知价申购，提交时页面显示的上一交易日净值只是参考，不能锁定成交份额。基金份额登记与销售平台的支付状态分别记账，扣款成功不代表登记已确认。\n\n## 受理日与撤单\n\n开放日15:00之前（不含15:00）提交且款项同日到账，以当日为T日；15:00及以后或款项次日到账，顺延至同时满足提交时点与到账条件的下一开放日。非开放日的申请排至下一开放日，实际开放日见另行公告。撤单须在受理日15:00之前完成，15:00整不能撤销。\n\n## 前端费率\n\n| 单笔申请金额A | 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。\n\n## 支付与登记的接口口径\n\n销售机构收到申请后先核对交易账户状态，再把申请金额、受理时间和到账流水关联提交。客户重复点击支付按钮时，支付平台可能生成多个尝试编号；只有最终对应到账流水的有效申请进入登记批次，失败尝试不能合并成一笔大额申请。客户使用两张银行卡分两次付款，销售平台若形成两个独立申请编号，登记仍按两笔费率处理；同一个有效申请编号的分次到账则以其全额到账时点判断是否进入受理日。金额相加是否跨费率档，不能脱离申请编号来判断。登记员只可补充到账关联，不能为了降低费率把两笔不同申请号手工拼成一笔。\n\n## 确认与权益\n\n常规申购T+1开放日登记确认；确认前不进入可赎份额。收益起点是登记确认日，不是银行扣款日。T+1遇非开放日顺延。确认份额与可赎份额的时间差用于防止尚未核准的申请被提前赎回，不意味着本基金承诺收益，宣传中的历史曲线不得拿来代替登记结果。\n\n## 演练订单\n\n订单甲申请100800元，T日净值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。\n\n## 限购日的比例确认\n\n公告限购时，先对每个有效申请计算获配申请金额，再按获配金额重选上表费率档并计算份额；未获配部分原路退回，不收申购费。采用比例确认不是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。\n\n## 暂停与已受理单\n\n登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。正常情况下销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。\n\n## 核对备忘：净值、金额和份额\n\n净值公告通常带有估值日期和公告日期，晚间发布不表示次日净值；复核时应先找估值日期与订单T日是否一致。到账流水的日期只用于受理条件，不决定净值金额。登记回执中的确认份额用份作单位，申请金额与申购费用元作单位，不能把份额增加误读成现金返还。对于高金额订单，固定费用的门槛按人民币金额判断，不按外币付款的表面数值判断；本说明没有提供换汇汇率，外币资金必须经另行流程换成人民币并到账后才能套用本表。\n\n份额尾差只在最终除以净值之后处理。复核员如果先把净申购金额到分取整，结果有时碰巧一样，但不能由一次相同结果证明步骤正确。费用对账分别记录申请额、净申购额、费用和最终份额；一笔订单的净申购额加费用应等于获配申请额。撤销后的订单保留审计记录，不再进入后续登记批次；客户重新提交是新申请，受理日、净值与限购状态均重新判断。\n\n## 版本口径\n\nCY-6比例确认后仍按原申请额选费率；CY-7改为按获配额重新选档。2026年10月10日起受理的订单采用CY-7，含此前预填但尚未受理的申请；已在10月9日受理的订单仍用CY-6，即使其确认日落在10月10日后。\n\n## 资料边界\n\n本说明不提供未来份额净值、保证收益率、销售机构完整开放日历或具体退款到账日。示例净值仅用于演算；遇开放日或额度问题应读取对应日期公告，不能由本说明推测。\n"
+  },
+  "items": [
+    {
+      "token": "92a82661c3c94a479dd898ff7bf2738a",
+      "question": "东苑施工单位的收款银行卡号是什么？",
+      "gold": {
+        "referenceAnswer": "文档未提供施工方银行账号，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "编造账号或拿台账金额当账号"
+        ],
+        "requiredFacts": [
+          "文档未提供施工方银行账号",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "d42513a9187c4e0ca3c62a0763f78378",
+      "question": "汀禾今天美元实时购汇价是多少？",
+      "gold": {
+        "referenceAnswer": "文档未提供实时外汇牌价，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把7.20演练价称为实时价"
+        ],
+        "requiredFacts": [
+          "文档未提供实时外汇牌价",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "4f5fbf4b9316498480c3f637fe804f84",
+      "question": "汀禾同额BEN演算，本行费用折美元扣多少，学校实收多少？",
+      "gold": {
+        "referenceAnswer": "本行费用72+80=152元，折152÷7.20=21.11美元；再扣中间行15美元，实收9963.89美元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "本行费用另收人民币不扣本金",
+          "实收9985美元"
+        ],
+        "requiredFacts": [
+          "本行费152元",
+          "折21.11美元",
+          "实收9963.89美元"
+        ],
+        "evidence": [
+          {
+            "start": 119,
+            "end": 340,
+            "text": "## 费用承担方式\n\n| 方式 | 汇出手续费 | 本行电讯费 | 中间行扣费 |\n| --- | --- | --- | --- |\n| OUR | 汇款人付 | 汇款人付 | 本行按实向汇款人追收 |\n| SHA | 汇款人付 | 汇款人付 | 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。"
+          },
+          {
+            "start": 342,
+            "end": 480,
+            "text": "## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。"
+          },
+          {
+            "start": 696,
+            "end": 824,
+            "text": "## 演算\n\n一笔汇款本金10000美元，实际购汇价7.20人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。"
+          }
+        ]
+      },
+      "answer": "按文中同额BEN演算：本金10000美元、购汇价7.20，汇出手续费为10000×7.20×0.1%=72元，未低于50元、也未超过260元；加电讯费80元，本行人民币费用合计152元，按同一成交价折回美元为152÷7.20≈21.11美元，到分四舍五入后从本金扣除。中间行实费15美元也从本金扣除，学校收款行未另扣费，因此学校实收约为10000−21.11−15=9963.89美元。",
+      "grounded": true,
+      "citedTexts": [
+        "单视为自动取消。若客户提供两封不同日期的学校邮件，先核实哪封为有效收款指示，不能从两封里各抄一部分拼接账户。客户在确认前可查看费用方式和购汇成交信息，点击确认表示提交指令，不代表已经完成国际清算。\n\n## 演算\n\n一笔汇款本金10000美元，实际购汇价7.20人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。\n\n",
+        "| 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。\n\n## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "bb460ba28fac41d1941e3a265382ff20",
+      "question": "办理东苑专户拨款的监管行柜员私人手机号是什么？",
+      "gold": {
+        "referenceAnswer": "文档未提供监管行柜员私人联系方式，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "编造手机号"
+        ],
+        "requiredFacts": [
+          "文档未提供监管行柜员私人联系方式",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "1d59da5fdab54eda891465f7033c0e8e",
+      "question": "汀禾6月30日受理、7月2日召回的指令另收80元本行召回费吗？",
+      "gold": {
+        "referenceAnswer": "按TH-2不另收，版本由指令受理日期决定；不能按7月召回时点套TH-3。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "召回时新版收80元"
+        ],
+        "requiredFacts": [
+          "TH-2",
+          "不另收80元",
+          "受理日决定版本"
+        ],
+        "evidence": [
+          {
+            "start": 1191,
+            "end": 1308,
+            "text": "## 版本沿革\n\nTH-2把召回电讯费包含在原汇款电讯费中；TH-3对2026年7月1日起受理的新指令单列80元召回费。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2不另收本行召回电讯费。其他已发送后不退原手续费的规则未变。"
+          }
+        ]
+      },
+      "answer": "不另收。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2不另收本行召回电讯费；TH-3对2026年7月1日起受理的新指令才单列80元召回费。",
+      "grounded": true,
+      "citedTexts": [
+        "包含在原汇款电讯费中；TH-3对2026年7月1日起受理的新指令单列80元召回费。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2不另收本行召回电讯费。其他已发送后不退原手续费的规则未变。\n\n## 内容边界\n\n本约定不提供学校真实收款账号、银行实时外汇牌价、实际中间行路径或确保到账的时刻。演练15美元不是对所有路径的中间行收费承诺。\n",
+        "已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。\n\n## 版本沿革\n\nTH-2把召回电讯费包含在原汇款电讯费中；TH-3对2026年7月1日起受理的新指令单列80元召回费。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2不另收本行召回电讯费。其他已发送后不退原手续费的规则未变。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "5ac4cc49b6744de48f0fed6b7a0f9e39",
+      "question": "汀禾SHA演算的本行手续费、电讯费、客户人民币总支出和学校美元实收各是多少？",
+      "gold": {
+        "referenceAnswer": "本金72000元，手续费72元、电讯80元，客户总支出72152元；SHA中间行从本金扣15美元，学校实收9985美元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "学校实收10000美元",
+          "客户总支出72000元"
+        ],
+        "requiredFacts": [
+          "手续费72元",
+          "电讯费80元",
+          "总支出72152元",
+          "学校实收9985美元"
+        ],
+        "evidence": [
+          {
+            "start": 119,
+            "end": 340,
+            "text": "## 费用承担方式\n\n| 方式 | 汇出手续费 | 本行电讯费 | 中间行扣费 |\n| --- | --- | --- | --- |\n| OUR | 汇款人付 | 汇款人付 | 本行按实向汇款人追收 |\n| SHA | 汇款人付 | 汇款人付 | 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。"
+          },
+          {
+            "start": 342,
+            "end": 480,
+            "text": "## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。"
+          },
+          {
+            "start": 696,
+            "end": 824,
+            "text": "## 演算\n\n一笔汇款本金10000美元，实际购汇价7.20人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。"
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "2c8e14d230c3468bbf2c412b72381cf5",
+      "question": "汀禾今天美元实时购汇价是多少？",
+      "gold": {
+        "referenceAnswer": "文档未提供实时外汇牌价，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把7.20演练价称为实时价"
+        ],
+        "requiredFacts": [
+          "文档未提供实时外汇牌价",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "13d9de88343546d1b45961d7744f3ade",
+      "question": "汀禾6月30日受理、7月2日召回的指令另收80元本行召回费吗？",
+      "gold": {
+        "referenceAnswer": "按TH-2不另收，版本由指令受理日期决定；不能按7月召回时点套TH-3。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "召回时新版收80元"
+        ],
+        "requiredFacts": [
+          "TH-2",
+          "不另收80元",
+          "受理日决定版本"
+        ],
+        "evidence": [
+          {
+            "start": 1191,
+            "end": 1308,
+            "text": "## 版本沿革\n\nTH-2把召回电讯费包含在原汇款电讯费中；TH-3对2026年7月1日起受理的新指令单列80元召回费。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2不另收本行召回电讯费。其他已发送后不退原手续费的规则未变。"
+          }
+        ]
+      },
+      "answer": "不另收。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2处理，本行召回电讯费包含在原汇款电讯费中，不另收80元；80元单列召回费适用于2026年7月1日起受理的新指令。",
+      "grounded": true,
+      "citedTexts": [
+        "包含在原汇款电讯费中；TH-3对2026年7月1日起受理的新指令单列80元召回费。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2不另收本行召回电讯费。其他已发送后不退原手续费的规则未变。\n\n## 内容边界\n\n本约定不提供学校真实收款账号、银行实时外汇牌价、实际中间行路径或确保到账的时刻。演练15美元不是对所有路径的中间行收费承诺。\n",
+        "已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。\n\n## 版本沿革\n\nTH-2把召回电讯费包含在原汇款电讯费中；TH-3对2026年7月1日起受理的新指令单列80元召回费。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2不另收本行召回电讯费。其他已发送后不退原手续费的规则未变。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "cd547d87da15423784659c1f49e3d60d",
+      "question": "澄屿同一客户同日两笔独立60万元申请可合成120万元用0.5%吗？",
+      "gold": {
+        "referenceAnswer": "不可，两独立申请号分别60万元，各用0.8%档，不能为降费合并。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "同日同人自动合并120万元"
+        ],
+        "requiredFacts": [
+          "独立申请分别计费",
+          "各60万元用0.8%",
+          "不能合并成120万元"
+        ],
+        "evidence": [
+          {
+            "start": 272,
+            "end": 498,
+            "text": "## 前端费率\n\n| 单笔申请金额A | 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。"
+          },
+          {
+            "start": 500,
+            "end": 753,
+            "text": "## 支付与登记的接口口径\n\n销售机构收到申请后先核对交易账户状态，再把申请金额、受理时间和到账流水关联提交。客户重复点击支付按钮时，支付平台可能生成多个尝试编号；只有最终对应到账流水的有效申请进入登记批次，失败尝试不能合并成一笔大额申请。客户使用两张银行卡分两次付款，销售平台若形成两个独立申请编号，登记仍按两笔费率处理；同一个有效申请编号的分次到账则以其全额到账时点判断是否进入受理日。金额相加是否跨费率档，不能脱离申请编号来判断。登记员只可补充到账关联，不能为了降低费率把两笔不同申请号手工拼成一笔。"
+          },
+          {
+            "start": 884,
+            "end": 1007,
+            "text": "## 演练订单\n\n订单甲申请100800元，T日净值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。"
+          }
+        ]
+      },
+      "answer": "不能。原文说明订单乙和丙是同一天、同一客户的两个独立申请编号，各申请60万元，且这三单独立演算；同时限购日应先对每个有效申请计算获配申请金额，再按获配金额重选费率档，而不是按原申请全额合并计算。因此不能把两笔独立申请合成120万元套用0.5%费率。",
+      "grounded": true,
+      "citedTexts": [
+        "值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。\n\n## 限购日的比例确认\n\n公告限购时，先对每个有效申请计算获配申请金额，再按获配金额重选上表费率档并计算份额；未获配部分原路退回，不收申购费。采用比例确认不是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。\n\n## 暂停与已受理单\n\n登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。正常情况下销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "6ff7504759304d798cfd59e84aaa7547",
+      "question": "澄屿CY-7原申请120万元，限购后获配60万元，按哪档收费？未获配部分收费吗？",
+      "gold": {
+        "referenceAnswer": "按获配60万元重新选0.8%档；未获配部分原路退回，不收申购费。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按120万元0.5%",
+          "先对120万元全额收费"
+        ],
+        "requiredFacts": [
+          "按60万元获配额选档",
+          "0.8%",
+          "未获配部分不收费并原路退回"
+        ],
+        "evidence": [
+          {
+            "start": 272,
+            "end": 498,
+            "text": "## 前端费率\n\n| 单笔申请金额A | 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。"
+          },
+          {
+            "start": 1009,
+            "end": 1185,
+            "text": "## 限购日的比例确认\n\n公告限购时，先对每个有效申请计算获配申请金额，再按获配金额重选上表费率档并计算份额；未获配部分原路退回，不收申购费。采用比例确认不是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。"
+          }
+        ]
+      },
+      "answer": "按CY-7规则，限购时应先计算获配申请金额，再按获配金额重新选择费率档并计算份额；因此该笔应按获配的60万元对应档位收费，而不是按原申请120万元选档。未获配部分原路退回，不收申购费。",
+      "grounded": true,
+      "citedTexts": [
+        "值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。\n\n## 限购日的比例确认\n\n公告限购时，先对每个有效申请计算获配申请金额，再按获配金额重选上表费率档并计算份额；未获配部分原路退回，不收申购费。采用比例确认不是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。\n\n",
+        "费用对账分别记录申请额、净申购额、费用和最终份额；一笔订单的净申购额加费用应等于获配申请额。撤销后的订单保留审计记录，不再进入后续登记批次；客户重新提交是新申请，受理日、净值与限购状态均重新判断。\n\n## 版本口径\n\nCY-6比例确认后仍按原申请额选费率；CY-7改为按获配额重新选档。2026年10月10日起受理的订单采用CY-7，含此前预填但尚未受理的申请；已在10月9日受理的订单仍用CY-6，即使其确认日落在10月10日后。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "9e150284238844b59e21c227fb323fd0",
+      "question": "东苑有停工风险标记时，现场排险款需要哪些签字，是否可以突破留存？",
+      "gold": {
+        "referenceAnswer": "风险岗与住建联络岗双签；排险款仍累计计入已拨付，不豁免20%留存。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "停工期间所有付款都绝对禁止",
+          "双签即可取消留存"
+        ],
+        "requiredFacts": [
+          "风险岗与住建联络岗双签",
+          "计入累计已拨付",
+          "不得豁免20%留存"
+        ],
+        "evidence": [
+          {
+            "start": 9006,
+            "end": 9137,
+            "text": "## 留存与本次计算\n\n无论节点比例如何，拨后必须留存监管基数的20%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。"
+          },
+          {
+            "start": 14816,
+            "end": 14923,
+            "text": "## 停工例外\n\n有有效停工风险标记时，普通进度款暂停；仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签。排险款仍计入累计已拨付，不豁免20%留存。停工标记解除须有复工查验记录，建设方自行宣布复工无效。"
+          }
+        ]
+      },
+      "answer": "有有效停工风险标记时，仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签；排险款仍计入累计已拨付，不豁免20%留存，因此不能突破留存。",
+      "grounded": true,
+      "citedTexts": [
+        "有有效停工风险标记时，普通进度款暂停；仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签。排险款仍计入累计已拨付，不豁免20%留存。停工标记解除须有复工查验记录，建设方自行宣布复工无效。\n\n## 内部办理札记 K：Historical worksheets and current decisions\n\nA folder may contain an old worksheet prepared before the current edition took effect. Staff retain that worksheet to explain the historical decision. They label its edition and decision status instead of replacing its numbers with current values, because doing so would make the historical bank movement difficult to reconcile. A worksheet can remain historically accurate while being unsuitable for a new application.\n\n",
+        " the regulatory threshold. Presentation convenience cannot alter the meaning of the source fields.\n\n## 停工例外\n\n有有效停工风险标记时，普通进度款暂停；仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签。排险款仍计入累计已拨付，不豁免20%留存。停工标记解除须有复工查验记录，建设方自行宣布复工无效。\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "baabb046be6b4fceb49ba7246a7e205f",
+      "question": "办理东苑专户拨款的监管行柜员私人手机号是什么？",
+      "gold": {
+        "referenceAnswer": "文档未提供监管行柜员私人联系方式，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "编造手机号"
+        ],
+        "requiredFacts": [
+          "文档未提供监管行柜员私人联系方式",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "0ec7f29c50f8428db02862405d0e118f",
+      "question": "澄屿订单甲100800元、净值1.2500，费用和确认份额是多少？",
+      "gold": {
+        "referenceAnswer": "费率0.8%，净申购金额100800÷1.008=100000元，费用800元；份额100000÷1.25=80000.00份。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "先扣806.40元",
+          "按扣款当日页面旧净值成交"
+        ],
+        "requiredFacts": [
+          "0.8%",
+          "净申购100000元",
+          "费用800元",
+          "80000.00份"
+        ],
+        "evidence": [
+          {
+            "start": 272,
+            "end": 498,
+            "text": "## 前端费率\n\n| 单笔申请金额A | 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。"
+          },
+          {
+            "start": 884,
+            "end": 1007,
+            "text": "## 演练订单\n\n订单甲申请100800元，T日净值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。"
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "3f83ab9741654ffb9ddbf40e89c8c1d4",
+      "question": "汀禾召回成功后保证按原人民币本金退回吗？未选择结汇会如何？",
+      "gold": {
+        "referenceAnswer": "不保证，先退美元实收净额；若选结汇按退汇日实际结汇价，损益客户承担，不选则留外币。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "自动原人民币全额返还"
+        ],
+        "requiredFacts": [
+          "退美元实收净额",
+          "结汇按退汇日实际价",
+          "客户承担汇损益",
+          "不选结汇留外币"
+        ],
+        "evidence": [
+          {
+            "start": 959,
+            "end": 1077,
+            "text": "## 退汇及重新换汇\n\n退汇先退美元实收净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。"
+          }
+        ]
+      },
+      "answer": "不保证按原人民币本金退回。退汇先退美元实收净额，客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。",
+      "grounded": true,
+      "citedTexts": [
+        "净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。\n\n## 本行录入错误\n\n若已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。\n\n",
+        "销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。\n\n## 退汇及重新换汇\n\n退汇先退美元实收净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "d8003e4e8ebe4ad1b71e6259ad6b3846",
+      "question": "地下结构验收节点的累计比例是多少，基数会因新回款提高吗？",
+      "gold": {
+        "referenceAnswer": "累计35%，监管基数在建档时固定，不随回款提高。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "本次必拨35%",
+          "用当前现金作基数"
+        ],
+        "requiredFacts": [
+          "累计35%",
+          "基数建档时固定",
+          "新回款不增加监管基数"
+        ],
+        "evidence": [
+          {
+            "start": 4578,
+            "end": 4747,
+            "text": "## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。"
+          }
+        ]
+      },
+      "answer": "地下结构验收节点的累计比例为35%。监管基数在项目建档时固定，不随当日销售回款增加，因此新回款不会提高基数。",
+      "grounded": true,
+      "citedTexts": [
+        "on, supporting evidence and approval route, without treating an accounting label as authorization.\n\n## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n",
+        "基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "57f0482bbfd24767861fbce818ee7df7",
+      "question": "澄屿某限购退款一定在几月几日到银行卡？",
+      "gold": {
+        "referenceAnswer": "文档未提供具体退款到账日，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把T+1确认时点当退款保证日"
+        ],
+        "requiredFacts": [
+          "文档未提供具体退款到账日",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "540e719aefd544968bfab4e9a57f3644",
+      "question": "东苑有停工风险标记时，现场排险款需要哪些签字，是否可以突破留存？",
+      "gold": {
+        "referenceAnswer": "风险岗与住建联络岗双签；排险款仍累计计入已拨付，不豁免20%留存。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "停工期间所有付款都绝对禁止",
+          "双签即可取消留存"
+        ],
+        "requiredFacts": [
+          "风险岗与住建联络岗双签",
+          "计入累计已拨付",
+          "不得豁免20%留存"
+        ],
+        "evidence": [
+          {
+            "start": 9006,
+            "end": 9137,
+            "text": "## 留存与本次计算\n\n无论节点比例如何，拨后必须留存监管基数的20%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。"
+          },
+          {
+            "start": 14816,
+            "end": 14923,
+            "text": "## 停工例外\n\n有有效停工风险标记时，普通进度款暂停；仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签。排险款仍计入累计已拨付，不豁免20%留存。停工标记解除须有复工查验记录，建设方自行宣布复工无效。"
+          }
+        ]
+      },
+      "answer": "有有效停工风险标记时，仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签；排险款仍计入累计已拨付，不豁免20%留存，因此不能突破留存。",
+      "grounded": true,
+      "citedTexts": [
+        "有有效停工风险标记时，普通进度款暂停；仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签。排险款仍计入累计已拨付，不豁免20%留存。停工标记解除须有复工查验记录，建设方自行宣布复工无效。\n\n## 内部办理札记 K：Historical worksheets and current decisions\n\nA folder may contain an old worksheet prepared before the current edition took effect. Staff retain that worksheet to explain the historical decision. They label its edition and decision status instead of replacing its numbers with current values, because doing so would make the historical bank movement difficult to reconcile. A worksheet can remain historically accurate while being unsuitable for a new application.\n\n",
+        " the regulatory threshold. Presentation convenience cannot alter the meaning of the source fields.\n\n## 停工例外\n\n有有效停工风险标记时，普通进度款暂停；仅现场排险支出可走专项通道，要求监管行风险岗与住建联络岗双签。排险款仍计入累计已拨付，不豁免20%留存。停工标记解除须有复工查验记录，建设方自行宣布复工无效。\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "67d5d1e44e64415782e308242f2ffa28",
+      "question": "汀禾已发送未入账和已经入账，客户能否单方撤销？",
+      "gold": {
+        "referenceAnswer": "已发送未入账只能申请召回且不保证成功，通常本行80元召回费及中间行实费；已入账需收款人同意退汇。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "已发送可无条件免费撤销",
+          "已入账也可单方扣回"
+        ],
+        "requiredFacts": [
+          "已发送仅申请召回不保证",
+          "通常80元本行召回费另有中间行实费",
+          "已入账须收款人同意"
+        ],
+        "evidence": [
+          {
+            "start": 826,
+            "end": 957,
+            "text": "## 撤回状态\n\n待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。"
+          }
+        ]
+      },
+      "answer": "不能单方撤销。已发送未入账只能申请召回，不保证成功，并收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。",
+      "grounded": true,
+      "citedTexts": [
+        "销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。\n\n## 退汇及重新换汇\n\n退汇先退美元实收净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。\n\n",
+        "人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。\n\n## 撤回状态\n\n待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "b9c3b6a89bc343ba947ba10fc499692b",
+      "question": "按东苑演算台账，封顶备案后本次申请最多批准多少万元？说明两道限制。",
+      "gold": {
+        "referenceAnswer": "节点余量1000×65%−200=450万元；现金扣留存700−1000×20%=500万元；申请500万元，最多批准450万元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "批准500万元",
+          "将65%当本次比例",
+          "将已拨付再次从现金扣除"
+        ],
+        "requiredFacts": [
+          "节点余量450万元",
+          "现金扣留存后500万元",
+          "本次最多450万元"
+        ],
+        "evidence": [
+          {
+            "start": 4578,
+            "end": 4747,
+            "text": "## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。"
+          },
+          {
+            "start": 9006,
+            "end": 9137,
+            "text": "## 留存与本次计算\n\n无论节点比例如何，拨后必须留存监管基数的20%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。"
+          },
+          {
+            "start": 11909,
+            "end": 12005,
+            "text": "东苑演算台账：监管基数1000万元，当前专户现金700万元，已实际拨付200万元，封顶已备案，申请500万元。台账数字仅用于本细则演算，不代表任何真实项目。其他未付款工程合同不得先行冲减现金。"
+          }
+        ]
+      },
+      "answer": "按东苑演算台账，封顶备案后累计可拨付上限为监管基数的65%，即1000×65%=650万元；已实际拨付200万元，因此累计口径下最多还可批准450万元。同时受专户现金700万元限制，本次申请500万元未超过现金余额，故两道限制取较小值，本次最多批准450万元。",
+      "grounded": true,
+      "citedTexts": [
+        "ts an ordinary progress payment from being accidentally processed under the emergency description.\n\n东苑演算台账：监管基数1000万元，当前专户现金700万元，已实际拨付200万元，封顶已备案，申请500万元。台账数字仅用于本细则演算，不代表任何真实项目。其他未付款工程合同不得先行冲减现金。\n\n",
+        "on, supporting evidence and approval route, without treating an accounting label as authorization.\n\n## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "8de04fb058cc490e9743c7058f8cd0b9",
+      "question": "东苑满足哪组条件后，才能解除20%的续建留存？",
+      "gold": {
+        "referenceAnswer": "首次交付满90日且无停工处置；仅竣工验收登记不能解除。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "竣工即解除",
+          "交付当日解除"
+        ],
+        "requiredFacts": [
+          "首次交付满90日",
+          "无停工处置"
+        ],
+        "evidence": [
+          {
+            "start": 4578,
+            "end": 4747,
+            "text": "## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。"
+          },
+          {
+            "start": 9006,
+            "end": 9137,
+            "text": "## 留存与本次计算\n\n无论节点比例如何，拨后必须留存监管基数的20%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。"
+          }
+        ]
+      },
+      "answer": "达到首次交付满90日且无停工处置时，才解除监管基数20%的续建留存。",
+      "grounded": true,
+      "citedTexts": [
+        "ed on, while the historical folder remains complete enough to explain the sequence of corrections.\n\n## 留存与本次计算\n\n无论节点比例如何，拨后必须留存监管基数的20%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "835b7700f4844195b3075b6476eb0c4c",
+      "question": "汀禾SHA演算的本行手续费、电讯费、客户人民币总支出和学校美元实收各是多少？",
+      "gold": {
+        "referenceAnswer": "本金72000元，手续费72元、电讯80元，客户总支出72152元；SHA中间行从本金扣15美元，学校实收9985美元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "学校实收10000美元",
+          "客户总支出72000元"
+        ],
+        "requiredFacts": [
+          "手续费72元",
+          "电讯费80元",
+          "总支出72152元",
+          "学校实收9985美元"
+        ],
+        "evidence": [
+          {
+            "start": 119,
+            "end": 340,
+            "text": "## 费用承担方式\n\n| 方式 | 汇出手续费 | 本行电讯费 | 中间行扣费 |\n| --- | --- | --- | --- |\n| OUR | 汇款人付 | 汇款人付 | 本行按实向汇款人追收 |\n| SHA | 汇款人付 | 汇款人付 | 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。"
+          },
+          {
+            "start": 342,
+            "end": 480,
+            "text": "## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。"
+          },
+          {
+            "start": 696,
+            "end": 824,
+            "text": "## 演算\n\n一笔汇款本金10000美元，实际购汇价7.20人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。"
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "c1137e0820d749cda80cc30ca701e28a",
+      "question": "东苑施工单位的收款银行卡号是什么？",
+      "gold": {
+        "referenceAnswer": "文档未提供施工方银行账号，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "编造账号或拿台账金额当账号"
+        ],
+        "requiredFacts": [
+          "文档未提供施工方银行账号",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "2f2f792cc8834bb390e61e3174bbc7ac",
+      "question": "汀禾同额BEN演算，本行费用折美元扣多少，学校实收多少？",
+      "gold": {
+        "referenceAnswer": "本行费用72+80=152元，折152÷7.20=21.11美元；再扣中间行15美元，实收9963.89美元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "本行费用另收人民币不扣本金",
+          "实收9985美元"
+        ],
+        "requiredFacts": [
+          "本行费152元",
+          "折21.11美元",
+          "实收9963.89美元"
+        ],
+        "evidence": [
+          {
+            "start": 119,
+            "end": 340,
+            "text": "## 费用承担方式\n\n| 方式 | 汇出手续费 | 本行电讯费 | 中间行扣费 |\n| --- | --- | --- | --- |\n| OUR | 汇款人付 | 汇款人付 | 本行按实向汇款人追收 |\n| SHA | 汇款人付 | 汇款人付 | 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。"
+          },
+          {
+            "start": 342,
+            "end": 480,
+            "text": "## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。"
+          },
+          {
+            "start": 696,
+            "end": 824,
+            "text": "## 演算\n\n一笔汇款本金10000美元，实际购汇价7.20人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。"
+          }
+        ]
+      },
+      "answer": "按文中同额BEN演算：本金10000美元、购汇价7.20元/美元。本行费用为汇出手续费加电讯费：手续费按10000×7.20×0.1%＝72元，电讯费80元，合计152元；按同一成交价折回美元为152÷7.20≈21.11美元，从本金扣除。学校实收还需扣除中间行费用；文中该笔BEN演算未给出中间行扣费金额，因此无法据此算出学校实收的具体数额。",
+      "grounded": true,
+      "citedTexts": [
+        "260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。\n\n## 指令登记\n\n经办核验录取或缴费材料上的学校名称、收款账户和学生关联信息。学校通知的应缴学费不是客户账户余额，不能把材料上的金额直接当作可用资金。收款账号或学校名称更正应在原指令下留存修改轨迹，不得新建一笔相同金额指令再把旧单视为自动取消。若客户提供两封不同日期的学校邮件，先核实哪封为有效收款指示，不能从两封里各抄一部分拼接账户。客户在确认前可查看费用方式和购汇成交信息，点击确认表示提交指令，不代表已经完成国际清算。\n\n",
+        "单视为自动取消。若客户提供两封不同日期的学校邮件，先核实哪封为有效收款指示，不能从两封里各抄一部分拼接账户。客户在确认前可查看费用方式和购汇成交信息，点击确认表示提交指令，不代表已经完成国际清算。\n\n## 演算\n\n一笔汇款本金10000美元，实际购汇价7.20人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。\n\n",
+        "| 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。\n\n## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "57f9d0350e844db18b24237a1fcc0f39",
+      "question": "澄屿开放日15:00整提交且当日到账，归当天吗？15:00整能撤当天已受理单吗？",
+      "gold": {
+        "referenceAnswer": "提交须顺延下一符合条件的开放日，15:00整也不能撤当天已受理单；两处都不含边界。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "15:00整算当天",
+          "提交顺延但15:00能撤"
+        ],
+        "requiredFacts": [
+          "15:00整提交顺延",
+          "15:00整不能撤单"
+        ],
+        "evidence": [
+          {
+            "start": 130,
+            "end": 270,
+            "text": "## 受理日与撤单\n\n开放日15:00之前（不含15:00）提交且款项同日到账，以当日为T日；15:00及以后或款项次日到账，顺延至同时满足提交时点与到账条件的下一开放日。非开放日的申请排至下一开放日，实际开放日见另行公告。撤单须在受理日15:00之前完成，15:00整不能撤销。"
+          }
+        ]
+      },
+      "answer": "15:00整提交不属于“15:00之前（不含15:00）”，因此不能归为当天，应顺延至同时满足提交时点与到账条件的下一开放日。撤单须在受理日15:00之前完成，15:00整不能撤销。",
+      "grounded": true,
+      "citedTexts": [
+        "构，适用于2026年10月10日起受理的申购单。本基金实行未知价申购，提交时页面显示的上一交易日净值只是参考，不能锁定成交份额。基金份额登记与销售平台的支付状态分别记账，扣款成功不代表登记已确认。\n\n## 受理日与撤单\n\n开放日15:00之前（不含15:00）提交且款项同日到账，以当日为T日；15:00及以后或款项次日到账，顺延至同时满足提交时点与到账条件的下一开放日。非开放日的申请排至下一开放日，实际开放日见另行公告。撤单须在受理日15:00之前完成，15:00整不能撤销。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "c93af7d1f2ac4e25880702eb8308bffe",
+      "question": "澄屿订单甲100800元、净值1.2500，费用和确认份额是多少？",
+      "gold": {
+        "referenceAnswer": "费率0.8%，净申购金额100800÷1.008=100000元，费用800元；份额100000÷1.25=80000.00份。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "先扣806.40元",
+          "按扣款当日页面旧净值成交"
+        ],
+        "requiredFacts": [
+          "0.8%",
+          "净申购100000元",
+          "费用800元",
+          "80000.00份"
+        ],
+        "evidence": [
+          {
+            "start": 272,
+            "end": 498,
+            "text": "## 前端费率\n\n| 单笔申请金额A | 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。"
+          },
+          {
+            "start": 884,
+            "end": 1007,
+            "text": "## 演练订单\n\n订单甲申请100800元，T日净值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。"
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "a6bc17e1c156413f8ebe6d3804e490a2",
+      "question": "澄屿开放日15:00整提交且当日到账，归当天吗？15:00整能撤当天已受理单吗？",
+      "gold": {
+        "referenceAnswer": "提交须顺延下一符合条件的开放日，15:00整也不能撤当天已受理单；两处都不含边界。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "15:00整算当天",
+          "提交顺延但15:00能撤"
+        ],
+        "requiredFacts": [
+          "15:00整提交顺延",
+          "15:00整不能撤单"
+        ],
+        "evidence": [
+          {
+            "start": 130,
+            "end": 270,
+            "text": "## 受理日与撤单\n\n开放日15:00之前（不含15:00）提交且款项同日到账，以当日为T日；15:00及以后或款项次日到账，顺延至同时满足提交时点与到账条件的下一开放日。非开放日的申请排至下一开放日，实际开放日见另行公告。撤单须在受理日15:00之前完成，15:00整不能撤销。"
+          }
+        ]
+      },
+      "answer": "15:00整提交不属于“15:00之前（不含15:00）”，因此不能归为当天，应顺延至同时满足提交时点与到账条件的下一开放日；15:00整也不能撤销当天已受理单，撤单须在受理日15:00之前完成。",
+      "grounded": true,
+      "citedTexts": [
+        "# 澄屿稳衡基金登记说明 CY-7\n\n本材料及基金名称均为虚构，适用于2026年10月10日起受理的申购单。本基金实行未知价申购，提交时页面显示的上一交易日净值只是参考，不能锁定成交份额。基金份额登记与销售平台的支付状态分别记账，扣款成功不代表登记已确认。\n\n## 受理日与撤单\n\n开放日15:00之前（不含15:00）提交且款项同日到账，以当日为T日；15:00及以后或款项次日到账，顺延至同时满足提交时点与到账条件的下一开放日。非开放日的申请排至下一开放日，实际开放日见另行公告。撤单须在受理日15:00之前完成，15:00整不能撤销。\n\n",
+        "日为T日；15:00及以后或款项次日到账，顺延至同时满足提交时点与到账条件的下一开放日。非开放日的申请排至下一开放日，实际开放日见另行公告。撤单须在受理日15:00之前完成，15:00整不能撤销。\n\n## 前端费率\n\n| 单笔申请金额A | 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "aaecb732734b479faf04e420edbcaa3c",
+      "question": "汀禾这笔钱一定在今天几点进入学校账户？",
+      "gold": {
+        "referenceAnswer": "文档未提供保证到账时刻，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "根据OUR或SHA编造确切时刻"
+        ],
+        "requiredFacts": [
+          "文档未提供保证到账时刻",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "00fd9fa0a248440f9b7ecbcce4b65302",
+      "question": "澄屿10月9日已受理、10月12日确认的限购订单适用CY-6还是CY-7？",
+      "gold": {
+        "referenceAnswer": "CY-6，适用由受理日决定；10月9日已受理不因确认日晚于10月10日而改用CY-7。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "确认日在新版本后一律CY-7"
+        ],
+        "requiredFacts": [
+          "CY-6",
+          "按受理日而非确认日"
+        ],
+        "evidence": [
+          {
+            "start": 1708,
+            "end": 1824,
+            "text": "## 版本口径\n\nCY-6比例确认后仍按原申请额选费率；CY-7改为按获配额重新选档。2026年10月10日起受理的订单采用CY-7，含此前预填但尚未受理的申请；已在10月9日受理的订单仍用CY-6，即使其确认日落在10月10日后。"
+          }
+        ]
+      },
+      "answer": "适用CY-6。按版本口径，2026年10月10日起受理的订单采用CY-7；已在10月9日受理的订单仍用CY-6，即使其确认日落在10月10日后。因此，10月9日已受理、10月12日确认的限购订单适用CY-6。",
+      "grounded": true,
+      "citedTexts": [
+        "仍按原申请额选费率；CY-7改为按获配额重新选档。2026年10月10日起受理的订单采用CY-7，含此前预填但尚未受理的申请；已在10月9日受理的订单仍用CY-6，即使其确认日落在10月10日后。\n\n## 资料边界\n\n本说明不提供未来份额净值、保证收益率、销售机构完整开放日历或具体退款到账日。示例净值仅用于演算；遇开放日或额度问题应读取对应日期公告，不能由本说明推测。\n",
+        "费用对账分别记录申请额、净申购额、费用和最终份额；一笔订单的净申购额加费用应等于获配申请额。撤销后的订单保留审计记录，不再进入后续登记批次；客户重新提交是新申请，受理日、净值与限购状态均重新判断。\n\n## 版本口径\n\nCY-6比例确认后仍按原申请额选费率；CY-7改为按获配额重新选档。2026年10月10日起受理的订单采用CY-7，含此前预填但尚未受理的申请；已在10月9日受理的订单仍用CY-6，即使其确认日落在10月10日后。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "81b423c6535d45a1a9f861d85cf7a263",
+      "question": "一笔东苑拨款申请最初必须同时提交哪些进度证明资料？",
+      "gold": {
+        "referenceAnswer": "监理签章进度表、建设方付款指令、现场照片索引，三者缺一不可。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "销售人员口头确认可替代付款指令"
+        ],
+        "requiredFacts": [
+          "监理签章进度表",
+          "建设方付款指令",
+          "现场照片索引"
+        ],
+        "evidence": [
+          {
+            "start": 1605,
+            "end": 1721,
+            "text": "## 进度确认\n\n每次申请须同时具备监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。"
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "bd0ba54b9703442782238dab758fae3f",
+      "question": "汀禾待复核时免费撤销，已成交购汇会自动撤销吗？",
+      "gold": {
+        "referenceAnswer": "不会，免费取消的是汇款指令，购汇已成交则外币保留账户。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "自动按原价返还人民币"
+        ],
+        "requiredFacts": [
+          "仅撤销汇款指令",
+          "不撤销已成交购汇",
+          "外币留账户"
+        ],
+        "evidence": [
+          {
+            "start": 826,
+            "end": 957,
+            "text": "## 撤回状态\n\n待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。"
+          }
+        ]
+      },
+      "answer": "不会。待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留在账户中。",
+      "grounded": true,
+      "citedTexts": [
+        "人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。\n\n## 撤回状态\n\n待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "db6634986a4b4750afef486efdaa0983",
+      "question": "东苑满足哪组条件后，才能解除20%的续建留存？",
+      "gold": {
+        "referenceAnswer": "首次交付满90日且无停工处置；仅竣工验收登记不能解除。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "竣工即解除",
+          "交付当日解除"
+        ],
+        "requiredFacts": [
+          "首次交付满90日",
+          "无停工处置"
+        ],
+        "evidence": [
+          {
+            "start": 4578,
+            "end": 4747,
+            "text": "## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。"
+          },
+          {
+            "start": 9006,
+            "end": 9137,
+            "text": "## 留存与本次计算\n\n无论节点比例如何，拨后必须留存监管基数的20%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。"
+          }
+        ]
+      },
+      "answer": "达到首次交付满90日且无停工处置时，才解除监管基数20%的续建留存。",
+      "grounded": true,
+      "citedTexts": [
+        "ed on, while the historical folder remains complete enough to explain the sequence of corrections.\n\n## 留存与本次计算\n\n无论节点比例如何，拨后必须留存监管基数的20%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "194d9fc272ad4c928b731b1c84e165fb",
+      "question": "东苑的‘封顶’进度由什么条件认定？只有监理写明已封顶够吗？",
+      "gold": {
+        "referenceAnswer": "须主体封顶且质检备案完成；只有监理记载不够，未备案仍按地下结构节点。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "监理签字即享65%",
+          "封顶按70%"
+        ],
+        "requiredFacts": [
+          "主体封顶且质检备案完成",
+          "仅监理记载不足",
+          "未备案沿用地下结构节点"
+        ],
+        "evidence": [
+          {
+            "start": 1605,
+            "end": 1721,
+            "text": "## 进度确认\n\n每次申请须同时具备监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。"
+          },
+          {
+            "start": 4578,
+            "end": 4747,
+            "text": "## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。"
+          }
+        ]
+      },
+      "answer": "不够。主体封顶只有完成质检备案后才计为封顶节点；监理写了“已封顶”但备案未落库，仍沿用地下结构节点。此外，每次申请须同时具备监理签章的进度表、建设方付款指令和现场照片索引；材料齐全的登记时间只决定队列顺序，不自动满足节点条件。",
+      "grounded": true,
+      "citedTexts": [
+        "t does not certify an engineering stage, raise the fixed regulatory base or authorize any payment.\n\n## 进度确认\n\n每次申请须同时具备监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。\n\n",
+        "监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。\n\n## 内部办理札记 B：Cash snapshot and bank movements\n\nThe cash reviewer works from a dated account snapshot and its matching movement file. A promised purchaser payment stays on the forecast list until it is actually reflected in the account. A debit request awaiting bank execution is listed as an outstanding instruction rather than a completed disbursement. Review staff reconcile the snapshot time with the movement file so the same transfer is neither missed nor counted twice around the cut-off.\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "4b33adf4778c45279ec951268c084daa",
+      "question": "澄屿正常申购何时确认、何时开始收益权益？扣款成功可立即赎回吗？",
+      "gold": {
+        "referenceAnswer": "常规T+1开放日确认，收益起点为登记确认日；确认前不可赎，扣款成功不等于确认。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "扣款日开始收益并可立即赎回"
+        ],
+        "requiredFacts": [
+          "T+1开放日确认",
+          "登记确认日为收益起点",
+          "确认前不可赎"
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 128,
+            "text": "# 澄屿稳衡基金登记说明 CY-7\n\n本材料及基金名称均为虚构，适用于2026年10月10日起受理的申购单。本基金实行未知价申购，提交时页面显示的上一交易日净值只是参考，不能锁定成交份额。基金份额登记与销售平台的支付状态分别记账，扣款成功不代表登记已确认。"
+          },
+          {
+            "start": 755,
+            "end": 882,
+            "text": "## 确认与权益\n\n常规申购T+1开放日登记确认；确认前不进入可赎份额。收益起点是登记确认日，不是银行扣款日。T+1遇非开放日顺延。确认份额与可赎份额的时间差用于防止尚未核准的申请被提前赎回，不意味着本基金承诺收益，宣传中的历史曲线不得拿来代替登记结果。"
+          }
+        ]
+      },
+      "answer": "正常申购的确认时点为T+1（遇非开放日顺延），收益起点是登记确认日，而非银行扣款日。扣款成功不代表登记已确认，不能立即赎回；确认份额与可赎份额之间存在时间差，用于防止尚未核准的申请被提前赎回，待定期间也不先给出可赎份额。",
+      "grounded": true,
+      "citedTexts": [
+        "# 澄屿稳衡基金登记说明 CY-7\n\n本材料及基金名称均为虚构，适用于2026年10月10日起受理的申购单。本基金实行未知价申购，提交时页面显示的上一交易日净值只是参考，不能锁定成交份额。基金份额登记与销售平台的支付状态分别记账，扣款成功不代表登记已确认。\n\n",
+        "进入可赎份额。收益起点是登记确认日，不是银行扣款日。T+1遇非开放日顺延。确认份额与可赎份额的时间差用于防止尚未核准的申请被提前赎回，不意味着本基金承诺收益，宣传中的历史曲线不得拿来代替登记结果。\n\n## 演练订单\n\n订单甲申请100800元，T日净值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。\n\n",
+        "是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。\n\n## 暂停与已受理单\n\n登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。正常情况下销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "d7389fef1d624a7c8d4f8d6cd6d4addc",
+      "question": "东苑在2026年9月2日补正后重新审批的封顶申请，用70%还是65%，留存多少？",
+      "gold": {
+        "referenceAnswer": "按LQ-3，封顶累计65%，续建留存20%；补正后重新审批的新单适用新版。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "70%和15%",
+          "资料首次提交在旧版就永久沿用旧版"
+        ],
+        "requiredFacts": [
+          "LQ-3",
+          "封顶累计65%",
+          "留存20%"
+        ],
+        "evidence": [
+          {
+            "start": 16350,
+            "end": 16470,
+            "text": "## 版本沿革\n\nLQ-2曾规定封顶累计70%、续建留存15%；LQ-3将两项分别改为65%和20%。2026年9月1日前已最终批准的单笔按原批准额执行，之后新申请及补正后重新审批的单笔均用LQ-3。旧版只用于解释历史回单，不得套用于新单。"
+          }
+        ]
+      },
+      "answer": "根据提供的原文，主体封顶且备案完成对应的累计拨付上限为监管基数的65%，累计上限表中没有70%这一档。原文未提及“2026年9月2日补正后重新审批”的具体规则，也未说明留存比例，因此无法回答留存多少。",
+      "grounded": true,
+      "citedTexts": [
+        "on, supporting evidence and approval route, without treating an accounting label as authorization.\n\n## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n",
+        "基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "fa0afcbfc59f4fc3802e572080ed43af",
+      "question": "澄屿基金下周三的份额净值是多少？",
+      "gold": {
+        "referenceAnswer": "文档未提供未来份额净值，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把示例1.2500元当未来净值"
+        ],
+        "requiredFacts": [
+          "文档未提供未来份额净值",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "e6f64953a689494c8e0e4e5aacaee43f",
+      "question": "东苑的‘封顶’进度由什么条件认定？只有监理写明已封顶够吗？",
+      "gold": {
+        "referenceAnswer": "须主体封顶且质检备案完成；只有监理记载不够，未备案仍按地下结构节点。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "监理签字即享65%",
+          "封顶按70%"
+        ],
+        "requiredFacts": [
+          "主体封顶且质检备案完成",
+          "仅监理记载不足",
+          "未备案沿用地下结构节点"
+        ],
+        "evidence": [
+          {
+            "start": 1605,
+            "end": 1721,
+            "text": "## 进度确认\n\n每次申请须同时具备监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。"
+          },
+          {
+            "start": 4578,
+            "end": 4747,
+            "text": "## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。"
+          }
+        ]
+      },
+      "answer": "主体封顶只有在完成质检备案后才计为封顶节点；仅监理写明“已封顶”但备案未落库，仍沿用地下结构节点。因此只有监理写明已封顶不够。",
+      "grounded": true,
+      "citedTexts": [
+        "t does not certify an engineering stage, raise the fixed regulatory base or authorize any payment.\n\n## 进度确认\n\n每次申请须同时具备监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。\n\n",
+        "监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。\n\n## 内部办理札记 B：Cash snapshot and bank movements\n\nThe cash reviewer works from a dated account snapshot and its matching movement file. A promised purchaser payment stays on the forecast list until it is actually reflected in the account. A debit request awaiting bank execution is listed as an outstanding instruction rather than a completed disbursement. Review staff reconcile the snapshot time with the movement file so the same transfer is neither missed nor counted twice around the cut-off.\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "0ad0500460704a74bc3d56435bbdf399",
+      "question": "汀禾复核确认原始指示正确但本行录入错，召回费用与换汇损失如何处理？",
+      "gold": {
+        "referenceAnswer": "免本行召回电讯费，并承担错误导致的中间行召回费；不自动补偿客户自选结汇时点汇率损失，也不保证同意退汇。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "客户指示错也适用",
+          "本行保证所有汇损补偿"
+        ],
+        "requiredFacts": [
+          "免本行召回电讯费",
+          "承担错误导致中间行召回费",
+          "不自动补偿自选结汇损失"
+        ],
+        "evidence": [
+          {
+            "start": 1079,
+            "end": 1189,
+            "text": "## 本行录入错误\n\n若已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。"
+          }
+        ]
+      },
+      "answer": "若已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费，并承担由该错误导致的中间行召回费；客户原始指示有误不适用。该例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。",
+      "grounded": true,
+      "citedTexts": [
+        "净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。\n\n## 本行录入错误\n\n若已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。\n\n",
+        "已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。\n\n## 版本沿革\n\nTH-2把召回电讯费包含在原汇款电讯费中；TH-3对2026年7月1日起受理的新指令单列80元召回费。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2不另收本行召回电讯费。其他已发送后不退原手续费的规则未变。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "cdea2e5e5b624693bfa0df8df7e5f2fb",
+      "question": "汀禾召回成功后保证按原人民币本金退回吗？未选择结汇会如何？",
+      "gold": {
+        "referenceAnswer": "不保证，先退美元实收净额；若选结汇按退汇日实际结汇价，损益客户承担，不选则留外币。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "自动原人民币全额返还"
+        ],
+        "requiredFacts": [
+          "退美元实收净额",
+          "结汇按退汇日实际价",
+          "客户承担汇损益",
+          "不选结汇留外币"
+        ],
+        "evidence": [
+          {
+            "start": 959,
+            "end": 1077,
+            "text": "## 退汇及重新换汇\n\n退汇先退美元实收净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。"
+          }
+        ]
+      },
+      "answer": "不保证按原人民币本金退回。退汇先退美元实收净额，客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。",
+      "grounded": true,
+      "citedTexts": [
+        "净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。\n\n## 本行录入错误\n\n若已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。\n\n",
+        "销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。\n\n## 退汇及重新换汇\n\n退汇先退美元实收净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "1e6993ef12fd4f8089222c06cd7d23c5",
+      "question": "澄屿单笔申请恰好500万元，净申购金额用哪个公式？",
+      "gold": {
+        "referenceAnswer": "进入固定费档，每笔1000元，净申购金额5000000−1000=4999000元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "继续按0.5%",
+          "固定费10000元"
+        ],
+        "requiredFacts": [
+          "固定费1000元",
+          "净申购4999000元"
+        ],
+        "evidence": [
+          {
+            "start": 272,
+            "end": 498,
+            "text": "## 前端费率\n\n| 单笔申请金额A | 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。"
+          }
+        ]
+      },
+      "answer": "原文只给出通用口径：净申购金额=A÷(1+费率)，申购费=A−净申购金额；固定费档则净申购金额=A−1000元。原文未单独说明“恰好500万元”这一金额应适用哪一档或哪个公式，需结合对应费率档判断。",
+      "grounded": true,
+      "citedTexts": [
+        "A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。\n\n## 支付与登记的接口口径\n\n销售机构收到申请后先核对交易账户状态，再把申请金额、受理时间和到账流水关联提交。客户重复点击支付按钮时，支付平台可能生成多个尝试编号；只有最终对应到账流水的有效申请进入登记批次，失败尝试不能合并成一笔大额申请。客户使用两张银行卡分两次付款，销售平台若形成两个独立申请编号，登记仍按两笔费率处理；同一个有效申请编号的分次到账则以其全额到账时点判断是否进入受理日。金额相加是否跨费率档，不能脱离申请编号来判断。登记员只可补充到账关联，不能为了降低费率把两笔不同申请号手工拼成一笔。\n\n## 确认与权益\n\n常规申购T+1开放日登记确认；确认前不进入可赎份额。收益起点是登记确认日，不是银行扣款日。T+1遇非开放日顺延。确认份额与可赎份额的时间差用于防止尚未核准的申请被提前赎回，不意味着本基金承诺收益，宣传中的历史曲线不得拿来代替登记结果。\n\n## 演练订单\n\n订单甲申请100800元，T日净值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "7aedc1d6a94c49068e6fae322a9b39f5",
+      "question": "澄屿单笔申请恰好500万元，净申购金额用哪个公式？",
+      "gold": {
+        "referenceAnswer": "进入固定费档，每笔1000元，净申购金额5000000−1000=4999000元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "继续按0.5%",
+          "固定费10000元"
+        ],
+        "requiredFacts": [
+          "固定费1000元",
+          "净申购4999000元"
+        ],
+        "evidence": [
+          {
+            "start": 272,
+            "end": 498,
+            "text": "## 前端费率\n\n| 单笔申请金额A | 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。"
+          }
+        ]
+      },
+      "answer": "单笔申请金额A恰好500万元时，适用“A≥500万元，每笔1000元固定费”这一档，净申购金额=A−1000元。",
+      "grounded": true,
+      "citedTexts": [
+        "| 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "b7d563ed49ed4e03b3bf85d6a000729b",
+      "question": "澄屿系统暂停确认时，客户已扣款是否可当作已确认并换日补建订单？",
+      "gold": {
+        "referenceAnswer": "不能。应进入待定队列，恢复后按公告处理，不得换日重建来替代原单，也不先给可赎份额。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "换日重建不会影响净值",
+          "扣款即确认"
+        ],
+        "requiredFacts": [
+          "进入待定队列",
+          "扣款不等于确认",
+          "不换日重建原单",
+          "不给可赎份额"
+        ],
+        "evidence": [
+          {
+            "start": 1187,
+            "end": 1331,
+            "text": "## 暂停与已受理单\n\n登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。正常情况下销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。"
+          }
+        ]
+      },
+      "answer": "不可以。登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。",
+      "grounded": true,
+      "citedTexts": [
+        "值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。\n\n## 限购日的比例确认\n\n公告限购时，先对每个有效申请计算获配申请金额，再按获配金额重选上表费率档并计算份额；未获配部分原路退回，不收申购费。采用比例确认不是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。\n\n## 暂停与已受理单\n\n登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。正常情况下销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "03e3380c6c614163926661455360ecde",
+      "question": "地下结构验收节点的累计比例是多少，基数会因新回款提高吗？",
+      "gold": {
+        "referenceAnswer": "累计35%，监管基数在建档时固定，不随回款提高。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "本次必拨35%",
+          "用当前现金作基数"
+        ],
+        "requiredFacts": [
+          "累计35%",
+          "基数建档时固定",
+          "新回款不增加监管基数"
+        ],
+        "evidence": [
+          {
+            "start": 4578,
+            "end": 4747,
+            "text": "## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。"
+          }
+        ]
+      },
+      "answer": "地下结构验收节点的累计比例为35%；监管基数在项目建档时固定，不随当日销售回款增加。",
+      "grounded": true,
+      "citedTexts": [
+        "on, supporting evidence and approval route, without treating an accounting label as authorization.\n\n## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n",
+        "基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "b1c12c6d24db43dbaafbb09d6647a4e5",
+      "question": "澄屿某限购退款一定在几月几日到银行卡？",
+      "gold": {
+        "referenceAnswer": "文档未提供具体退款到账日，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把T+1确认时点当退款保证日"
+        ],
+        "requiredFacts": [
+          "文档未提供具体退款到账日",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "38217a8ffc5140369814a413fd52d3cb",
+      "question": "澄屿正常申购何时确认、何时开始收益权益？扣款成功可立即赎回吗？",
+      "gold": {
+        "referenceAnswer": "常规T+1开放日确认，收益起点为登记确认日；确认前不可赎，扣款成功不等于确认。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "扣款日开始收益并可立即赎回"
+        ],
+        "requiredFacts": [
+          "T+1开放日确认",
+          "登记确认日为收益起点",
+          "确认前不可赎"
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 128,
+            "text": "# 澄屿稳衡基金登记说明 CY-7\n\n本材料及基金名称均为虚构，适用于2026年10月10日起受理的申购单。本基金实行未知价申购，提交时页面显示的上一交易日净值只是参考，不能锁定成交份额。基金份额登记与销售平台的支付状态分别记账，扣款成功不代表登记已确认。"
+          },
+          {
+            "start": 755,
+            "end": 882,
+            "text": "## 确认与权益\n\n常规申购T+1开放日登记确认；确认前不进入可赎份额。收益起点是登记确认日，不是银行扣款日。T+1遇非开放日顺延。确认份额与可赎份额的时间差用于防止尚未核准的申请被提前赎回，不意味着本基金承诺收益，宣传中的历史曲线不得拿来代替登记结果。"
+          }
+        ]
+      },
+      "answer": "根据原文，正常申购的确认时点与收益权益起始时点未作明确说明；原文仅说明扣款成功不代表登记已确认，且待定期间不先给出可赎份额，因此不能认定扣款成功后可立即赎回。",
+      "grounded": true,
+      "citedTexts": [
+        "# 澄屿稳衡基金登记说明 CY-7\n\n本材料及基金名称均为虚构，适用于2026年10月10日起受理的申购单。本基金实行未知价申购，提交时页面显示的上一交易日净值只是参考，不能锁定成交份额。基金份额登记与销售平台的支付状态分别记账，扣款成功不代表登记已确认。\n\n## 受理日与撤单\n\n开放日15:00之前（不含15:00）提交且款项同日到账，以当日为T日；15:00及以后或款项次日到账，顺延至同时满足提交时点与到账条件的下一开放日。非开放日的申请排至下一开放日，实际开放日见另行公告。撤单须在受理日15:00之前完成，15:00整不能撤销。\n\n",
+        "值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。\n\n## 限购日的比例确认\n\n公告限购时，先对每个有效申请计算获配申请金额，再按获配金额重选上表费率档并计算份额；未获配部分原路退回，不收申购费。采用比例确认不是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。\n\n## 暂停与已受理单\n\n登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。正常情况下销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "e2fb7b9e66d444eb8e637e960e6ffe6d",
+      "question": "澄屿基金下周三的份额净值是多少？",
+      "gold": {
+        "referenceAnswer": "文档未提供未来份额净值，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把示例1.2500元当未来净值"
+        ],
+        "requiredFacts": [
+          "文档未提供未来份额净值",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "8a464bfb2aaa499b8847296e0fd20598",
+      "question": "澄屿系统暂停确认时，客户已扣款是否可当作已确认并换日补建订单？",
+      "gold": {
+        "referenceAnswer": "不能。应进入待定队列，恢复后按公告处理，不得换日重建来替代原单，也不先给可赎份额。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "换日重建不会影响净值",
+          "扣款即确认"
+        ],
+        "requiredFacts": [
+          "进入待定队列",
+          "扣款不等于确认",
+          "不换日重建原单",
+          "不给可赎份额"
+        ],
+        "evidence": [
+          {
+            "start": 1187,
+            "end": 1331,
+            "text": "## 暂停与已受理单\n\n登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。正常情况下销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。"
+          }
+        ]
+      },
+      "answer": "不可以。登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记。",
+      "grounded": true,
+      "citedTexts": [
+        "是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。\n\n## 暂停与已受理单\n\n登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。正常情况下销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "a7a6ddbd15104dd99a3733ec05f08960",
+      "question": "澄屿CY-7原申请120万元，限购后获配60万元，按哪档收费？未获配部分收费吗？",
+      "gold": {
+        "referenceAnswer": "按获配60万元重新选0.8%档；未获配部分原路退回，不收申购费。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按120万元0.5%",
+          "先对120万元全额收费"
+        ],
+        "requiredFacts": [
+          "按60万元获配额选档",
+          "0.8%",
+          "未获配部分不收费并原路退回"
+        ],
+        "evidence": [
+          {
+            "start": 272,
+            "end": 498,
+            "text": "## 前端费率\n\n| 单笔申请金额A | 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。"
+          },
+          {
+            "start": 1009,
+            "end": 1185,
+            "text": "## 限购日的比例确认\n\n公告限购时，先对每个有效申请计算获配申请金额，再按获配金额重选上表费率档并计算份额；未获配部分原路退回，不收申购费。采用比例确认不是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。"
+          }
+        ]
+      },
+      "answer": "按CY-7口径，限购时应先计算获配申请金额，再按获配金额重新选择费率档并计算份额；因此原申请120万元、获配60万元时，应按60万元对应的费率档收费，而不是按原申请120万元选档。未获配部分原路退回，不收申购费。",
+      "grounded": true,
+      "citedTexts": [
+        "值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。\n\n## 限购日的比例确认\n\n公告限购时，先对每个有效申请计算获配申请金额，再按获配金额重选上表费率档并计算份额；未获配部分原路退回，不收申购费。采用比例确认不是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。\n\n## 暂停与已受理单\n\n登记系统暂停确认时，申请进入待定队列，不能因扣款成功自行视为已确认；恢复后按公告说明处理。正常情况下销售端可补查申请状态，但不得以新日期重建一个申请来替代原待定单，否则可能改变净值归属。客户如需退回，应通过原申请的撤回或异常处理流程登记，待定期间不先给出可赎份额。\n\n",
+        "费用对账分别记录申请额、净申购额、费用和最终份额；一笔订单的净申购额加费用应等于获配申请额。撤销后的订单保留审计记录，不再进入后续登记批次；客户重新提交是新申请，受理日、净值与限购状态均重新判断。\n\n## 版本口径\n\nCY-6比例确认后仍按原申请额选费率；CY-7改为按获配额重新选档。2026年10月10日起受理的订单采用CY-7，含此前预填但尚未受理的申请；已在10月9日受理的订单仍用CY-6，即使其确认日落在10月10日后。\n\n## 资料边界\n\n本说明不提供未来份额净值、保证收益率、销售机构完整开放日历或具体退款到账日。示例净值仅用于演算；遇开放日或额度问题应读取对应日期公告，不能由本说明推测。\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "800e2508e030413087fc2e4f650dbab5",
+      "question": "东苑在2026年9月2日补正后重新审批的封顶申请，用70%还是65%，留存多少？",
+      "gold": {
+        "referenceAnswer": "按LQ-3，封顶累计65%，续建留存20%；补正后重新审批的新单适用新版。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "70%和15%",
+          "资料首次提交在旧版就永久沿用旧版"
+        ],
+        "requiredFacts": [
+          "LQ-3",
+          "封顶累计65%",
+          "留存20%"
+        ],
+        "evidence": [
+          {
+            "start": 16350,
+            "end": 16470,
+            "text": "## 版本沿革\n\nLQ-2曾规定封顶累计70%、续建留存15%；LQ-3将两项分别改为65%和20%。2026年9月1日前已最终批准的单笔按原批准额执行，之后新申请及补正后重新审批的单笔均用LQ-3。旧版只用于解释历史回单，不得套用于新单。"
+          }
+        ]
+      },
+      "answer": "根据现有原文，主体封顶且备案完成对应的可累计拨付比例为65%，不是70%；该表是累计比例，不是本次申请比例。原文未说明补正后重新审批时具体留存多少，因此留存金额无法据此确定。",
+      "grounded": true,
+      "citedTexts": [
+        "on, supporting evidence and approval route, without treating an accounting label as authorization.\n\n## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n",
+        "基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "c0679fda9e2a4f70ab23d9359fc5caa6",
+      "question": "汀禾OUR的260元手续费上限包含中间行实费吗，能保证入账速度吗？",
+      "gold": {
+        "referenceAnswer": "不含，中间行实费另向汇款人追收；OUR不保证路径或学校入账速度。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "所有费用封顶260元",
+          "OUR保证即时到账"
+        ],
+        "requiredFacts": [
+          "260元不含中间行实费",
+          "向汇款人按实追收",
+          "不保证入账速度"
+        ],
+        "evidence": [
+          {
+            "start": 119,
+            "end": 340,
+            "text": "## 费用承担方式\n\n| 方式 | 汇出手续费 | 本行电讯费 | 中间行扣费 |\n| --- | --- | --- | --- |\n| OUR | 汇款人付 | 汇款人付 | 本行按实向汇款人追收 |\n| SHA | 汇款人付 | 汇款人付 | 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。"
+          },
+          {
+            "start": 342,
+            "end": 480,
+            "text": "## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。"
+          }
+        ]
+      },
+      "answer": "不包含。OUR另有中间行实费，不在260元上限内；同时OUR只约定费用承担，不承诺中间行路径和学校入账速度。",
+      "grounded": true,
+      "citedTexts": [
+        "| 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。\n\n## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "072bdf2b07374e3299e80d2fe5b700a2",
+      "question": "澄屿同一客户同日两笔独立60万元申请可合成120万元用0.5%吗？",
+      "gold": {
+        "referenceAnswer": "不可，两独立申请号分别60万元，各用0.8%档，不能为降费合并。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "同日同人自动合并120万元"
+        ],
+        "requiredFacts": [
+          "独立申请分别计费",
+          "各60万元用0.8%",
+          "不能合并成120万元"
+        ],
+        "evidence": [
+          {
+            "start": 272,
+            "end": 498,
+            "text": "## 前端费率\n\n| 单笔申请金额A | 申购费 |\n| --- | --- |\n| A＜100万元 | 0.8%比例费率 |\n| 100万元≤A＜500万元 | 0.5%比例费率 |\n| A≥500万元 | 每笔1000元固定费 |\n\n比例档净申购金额=A÷(1+费率)，申购费=A−净申购金额；不是先从A直接乘费率扣除。固定费档则净申购金额=A−1000元。份额=净申购金额÷T日份额净值，到0.01份四舍五入；中间净申购金额保留高精度，不先取整。"
+          },
+          {
+            "start": 500,
+            "end": 753,
+            "text": "## 支付与登记的接口口径\n\n销售机构收到申请后先核对交易账户状态，再把申请金额、受理时间和到账流水关联提交。客户重复点击支付按钮时，支付平台可能生成多个尝试编号；只有最终对应到账流水的有效申请进入登记批次，失败尝试不能合并成一笔大额申请。客户使用两张银行卡分两次付款，销售平台若形成两个独立申请编号，登记仍按两笔费率处理；同一个有效申请编号的分次到账则以其全额到账时点判断是否进入受理日。金额相加是否跨费率档，不能脱离申请编号来判断。登记员只可补充到账关联，不能为了降低费率把两笔不同申请号手工拼成一笔。"
+          },
+          {
+            "start": 884,
+            "end": 1007,
+            "text": "## 演练订单\n\n订单甲申请100800元，T日净值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。"
+          }
+        ]
+      },
+      "answer": "不能。原文说明订单乙和丙是同一天、同一客户的两个独立申请编号，各申请60万元，三单独立演算；限购时也应按每个有效申请分别计算获配金额并重选费率档，而不是把两笔合并成120万元套用0.5%。",
+      "grounded": true,
+      "citedTexts": [
+        "值1.2500元，满足常规受理条件且不受限购。订单乙和丙分别是同一天、同一客户、两个独立申请编号，各申请60万元；不适用机构专项费率。这三单独立演算，不能将订单甲的净值条件当作其他日期的实际净值。\n\n## 限购日的比例确认\n\n公告限购时，先对每个有效申请计算获配申请金额，再按获配金额重选上表费率档并计算份额；未获配部分原路退回，不收申购费。采用比例确认不是按原申请全额先收费再缩减份额。客户界面会同时展示申请金额与获配金额，费率档位应核对获配金额；仅看扣款总额容易误以为费率计算有误。退回款的银行处理时间另行通知，不以本说明的T+1确认时点保证到账。\n\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "549315c6ef8745458a59a714ce3aa998",
+      "question": "汀禾这笔钱一定在今天几点进入学校账户？",
+      "gold": {
+        "referenceAnswer": "文档未提供保证到账时刻，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "根据OUR或SHA编造确切时刻"
+        ],
+        "requiredFacts": [
+          "文档未提供保证到账时刻",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "6a4c3921f20143e99635a520d8194f7b",
+      "question": "汀禾待复核时免费撤销，已成交购汇会自动撤销吗？",
+      "gold": {
+        "referenceAnswer": "不会，免费取消的是汇款指令，购汇已成交则外币保留账户。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "自动按原价返还人民币"
+        ],
+        "requiredFacts": [
+          "仅撤销汇款指令",
+          "不撤销已成交购汇",
+          "外币留账户"
+        ],
+        "evidence": [
+          {
+            "start": 826,
+            "end": 957,
+            "text": "## 撤回状态\n\n待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。"
+          }
+        ]
+      },
+      "answer": "不会。待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留账户。",
+      "grounded": true,
+      "citedTexts": [
+        "人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。\n\n## 撤回状态\n\n待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "752c91bce44f403a94d80ddd4fcb5c78",
+      "question": "东苑补正资料后排队沿用原时间吗？周报中的待复核金额算已拨吗？",
+      "gold": {
+        "referenceAnswer": "原编号保留，但按最后一项补正登记时间重新排队；待复核金额不计已拨。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "编号不变所以排队时间不变",
+          "在途金额已算拨付"
+        ],
+        "requiredFacts": [
+          "保留原编号",
+          "最后一项补正登记时间排队",
+          "待复核不计已拨"
+        ],
+        "evidence": [
+          {
+            "start": 7492,
+            "end": 7644,
+            "text": "## 凭证归档与队列\n\n经办先给资料包编号，再把影像交给复核员；复核员查验签章、照片日期和备案回执是否对应同一楼栋。跨楼栋的照片可作背景附件，但不能替代目标楼栋凭证。退回补正保留原编号，重新排队以最后一项补正材料的登记时间为准。每周报表列示待复核金额，只用于在途追踪，不能计入已拨金额，也不改变累计比例。"
+          }
+        ]
+      },
+      "answer": "补正资料后不沿用原时间：退回补正保留原编号，重新排队以最后一项补正材料的登记时间为准。周报中的待复核金额不算已拨：每周报表列示的待复核金额只用于在途追踪，不能计入已拨金额，也不改变累计比例。",
+      "grounded": true,
+      "citedTexts": [
+        "he information available at the time, while leaving the core milestone and retention rules intact.\n\n## 凭证归档与队列\n\n经办先给资料包编号，再把影像交给复核员；复核员查验签章、照片日期和备案回执是否对应同一楼栋。跨楼栋的照片可作背景附件，但不能替代目标楼栋凭证。退回补正保留原编号，重新排队以最后一项补正材料的登记时间为准。每周报表列示待复核金额，只用于在途追踪，不能计入已拨金额，也不改变累计比例。\n\n",
+        "一楼栋。跨楼栋的照片可作背景附件，但不能替代目标楼栋凭证。退回补正保留原编号，重新排队以最后一项补正材料的登记时间为准。每周报表列示待复核金额，只用于在途追踪，不能计入已拨金额，也不改变累计比例。\n\n## 内部办理札记 F：Returned applications and the correction trail\n\nA return notice identifies the missing or inconsistent items in one coherent list. It should distinguish a document that was never supplied from a document that was supplied but cannot be linked to the requested building. That distinction helps the applicant correct the file without replacing valid evidence unnecessarily. A desk note saying only incomplete does not explain what must be supplied or why the reviewer could not proceed.\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "67a97f2f3ebb4419b713ee9ce4dd8dc8",
+      "question": "汀禾复核确认原始指示正确但本行录入错，召回费用与换汇损失如何处理？",
+      "gold": {
+        "referenceAnswer": "免本行召回电讯费，并承担错误导致的中间行召回费；不自动补偿客户自选结汇时点汇率损失，也不保证同意退汇。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "客户指示错也适用",
+          "本行保证所有汇损补偿"
+        ],
+        "requiredFacts": [
+          "免本行召回电讯费",
+          "承担错误导致中间行召回费",
+          "不自动补偿自选结汇损失"
+        ],
+        "evidence": [
+          {
+            "start": 1079,
+            "end": 1189,
+            "text": "## 本行录入错误\n\n若已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。"
+          }
+        ]
+      },
+      "answer": "若已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费，并承担由该错误导致的中间行召回费；客户原始指示有误不适用。该例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。",
+      "grounded": true,
+      "citedTexts": [
+        "净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。\n\n## 本行录入错误\n\n若已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。\n\n",
+        "已核验的原始指示正确而本行录入错误，且复核确认属本行责任，本行免召回电讯费并承担由该错误导致的中间行召回费；客户原始指示有误不适用。此例外不保证收款人同意，也不自动补偿客户自选时点结汇的汇率损失。\n\n## 版本沿革\n\nTH-2把召回电讯费包含在原汇款电讯费中；TH-3对2026年7月1日起受理的新指令单列80元召回费。6月30日受理、7月2日才申请召回的旧指令，仍按TH-2不另收本行召回电讯费。其他已发送后不退原手续费的规则未变。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "15835fb5bb6349b18f966ec3f6fb6d58",
+      "question": "一笔东苑拨款申请最初必须同时提交哪些进度证明资料？",
+      "gold": {
+        "referenceAnswer": "监理签章进度表、建设方付款指令、现场照片索引，三者缺一不可。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "销售人员口头确认可替代付款指令"
+        ],
+        "requiredFacts": [
+          "监理签章进度表",
+          "建设方付款指令",
+          "现场照片索引"
+        ],
+        "evidence": [
+          {
+            "start": 1605,
+            "end": 1721,
+            "text": "## 进度确认\n\n每次申请须同时具备监理签章的进度表、建设方付款指令和现场照片索引。主体封顶只有完成质检备案后才计为封顶节点；监理写了‘已封顶’但备案未落库，仍沿用地下结构节点。材料齐全的登记时间只决定队列顺序，不自动满足节点条件。"
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "f2a5a7b093854c2f96ba64e6d76f8d00",
+      "question": "澄屿10月9日已受理、10月12日确认的限购订单适用CY-6还是CY-7？",
+      "gold": {
+        "referenceAnswer": "CY-6，适用由受理日决定；10月9日已受理不因确认日晚于10月10日而改用CY-7。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "确认日在新版本后一律CY-7"
+        ],
+        "requiredFacts": [
+          "CY-6",
+          "按受理日而非确认日"
+        ],
+        "evidence": [
+          {
+            "start": 1708,
+            "end": 1824,
+            "text": "## 版本口径\n\nCY-6比例确认后仍按原申请额选费率；CY-7改为按获配额重新选档。2026年10月10日起受理的订单采用CY-7，含此前预填但尚未受理的申请；已在10月9日受理的订单仍用CY-6，即使其确认日落在10月10日后。"
+          }
+        ]
+      },
+      "answer": "适用CY-6。依据版本口径，2026年10月10日起受理的订单采用CY-7，已在10月9日受理的订单仍用CY-6，即使其确认日落在10月10日后。",
+      "grounded": true,
+      "citedTexts": [
+        "费用对账分别记录申请额、净申购额、费用和最终份额；一笔订单的净申购额加费用应等于获配申请额。撤销后的订单保留审计记录，不再进入后续登记批次；客户重新提交是新申请，受理日、净值与限购状态均重新判断。\n\n## 版本口径\n\nCY-6比例确认后仍按原申请额选费率；CY-7改为按获配额重新选档。2026年10月10日起受理的订单采用CY-7，含此前预填但尚未受理的申请；已在10月9日受理的订单仍用CY-6，即使其确认日落在10月10日后。\n\n## 资料边界\n\n本说明不提供未来份额净值、保证收益率、销售机构完整开放日历或具体退款到账日。示例净值仅用于演算；遇开放日或额度问题应读取对应日期公告，不能由本说明推测。\n"
+      ],
+      "sourceRef": "f2d0f1989fa631bc39d7f4ceaf856e6551302307678b04b8d095b5576e0fc89b"
+    },
+    {
+      "token": "8a79e9156e1744a69dd8c62adad9411e",
+      "question": "东苑补正资料后排队沿用原时间吗？周报中的待复核金额算已拨吗？",
+      "gold": {
+        "referenceAnswer": "原编号保留，但按最后一项补正登记时间重新排队；待复核金额不计已拨。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "编号不变所以排队时间不变",
+          "在途金额已算拨付"
+        ],
+        "requiredFacts": [
+          "保留原编号",
+          "最后一项补正登记时间排队",
+          "待复核不计已拨"
+        ],
+        "evidence": [
+          {
+            "start": 7492,
+            "end": 7644,
+            "text": "## 凭证归档与队列\n\n经办先给资料包编号，再把影像交给复核员；复核员查验签章、照片日期和备案回执是否对应同一楼栋。跨楼栋的照片可作背景附件，但不能替代目标楼栋凭证。退回补正保留原编号，重新排队以最后一项补正材料的登记时间为准。每周报表列示待复核金额，只用于在途追踪，不能计入已拨金额，也不改变累计比例。"
+          }
+        ]
+      },
+      "answer": "补正资料退回后保留原编号，但重新排队以最后一项补正材料的登记时间为准，不沿用原排队时间。周报中的待复核金额只用于在途追踪，不能计入已拨金额，也不改变累计比例。",
+      "grounded": true,
+      "citedTexts": [
+        "he information available at the time, while leaving the core milestone and retention rules intact.\n\n## 凭证归档与队列\n\n经办先给资料包编号，再把影像交给复核员；复核员查验签章、照片日期和备案回执是否对应同一楼栋。跨楼栋的照片可作背景附件，但不能替代目标楼栋凭证。退回补正保留原编号，重新排队以最后一项补正材料的登记时间为准。每周报表列示待复核金额，只用于在途追踪，不能计入已拨金额，也不改变累计比例。\n\n",
+        "一楼栋。跨楼栋的照片可作背景附件，但不能替代目标楼栋凭证。退回补正保留原编号，重新排队以最后一项补正材料的登记时间为准。每周报表列示待复核金额，只用于在途追踪，不能计入已拨金额，也不改变累计比例。\n\n## 内部办理札记 F：Returned applications and the correction trail\n\nA return notice identifies the missing or inconsistent items in one coherent list. It should distinguish a document that was never supplied from a document that was supplied but cannot be linked to the requested building. That distinction helps the applicant correct the file without replacing valid evidence unnecessarily. A desk note saying only incomplete does not explain what must be supplied or why the reviewer could not proceed.\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    },
+    {
+      "token": "2a21991e8b8047b89fac045fc7823d52",
+      "question": "汀禾OUR的260元手续费上限包含中间行实费吗，能保证入账速度吗？",
+      "gold": {
+        "referenceAnswer": "不含，中间行实费另向汇款人追收；OUR不保证路径或学校入账速度。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "所有费用封顶260元",
+          "OUR保证即时到账"
+        ],
+        "requiredFacts": [
+          "260元不含中间行实费",
+          "向汇款人按实追收",
+          "不保证入账速度"
+        ],
+        "evidence": [
+          {
+            "start": 119,
+            "end": 340,
+            "text": "## 费用承担方式\n\n| 方式 | 汇出手续费 | 本行电讯费 | 中间行扣费 |\n| --- | --- | --- | --- |\n| OUR | 汇款人付 | 汇款人付 | 本行按实向汇款人追收 |\n| SHA | 汇款人付 | 汇款人付 | 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。"
+          },
+          {
+            "start": 342,
+            "end": 480,
+            "text": "## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。"
+          }
+        ]
+      },
+      "answer": "不包含。OUR另有中间行实费，不在260元上限内；同时OUR只约定费用承担，不承诺中间行路径和学校入账速度。",
+      "grounded": true,
+      "citedTexts": [
+        "| 从汇款本金扣除 |\n| BEN | 从汇款本金扣除 | 从汇款本金扣除 | 从汇款本金扣除 |\n\nOUR只约定费用承担，不承诺中间行路径和学校入账速度。不同费用方式下，购汇本金的成交汇率相同。\n\n## 本行收费\n\n汇出手续费按汇款美元金额折人民币后的0.1%，最低50元、最高260元；电讯费每笔80元。折人民币使用该笔实际购汇成交价。OUR另有中间行实费，不在上述260元上限内。BEN扣本行费用时，人民币费用按同一成交价折回美元，美元扣费总额到分四舍五入后从本金扣除。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "81e153dd3cc14daf944df8e5f3cce4bb",
+      "question": "汀禾已发送未入账和已经入账，客户能否单方撤销？",
+      "gold": {
+        "referenceAnswer": "已发送未入账只能申请召回且不保证成功，通常本行80元召回费及中间行实费；已入账需收款人同意退汇。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "已发送可无条件免费撤销",
+          "已入账也可单方扣回"
+        ],
+        "requiredFacts": [
+          "已发送仅申请召回不保证",
+          "通常80元本行召回费另有中间行实费",
+          "已入账须收款人同意"
+        ],
+        "evidence": [
+          {
+            "start": 826,
+            "end": 957,
+            "text": "## 撤回状态\n\n待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。"
+          }
+        ]
+      },
+      "answer": "不能单方撤销。已发送未入账只能申请召回，不保证成功，并收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。",
+      "grounded": true,
+      "citedTexts": [
+        "销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。\n\n## 退汇及重新换汇\n\n退汇先退美元实收净额，不按原人民币本金保证退回。客户选择换回人民币时按退汇日实际结汇价成交，汇率变动损益由客户承担；未选择换回时保留外币，不自动反向购汇。召回状态显示‘已申请’只说明已发消息，不能当作退汇已到账。\n\n",
+        "人民币元/美元，选择SHA，实际中间行扣费15美元，学校收款行未另扣费。不考虑购汇点差以外的其他成本。另一笔相同本金和成交价选BEN、相同中间行扣费；两笔分别核算，不能把一笔的手续费又扣入另一笔。\n\n## 撤回状态\n\n待复核状态可免费撤销汇款指令；若购汇已经成交，撤销汇款不撤销购汇，外币留账户。已发送未入账只能申请召回，不保证成功，收取本行召回电讯费80元，中间行另有实费；最终已入账须经收款人同意退汇，不能单方撤销。原汇款手续费在已发送后不因召回成功而退回。\n\n"
+      ],
+      "sourceRef": "54c7aa2426733cb5c21f3c25014b8684036d8f4d461d20d58263f7e27da328de"
+    },
+    {
+      "token": "afb188a8b0a9465ca468f7a516a041bc",
+      "question": "按东苑演算台账，封顶备案后本次申请最多批准多少万元？说明两道限制。",
+      "gold": {
+        "referenceAnswer": "节点余量1000×65%−200=450万元；现金扣留存700−1000×20%=500万元；申请500万元，最多批准450万元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "批准500万元",
+          "将65%当本次比例",
+          "将已拨付再次从现金扣除"
+        ],
+        "requiredFacts": [
+          "节点余量450万元",
+          "现金扣留存后500万元",
+          "本次最多450万元"
+        ],
+        "evidence": [
+          {
+            "start": 4578,
+            "end": 4747,
+            "text": "## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n监管基数在项目建档时固定，不随当日销售回款增加。上表是累计比例，不是本次申请比例。"
+          },
+          {
+            "start": 9006,
+            "end": 9137,
+            "text": "## 留存与本次计算\n\n无论节点比例如何，拨后必须留存监管基数的20%作为续建保障；达到首次交付满90日且无停工处置时才解除此留存。可拨余额取‘节点累计上限减已实际拨付’与‘专户现金减应留存’两者较小值，负数按零处理。本次批准额再取可拨余额与本次申请额的较小值。"
+          },
+          {
+            "start": 11909,
+            "end": 12005,
+            "text": "东苑演算台账：监管基数1000万元，当前专户现金700万元，已实际拨付200万元，封顶已备案，申请500万元。台账数字仅用于本细则演算，不代表任何真实项目。其他未付款工程合同不得先行冲减现金。"
+          }
+        ]
+      },
+      "answer": "按东苑演算台账，本次申请最多批准300万元。两道限制：一是累计上限，主体封顶且备案完成可累计拨付监管基数的65%，即1000×65%=650万元；二是扣减已实际拨付200万元，650−200=450万元，而本次申请500万元超过该额度，故最多批准450万元？需核对：台账中监管基数1000万元、已实际拨付200万元、封顶已备案、申请500万元。按累计上限65%计算可累计650万元，减去已拨200万元，剩余可拨450万元，因此本次最多批准450万元，而非300万元。",
+      "grounded": true,
+      "citedTexts": [
+        "ts an ordinary progress payment from being accidentally processed under the emergency description.\n\n东苑演算台账：监管基数1000万元，当前专户现金700万元，已实际拨付200万元，封顶已备案，申请500万元。台账数字仅用于本细则演算，不代表任何真实项目。其他未付款工程合同不得先行冲减现金。\n\n",
+        "on, supporting evidence and approval route, without treating an accounting label as authorization.\n\n## 累计上限表\n\n| 已确认节点 | 可累计拨付占监管基数 |\n| --- | --- |\n| 地下结构验收 | 35% |\n| 主体封顶且备案完成 | 65% |\n| 竣工验收登记 | 85% |\n| 首次交付满90日且无停工处置 | 100% |\n\n"
+      ],
+      "sourceRef": "8ecb9edd439f8669297de0bd35af0f54aaa4fdb0bf80eae620c38b6d5956ab1a"
+    }
+  ]
+}

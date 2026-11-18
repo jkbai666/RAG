@@ -6,7 +6,13 @@ import java.util.List;
 public final class ApiTypes {
     private ApiTypes() {}
     public record Document(String id, String fileName, String format, long sizeBytes, String status,
-                           int chunkCount, Instant createdAt, String errorMessage) {}
+                           int chunkCount, Instant createdAt, String errorMessage,
+                           String chunkingStrategy, String chunkingFallbackReason) {
+        public Document(String id, String fileName, String format, long sizeBytes, String status,
+                        int chunkCount, Instant createdAt, String errorMessage) {
+            this(id,fileName,format,sizeBytes,status,chunkCount,createdAt,errorMessage,null,null);
+        }
+    }
     public record Chunk(String id, String documentId, int index, String text, Integer pageStart, Integer pageEnd) {}
     public record Documents(List<Document> items, long total) {}
     public record Chunks(List<Chunk> items, long total, int page, int pageSize) {}

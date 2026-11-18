@@ -1,0 +1,1818 @@
+{
+  "schemaVersion": 1,
+  "blindPackageSha256": "bea8d62bdcf047e08fdd83cccb3cb6267d93bd6ee5395a367e3debf7dbf74a10",
+  "instructions": "Review only this bundle and frozen rubric. No strategy, split or arm mapping is supplied.",
+  "sources": {
+    "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c": "MORROW ACQUIRING | OPERATING NOTE M-4 | 2026-08-01\r\nFictional merchant settlement rules. Currency: CNY. A settlement batch and a dispute case\r\nhave different identifiers. A case reference is not a payout instruction. This note governs\r\nreserve movements, not cardholder credit limits.\r\nBATCH CLOCK\r\nTransactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters\r\nthe next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and\r\nthe published closed days are skipped. The examples below assume no closed days other than\r\nweekends.\r\nRESERVE MATRIX\r\nStandard merchant: withhold 6% of gross accepted sales.\r\nElevated merchant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve\r\nbase of the batch in which they are paid. Transaction fees are separate deductions and do\r\nnot reduce the reserve base either.\r\nLEDGER DISCIPLINE\r\nOperations reconcile accepted sale IDs to the terminal report before sending the batch for\r\nreview. A void made before acceptance never becomes a gross sale. A refund made after\r\nacceptance is a separate debit, even when its amount equals the original sale. Reviewers\r\nmay attach card scheme messages as context; those messages cannot replace a matched sale\r\nID. A manual note does not change an accepted timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves.\r\nWORKED BATCH\r\nA Standard merchant has gross accepted sales of 50,000, refunds of 8,000, transaction fees\r\nof 500 and a matured old reserve release of 1,000. No other debit applies. Payout equals\r\ngross sales minus refunds, fees and the new reserve, plus the matured release. An unrelated\r\nopen dispute has no deduction until a provisional debit is posted.\r\nDISPUTE PATH\r\nA provisional dispute debit is posted when a case is opened with a scheme debit notice. The\r\nmerchant has 7 calendar days after notice to submit a matched receipt and delivery proof. A\r\nresponse with only a receipt is incomplete. Winning a case reverses the provisional debit;\r\nit does not create another sale or reduce a reserve that was correctly withheld.\r\nRESERVE RELEASE\r\nEach reserve lot matures 90 calendar days after its batch date. Release requires maturity\r\nand no open dispute linked to that lot. An unlinked dispute does not block that lot. Lots\r\nare tracked separately: one blocked lot cannot justify retaining every other mature lot. No\r\ninterest is paid on held reserves under M-4.\r\nOUTAGE EXCEPTION\r\nA documented terminal clock outage may move an accepted transaction back by one batch only\r\nafter both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. The outage exception does not shorten T+2 settlement or the 90-day reserve\r\nmaturity period.\r\nVERSION REGISTER\r\nM-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.\r\nExisting M-3 reserve lots keep their original amounts; they are not topped up. The 90-day\r\nmaturity rule is unchanged. Do not recalculate an old lot using the current withholding\r\nrate.\r\nSCOPE LIMIT\r\nThis fictional note does not list actual merchant bank account numbers, the card scheme's\r\narbitration fee, or the issuer's internal fraud score. Those items cannot be derived from\r\nreserve percentages or settlement dates.\r\n",
+    "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863": "CEDAR EQUIPMENT TRUST | CASH MEMORANDUM CE-9 | 2026-09-01\r\nThis is a fictional closed trust, not a public investment offer. Amounts in the exercise\r\nare thousands of CNY. Interest targets are accounting obligations for a period, not\r\nguaranteed returns. A trustee fee cap and the reserve target are separate limits.\r\nAPPENDIX A | COLLECTION FILE INTAKE\r\nThe equipment servicer prepares a collection file from actual receipts and identifies the\r\nasset reference for each entry. A lease invoice establishes a claim but does not establish\r\nthat cash has arrived. Staff compare the file with the relevant bank movements and retain\r\nunmatched items for investigation. An unexplained difference is not filled with an\r\nestimated receipt merely because the estimate would make the distribution worksheet\r\nbalance.\r\nThe collector's note can describe a tenant's promise to pay, an equipment purchaser's\r\ninstallment plan or a disputed charge. These notes are useful operational context. They\r\nremain separate from completed receipts until the supporting movement is available and\r\nmatched. A customer who confirms a payment has been initiated may still have supplied only\r\na remittance instruction, rather than evidence that the trust has received usable funds.\r\nWhen an asset reference is missing, the receipt is held for identification under the\r\noperational process. Review staff preserve the payer's message and the bank record while\r\nasking the servicer to explain the association. They do not choose the asset with the most\r\noverdue lease simply to improve a delinquency report. The completed file should allow\r\nanother analyst to reproduce which receipts supported the period's cash total and which\r\nitems were excluded or unresolved.\r\nDISTRIBUTABLE CASH\r\nBegin with period collections plus the opening unrestricted cash balance. Exclude money\r\nheld in the tax escrow and exclude unreceived sale proceeds. A signed equipment sale\r\ncontract is not collected cash. Restricted reserve cash is separate from the opening\r\nunrestricted balance and is not added a second time.\r\nAPPENDIX B | OPENING BALANCE RECONCILIATION\r\nThe opening unrestricted cash balance is traced to the previous period's signed closing\r\nposition and subsequent authorized adjustments. A draft distribution proposal is not a\r\nsigned closing position. If the prior period retained cash, the reconciliation identifies\r\nwhere that cash remained and why it is not also described as a new collection. The same\r\namount must not enter the present worksheet once as opening cash and again as a current\r\nreceipt.\r\nA book entry correcting an earlier classification is supported by an explanation and the\r\nrelevant source record. Staff do not assume every unexplained difference is distributable\r\nsimply because it appears in a cash account report. Restricted balances, unresolved\r\nreceipts and amounts belonging to another vehicle can appear in operational views that were\r\nnot designed to be distribution statements. The reviewer checks the meaning of the fields\r\nbefore using their totals.\r\nThe handover pack retains both the original prior-period report and the authorized\r\ncorrection, when a correction exists. This makes a later change understandable without\r\npretending that staff had always reported the corrected number. A reconciliation can\r\nexplain an accounting difference; it does not by itself grant a new right to distribute\r\nrestricted money. The governing cash and reserve definitions remain the ones in the main\r\nmemorandum.\r\nNORMAL WATERFALL\r\nApply distributable cash in this order: (1) trustee fee, capped at 5 each period; (2)\r\nsenior current interest and senior interest arrears; (3) refill the liquidity reserve to\r\nits target; (4) junior current interest; (5) any residual to the junior capital account. An\r\nunpaid fee above the cap is not moved into senior interest. Unpaid senior interest carries\r\nforward without interest on interest.\r\nAPPENDIX C | TAX ESCROW SEPARATION\r\nThe tax escrow ledger is maintained separately from the unrestricted operating ledger.\r\nStaff identify transfers into the escrow, authorized tax payments from it and any\r\nunresolved tax reconciliation item. An escrow balance may be shown in an overall custody\r\nreport for completeness, but its inclusion in that report does not make it part of\r\ndistributable cash. The distribution analyst checks the account purpose as well as the\r\ncurrency and balance.\r\nA tax invoice and a completed escrow payment are different records. The invoice can explain\r\na liability while the movement establishes that money was used. If a payment is made from\r\nescrow, the analyst does not deduct it again from an unrelated unrestricted collection\r\ntotal unless there is a distinct supported transaction. Double recording an escrow use can\r\nunderstate cash just as adding escrow to the waterfall can overstate it.\r\nThis appendix provides no investor tax rate or personal withholding rule. Operational staff\r\nmust not derive such a rate by dividing an escrow balance by a convenient receipt amount.\r\nThe escrow was established for its documented purpose and may relate to more than one\r\ntiming item. Investor tax questions require the separate applicable terms and records,\r\nwhich are outside this fictional memorandum. A distribution calculation cannot create\r\nmissing tax instructions.\r\nAPPENDIX D | EQUIPMENT SALE STATUS\r\nThe asset manager tracks offers, signed sale contracts, delivery arrangements, invoiced\r\nproceeds and actual collected proceeds as different stages. A signed sale contract may\r\njustify a forecast in the planning report while leaving current distributable cash\r\nunchanged until funds are received. The asset manager's estimate of the final resale value\r\nis not a bank balance and should not be inserted into the present distribution to avoid a\r\nprojected shortfall.\r\nIf a purchaser pays an installment, staff match the actual receipt to the sale file and\r\nretain the remaining amount as outstanding. The whole contract amount is not treated as\r\ncollected merely because one installment arrived. A deposit subject to a restriction is\r\nclassified under its actual terms instead of being assumed unrestricted. The cash analyst\r\nrequests clarification when a sale summary omits the status or restrictions associated with\r\nan amount.\r\nCanceled sales and returned deposits remain visible in the asset history. Staff do not\r\ndelete the old contract simply because it is no longer expected to complete. The archive\r\nexplains which receipts, refunds or unresolved claims resulted from it. None of these\r\noperational events supplies a forecast equipment price for the exercise in the main\r\nmemorandum. That exercise is a closed snapshot and remains separate from the additional\r\ncasebook's hypothetical workflow.\r\nCASH CONTROL NOTES\r\nThe servicing team records collection dates and asset references before sending the cash\r\nfile to the trustee. A buyer's promise to pay may be attached as a forecast, but must\r\nremain outside the distributable cash total. Reconciliation matches the bank statement to\r\nthe file and explains outstanding items. Forecasts are useful for the next period's\r\nplanning; they cannot fund the present distribution. Tax escrow belongs in its own ledger\r\nso an invoice paid from escrow does not appear again as an unrestricted cash expense.\r\nAPPENDIX E | TRUSTEE FEE REQUEST REVIEW\r\nThe trustee's request is reconciled to the service period and supporting fee notice before\r\nbeing placed in the first waterfall step. A request can be larger than the amount permitted\r\nat that step. The reviewer preserves the requested amount as a source fact while showing\r\nthe permitted application separately. Editing the request to equal the permitted\r\napplication would make the audit trail look simpler but would conceal the reason a\r\ndifference existed.\r\nStaff do not relabel the unallocated part of a fee request as senior interest. The two\r\nobligations have different sources and positions in the memorandum. A fee invoice cannot\r\nbecome an interest arrears record just by moving its amount to another worksheet row. Any\r\nunresolved treatment of a requested fee remains explicitly unresolved rather than being\r\npushed into an unrelated class to produce a fully paid report.\r\nThe signed notice identifies the fee actually applied in the distribution and the\r\nsupporting cap. A later correction to the source invoice is handled with its own record.\r\nThe correction does not retroactively authorize a draft allocation that was inconsistent\r\nwith the main waterfall. The casebook keeps invoice administration distinct from the\r\ndistribution priority so staff can discuss an invoice without silently changing the cash\r\nrules for senior, reserve or junior payments.\r\nRESERVE TARGET\r\nThe target is 40 while the performance trigger is clear. It becomes 70 when the trigger is\r\nactive. A refill uses the difference between the current reserve balance and the applicable\r\ntarget, with a floor of zero. A reserve already above target does not pay a negative\r\nrefill; excess reserve is released only by a separately authorized release instruction.\r\nAPPENDIX F | SENIOR INTEREST REGISTER\r\nThe senior register distinguishes current interest, carried interest arrears and capital\r\nbalance. Staff trace each item to its relevant period and source record. A capital amount\r\ncannot be inserted into the current interest line to accelerate a capital payment, and a\r\nrequested trustee fee cannot be entered as senior arrears. The headings are business\r\ndefinitions, not free-form labels selected to obtain a preferred priority.\r\nWhen previous senior interest was not paid, the arrears record carries the unpaid amount\r\nforward under the main memorandum's treatment. The analyst retains the earlier signed\r\ndistribution notice to explain that amount. A planning spreadsheet may calculate\r\nhypothetical future amounts, but those projections do not turn into actual arrears before\r\nthe relevant obligation arises. Reviewers compare both the amount and the obligation's\r\nidentity.\r\nThe interest register is reconciled after payment using actual execution evidence. An\r\napproved payment that fails at the bank remains distinguishable from a completed\r\ndistribution. If the next worksheet uses a revised arrears position, the file explains the\r\nfailed or corrected movement. Staff should be able to reconstruct the register without\r\nadding interest on unpaid interest where the main terms do not permit it. A spreadsheet's\r\nautomatic compounding function is not independent contractual authority.\r\nPERFORMANCE TRIGGER\r\nThe trigger becomes active when the three-month average delinquency ratio is strictly above\r\n4.0%. A value exactly 4.0% does not activate it. While active, junior current interest and\r\njunior residual distributions are suspended; cash left after steps 1 through 3 remains in\r\nunrestricted cash. Junior unpaid current interest is recorded, but does not jump ahead of\r\nthe reserve in the next period.\r\nAPPENDIX G | LIQUIDITY RESERVE MOVEMENTS\r\nThe reserve ledger identifies its opening balance, authorized draws, refills and separately\r\nauthorized releases. The ledger is not a second copy of unrestricted cash. Staff check\r\nmovement direction and account purpose when reconciling it, because a transfer into reserve\r\nreduces available unrestricted money while raising reserve. Listing the transfer as both a\r\nnew collection and a refill would count the same movement twice in different roles.\r\nA proposed reserve release remains a proposal until its separate authority is present. A\r\nworksheet can show an amount above the ordinary target without establishing that the\r\nsurplus has been released. Likewise, the restoration of a lower target after cure does not\r\nitself prove that a bank transfer occurred. The archive separates the target calculation,\r\napproval to release and actual execution evidence.\r\nWhen a draw has been authorized for a permitted current senior shortfall, the subsequent\r\nrefill uses the actual reduced reserve balance under the main sequence. Staff do not carry\r\nthe pre-draw balance into the refill calculation merely because it appeared in an earlier\r\ndraft. The records explain which balance was current at each step. This operational\r\nguidance does not broaden the permitted draw purposes or permit junior interest, arrears or\r\nfees to be funded from reserve.\r\nAPPENDIX H | DELINQUENCY DATA PREPARATION\r\nThe servicer's delinquency file is prepared from the observation records used for the\r\nperformance test. Staff retain the observations, the source dates and the calculation\r\nsupporting the reported average. A rounded presentation in a management slide does not\r\nautomatically replace the underlying test input. The analyst checks whether a label\r\ndescribes a monthly observation, a three-month average or a projection before applying the\r\nmain trigger condition.\r\nA data correction is recorded with its reason and source. For example, a receipt assigned\r\nto the wrong equipment reference can distort the delinquency file even while total bank\r\ncash remains correct. Correcting that assignment may change a performance measure without\r\ncreating any new collection. Cash reconciliation and performance measurement must therefore\r\nbe reviewed together but cannot be treated as interchangeable tests.\r\nThe file identifies which observations were used for a decision and preserves later\r\ncorrections separately. Staff cannot establish cure by selecting a favorable observation\r\nand omitting an unfavorable intervening record. The main memorandum's\r\nconsecutive-observation condition continues to govern. A forecast that the average may\r\ndecline is planning information, not an observation date on which the performance trigger\r\nhas actually cleared.\r\nDISTRIBUTION EXERCISE\r\nPeriod collections are 140, opening unrestricted cash is 10, and tax escrow is 20. A signed\r\nbut unpaid sale is 30. The reserve balance is 15. The trustee requests 7 in fees, senior\r\ncurrent interest is 50, senior interest arrears are 10, and junior current interest is 25.\r\nThe three-month delinquency average is 4.2%. No reserve release instruction exists and no\r\nother deductions apply.\r\nAPPENDIX I | TRIGGER STATUS REGISTER\r\nThe status register records when the performance trigger became active, which observations\r\nsupported that state and whether the cure test has subsequently been met. It should not\r\nsimply copy a green or red symbol from a presentation without the associated dates and\r\nmeaning. An active state and a new activation test are related but distinct questions;\r\nstaff must preserve the history needed to distinguish them.\r\nFor each distribution, the preparer links the state used in the worksheet to the relevant\r\nstatus record. An old worksheet may show the trigger clear because it belonged to an\r\nearlier period. Copying that worksheet's formatting into a new period does not establish\r\nthat the new period is clear. The reviewer checks the underlying observations and the state\r\ntransition, not merely the color or wording in a reused template.\r\nWhen a disputed data item affects the status, the distribution file documents the\r\nunresolved issue and the applicable decision process. This appendix does not invent a\r\nwaiver or permit a clerk to choose the state that gives a desired junior payment.\r\nHistorical status records remain available after cure so an auditor can understand why a\r\nprevious distribution was retained. Cure is a recorded condition under the main terms, not\r\na retroactive declaration that no trigger ever existed.\r\nREPORTING REVIEW\r\nThe distribution notice should list cash available, each applied step, the ending reserve\r\nand retained unrestricted cash. Amounts withheld from junior distribution are not a payment\r\nto senior capital unless a separate capital repayment step is authorized. Staff should\r\nretain the unapproved draft and the signed final notice with different version labels. A\r\nreviewer may correct a transcription error before signing, but cannot move a restricted\r\nescrow balance into the waterfall to make a draft reconcile. The cap applies to the current\r\ntrustee fee step; a requested fee above the cap is not permission to skip reserve\r\nreplenishment.\r\nAPPENDIX J | JUNIOR PAYMENT AND RETAINED CASH\r\nThe junior ledger separately tracks current interest, recorded unpaid junior interest and\r\namounts allocated to the junior capital account when the main sequence permits. A withheld\r\njunior payment is not a completed distribution. It also does not automatically become\r\nsenior arrears or a repayment of senior capital. Staff preserve the obligation's class when\r\nrecording why money was not distributed.\r\nWhile the trigger is active, the notice explains the retained unrestricted cash after the\r\npermitted earlier steps. That retained balance should be identifiable in the closing cash\r\nreconciliation and the next period's opening position. A narrative calling it reserved for\r\njunior is not a completed transfer and does not create an automatic release instruction.\r\nThe cash remains classified according to the actual terms and recorded movements.\r\nJunior investors may ask why a period with positive collections did not produce a junior\r\npayment. The explanation points to the applicable state, the earlier priority steps and the\r\nretained cash, rather than describing collections as guaranteed return. Staff do not invent\r\na future payment date or promise a yield from one period's worksheet. The main memorandum\r\ndetermines the current distribution, and later distributions require their own\r\nobservations, cash position and approvals.\r\nCURE AND RELEASE\r\nAn active trigger clears only after the three-month average is at or below 3.0% on two\r\nconsecutive monthly observation dates. One low month is insufficient. After cure, the\r\nordinary target of 40 applies, but any release of reserve above 40 still needs the separate\r\nrelease instruction. Cure alone does not turn previously suspended junior interest into\r\nsenior arrears.\r\nAPPENDIX K | DRAW REQUEST PACKET\r\nA reserve draw request identifies the specific current senior interest shortfall and shows\r\nthe cash position after the trustee fee step. The packet includes the source interest\r\nregister and the reserve balance available for review. A general statement that the trust\r\nneeds liquidity is insufficient to establish the permitted purpose. The reviewer checks the\r\nrequested use instead of assuming that any senior-labeled amount may be funded.\r\nThe two required approvals are recorded as distinct decisions with the packet version each\r\nreviewer considered. A preparer cannot copy one approval into the other role's field. If\r\nthe packet changes materially after an approval, staff identify the change and obtain the\r\nnecessary review of the revised packet. The presence of a signature somewhere in the folder\r\nis not enough to show that the final instruction was approved.\r\nExecution evidence is linked to the authorized request, and the reserve ledger is updated\r\nto reflect the actual movement. A canceled or rejected instruction remains visible but does\r\nnot reduce reserve as though money had left. The later refill calculation uses the\r\nsupported balance. The operational packet makes the draw reproducible without adding new\r\nauthorized purposes, dispensing with either approval or treating reserve money as new\r\nperiod collections.\r\nAPPENDIX L | DRAFT DISTRIBUTION WORKSHEETS\r\nPreparers may create several draft worksheets while reconciling an input discrepancy. Each\r\ndraft is labeled with its source snapshot and review status. A draft is useful working\r\nmaterial, but its existence does not establish a payment obligation different from the main\r\nmemorandum. The final signed worksheet identifies the actual inputs and supersedes the\r\ndraft for execution without deleting the earlier working history.\r\nThe reviewer checks formulas and business definitions together. A spreadsheet can add rows\r\ncorrectly while using tax escrow as unrestricted cash or placing a junior amount ahead of\r\nreserve. Conversely, a formula error can produce the wrong amount even when the preparer\r\nselected the correct class of inputs. Review comments describe which problem occurred so\r\nthe correction addresses its cause rather than simply replacing the final cell with a\r\ndesired number.\r\nHidden rows, stale links and copied period labels are reviewed as potential sources of\r\ndiscrepancy. A locked workbook does not prove that its formulas are correct. The final\r\nallocation should be reproducible from the source cash, obligations, reserve state and\r\ntrigger state using the stated order. Staff retain the review conclusion and corrected\r\nversion, allowing later examination of both the accounting result and the evidence\r\nsupporting it.\r\nRESERVE DRAW\r\nA liquidity draw may cover a shortfall in senior current interest only, after the trustee\r\nfee step. It cannot pay junior interest, senior interest arrears, or fees. The draw\r\nrequires both trustee and oversight officer approval. A draw reduces the reserve balance\r\nused in the later refill step; it is not new period collections.\r\nAPPENDIX M | DISTRIBUTION NOTICE DELIVERY\r\nThe signed distribution notice states the period, applied cash total, allocations, reserve\r\nmovements and retained balance relevant to that decision. The notice is delivered through\r\nthe recorded channel with a copy preserved in the archive. A draft sent for discussion is\r\nlabeled draft so recipients do not reasonably confuse it with the execution notice. Staff\r\nshould be able to identify which notice was final without reading an informal conversation\r\nthread.\r\nWhere a transcription error is discovered after dispatch, the correction identifies the\r\nprior notice and the specific change. Staff check whether the error was only in the\r\npresentation or also affected an executed payment. These are different consequences and\r\nrequire different supporting records. A corrected notice cannot by itself reverse a\r\ncompleted bank movement; any actual correction must be traceable through its own authorized\r\ninstruction and execution evidence.\r\nThe delivery log establishes what was sent and when, while the bank file establishes what\r\nwas paid. Neither substitutes for the other. A recipient's acknowledgement does not prove\r\nthat funds reached the recipient account, and a bank movement does not prove that all\r\ndisclosures in a notice were complete. The archive keeps both kinds of evidence so\r\noperational completion can be assessed without turning a communication event into a\r\nfictitious cash movement.\r\nVERSION REGISTER\r\nCE-8 released every residual to junior even when the trigger was active. CE-9 retains that\r\nresidual in unrestricted cash. The new rule applies to distribution periods ending on or\r\nafter 2026-09-01, including assets originated under CE-8. It does not reopen already\r\ncompleted earlier distributions. Reserve targets and the cure test are unchanged.\r\nAPPENDIX N | ASSET TRANSFERS AND ORIGINATION HISTORY\r\nEquipment assets can have origination records created under an earlier operational edition.\r\nThe asset history explains the underlying leases and service arrangements, but it does not\r\nindependently choose the distribution rule for a later period. Staff distinguish the\r\nasset's origination date from the ending date of the distribution period when applying the\r\ntransition provision in the main memorandum.\r\nA file transfer between service teams preserves the original source documents and their\r\ndates. Copying an asset folder into a newly named directory is not a new origination event,\r\nand scanning an old agreement does not alter its execution date. Equally, old asset\r\nidentifiers do not preserve a superseded residual distribution treatment for every future\r\nperiod. The preparer records the applicable edition and the event that makes it applicable.\r\nCompleted historical distributions are retained as historical decisions. Staff do not\r\nreopen them merely to make all archived notices use the same format or current terminology.\r\nIf a genuine correction is required, it is recorded as a correction with its basis, rather\r\nthan disguising a new worksheet as the original. The transition analysis needs both\r\nbusiness chronology and document identity; a filename prefix or software modification date\r\ncannot replace either.\r\nBOUNDARY\r\nThis memorandum contains no actual borrower identities, a tax withholding rate for\r\ninvestors, or a projected equipment sale price. The fictional amounts do not establish an\r\ninvestment yield, and a cash-flow calculation cannot supply missing tax terms.\r\nAPPENDIX O | EXTERNAL AUDIT WORKING PACK\r\nThe audit working pack provides the selected period's source cash reconciliation,\r\nobligation registers, reserve history, trigger observations, signed worksheet, notice and\r\nexecution evidence. It is a collection of records for review, not a new instruction to\r\noperate trust accounts. Audit comments are logged as findings or questions, with the\r\nresponsible record owner identified for a response.\r\nThe pack distinguishes a missing document from a document that exists but does not support\r\nthe claimed conclusion. An unsigned draft might explain how an analyst worked without\r\nproving that the final decision was authorized. A report repeating the worksheet total is\r\nnot independent evidence of its inputs. Reviewers trace material claims back to the\r\nunderlying record instead of counting the number of documents that repeat the same figure.\r\nSensitive or unrelated asset details can be handled through the authorized audit process\r\nwithout inventing identities in this fictional casebook. An extract should preserve\r\nqualifications that affect interpretation and clearly state that it is an extract. The full\r\ncontrolled record remains the reference for a disputed context. Audit convenience does not\r\npermit staff to omit a reserve restriction or trigger qualification from the evidence\r\nsupplied for a distribution conclusion.\r\nAPPENDIX P | CLOSE OF PERIOD AND HANDOVER\r\nAfter execution, the closing reconciliation accounts for actual payments, actual reserve\r\nmovements and the unrestricted cash retained. Outstanding instructions are listed\r\nseparately from completed movements. The next team's opening file should make it possible\r\nto distinguish cash carried forward from new collections and to identify any failed payment\r\nwhose obligation still needs attention.\r\nThe handover note names unresolved issues and links their source records. It does not\r\ncreate a power to settle them outside the main memorandum. A personal note that a manager\r\nexpected a cure next month remains a forecast, and a draft plan to sell equipment remains a\r\nplan. Staff should not convert those expectations into current cash, a cleared trigger or\r\nan authorized junior distribution merely to reduce the list of open items.\r\nThe completed period is archived with the edition, observation set and final worksheet\r\nused. Later teams can learn from mistakes without rewriting the original chronology. If a\r\ngenuine subsequent event changes an outstanding balance, its effect is recorded in the\r\nappropriate later reconciliation. The resulting chain explains both what was distributed\r\nand what remained, preserving the distinction between current interest, arrears, capital,\r\nreserve and unrestricted cash across the handover.\r\n",
+    "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8": "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value.\r\nHAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds.\r\nVALUATION AND ROUNDING\r\nEach issue is valued separately: clean market value multiplied by one minus its total\r\nhaircut. Sum the issue values without intermediate rounding, then round the total down to\r\nthe nearest 1 thousand. Accrued bond coupon is excluded. Exposure, in contrast, includes\r\naccrued repo interest. The two kinds of accrued amounts must not be interchanged.\r\nMARKET RECORDS\r\nThe valuation analyst stores the quote time and source with the issue code. A dealer's\r\nindicative email may explain a price change, but is not a substitute for the approved\r\nclosing quote. A stale quote is treated under the missing-quote rule if it is outside the\r\npermitted feed window. Custody receipts describe location and ownership; they do not\r\nestablish a market price. Reconciliation staff keep the exposure file separate from the\r\ncollateral file so that a coupon receipt cannot accidentally reduce repo principal.\r\nMARGIN CALL\r\nDeficit is exposure minus rounded collateral value. A call is issued only when the deficit\r\nis strictly greater than 20. A deficit equal to 20 is logged but not called. The transfer\r\ndue on a call is the entire deficit, not just the portion above 20. The minimum transfer\r\nthreshold is a trigger, not a deductible.\r\nVALUATION EXERCISE\r\nExposure is 1,000. Collateral consists of a long sovereign bond worth 500 and a\r\nwatch-listed approved corporate bond worth 500. Both have valid quotes. There are no other\r\nsecurities, cash credits or pending transfers. A transfer accepted after the call is\r\nreconciled as a new movement; it is not assumed in this snapshot.\r\nCALL TIMING\r\nA call delivered by 11:00 inclusive is due at 15:00 on the same business day. A later call\r\nis due at 10:00 on the next business day. Delivery means receipt in the agreed margin\r\ninbox, not when an analyst began drafting. A call disputed before its deadline remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads.\r\nSUBSTITUTION CONTROL\r\nA substitution requires prior counterparty consent and receipt of eligible replacement\r\ncollateral with adjusted value at least equal to the value released. The old security is\r\nreleased only after custody confirms receipt. An email promising delivery is insufficient.\r\nDuring a feed outage no substitution using an unquoted replacement is allowed, even if its\r\nface value exceeds the old security's value.\r\nVERSION CONTROL\r\nOR-5 used a flat 10% haircut on approved corporate bonds without a watch-list add-on. OR-6\r\nreplaces that rule for every valuation dated on or after 2026-10-01, including trades\r\nopened earlier. Sovereign haircuts are unchanged. An old trade date does not preserve the\r\nOR-5 corporate haircut.\r\nINFORMATION LIMIT\r\nThis schedule does not disclose actual security identifiers, the repo counterparty's legal\r\nentity code, or a forecast of tomorrow's bond price. The exercise is a closed fictional\r\nsnapshot and does not authorize real transfers.\r\n"
+  },
+  "items": [
+    {
+      "token": "902ff432ca254d5a80e896f5cee6e912",
+      "question": "Morrow终端时钟故障可将交易跨两个批次回移吗？谁须审批？",
+      "gold": {
+        "referenceAnswer": "不能，最多回移一个批次，须对账岗和风险岗共同批准；不缩短T+2或90日。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "可跨两个批次",
+          "商户自行调整即可"
+        ],
+        "requiredFacts": [
+          "最多一个批次",
+          "对账岗和风险岗共同批准",
+          "不缩短结算或到期周期"
+        ],
+        "evidence": [
+          {
+            "start": 286,
+            "end": 581,
+            "text": "BATCH CLOCK\r\nTransactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters\r\nthe next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and\r\nthe published closed days are skipped. The examples below assume no closed days other than\r\nweekends."
+          },
+          {
+            "start": 2186,
+            "end": 2522,
+            "text": "RESERVE RELEASE\r\nEach reserve lot matures 90 calendar days after its batch date. Release requires maturity\r\nand no open dispute linked to that lot. An unlinked dispute does not block that lot. Lots\r\nare tracked separately: one blocked lot cannot justify retaining every other mature lot. No\r\ninterest is paid on held reserves under M-4."
+          },
+          {
+            "start": 2524,
+            "end": 2829,
+            "text": "OUTAGE EXCEPTION\r\nA documented terminal clock outage may move an accepted transaction back by one batch only\r\nafter both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. The outage exception does not shorten T+2 settlement or the 90-day reserve\r\nmaturity period."
+          }
+        ]
+      },
+      "answer": "不可以跨两个批次回移。有记录的终端时钟故障只能将已受理交易回移一个批次，且须经对账官和风险官双方批准。",
+      "grounded": true,
+      "citedTexts": [
+        "tice to submit a matched receipt and delivery proof. A\r\nresponse with only a receipt is incomplete. Winning a case reverses the provisional debit;\r\nit does not create another sale or reduce a reserve that was correctly withheld.\r\nRESERVE RELEASE\r\nEach reserve lot matures 90 calendar days after its batch date. Release requires maturity\r\nand no open dispute linked to that lot. An unlinked dispute does not block that lot. Lots\r\nare tracked separately: one blocked lot cannot justify retaining every other mature lot. No\r\ninterest is paid on held reserves under M-4.\r\nOUTAGE EXCEPTION\r\nA documented terminal clock outage may move an accepted transaction back by one batch only\r\nafter both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. ",
+        "er both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. The outage exception does not shorten T+2 settlement or the 90-day reserve\r\nmaturity period.\r\nVERSION REGISTER\r\nM-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.\r\nExisting M-3 reserve lots keep their original amounts; they are not topped up. The 90-day\r\nmaturity rule is unchanged. Do not recalculate an old lot using the current withholding\r\nrate.\r\nSCOPE LIMIT\r\nThis fictional note does not list actual merchant bank account numbers, the card scheme's\r\narbitration fee, or the issuer's internal fraud score. Those items cannot be derived from\r\nreserve percentages or settlement dates.\r\n"
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "fc4c9520b2a944b89d1d82616704eb17",
+      "question": "Oriole抵押债券的应计票息和回购的应计利息是否同样计入估值？",
+      "gold": {
+        "referenceAnswer": "不同；抵押品用净市值排除债券应计票息，风险敞口却包括回购应计利息。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "两类应计额都排除或都纳入"
+        ],
+        "requiredFacts": [
+          "抵押品不含债券应计票息",
+          "敞口含回购应计利息"
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 345,
+            "text": "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value."
+          },
+          {
+            "start": 736,
+            "end": 1109,
+            "text": "VALUATION AND ROUNDING\r\nEach issue is valued separately: clean market value multiplied by one minus its total\r\nhaircut. Sum the issue values without intermediate rounding, then round the total down to\r\nthe nearest 1 thousand. Accrued bond coupon is excluded. Exposure, in contrast, includes\r\naccrued repo interest. The two kinds of accrued amounts must not be interchanged."
+          }
+        ]
+      },
+      "answer": "不是。原文明确区分两类应计金额：抵押债券的应计票息被排除在估值之外（Accrued bond coupon is excluded）；而敞口（Exposure）则包含回购应计利息（Exposure, in contrast, includes accrued repo interest）。两者不得互换。",
+      "grounded": true,
+      "citedTexts": [
+        "le, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds.\r\nVALUATION AND ROUNDING\r\nEach issue is valued separately: clean market value multiplied by one minus its total\r\nhaircut. Sum the issue values without intermediate rounding, then round the total down to\r\nthe nearest 1 thousand. Accrued bond coupon is excluded. Exposure, in contrast, includes\r\naccrued repo interest. The two kinds of accrued amounts must not be interchanged.\r\nMARKET RECORDS\r\nThe valuation analyst stores the quote time and source with the issue code. A dealer's\r\nindicative email may explain a price change, but is not a substitute for the approved\r\nclosing quote. A stale quote is treated under the missing-quote rule if it is outside the\r\npermitted feed window. ",
+        "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value.\r\nHAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds.\r\n"
+      ],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "29ac2777eacc41b9b45e999a7d633f5a",
+      "question": "Cedar向投资者分配时应代扣多少百分比的税？",
+      "gold": {
+        "referenceAnswer": "文档未提供投资者代扣税率，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把税款专户20千元反算税率"
+        ],
+        "requiredFacts": [
+          "文档未提供投资者代扣税率",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "38539c080b934685b59664c5d586a457",
+      "question": "Oriole九月开立的公司债回购，在10月2日估值仍可用旧版10%吗？",
+      "gold": {
+        "referenceAnswer": "不能，10月1日及以后所有估值均用OR-6，普通公司债9%，观察名单再加6个百分点，旧交易也一样。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按交易日锁定10%"
+        ],
+        "requiredFacts": [
+          "按估值日适用OR-6",
+          "旧交易不保留10%",
+          "公司债9%并按名单加6个百分点"
+        ],
+        "evidence": [
+          {
+            "start": 347,
+            "end": 734,
+            "text": "HAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds."
+          },
+          {
+            "start": 3126,
+            "end": 3436,
+            "text": "VERSION CONTROL\r\nOR-5 used a flat 10% haircut on approved corporate bonds without a watch-list add-on. OR-6\r\nreplaces that rule for every valuation dated on or after 2026-10-01, including trades\r\nopened earlier. Sovereign haircuts are unchanged. An old trade date does not preserve the\r\nOR-5 corporate haircut."
+          }
+        ]
+      },
+      "answer": "不可以。OR-6规定，自2026-10-01起（含当日）的所有估值都适用新规则，包括此前开立的交易；旧交易日期不保留OR-5的10%公司债折扣。OR-6中认可的公司债折扣为9%，若该债券在观察名单上，还需额外加6个百分点。",
+      "grounded": true,
+      "citedTexts": [
+        "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value.\r\nHAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds.\r\n",
+        "ne remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads.\r\nSUBSTITUTION CONTROL\r\nA substitution requires prior counterparty consent and receipt of eligible replacement\r\ncollateral with adjusted value at least equal to the value released. The old security is\r\nreleased only after custody confirms receipt. An email promising delivery is insufficient.\r\nDuring a feed outage no substitution using an unquoted replacement is allowed, even if its\r\nface value exceeds the old security's value.\r\nVERSION CONTROL\r\nOR-5 used a flat 10% haircut on approved corporate bonds without a watch-list add-on. OR-6\r\nreplaces that rule for every valuation dated on or after 2026-10-01, including trades\r\nopened earlier. Sovereign haircuts are unchanged. ",
+        "n dated on or after 2026-10-01, including trades\r\nopened earlier. Sovereign haircuts are unchanged. An old trade date does not preserve the\r\nOR-5 corporate haircut.\r\nINFORMATION LIMIT\r\nThis schedule does not disclose actual security identifiers, the repo counterparty's legal\r\nentity code, or a forecast of tomorrow's bond price. The exercise is a closed fictional\r\nsnapshot and does not authorize real transfers.\r\n"
+      ],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "854911e31ad846da9836a277440b6110",
+      "question": "Cedar9月30日结算旧资产产生的现金，触发期间残余还能按CE-8给次级吗？",
+      "gold": {
+        "referenceAnswer": "不能。9月1日及以后结束的分配期间用CE-9，即使资产旧，触发残余仍留非受限现金。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "旧资产沿用CE-8"
+        ],
+        "requiredFacts": [
+          "CE-9按分配期结束日",
+          "旧资产也适用",
+          "触发残余留非受限现金"
+        ],
+        "evidence": [
+          {
+            "start": 22524,
+            "end": 22891,
+            "text": "VERSION REGISTER\r\nCE-8 released every residual to junior even when the trigger was active. CE-9 retains that\r\nresidual in unrestricted cash. The new rule applies to distribution periods ending on or\r\nafter 2026-09-01, including assets originated under CE-8. It does not reopen already\r\ncompleted earlier distributions. Reserve targets and the cure test are unchanged."
+          }
+        ]
+      },
+      "answer": "不能。CE-9规定，自2026-09-01（含）结束的分派期起，即使触发条件处于活动状态，残余也不再释放给次级，而是保留为不受限制的现金；该新规适用于包括CE-8下发起资产在内的资产，且不重新打开此前已完成的分派。因此，9月30日结算旧资产产生的现金，在触发期间不能按CE-8把残余分配给次级。",
+      "grounded": true,
+      "citedTexts": [
+        "ipient account, and a bank movement does not prove that all\r\ndisclosures in a notice were complete. The archive keeps both kinds of evidence so\r\noperational completion can be assessed without turning a communication event into a\r\nfictitious cash movement.\r\nVERSION REGISTER\r\nCE-8 released every residual to junior even when the trigger was active. CE-9 retains that\r\nresidual in unrestricted cash. The new rule applies to distribution periods ending on or\r\nafter 2026-09-01, including assets originated under CE-8. It does not reopen already\r\ncompleted earlier distributions. Reserve targets and the cure test are unchanged.\r\nAPPENDIX N | ASSET TRANSFERS AND ORIGINATION HISTORY\r\nEquipment assets can have origination records created under an earlier operational edition.\r\n"
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "c48b88f33531422783fc108ecec0dffe",
+      "question": "Oriole演算两只债券的折后价值、总价值和应补金额各为多少？",
+      "gold": {
+        "referenceAnswer": "长期主权债500×96%=480，观察名单公司债500×85%=425，合计905千元；缺口1000−905=95千元，大于20千元，补足全额95千元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "公司债仅9%折扣",
+          "仅补75千元",
+          "金额单位误为元"
+        ],
+        "requiredFacts": [
+          "主权债480千元",
+          "公司债425千元",
+          "合计905千元",
+          "应补95千元"
+        ],
+        "evidence": [
+          {
+            "start": 347,
+            "end": 734,
+            "text": "HAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds."
+          },
+          {
+            "start": 736,
+            "end": 1109,
+            "text": "VALUATION AND ROUNDING\r\nEach issue is valued separately: clean market value multiplied by one minus its total\r\nhaircut. Sum the issue values without intermediate rounding, then round the total down to\r\nthe nearest 1 thousand. Accrued bond coupon is excluded. Exposure, in contrast, includes\r\naccrued repo interest. The two kinds of accrued amounts must not be interchanged."
+          },
+          {
+            "start": 1653,
+            "end": 1980,
+            "text": "MARGIN CALL\r\nDeficit is exposure minus rounded collateral value. A call is issued only when the deficit\r\nis strictly greater than 20. A deficit equal to 20 is logged but not called. The transfer\r\ndue on a call is the entire deficit, not just the portion above 20. The minimum transfer\r\nthreshold is a trigger, not a deductible."
+          },
+          {
+            "start": 1982,
+            "end": 2326,
+            "text": "VALUATION EXERCISE\r\nExposure is 1,000. Collateral consists of a long sovereign bond worth 500 and a\r\nwatch-listed approved corporate bond worth 500. Both have valid quotes. There are no other\r\nsecurities, cash credits or pending transfers. A transfer accepted after the call is\r\nreconciled as a new movement; it is not assumed in this snapshot."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "12e735f7d29a48dbbdb4ded0a23af9b9",
+      "question": "Cedar已触发后，一个月三月均值降至2.8%是否解除？解除后超额储备自动给次级吗？",
+      "gold": {
+        "referenceAnswer": "一个月不足，须连续两个观察月均不高于3.0%；解除后目标40，但超额释放仍需独立指令，不自动给次级。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "单月低于4%立即解除",
+          "解除自动释放全部超额"
+        ],
+        "requiredFacts": [
+          "连续两个月不高于3%",
+          "单月2.8%不足",
+          "目标恢复40千元",
+          "超额释放仍须独立指令"
+        ],
+        "evidence": [
+          {
+            "start": 8720,
+            "end": 9094,
+            "text": "RESERVE TARGET\r\nThe target is 40 while the performance trigger is clear. It becomes 70 when the trigger is\r\nactive. A refill uses the difference between the current reserve balance and the applicable\r\ntarget, with a floor of zero. A reserve already above target does not pay a negative\r\nrefill; excess reserve is released only by a separately authorized release instruction."
+          },
+          {
+            "start": 17569,
+            "end": 17959,
+            "text": "CURE AND RELEASE\r\nAn active trigger clears only after the three-month average is at or below 3.0% on two\r\nconsecutive monthly observation dates. One low month is insufficient. After cure, the\r\nordinary target of 40 applies, but any release of reserve above 40 still needs the separate\r\nrelease instruction. Cure alone does not turn previously suspended junior interest into\r\nsenior arrears."
+          }
+        ]
+      },
+      "answer": "不能仅凭一个月降至2.8%就解除。触发状态须在连续两个月度观察日上三月均值均不高于3.0%后才清除，单月偏低不足够。解除后恢复40的常规目标，但超过40的储备释放仍需单独的释放指令；解除本身不会把此前暂停的次级利息转为高级欠款，也不代表超额储备会自动支付给次级。",
+      "grounded": true,
+      "citedTexts": [
+        " return. Staff do not invent\r\na future payment date or promise a yield from one period's worksheet. The main memorandum\r\ndetermines the current distribution, and later distributions require their own\r\nobservations, cash position and approvals.\r\nCURE AND RELEASE\r\nAn active trigger clears only after the three-month average is at or below 3.0% on two\r\nconsecutive monthly observation dates. One low month is insufficient. After cure, the\r\nordinary target of 40 applies, but any release of reserve above 40 still needs the separate\r\nrelease instruction. Cure alone does not turn previously suspended junior interest into\r\nsenior arrears.\r\n",
+        "rent roles.\r\nA proposed reserve release remains a proposal until its separate authority is present. A\r\nworksheet can show an amount above the ordinary target without establishing that the\r\nsurplus has been released. Likewise, the restoration of a lower target after cure does not\r\nitself prove that a bank transfer occurred. The archive separates the target calculation,\r\napproval to release and actual execution evidence.\r\nWhen a draw has been authorized for a permitted current senior shortfall, the subsequent\r\nrefill uses the actual reduced reserve balance under the main sequence. Staff do not carry\r\nthe pre-draw balance into the refill calculation merely because it appeared in an earlier\r\ndraft. The records explain which balance was current at each step. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "96da47a657d54cbabc300bad643f2ca8",
+      "question": "Oriole演算两只债券的折后价值、总价值和应补金额各为多少？",
+      "gold": {
+        "referenceAnswer": "长期主权债500×96%=480，观察名单公司债500×85%=425，合计905千元；缺口1000−905=95千元，大于20千元，补足全额95千元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "公司债仅9%折扣",
+          "仅补75千元",
+          "金额单位误为元"
+        ],
+        "requiredFacts": [
+          "主权债480千元",
+          "公司债425千元",
+          "合计905千元",
+          "应补95千元"
+        ],
+        "evidence": [
+          {
+            "start": 347,
+            "end": 734,
+            "text": "HAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds."
+          },
+          {
+            "start": 736,
+            "end": 1109,
+            "text": "VALUATION AND ROUNDING\r\nEach issue is valued separately: clean market value multiplied by one minus its total\r\nhaircut. Sum the issue values without intermediate rounding, then round the total down to\r\nthe nearest 1 thousand. Accrued bond coupon is excluded. Exposure, in contrast, includes\r\naccrued repo interest. The two kinds of accrued amounts must not be interchanged."
+          },
+          {
+            "start": 1653,
+            "end": 1980,
+            "text": "MARGIN CALL\r\nDeficit is exposure minus rounded collateral value. A call is issued only when the deficit\r\nis strictly greater than 20. A deficit equal to 20 is logged but not called. The transfer\r\ndue on a call is the entire deficit, not just the portion above 20. The minimum transfer\r\nthreshold is a trigger, not a deductible."
+          },
+          {
+            "start": 1982,
+            "end": 2326,
+            "text": "VALUATION EXERCISE\r\nExposure is 1,000. Collateral consists of a long sovereign bond worth 500 and a\r\nwatch-listed approved corporate bond worth 500. Both have valid quotes. There are no other\r\nsecurities, cash credits or pending transfers. A transfer accepted after the call is\r\nreconciled as a new movement; it is not assumed in this snapshot."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "6ef6f982103b4b408bae650a08c602b0",
+      "question": "Oriole抵押债券的应计票息和回购的应计利息是否同样计入估值？",
+      "gold": {
+        "referenceAnswer": "不同；抵押品用净市值排除债券应计票息，风险敞口却包括回购应计利息。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "两类应计额都排除或都纳入"
+        ],
+        "requiredFacts": [
+          "抵押品不含债券应计票息",
+          "敞口含回购应计利息"
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 345,
+            "text": "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value."
+          },
+          {
+            "start": 736,
+            "end": 1109,
+            "text": "VALUATION AND ROUNDING\r\nEach issue is valued separately: clean market value multiplied by one minus its total\r\nhaircut. Sum the issue values without intermediate rounding, then round the total down to\r\nthe nearest 1 thousand. Accrued bond coupon is excluded. Exposure, in contrast, includes\r\naccrued repo interest. The two kinds of accrued amounts must not be interchanged."
+          }
+        ]
+      },
+      "answer": "不是同样计入。抵押债券的应计票息被排除在估值之外；而回购敞口（Exposure）则包含应计回购利息。两类应计金额不得互换。",
+      "grounded": true,
+      "citedTexts": [
+        "le, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds.\r\nVALUATION AND ROUNDING\r\nEach issue is valued separately: clean market value multiplied by one minus its total\r\nhaircut. Sum the issue values without intermediate rounding, then round the total down to\r\nthe nearest 1 thousand. Accrued bond coupon is excluded. Exposure, in contrast, includes\r\naccrued repo interest. The two kinds of accrued amounts must not be interchanged.\r\nMARKET RECORDS\r\nThe valuation analyst stores the quote time and source with the issue code. A dealer's\r\nindicative email may explain a price change, but is not a substitute for the approved\r\nclosing quote. A stale quote is treated under the missing-quote rule if it is outside the\r\npermitted feed window. "
+      ],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "1c9506d3d1b44f5f912cf57d4ce62457",
+      "question": "Morrow演练商户的新留存与最终出款各是多少元？退款是否降低留存基数？",
+      "gold": {
+        "referenceAnswer": "留存50000×6%=3000元；出款50000−8000−500−3000+1000=39500元。退款不降低留存基数。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按42000元留存",
+          "出款38500元",
+          "未记账争议也扣款"
+        ],
+        "requiredFacts": [
+          "新留存3000元",
+          "出款39500元",
+          "退款不减少留存基数"
+        ],
+        "evidence": [
+          {
+            "start": 583,
+            "end": 931,
+            "text": "RESERVE MATRIX\r\nStandard merchant: withhold 6% of gross accepted sales.\r\nElevated merchant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve\r\nbase of the batch in which they are paid. Transaction fees are separate deductions and do\r\nnot reduce the reserve base either."
+          },
+          {
+            "start": 1455,
+            "end": 1810,
+            "text": "WORKED BATCH\r\nA Standard merchant has gross accepted sales of 50,000, refunds of 8,000, transaction fees\r\nof 500 and a matured old reserve release of 1,000. No other debit applies. Payout equals\r\ngross sales minus refunds, fees and the new reserve, plus the matured release. An unrelated\r\nopen dispute has no deduction until a provisional debit is posted."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "6ff8902c0006409a967771bfad8f59c1",
+      "question": "Cedar储备余额已高于目标，补储备步骤会自动产生负补提并增加分配吗？",
+      "gold": {
+        "referenceAnswer": "不会，补提下限为零；超额储备需另有释放指令才可释放。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "负补提自动增加可分配现金"
+        ],
+        "requiredFacts": [
+          "补提下限零",
+          "超额不自动释放",
+          "独立释放指令"
+        ],
+        "evidence": [
+          {
+            "start": 8720,
+            "end": 9094,
+            "text": "RESERVE TARGET\r\nThe target is 40 while the performance trigger is clear. It becomes 70 when the trigger is\r\nactive. A refill uses the difference between the current reserve balance and the applicable\r\ntarget, with a floor of zero. A reserve already above target does not pay a negative\r\nrefill; excess reserve is released only by a separately authorized release instruction."
+          }
+        ]
+      },
+      "answer": "不能。补储备使用当前储备余额与适用目标之间的差额，并以零为下限；因此余额高于目标时不会产生负补提，也不会据此增加分配。",
+      "grounded": true,
+      "citedTexts": [
+        "\nThe signed notice identifies the fee actually applied in the distribution and the\r\nsupporting cap. A later correction to the source invoice is handled with its own record.\r\nThe correction does not retroactively authorize a draft allocation that was inconsistent\r\nwith the main waterfall. The casebook keeps invoice administration distinct from the\r\ndistribution priority so staff can discuss an invoice without silently changing the cash\r\nrules for senior, reserve or junior payments.\r\nRESERVE TARGET\r\nThe target is 40 while the performance trigger is clear. It becomes 70 when the trigger is\r\nactive. A refill uses the difference between the current reserve balance and the applicable\r\ntarget, with a floor of zero. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "28f39381a839481d83a589b86071f299",
+      "question": "Oriole演算交易对手的真实法人识别编码是什么？",
+      "gold": {
+        "referenceAnswer": "文档未提供交易对手法人识别编码，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "捏造编码"
+        ],
+        "requiredFacts": [
+          "文档未提供交易对手法人识别编码",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "a6d78646991f49cc82085554900fb6ee",
+      "question": "Morrow八月新版生效后，七月M-3已留存批次是否补扣到6%？",
+      "gold": {
+        "referenceAnswer": "不补扣，旧M-3批次保留原金额；8月1日及以后批次Standard才用6%，90日到期规则不变。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "所有存量补扣1%",
+          "新版仍5%"
+        ],
+        "requiredFacts": [
+          "旧批次不补扣",
+          "8月1日及以后批次6%",
+          "90日不变"
+        ],
+        "evidence": [
+          {
+            "start": 2831,
+            "end": 3125,
+            "text": "VERSION REGISTER\r\nM-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.\r\nExisting M-3 reserve lots keep their original amounts; they are not topped up. The 90-day\r\nmaturity rule is unchanged. Do not recalculate an old lot using the current withholding\r\nrate."
+          }
+        ]
+      },
+      "answer": "不补扣。M-3已留存批次保留原金额，不会补足到6%；旧批次不得按当前扣留率重新计算。",
+      "grounded": true,
+      "citedTexts": [
+        "er both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. The outage exception does not shorten T+2 settlement or the 90-day reserve\r\nmaturity period.\r\nVERSION REGISTER\r\nM-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.\r\nExisting M-3 reserve lots keep their original amounts; they are not topped up. The 90-day\r\nmaturity rule is unchanged. Do not recalculate an old lot using the current withholding\r\nrate.\r\nSCOPE LIMIT\r\nThis fictional note does not list actual merchant bank account numbers, the card scheme's\r\narbitration fee, or the issuer's internal fraud score. Those items cannot be derived from\r\nreserve percentages or settlement dates.\r\n"
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "4eced52714b5472cb0464edaa58692ff",
+      "question": "Oriole观察名单的获准公司债总折扣多少？没有报价能否按零折扣纳入？",
+      "gold": {
+        "referenceAnswer": "总折扣9%+6个百分点=15%；无报价不合格，不能按零折扣纳入。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "6%乘9%",
+          "无报价零折扣"
+        ],
+        "requiredFacts": [
+          "15%",
+          "无报价不合格"
+        ],
+        "evidence": [
+          {
+            "start": 347,
+            "end": 734,
+            "text": "HAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds."
+          }
+        ]
+      },
+      "answer": "根据OR-6抵押品附表，获准公司债的基础折扣为9%；若该债券在观察名单上，需额外加6个百分点，因此观察名单上的获准公司债总折扣为15%。没有报价时，该债券会被视为不合格，不能按零折扣纳入。",
+      "grounded": true,
+      "citedTexts": [
+        "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value.\r\nHAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds.\r\n"
+      ],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "2e44587238d64e65bc5fd819a21bad35",
+      "question": "Morrow卡组织仲裁费具体多少元？",
+      "gold": {
+        "referenceAnswer": "文档未提供卡组织仲裁费，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把500元交易费当仲裁费"
+        ],
+        "requiredFacts": [
+          "文档未提供卡组织仲裁费",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "400ae1dd97f942259f84f7fed7763581",
+      "question": "Morrow一个已满90天的留存批次，没有与其关联的争议，但商户另有无关争议，应否放款？",
+      "gold": {
+        "referenceAnswer": "应释放该批留存，条件是已到期且无关联未结争议；无关争议不阻止此批。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "任何争议冻结全户所有批次"
+        ],
+        "requiredFacts": [
+          "满90个自然日",
+          "无关联未结争议",
+          "无关争议不阻止释放"
+        ],
+        "evidence": [
+          {
+            "start": 2186,
+            "end": 2522,
+            "text": "RESERVE RELEASE\r\nEach reserve lot matures 90 calendar days after its batch date. Release requires maturity\r\nand no open dispute linked to that lot. An unlinked dispute does not block that lot. Lots\r\nare tracked separately: one blocked lot cannot justify retaining every other mature lot. No\r\ninterest is paid on held reserves under M-4."
+          }
+        ]
+      },
+      "answer": "应放款。已满90天的留存批次到期后应释放；与批次无关的未决争议在正式临时扣款入账前不产生扣减，因此不影响该批次放款。",
+      "grounded": true,
+      "citedTexts": [
+        "d timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves.\r\nWORKED BATCH\r\nA Standard merchant has gross accepted sales of 50,000, refunds of 8,000, transaction fees\r\nof 500 and a matured old reserve release of 1,000. No other debit applies. Payout equals\r\ngross sales minus refunds, fees and the new reserve, plus the matured release. An unrelated\r\nopen dispute has no deduction until a provisional debit is posted.\r\nDISPUTE PATH\r\nA provisional dispute debit is posted when a case is opened with a scheme debit notice. The\r\nmerchant has 7 calendar days after notice to submit a matched receipt and delivery proof. A\r\nresponse with only a receipt is incomplete. ",
+        "er both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. The outage exception does not shorten T+2 settlement or the 90-day reserve\r\nmaturity period.\r\nVERSION REGISTER\r\nM-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.\r\nExisting M-3 reserve lots keep their original amounts; they are not topped up. The 90-day\r\nmaturity rule is unchanged. Do not recalculate an old lot using the current withholding\r\nrate.\r\nSCOPE LIMIT\r\nThis fictional note does not list actual merchant bank account numbers, the card scheme's\r\narbitration fee, or the issuer's internal fraud score. Those items cannot be derived from\r\nreserve percentages or settlement dates.\r\n"
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "d4053a4c3d2a4e84800e76c44aefe461",
+      "question": "Morrow同时有Standard和Elevated标记的商户，留存是几成或百分之几？",
+      "gold": {
+        "referenceAnswer": "只用Elevated的12%，不把6%和12%相加。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "18%",
+          "6%"
+        ],
+        "requiredFacts": [
+          "12%",
+          "不叠加为18%"
+        ],
+        "evidence": [
+          {
+            "start": 583,
+            "end": 931,
+            "text": "RESERVE MATRIX\r\nStandard merchant: withhold 6% of gross accepted sales.\r\nElevated merchant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve\r\nbase of the batch in which they are paid. Transaction fees are separate deductions and do\r\nnot reduce the reserve base either."
+          }
+        ]
+      },
+      "answer": "同时带有 Standard 和 Elevated 标记的商户只按 Elevated 处理，留存比例为总受理销售额的 12%（即一成二），不按 18% 计算。",
+      "grounded": true,
+      "citedTexts": [
+        "MORROW ACQUIRING | OPERATING NOTE M-4 | 2026-08-01\r\nFictional merchant settlement rules. Currency: CNY. A settlement batch and a dispute case\r\nhave different identifiers. A case reference is not a payout instruction. This note governs\r\nreserve movements, not cardholder credit limits.\r\nBATCH CLOCK\r\nTransactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters\r\nthe next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and\r\nthe published closed days are skipped. The examples below assume no closed days other than\r\nweekends.\r\nRESERVE MATRIX\r\nStandard merchant: withhold 6% of gross accepted sales.\r\nElevated merchant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. ",
+        "ant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve\r\nbase of the batch in which they are paid. Transaction fees are separate deductions and do\r\nnot reduce the reserve base either.\r\nLEDGER DISCIPLINE\r\nOperations reconcile accepted sale IDs to the terminal report before sending the batch for\r\nreview. A void made before acceptance never becomes a gross sale. A refund made after\r\nacceptance is a separate debit, even when its amount equals the original sale. Reviewers\r\nmay attach card scheme messages as context; those messages cannot replace a matched sale\r\nID. A manual note does not change an accepted timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves.\r\n"
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "b2e08da3409d4dbfa335c7d664d4fc49",
+      "question": "Oriole这只债券明天收盘价会是多少？",
+      "gold": {
+        "referenceAnswer": "文档未提供未来债券价格预测，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "将500千元演练市值当明日报价"
+        ],
+        "requiredFacts": [
+          "文档未提供未来债券价格预测",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "ae233915d77a4de3b0050a3550ddf89c",
+      "question": "Oriole缺口恰好20千元需要发补仓通知吗？若21千元应转多少？",
+      "gold": {
+        "referenceAnswer": "20千元仅记录不发通知；21千元触发时全额转21千元，不是1千元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "达到20即触发",
+          "只补超过门槛的1千元"
+        ],
+        "requiredFacts": [
+          "等于20千元不触发",
+          "21千元应全额补21千元"
+        ],
+        "evidence": [
+          {
+            "start": 1653,
+            "end": 1980,
+            "text": "MARGIN CALL\r\nDeficit is exposure minus rounded collateral value. A call is issued only when the deficit\r\nis strictly greater than 20. A deficit equal to 20 is logged but not called. The transfer\r\ndue on a call is the entire deficit, not just the portion above 20. The minimum transfer\r\nthreshold is a trigger, not a deductible."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "059187af145745619d54d677d97bef75",
+      "question": "Cedar储备金临时动用能付优先欠息或次级利息吗，谁批准？",
+      "gold": {
+        "referenceAnswer": "只能在费用步骤后补优先本期利息短缺，不能付欠息、次级利息或费用；须受托人与监督岗共同批准。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "优先欠息也能用储备",
+          "动用当作新收款"
+        ],
+        "requiredFacts": [
+          "只补优先本期利息短缺",
+          "不能付欠息次级或费用",
+          "受托人与监督岗双批"
+        ],
+        "evidence": [
+          {
+            "start": 20726,
+            "end": 21070,
+            "text": "RESERVE DRAW\r\nA liquidity draw may cover a shortfall in senior current interest only, after the trustee\r\nfee step. It cannot pay junior interest, senior interest arrears, or fees. The draw\r\nrequires both trustee and oversight officer approval. A draw reduces the reserve balance\r\nused in the later refill step; it is not new period collections."
+          }
+        ]
+      },
+      "answer": "根据原文，储备金动用请求必须针对具体的当期优先利息缺口，并需展示受托人费用步骤后的现金状况；仅笼统称信托需要流动性不足以构成允许用途，审查人应核查请求用途而非假定任何标注为优先的金额都可获资金。原文还明确，治愈本身不会把此前被暂停的次级利息转为优先欠息。因此，储备金临时动用不能用于支付优先欠息或次级利息，只能用于当期优先利息缺口。批准方面，原文要求两项批准作为不同决定分别记录，并注明各审查人所审阅的包版本，准备人不能把一项批准复制到另一角色的字段中。",
+      "grounded": true,
+      "citedTexts": [
+        "e instruction. Cure alone does not turn previously suspended junior interest into\r\nsenior arrears.\r\nAPPENDIX K | DRAW REQUEST PACKET\r\nA reserve draw request identifies the specific current senior interest shortfall and shows\r\nthe cash position after the trustee fee step. The packet includes the source interest\r\nregister and the reserve balance available for review. A general statement that the trust\r\nneeds liquidity is insufficient to establish the permitted purpose. The reviewer checks the\r\nrequested use instead of assuming that any senior-labeled amount may be funded.\r\nThe two required approvals are recorded as distinct decisions with the packet version each\r\nreviewer considered. A preparer cannot copy one approval into the other role's field. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "e252bd0d631d404493cbbeda863f3be9",
+      "question": "Oriole演算交易对手的真实法人识别编码是什么？",
+      "gold": {
+        "referenceAnswer": "文档未提供交易对手法人识别编码，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "捏造编码"
+        ],
+        "requiredFacts": [
+          "文档未提供交易对手法人识别编码",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "0fa9eb032c8b4edd8fdc96574a525ab9",
+      "question": "Morrow八月新版生效后，七月M-3已留存批次是否补扣到6%？",
+      "gold": {
+        "referenceAnswer": "不补扣，旧M-3批次保留原金额；8月1日及以后批次Standard才用6%，90日到期规则不变。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "所有存量补扣1%",
+          "新版仍5%"
+        ],
+        "requiredFacts": [
+          "旧批次不补扣",
+          "8月1日及以后批次6%",
+          "90日不变"
+        ],
+        "evidence": [
+          {
+            "start": 2831,
+            "end": 3125,
+            "text": "VERSION REGISTER\r\nM-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.\r\nExisting M-3 reserve lots keep their original amounts; they are not topped up. The 90-day\r\nmaturity rule is unchanged. Do not recalculate an old lot using the current withholding\r\nrate."
+          }
+        ]
+      },
+      "answer": "不补扣。M-3已留存批次保留原金额，不会补足到6%；旧批次也不得按当前扣留率重新计算。",
+      "grounded": true,
+      "citedTexts": [
+        "er both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. The outage exception does not shorten T+2 settlement or the 90-day reserve\r\nmaturity period.\r\nVERSION REGISTER\r\nM-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.\r\nExisting M-3 reserve lots keep their original amounts; they are not topped up. The 90-day\r\nmaturity rule is unchanged. Do not recalculate an old lot using the current withholding\r\nrate.\r\nSCOPE LIMIT\r\nThis fictional note does not list actual merchant bank account numbers, the card scheme's\r\narbitration fee, or the issuer's internal fraud score. Those items cannot be derived from\r\nreserve percentages or settlement dates.\r\n"
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "7b2759ee9c6a4005bebdf0f330fff786",
+      "question": "Cedar正常瀑布中，补储备在优先欠息之前还是之后，在次级利息之前还是之后？",
+      "gold": {
+        "referenceAnswer": "先费用，再优先本期及欠息，之后补储备，最后才次级本期利息和次级残余。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "次级利息先于储备",
+          "欠息排在储备后"
+        ],
+        "requiredFacts": [
+          "优先本期及欠息先于补储备",
+          "补储备先于次级利息"
+        ],
+        "evidence": [
+          {
+            "start": 3497,
+            "end": 3914,
+            "text": "NORMAL WATERFALL\r\nApply distributable cash in this order: (1) trustee fee, capped at 5 each period; (2)\r\nsenior current interest and senior interest arrears; (3) refill the liquidity reserve to\r\nits target; (4) junior current interest; (5) any residual to the junior capital account. An\r\nunpaid fee above the cap is not moved into senior interest. Unpaid senior interest carries\r\nforward without interest on interest."
+          }
+        ]
+      },
+      "answer": "在Cedar正常瀑布中，补储备（将流动性储备补足至目标）位于第(3)步：它在优先当期利息及优先欠息（第(2)步）之后，在次级当期利息（第(4)步）之前。",
+      "grounded": true,
+      "citedTexts": [
+        "ins both the original prior-period report and the authorized\r\ncorrection, when a correction exists. This makes a later change understandable without\r\npretending that staff had always reported the corrected number. A reconciliation can\r\nexplain an accounting difference; it does not by itself grant a new right to distribute\r\nrestricted money. The governing cash and reserve definitions remain the ones in the main\r\nmemorandum.\r\nNORMAL WATERFALL\r\nApply distributable cash in this order: (1) trustee fee, capped at 5 each period; (2)\r\nsenior current interest and senior interest arrears; (3) refill the liquidity reserve to\r\nits target; (4) junior current interest; (5) any residual to the junior capital account. An\r\nunpaid fee above the cap is not moved into senior interest. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "0e7f1b1408114147b120570e12e68a42",
+      "question": "没有额外休业日时，Morrow周五恰好18:00受理的交易在哪个批次，何日结算？",
+      "gold": {
+        "referenceAnswer": "进入下周一批次，按T+2工作日于周三结算；周末跳过。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "周五批次周二结算",
+          "周日结算"
+        ],
+        "requiredFacts": [
+          "下周一批次",
+          "周三结算",
+          "18:00归下一工作日"
+        ],
+        "evidence": [
+          {
+            "start": 286,
+            "end": 581,
+            "text": "BATCH CLOCK\r\nTransactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters\r\nthe next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and\r\nthe published closed days are skipped. The examples below assume no closed days other than\r\nweekends."
+          }
+        ]
+      },
+      "answer": "恰好18:00受理的交易进入下一营业日的批次，即周一所在批次；结算按T+2营业日，跳过周六、周日，因此结算日为周三。",
+      "grounded": true,
+      "citedTexts": [
+        "MORROW ACQUIRING | OPERATING NOTE M-4 | 2026-08-01\r\nFictional merchant settlement rules. Currency: CNY. A settlement batch and a dispute case\r\nhave different identifiers. A case reference is not a payout instruction. This note governs\r\nreserve movements, not cardholder credit limits.\r\nBATCH CLOCK\r\nTransactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters\r\nthe next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and\r\nthe published closed days are skipped. The examples below assume no closed days other than\r\nweekends.\r\nRESERVE MATRIX\r\nStandard merchant: withhold 6% of gross accepted sales.\r\nElevated merchant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. "
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "1604ae4f327943a4894385f810b82931",
+      "question": "Oriole对补仓有异议，是否可以暂不付全部金额？",
+      "gold": {
+        "referenceAnswer": "不能一概停付；未争议部分仍按期交付，争议部分升级双方估值负责人。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "异议自动暂停全部转账"
+        ],
+        "requiredFacts": [
+          "未争议部分仍到期应付",
+          "争议部分升级双方估值负责人"
+        ],
+        "evidence": [
+          {
+            "start": 2328,
+            "end": 2694,
+            "text": "CALL TIMING\r\nA call delivered by 11:00 inclusive is due at 15:00 on the same business day. A later call\r\nis due at 10:00 on the next business day. Delivery means receipt in the agreed margin\r\ninbox, not when an analyst began drafting. A call disputed before its deadline remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "c2a57cef6938449f9dca4b72cf299ba1",
+      "question": "Morrow演练商户的新留存与最终出款各是多少元？退款是否降低留存基数？",
+      "gold": {
+        "referenceAnswer": "留存50000×6%=3000元；出款50000−8000−500−3000+1000=39500元。退款不降低留存基数。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按42000元留存",
+          "出款38500元",
+          "未记账争议也扣款"
+        ],
+        "requiredFacts": [
+          "新留存3000元",
+          "出款39500元",
+          "退款不减少留存基数"
+        ],
+        "evidence": [
+          {
+            "start": 583,
+            "end": 931,
+            "text": "RESERVE MATRIX\r\nStandard merchant: withhold 6% of gross accepted sales.\r\nElevated merchant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve\r\nbase of the batch in which they are paid. Transaction fees are separate deductions and do\r\nnot reduce the reserve base either."
+          },
+          {
+            "start": 1455,
+            "end": 1810,
+            "text": "WORKED BATCH\r\nA Standard merchant has gross accepted sales of 50,000, refunds of 8,000, transaction fees\r\nof 500 and a matured old reserve release of 1,000. No other debit applies. Payout equals\r\ngross sales minus refunds, fees and the new reserve, plus the matured release. An unrelated\r\nopen dispute has no deduction until a provisional debit is posted."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "6fad714d7ef5464d98ac434f2350e3dc",
+      "question": "Cedar储备余额已高于目标，补储备步骤会自动产生负补提并增加分配吗？",
+      "gold": {
+        "referenceAnswer": "不会，补提下限为零；超额储备需另有释放指令才可释放。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "负补提自动增加可分配现金"
+        ],
+        "requiredFacts": [
+          "补提下限零",
+          "超额不自动释放",
+          "独立释放指令"
+        ],
+        "evidence": [
+          {
+            "start": 8720,
+            "end": 9094,
+            "text": "RESERVE TARGET\r\nThe target is 40 while the performance trigger is clear. It becomes 70 when the trigger is\r\nactive. A refill uses the difference between the current reserve balance and the applicable\r\ntarget, with a floor of zero. A reserve already above target does not pay a negative\r\nrefill; excess reserve is released only by a separately authorized release instruction."
+          }
+        ]
+      },
+      "answer": "不会。补储备按当前储备余额与适用目标之间的差额计算，并以零为下限；因此当余额高于目标时，补提额为零，不会形成负补提，也不会因此增加分配。",
+      "grounded": true,
+      "citedTexts": [
+        "\nThe signed notice identifies the fee actually applied in the distribution and the\r\nsupporting cap. A later correction to the source invoice is handled with its own record.\r\nThe correction does not retroactively authorize a draft allocation that was inconsistent\r\nwith the main waterfall. The casebook keeps invoice administration distinct from the\r\ndistribution priority so staff can discuss an invoice without silently changing the cash\r\nrules for senior, reserve or junior payments.\r\nRESERVE TARGET\r\nThe target is 40 while the performance trigger is clear. It becomes 70 when the trigger is\r\nactive. A refill uses the difference between the current reserve balance and the applicable\r\ntarget, with a floor of zero. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "8ed865fe1cd84a9bba2f5c456f35ede6",
+      "question": "Oriole在11:00收妥补仓通知和11:01收妥，截止时点分别是什么？",
+      "gold": {
+        "referenceAnswer": "11:00含边界，须当日15:00；11:01须下一工作日10:00。以约定邮箱收妥为准。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "11:00属于晚到",
+          "两者均下一日"
+        ],
+        "requiredFacts": [
+          "11:00收妥当日15:00",
+          "11:01下一工作日10:00",
+          "收妥而非起草时间"
+        ],
+        "evidence": [
+          {
+            "start": 2328,
+            "end": 2694,
+            "text": "CALL TIMING\r\nA call delivered by 11:00 inclusive is due at 15:00 on the same business day. A later call\r\nis due at 10:00 on the next business day. Delivery means receipt in the agreed margin\r\ninbox, not when an analyst began drafting. A call disputed before its deadline remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "ee1c894038e44778b3b856b0435bbf87",
+      "question": "Morrow的受理前撤销和受理后退款在账本中有什么差别？",
+      "gold": {
+        "referenceAnswer": "受理前撤销不形成销售额；受理后退款作为独立借项，即使金额等于原销售也不抹除销售。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "退款直接抹除原销售与留存基数"
+        ],
+        "requiredFacts": [
+          "受理前撤销不入销售",
+          "受理后退款独立借项"
+        ],
+        "evidence": [
+          {
+            "start": 933,
+            "end": 1453,
+            "text": "LEDGER DISCIPLINE\r\nOperations reconcile accepted sale IDs to the terminal report before sending the batch for\r\nreview. A void made before acceptance never becomes a gross sale. A refund made after\r\nacceptance is a separate debit, even when its amount equals the original sale. Reviewers\r\nmay attach card scheme messages as context; those messages cannot replace a matched sale\r\nID. A manual note does not change an accepted timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves."
+          }
+        ]
+      },
+      "answer": "依据原文，受理前撤销（void made before acceptance）从不成为一笔gross sale；而受理后退款（refund made after acceptance）是一笔单独的借记（separate debit），即使其金额等于原始销售金额也是如此。",
+      "grounded": true,
+      "citedTexts": [
+        "ant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve\r\nbase of the batch in which they are paid. Transaction fees are separate deductions and do\r\nnot reduce the reserve base either.\r\nLEDGER DISCIPLINE\r\nOperations reconcile accepted sale IDs to the terminal report before sending the batch for\r\nreview. A void made before acceptance never becomes a gross sale. A refund made after\r\nacceptance is a separate debit, even when its amount equals the original sale. Reviewers\r\nmay attach card scheme messages as context; those messages cannot replace a matched sale\r\nID. A manual note does not change an accepted timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves.\r\n"
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "f1d1c6fe5782416494923c85a08af630",
+      "question": "Cedar演算最终费用、优先利息、补储备、次级实付和留存现金各是多少？",
+      "gold": {
+        "referenceAnswer": "触发4.2%>4%，可分配150。费用5，优先本期50及欠息10合计60，储备从15补至70用55，剩30留在非受限现金；次级实付0。单位千元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "费用7千元",
+          "储备只补25千元",
+          "向次级支付25并分残余5"
+        ],
+        "requiredFacts": [
+          "费用5千元",
+          "优先利息60千元",
+          "补储备55千元至70千元",
+          "次级实付0",
+          "留存30千元"
+        ],
+        "evidence": [
+          {
+            "start": 1733,
+            "end": 2066,
+            "text": "DISTRIBUTABLE CASH\r\nBegin with period collections plus the opening unrestricted cash balance. Exclude money\r\nheld in the tax escrow and exclude unreceived sale proceeds. A signed equipment sale\r\ncontract is not collected cash. Restricted reserve cash is separate from the opening\r\nunrestricted balance and is not added a second time."
+          },
+          {
+            "start": 3497,
+            "end": 3914,
+            "text": "NORMAL WATERFALL\r\nApply distributable cash in this order: (1) trustee fee, capped at 5 each period; (2)\r\nsenior current interest and senior interest arrears; (3) refill the liquidity reserve to\r\nits target; (4) junior current interest; (5) any residual to the junior capital account. An\r\nunpaid fee above the cap is not moved into senior interest. Unpaid senior interest carries\r\nforward without interest on interest."
+          },
+          {
+            "start": 8720,
+            "end": 9094,
+            "text": "RESERVE TARGET\r\nThe target is 40 while the performance trigger is clear. It becomes 70 when the trigger is\r\nactive. A refill uses the difference between the current reserve balance and the applicable\r\ntarget, with a floor of zero. A reserve already above target does not pay a negative\r\nrefill; excess reserve is released only by a separately authorized release instruction."
+          },
+          {
+            "start": 10531,
+            "end": 10950,
+            "text": "PERFORMANCE TRIGGER\r\nThe trigger becomes active when the three-month average delinquency ratio is strictly above\r\n4.0%. A value exactly 4.0% does not activate it. While active, junior current interest and\r\njunior residual distributions are suspended; cash left after steps 1 through 3 remains in\r\nunrestricted cash. Junior unpaid current interest is recorded, but does not jump ahead of\r\nthe reserve in the next period."
+          },
+          {
+            "start": 13729,
+            "end": 14141,
+            "text": "DISTRIBUTION EXERCISE\r\nPeriod collections are 140, opening unrestricted cash is 10, and tax escrow is 20. A signed\r\nbut unpaid sale is 30. The reserve balance is 15. The trustee requests 7 in fees, senior\r\ncurrent interest is 50, senior interest arrears are 10, and junior current interest is 25.\r\nThe three-month delinquency average is 4.2%. No reserve release instruction exists and no\r\nother deductions apply."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "3f3d7887f8a54780a35e68fb646c51db",
+      "question": "Oriole换券时对手方已同意、承诺交付面值更高的新券，能立即释放旧券吗？",
+      "gold": {
+        "referenceAnswer": "不能。须收到合格替代抵押物，折后价值至少等于被释放价值，并由托管确认收妥，承诺邮件或高面值不够。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "高面值承诺即可释放",
+          "报价中断可无报价替换"
+        ],
+        "requiredFacts": [
+          "先获对手方同意",
+          "替代券合格且折后价值足够",
+          "托管确认收妥后放旧券"
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 345,
+            "text": "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value."
+          },
+          {
+            "start": 2696,
+            "end": 3124,
+            "text": "SUBSTITUTION CONTROL\r\nA substitution requires prior counterparty consent and receipt of eligible replacement\r\ncollateral with adjusted value at least equal to the value released. The old security is\r\nreleased only after custody confirms receipt. An email promising delivery is insufficient.\r\nDuring a feed outage no substitution using an unquoted replacement is allowed, even if its\r\nface value exceeds the old security's value."
+          }
+        ]
+      },
+      "answer": "不能。换券需要事先取得对手方同意，并收到合格替代担保品，且调整后价值至少等于被释放的价值；旧券只有在托管确认收到后才释放，仅凭承诺交付的邮件不够。即使新券面值更高，在数据源中断期间也不得使用无报价的替代品进行换券。",
+      "grounded": true,
+      "citedTexts": [
+        "ne remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads.\r\nSUBSTITUTION CONTROL\r\nA substitution requires prior counterparty consent and receipt of eligible replacement\r\ncollateral with adjusted value at least equal to the value released. The old security is\r\nreleased only after custody confirms receipt. An email promising delivery is insufficient.\r\nDuring a feed outage no substitution using an unquoted replacement is allowed, even if its\r\nface value exceeds the old security's value.\r\nVERSION CONTROL\r\nOR-5 used a flat 10% haircut on approved corporate bonds without a watch-list add-on. OR-6\r\nreplaces that rule for every valuation dated on or after 2026-10-01, including trades\r\nopened earlier. Sovereign haircuts are unchanged. "
+      ],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "cf9eb0c18517441da6905f8bfb252399",
+      "question": "Oriole缺口恰好20千元需要发补仓通知吗？若21千元应转多少？",
+      "gold": {
+        "referenceAnswer": "20千元仅记录不发通知；21千元触发时全额转21千元，不是1千元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "达到20即触发",
+          "只补超过门槛的1千元"
+        ],
+        "requiredFacts": [
+          "等于20千元不触发",
+          "21千元应全额补21千元"
+        ],
+        "evidence": [
+          {
+            "start": 1653,
+            "end": 1980,
+            "text": "MARGIN CALL\r\nDeficit is exposure minus rounded collateral value. A call is issued only when the deficit\r\nis strictly greater than 20. A deficit equal to 20 is logged but not called. The transfer\r\ndue on a call is the entire deficit, not just the portion above 20. The minimum transfer\r\nthreshold is a trigger, not a deductible."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "efdc13ea0da142349a5178bcecfdbe2f",
+      "question": "Morrow一个已满90天的留存批次，没有与其关联的争议，但商户另有无关争议，应否放款？",
+      "gold": {
+        "referenceAnswer": "应释放该批留存，条件是已到期且无关联未结争议；无关争议不阻止此批。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "任何争议冻结全户所有批次"
+        ],
+        "requiredFacts": [
+          "满90个自然日",
+          "无关联未结争议",
+          "无关争议不阻止释放"
+        ],
+        "evidence": [
+          {
+            "start": 2186,
+            "end": 2522,
+            "text": "RESERVE RELEASE\r\nEach reserve lot matures 90 calendar days after its batch date. Release requires maturity\r\nand no open dispute linked to that lot. An unlinked dispute does not block that lot. Lots\r\nare tracked separately: one blocked lot cannot justify retaining every other mature lot. No\r\ninterest is paid on held reserves under M-4."
+          }
+        ]
+      },
+      "answer": "应放款。已满90天的留存批次到期后应释放；与批次无关的未决争议在临时借记入账前不产生扣款，因此不影响该批次放款。",
+      "grounded": true,
+      "citedTexts": [
+        "d timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves.\r\nWORKED BATCH\r\nA Standard merchant has gross accepted sales of 50,000, refunds of 8,000, transaction fees\r\nof 500 and a matured old reserve release of 1,000. No other debit applies. Payout equals\r\ngross sales minus refunds, fees and the new reserve, plus the matured release. An unrelated\r\nopen dispute has no deduction until a provisional debit is posted.\r\nDISPUTE PATH\r\nA provisional dispute debit is posted when a case is opened with a scheme debit notice. The\r\nmerchant has 7 calendar days after notice to submit a matched receipt and delivery proof. A\r\nresponse with only a receipt is incomplete. ",
+        "er both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. The outage exception does not shorten T+2 settlement or the 90-day reserve\r\nmaturity period.\r\nVERSION REGISTER\r\nM-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.\r\nExisting M-3 reserve lots keep their original amounts; they are not topped up. The 90-day\r\nmaturity rule is unchanged. Do not recalculate an old lot using the current withholding\r\nrate.\r\nSCOPE LIMIT\r\nThis fictional note does not list actual merchant bank account numbers, the card scheme's\r\narbitration fee, or the issuer's internal fraud score. Those items cannot be derived from\r\nreserve percentages or settlement dates.\r\n"
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "79c339fe0c3c4f8ba1d88540f76ea8a4",
+      "question": "Cedar演算最终费用、优先利息、补储备、次级实付和留存现金各是多少？",
+      "gold": {
+        "referenceAnswer": "触发4.2%>4%，可分配150。费用5，优先本期50及欠息10合计60，储备从15补至70用55，剩30留在非受限现金；次级实付0。单位千元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "费用7千元",
+          "储备只补25千元",
+          "向次级支付25并分残余5"
+        ],
+        "requiredFacts": [
+          "费用5千元",
+          "优先利息60千元",
+          "补储备55千元至70千元",
+          "次级实付0",
+          "留存30千元"
+        ],
+        "evidence": [
+          {
+            "start": 1733,
+            "end": 2066,
+            "text": "DISTRIBUTABLE CASH\r\nBegin with period collections plus the opening unrestricted cash balance. Exclude money\r\nheld in the tax escrow and exclude unreceived sale proceeds. A signed equipment sale\r\ncontract is not collected cash. Restricted reserve cash is separate from the opening\r\nunrestricted balance and is not added a second time."
+          },
+          {
+            "start": 3497,
+            "end": 3914,
+            "text": "NORMAL WATERFALL\r\nApply distributable cash in this order: (1) trustee fee, capped at 5 each period; (2)\r\nsenior current interest and senior interest arrears; (3) refill the liquidity reserve to\r\nits target; (4) junior current interest; (5) any residual to the junior capital account. An\r\nunpaid fee above the cap is not moved into senior interest. Unpaid senior interest carries\r\nforward without interest on interest."
+          },
+          {
+            "start": 8720,
+            "end": 9094,
+            "text": "RESERVE TARGET\r\nThe target is 40 while the performance trigger is clear. It becomes 70 when the trigger is\r\nactive. A refill uses the difference between the current reserve balance and the applicable\r\ntarget, with a floor of zero. A reserve already above target does not pay a negative\r\nrefill; excess reserve is released only by a separately authorized release instruction."
+          },
+          {
+            "start": 10531,
+            "end": 10950,
+            "text": "PERFORMANCE TRIGGER\r\nThe trigger becomes active when the three-month average delinquency ratio is strictly above\r\n4.0%. A value exactly 4.0% does not activate it. While active, junior current interest and\r\njunior residual distributions are suspended; cash left after steps 1 through 3 remains in\r\nunrestricted cash. Junior unpaid current interest is recorded, but does not jump ahead of\r\nthe reserve in the next period."
+          },
+          {
+            "start": 13729,
+            "end": 14141,
+            "text": "DISTRIBUTION EXERCISE\r\nPeriod collections are 140, opening unrestricted cash is 10, and tax escrow is 20. A signed\r\nbut unpaid sale is 30. The reserve balance is 15. The trustee requests 7 in fees, senior\r\ncurrent interest is 50, senior interest arrears are 10, and junior current interest is 25.\r\nThe three-month delinquency average is 4.2%. No reserve release instruction exists and no\r\nother deductions apply."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "04d247051fcb467abc7ffea646659e1b",
+      "question": "Morrow争议应答期限是多久？只交收据是否合格，胜诉会怎样处理预扣？",
+      "gold": {
+        "referenceAnswer": "通知后7个自然日内交匹配收据和交付证明；仅收据不完整。胜诉冲回争议预扣，不新增销售。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "7个工作日",
+          "胜诉取消所有留存"
+        ],
+        "requiredFacts": [
+          "7个自然日",
+          "匹配收据和交付证明",
+          "胜诉冲回预扣而非新增销售"
+        ],
+        "evidence": [
+          {
+            "start": 1812,
+            "end": 2184,
+            "text": "DISPUTE PATH\r\nA provisional dispute debit is posted when a case is opened with a scheme debit notice. The\r\nmerchant has 7 calendar days after notice to submit a matched receipt and delivery proof. A\r\nresponse with only a receipt is incomplete. Winning a case reverses the provisional debit;\r\nit does not create another sale or reduce a reserve that was correctly withheld."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "5f245fc9d7fb4801bb8405a3054aa0c8",
+      "question": "Cedar未付款设备最终将按什么价格出售？",
+      "gold": {
+        "referenceAnswer": "文档未提供未来设备出售价格，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "将30千元未收款当已确定最终成交预测"
+        ],
+        "requiredFacts": [
+          "文档未提供未来设备出售价格",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "2799684c506846b490ccc723d67e05b9",
+      "question": "Cedar9月30日结算旧资产产生的现金，触发期间残余还能按CE-8给次级吗？",
+      "gold": {
+        "referenceAnswer": "不能。9月1日及以后结束的分配期间用CE-9，即使资产旧，触发残余仍留非受限现金。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "旧资产沿用CE-8"
+        ],
+        "requiredFacts": [
+          "CE-9按分配期结束日",
+          "旧资产也适用",
+          "触发残余留非受限现金"
+        ],
+        "evidence": [
+          {
+            "start": 22524,
+            "end": 22891,
+            "text": "VERSION REGISTER\r\nCE-8 released every residual to junior even when the trigger was active. CE-9 retains that\r\nresidual in unrestricted cash. The new rule applies to distribution periods ending on or\r\nafter 2026-09-01, including assets originated under CE-8. It does not reopen already\r\ncompleted earlier distributions. Reserve targets and the cure test are unchanged."
+          }
+        ]
+      },
+      "answer": "不能。CE-9规定，即使触发条件处于活跃状态，也不再像CE-8那样把全部残余释放给次级，而是将残余保留为不受限制的现金；新规则适用于2026-09-01及之后结束的分配期，包括在CE-8下发起的资产，因此9月30日结算旧资产产生的现金应按CE-9处理，不能按CE-8给次级。",
+      "grounded": true,
+      "citedTexts": [
+        "ipient account, and a bank movement does not prove that all\r\ndisclosures in a notice were complete. The archive keeps both kinds of evidence so\r\noperational completion can be assessed without turning a communication event into a\r\nfictitious cash movement.\r\nVERSION REGISTER\r\nCE-8 released every residual to junior even when the trigger was active. CE-9 retains that\r\nresidual in unrestricted cash. The new rule applies to distribution periods ending on or\r\nafter 2026-09-01, including assets originated under CE-8. It does not reopen already\r\ncompleted earlier distributions. Reserve targets and the cure test are unchanged.\r\nAPPENDIX N | ASSET TRANSFERS AND ORIGINATION HISTORY\r\nEquipment assets can have origination records created under an earlier operational edition.\r\n"
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "a4024dccb018443791d2b86f1df80760",
+      "question": "Morrow的受理前撤销和受理后退款在账本中有什么差别？",
+      "gold": {
+        "referenceAnswer": "受理前撤销不形成销售额；受理后退款作为独立借项，即使金额等于原销售也不抹除销售。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "退款直接抹除原销售与留存基数"
+        ],
+        "requiredFacts": [
+          "受理前撤销不入销售",
+          "受理后退款独立借项"
+        ],
+        "evidence": [
+          {
+            "start": 933,
+            "end": 1453,
+            "text": "LEDGER DISCIPLINE\r\nOperations reconcile accepted sale IDs to the terminal report before sending the batch for\r\nreview. A void made before acceptance never becomes a gross sale. A refund made after\r\nacceptance is a separate debit, even when its amount equals the original sale. Reviewers\r\nmay attach card scheme messages as context; those messages cannot replace a matched sale\r\nID. A manual note does not change an accepted timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves."
+          }
+        ]
+      },
+      "answer": "受理前撤销（void）不会成为一笔gross sale；受理后退款（refund）则是一笔独立的借记，即使金额与原销售相同也如此。此外，退款不会减少其支付所在批次的reserve base。",
+      "grounded": true,
+      "citedTexts": [
+        "ant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve\r\nbase of the batch in which they are paid. Transaction fees are separate deductions and do\r\nnot reduce the reserve base either.\r\nLEDGER DISCIPLINE\r\nOperations reconcile accepted sale IDs to the terminal report before sending the batch for\r\nreview. A void made before acceptance never becomes a gross sale. A refund made after\r\nacceptance is a separate debit, even when its amount equals the original sale. Reviewers\r\nmay attach card scheme messages as context; those messages cannot replace a matched sale\r\nID. A manual note does not change an accepted timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves.\r\n"
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "92b1ecc93574425c97ff65e2952f5078",
+      "question": "Cedar向投资者分配时应代扣多少百分比的税？",
+      "gold": {
+        "referenceAnswer": "文档未提供投资者代扣税率，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把税款专户20千元反算税率"
+        ],
+        "requiredFacts": [
+          "文档未提供投资者代扣税率",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "5028d02b2c024f7888b8f30b84e39bb1",
+      "question": "Cedar正常瀑布中，补储备在优先欠息之前还是之后，在次级利息之前还是之后？",
+      "gold": {
+        "referenceAnswer": "先费用，再优先本期及欠息，之后补储备，最后才次级本期利息和次级残余。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "次级利息先于储备",
+          "欠息排在储备后"
+        ],
+        "requiredFacts": [
+          "优先本期及欠息先于补储备",
+          "补储备先于次级利息"
+        ],
+        "evidence": [
+          {
+            "start": 3497,
+            "end": 3914,
+            "text": "NORMAL WATERFALL\r\nApply distributable cash in this order: (1) trustee fee, capped at 5 each period; (2)\r\nsenior current interest and senior interest arrears; (3) refill the liquidity reserve to\r\nits target; (4) junior current interest; (5) any residual to the junior capital account. An\r\nunpaid fee above the cap is not moved into senior interest. Unpaid senior interest carries\r\nforward without interest on interest."
+          }
+        ]
+      },
+      "answer": "在Cedar正常瀑布中，补储备（refill the liquidity reserve to its target）位于第(3)步：它在优先当前利息及优先欠息（senior current interest and senior interest arrears，第(2)步）之后，在次级当前利息（junior current interest，第(4)步）之前。",
+      "grounded": true,
+      "citedTexts": [
+        "ins both the original prior-period report and the authorized\r\ncorrection, when a correction exists. This makes a later change understandable without\r\npretending that staff had always reported the corrected number. A reconciliation can\r\nexplain an accounting difference; it does not by itself grant a new right to distribute\r\nrestricted money. The governing cash and reserve definitions remain the ones in the main\r\nmemorandum.\r\nNORMAL WATERFALL\r\nApply distributable cash in this order: (1) trustee fee, capped at 5 each period; (2)\r\nsenior current interest and senior interest arrears; (3) refill the liquidity reserve to\r\nits target; (4) junior current interest; (5) any residual to the junior capital account. An\r\nunpaid fee above the cap is not moved into senior interest. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "c75d16865d454da69db823909fd98aa5",
+      "question": "Morrow该商户实际收款银行账号是什么？",
+      "gold": {
+        "referenceAnswer": "文档未提供真实商户银行账号，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "编造银行账号"
+        ],
+        "requiredFacts": [
+          "文档未提供真实商户银行账号",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "4818f1c75bd8474b88c0969a33b676a7",
+      "question": "Cedar三个月平均拖欠率刚好4.0%会新触发吗？触发后次级分配怎么处理？",
+      "gold": {
+        "referenceAnswer": "等于4.0%不新触发，须严格高于4%；已触发时次级本期利息和残余都暂停，步骤1至3后余款留非受限现金。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "4.0%即触发",
+          "只停次级本金不暂停利息"
+        ],
+        "requiredFacts": [
+          "严格高于4%才触发",
+          "次级利息和残余暂停",
+          "余款留非受限现金"
+        ],
+        "evidence": [
+          {
+            "start": 10531,
+            "end": 10950,
+            "text": "PERFORMANCE TRIGGER\r\nThe trigger becomes active when the three-month average delinquency ratio is strictly above\r\n4.0%. A value exactly 4.0% does not activate it. While active, junior current interest and\r\njunior residual distributions are suspended; cash left after steps 1 through 3 remains in\r\nunrestricted cash. Junior unpaid current interest is recorded, but does not jump ahead of\r\nthe reserve in the next period."
+          }
+        ]
+      },
+      "answer": "不会。触发条件要求三个月平均拖欠率严格高于4.0%，刚好4.0%不触发。若触发已生效，次级当期利息和次级剩余分配会被暂停；步骤1至3之后的剩余现金留在非受限现金中。",
+      "grounded": true,
+      "citedTexts": [
+        "An\r\napproved payment that fails at the bank remains distinguishable from a completed\r\ndistribution. If the next worksheet uses a revised arrears position, the file explains the\r\nfailed or corrected movement. Staff should be able to reconstruct the register without\r\nadding interest on unpaid interest where the main terms do not permit it. A spreadsheet's\r\nautomatic compounding function is not independent contractual authority.\r\nPERFORMANCE TRIGGER\r\nThe trigger becomes active when the three-month average delinquency ratio is strictly above\r\n4.0%. A value exactly 4.0% does not activate it. While active, junior current interest and\r\njunior residual distributions are suspended; cash left after steps 1 through 3 remains in\r\nunrestricted cash. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "1c090b5449e04adf8e9a08849cd22187",
+      "question": "Oriole在11:00收妥补仓通知和11:01收妥，截止时点分别是什么？",
+      "gold": {
+        "referenceAnswer": "11:00含边界，须当日15:00；11:01须下一工作日10:00。以约定邮箱收妥为准。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "11:00属于晚到",
+          "两者均下一日"
+        ],
+        "requiredFacts": [
+          "11:00收妥当日15:00",
+          "11:01下一工作日10:00",
+          "收妥而非起草时间"
+        ],
+        "evidence": [
+          {
+            "start": 2328,
+            "end": 2694,
+            "text": "CALL TIMING\r\nA call delivered by 11:00 inclusive is due at 15:00 on the same business day. A later call\r\nis due at 10:00 on the next business day. Delivery means receipt in the agreed margin\r\ninbox, not when an analyst began drafting. A call disputed before its deadline remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "05084687f9b64e4491b485803cd247c4",
+      "question": "Morrow终端时钟故障可将交易跨两个批次回移吗？谁须审批？",
+      "gold": {
+        "referenceAnswer": "不能，最多回移一个批次，须对账岗和风险岗共同批准；不缩短T+2或90日。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "可跨两个批次",
+          "商户自行调整即可"
+        ],
+        "requiredFacts": [
+          "最多一个批次",
+          "对账岗和风险岗共同批准",
+          "不缩短结算或到期周期"
+        ],
+        "evidence": [
+          {
+            "start": 286,
+            "end": 581,
+            "text": "BATCH CLOCK\r\nTransactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters\r\nthe next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and\r\nthe published closed days are skipped. The examples below assume no closed days other than\r\nweekends."
+          },
+          {
+            "start": 2186,
+            "end": 2522,
+            "text": "RESERVE RELEASE\r\nEach reserve lot matures 90 calendar days after its batch date. Release requires maturity\r\nand no open dispute linked to that lot. An unlinked dispute does not block that lot. Lots\r\nare tracked separately: one blocked lot cannot justify retaining every other mature lot. No\r\ninterest is paid on held reserves under M-4."
+          },
+          {
+            "start": 2524,
+            "end": 2829,
+            "text": "OUTAGE EXCEPTION\r\nA documented terminal clock outage may move an accepted transaction back by one batch only\r\nafter both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. The outage exception does not shorten T+2 settlement or the 90-day reserve\r\nmaturity period."
+          }
+        ]
+      },
+      "answer": "不可以跨两个批次回移。有记录的终端时钟故障只能将已受理交易回移一个批次，且须经对账岗和风险岗两名人员均批准。",
+      "grounded": true,
+      "citedTexts": [
+        "tice to submit a matched receipt and delivery proof. A\r\nresponse with only a receipt is incomplete. Winning a case reverses the provisional debit;\r\nit does not create another sale or reduce a reserve that was correctly withheld.\r\nRESERVE RELEASE\r\nEach reserve lot matures 90 calendar days after its batch date. Release requires maturity\r\nand no open dispute linked to that lot. An unlinked dispute does not block that lot. Lots\r\nare tracked separately: one blocked lot cannot justify retaining every other mature lot. No\r\ninterest is paid on held reserves under M-4.\r\nOUTAGE EXCEPTION\r\nA documented terminal clock outage may move an accepted transaction back by one batch only\r\nafter both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. ",
+        "er both reconciliation and risk officers approve. It cannot move a transaction across\r\ntwo batches. The outage exception does not shorten T+2 settlement or the 90-day reserve\r\nmaturity period.\r\nVERSION REGISTER\r\nM-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.\r\nExisting M-3 reserve lots keep their original amounts; they are not topped up. The 90-day\r\nmaturity rule is unchanged. Do not recalculate an old lot using the current withholding\r\nrate.\r\nSCOPE LIMIT\r\nThis fictional note does not list actual merchant bank account numbers, the card scheme's\r\narbitration fee, or the issuer's internal fraud score. Those items cannot be derived from\r\nreserve percentages or settlement dates.\r\n"
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "1729996552154da49e374654ecd1e470",
+      "question": "Oriole九月开立的公司债回购，在10月2日估值仍可用旧版10%吗？",
+      "gold": {
+        "referenceAnswer": "不能，10月1日及以后所有估值均用OR-6，普通公司债9%，观察名单再加6个百分点，旧交易也一样。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按交易日锁定10%"
+        ],
+        "requiredFacts": [
+          "按估值日适用OR-6",
+          "旧交易不保留10%",
+          "公司债9%并按名单加6个百分点"
+        ],
+        "evidence": [
+          {
+            "start": 347,
+            "end": 734,
+            "text": "HAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds."
+          },
+          {
+            "start": 3126,
+            "end": 3436,
+            "text": "VERSION CONTROL\r\nOR-5 used a flat 10% haircut on approved corporate bonds without a watch-list add-on. OR-6\r\nreplaces that rule for every valuation dated on or after 2026-10-01, including trades\r\nopened earlier. Sovereign haircuts are unchanged. An old trade date does not preserve the\r\nOR-5 corporate haircut."
+          }
+        ]
+      },
+      "answer": "不可以。OR-6规定，自2026-10-01起（含当日）的所有估值均适用新规则，包括此前开立的交易；旧交易日期不保留OR-5对批准公司债统一10%的折扣率。OR-6下批准公司债折扣率为9%，若该债券在观察名单上，还需额外加6个百分点。",
+      "grounded": true,
+      "citedTexts": [
+        "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value.\r\nHAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds.\r\n",
+        "ne remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads.\r\nSUBSTITUTION CONTROL\r\nA substitution requires prior counterparty consent and receipt of eligible replacement\r\ncollateral with adjusted value at least equal to the value released. The old security is\r\nreleased only after custody confirms receipt. An email promising delivery is insufficient.\r\nDuring a feed outage no substitution using an unquoted replacement is allowed, even if its\r\nface value exceeds the old security's value.\r\nVERSION CONTROL\r\nOR-5 used a flat 10% haircut on approved corporate bonds without a watch-list add-on. OR-6\r\nreplaces that rule for every valuation dated on or after 2026-10-01, including trades\r\nopened earlier. Sovereign haircuts are unchanged. "
+      ],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "a4299bb264d94b39a13155341ab3f686",
+      "question": "Cedar储备金临时动用能付优先欠息或次级利息吗，谁批准？",
+      "gold": {
+        "referenceAnswer": "只能在费用步骤后补优先本期利息短缺，不能付欠息、次级利息或费用；须受托人与监督岗共同批准。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "优先欠息也能用储备",
+          "动用当作新收款"
+        ],
+        "requiredFacts": [
+          "只补优先本期利息短缺",
+          "不能付欠息次级或费用",
+          "受托人与监督岗双批"
+        ],
+        "evidence": [
+          {
+            "start": 20726,
+            "end": 21070,
+            "text": "RESERVE DRAW\r\nA liquidity draw may cover a shortfall in senior current interest only, after the trustee\r\nfee step. It cannot pay junior interest, senior interest arrears, or fees. The draw\r\nrequires both trustee and oversight officer approval. A draw reduces the reserve balance\r\nused in the later refill step; it is not new period collections."
+          }
+        ]
+      },
+      "answer": "根据原文，储备金动用请求必须针对具体的当期优先利息缺口（current senior interest shortfall），并需展示受托人费用步骤后的现金状况；仅笼统称信托需要流动性不足以构成允许用途。审核人应核查请求用途，而不能假定任何标注为“优先”的金额都可动用。原文未明确允许用储备金支付优先欠息或次级利息；相反，它区分了当期利息、结转欠息和资本余额，且资本金额不能插入当期利息行。批准方面，原文要求两项必需批准分别记录为不同决定，并注明各审核人所看的包版本；准备人不能把一项批准复制到另一角色的字段。",
+      "grounded": true,
+      "citedTexts": [
+        "e instruction. Cure alone does not turn previously suspended junior interest into\r\nsenior arrears.\r\nAPPENDIX K | DRAW REQUEST PACKET\r\nA reserve draw request identifies the specific current senior interest shortfall and shows\r\nthe cash position after the trustee fee step. The packet includes the source interest\r\nregister and the reserve balance available for review. A general statement that the trust\r\nneeds liquidity is insufficient to establish the permitted purpose. The reviewer checks the\r\nrequested use instead of assuming that any senior-labeled amount may be funded.\r\nThe two required approvals are recorded as distinct decisions with the packet version each\r\nreviewer considered. A preparer cannot copy one approval into the other role's field. ",
+        "he difference between the current reserve balance and the applicable\r\ntarget, with a floor of zero. A reserve already above target does not pay a negative\r\nrefill; excess reserve is released only by a separately authorized release instruction.\r\nAPPENDIX F | SENIOR INTEREST REGISTER\r\nThe senior register distinguishes current interest, carried interest arrears and capital\r\nbalance. Staff trace each item to its relevant period and source record. A capital amount\r\ncannot be inserted into the current interest line to accelerate a capital payment, and a\r\nrequested trustee fee cannot be entered as senior arrears. The headings are business\r\ndefinitions, not free-form labels selected to obtain a preferred priority.\r\n"
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "4255d05bf0e34ce79231dbdfdcd8adfd",
+      "question": "Cedar三个月平均拖欠率刚好4.0%会新触发吗？触发后次级分配怎么处理？",
+      "gold": {
+        "referenceAnswer": "等于4.0%不新触发，须严格高于4%；已触发时次级本期利息和残余都暂停，步骤1至3后余款留非受限现金。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "4.0%即触发",
+          "只停次级本金不暂停利息"
+        ],
+        "requiredFacts": [
+          "严格高于4%才触发",
+          "次级利息和残余暂停",
+          "余款留非受限现金"
+        ],
+        "evidence": [
+          {
+            "start": 10531,
+            "end": 10950,
+            "text": "PERFORMANCE TRIGGER\r\nThe trigger becomes active when the three-month average delinquency ratio is strictly above\r\n4.0%. A value exactly 4.0% does not activate it. While active, junior current interest and\r\njunior residual distributions are suspended; cash left after steps 1 through 3 remains in\r\nunrestricted cash. Junior unpaid current interest is recorded, but does not jump ahead of\r\nthe reserve in the next period."
+          }
+        ]
+      },
+      "answer": "刚好4.0%不会触发：触发条件要求三个月平均拖欠率严格高于4.0%，恰好等于4.0%不激活。若触发处于激活状态，次级当期利息和次级剩余分配会被暂停；步骤1至3之后的剩余现金留在非受限现金中。",
+      "grounded": true,
+      "citedTexts": [
+        "An\r\napproved payment that fails at the bank remains distinguishable from a completed\r\ndistribution. If the next worksheet uses a revised arrears position, the file explains the\r\nfailed or corrected movement. Staff should be able to reconstruct the register without\r\nadding interest on unpaid interest where the main terms do not permit it. A spreadsheet's\r\nautomatic compounding function is not independent contractual authority.\r\nPERFORMANCE TRIGGER\r\nThe trigger becomes active when the three-month average delinquency ratio is strictly above\r\n4.0%. A value exactly 4.0% does not activate it. While active, junior current interest and\r\njunior residual distributions are suspended; cash left after steps 1 through 3 remains in\r\nunrestricted cash. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "aece1da580574c69b329610b9d941691",
+      "question": "Morrow争议应答期限是多久？只交收据是否合格，胜诉会怎样处理预扣？",
+      "gold": {
+        "referenceAnswer": "通知后7个自然日内交匹配收据和交付证明；仅收据不完整。胜诉冲回争议预扣，不新增销售。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "7个工作日",
+          "胜诉取消所有留存"
+        ],
+        "requiredFacts": [
+          "7个自然日",
+          "匹配收据和交付证明",
+          "胜诉冲回预扣而非新增销售"
+        ],
+        "evidence": [
+          {
+            "start": 1812,
+            "end": 2184,
+            "text": "DISPUTE PATH\r\nA provisional dispute debit is posted when a case is opened with a scheme debit notice. The\r\nmerchant has 7 calendar days after notice to submit a matched receipt and delivery proof. A\r\nresponse with only a receipt is incomplete. Winning a case reverses the provisional debit;\r\nit does not create another sale or reduce a reserve that was correctly withheld."
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "7865e897643449968d6ae14d8b9717f5",
+      "question": "没有额外休业日时，Morrow周五恰好18:00受理的交易在哪个批次，何日结算？",
+      "gold": {
+        "referenceAnswer": "进入下周一批次，按T+2工作日于周三结算；周末跳过。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "周五批次周二结算",
+          "周日结算"
+        ],
+        "requiredFacts": [
+          "下周一批次",
+          "周三结算",
+          "18:00归下一工作日"
+        ],
+        "evidence": [
+          {
+            "start": 286,
+            "end": 581,
+            "text": "BATCH CLOCK\r\nTransactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters\r\nthe next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and\r\nthe published closed days are skipped. The examples below assume no closed days other than\r\nweekends."
+          }
+        ]
+      },
+      "answer": "恰好18:00受理的交易进入下一营业日的批次，因此周五18:00的交易归入下周一（下一营业日）的批次。结算为T+2营业日，跳过周六、周日，故结算日为下周三。",
+      "grounded": true,
+      "citedTexts": [
+        "MORROW ACQUIRING | OPERATING NOTE M-4 | 2026-08-01\r\nFictional merchant settlement rules. Currency: CNY. A settlement batch and a dispute case\r\nhave different identifiers. A case reference is not a payout instruction. This note governs\r\nreserve movements, not cardholder credit limits.\r\nBATCH CLOCK\r\nTransactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters\r\nthe next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and\r\nthe published closed days are skipped. The examples below assume no closed days other than\r\nweekends.\r\nRESERVE MATRIX\r\nStandard merchant: withhold 6% of gross accepted sales.\r\nElevated merchant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. "
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "ea184b918992463ca16e42b8a3dfac9f",
+      "question": "Oriole对补仓有异议，是否可以暂不付全部金额？",
+      "gold": {
+        "referenceAnswer": "不能一概停付；未争议部分仍按期交付，争议部分升级双方估值负责人。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "异议自动暂停全部转账"
+        ],
+        "requiredFacts": [
+          "未争议部分仍到期应付",
+          "争议部分升级双方估值负责人"
+        ],
+        "evidence": [
+          {
+            "start": 2328,
+            "end": 2694,
+            "text": "CALL TIMING\r\nA call delivered by 11:00 inclusive is due at 15:00 on the same business day. A later call\r\nis due at 10:00 on the next business day. Delivery means receipt in the agreed margin\r\ninbox, not when an analyst began drafting. A call disputed before its deadline remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads."
+          }
+        ]
+      },
+      "answer": "根据原文，担保款不足时不足额仍应补付，不以没收担保款作为责任上限；有挂起争议的，保留争议部分，未争议余额按期退回。因此，对补仓有异议时，仅可保留争议部分，未争议部分仍应按期支付，不能因此暂不支付全部金额。",
+      "grounded": true,
+      "citedTexts": [
+        "mented agreement, rather than inferring a right of set-off from a convenient bank transfer amount.\n\n担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。\n\n",
+        "迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。\n\n附录庚：Buyer election records outside the quantity band\n\n"
+      ],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "0dc84ce380c6457193cc21339c772757",
+      "question": "Oriole观察名单的获准公司债总折扣多少？没有报价能否按零折扣纳入？",
+      "gold": {
+        "referenceAnswer": "总折扣9%+6个百分点=15%；无报价不合格，不能按零折扣纳入。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "6%乘9%",
+          "无报价零折扣"
+        ],
+        "requiredFacts": [
+          "15%",
+          "无报价不合格"
+        ],
+        "evidence": [
+          {
+            "start": 347,
+            "end": 734,
+            "text": "HAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds."
+          }
+        ]
+      },
+      "answer": "获准公司债的基础折扣为9%，若该债券在观察名单上，则额外增加6个百分点，因此总折扣为15%。没有报价时，该债券会被视为不合格，不能按零折扣纳入。",
+      "grounded": true,
+      "citedTexts": [
+        "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value.\r\nHAIRCUT SCHEDULE\r\nSovereign bonds with remaining maturity up to 1 year: 2%.\r\nSovereign bonds with remaining maturity above 1 year: 4%.\r\nApproved corporate bonds: 9%.\r\nA corporate issue on the watch list receives an additional 6 percentage points. A missing\r\nquote makes that issue ineligible, rather than assigning a zero haircut. The watch-list\r\nadd-on never applies to sovereign bonds.\r\n"
+      ],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "5e3fd2086cb54382a612ae29c97edff3",
+      "question": "Morrow该商户实际收款银行账号是什么？",
+      "gold": {
+        "referenceAnswer": "文档未提供真实商户银行账号，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "编造银行账号"
+        ],
+        "requiredFacts": [
+          "文档未提供真实商户银行账号",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "60a1e145cf4c474591341bc1da057d50",
+      "question": "Morrow卡组织仲裁费具体多少元？",
+      "gold": {
+        "referenceAnswer": "文档未提供卡组织仲裁费，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把500元交易费当仲裁费"
+        ],
+        "requiredFacts": [
+          "文档未提供卡组织仲裁费",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "708d7052770e416c8b89b9ccb83a0ef9",
+      "question": "Cedar演算中可分配现金多少？税款专户与未收销售款算吗？",
+      "gold": {
+        "referenceAnswer": "140+10=150千元；20千元税款专户和30千元未收销售款都排除，储备也不能重复计入。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "可分配200千元",
+          "把签约视为收款"
+        ],
+        "requiredFacts": [
+          "150千元",
+          "排除税款专户20千元",
+          "排除未收销售款30千元"
+        ],
+        "evidence": [
+          {
+            "start": 1733,
+            "end": 2066,
+            "text": "DISTRIBUTABLE CASH\r\nBegin with period collections plus the opening unrestricted cash balance. Exclude money\r\nheld in the tax escrow and exclude unreceived sale proceeds. A signed equipment sale\r\ncontract is not collected cash. Restricted reserve cash is separate from the opening\r\nunrestricted balance and is not added a second time."
+          },
+          {
+            "start": 13729,
+            "end": 14141,
+            "text": "DISTRIBUTION EXERCISE\r\nPeriod collections are 140, opening unrestricted cash is 10, and tax escrow is 20. A signed\r\nbut unpaid sale is 30. The reserve balance is 15. The trustee requests 7 in fees, senior\r\ncurrent interest is 50, senior interest arrears are 10, and junior current interest is 25.\r\nThe three-month delinquency average is 4.2%. No reserve release instruction exists and no\r\nother deductions apply."
+          }
+        ]
+      },
+      "answer": "原文只给出可分配现金的计算口径：以期初非受限现金余额加当期收款为起点，并明确排除税款专户中的资金和未收到的销售款；已签署的设备销售合同不等于已收现金。原文未给出Cedar的具体金额，因此无法计算具体数额。",
+      "grounded": true,
+      "citedTexts": [
+        " asset reference is missing, the receipt is held for identification under the\r\noperational process. Review staff preserve the payer's message and the bank record while\r\nasking the servicer to explain the association. They do not choose the asset with the most\r\noverdue lease simply to improve a delinquency report. The completed file should allow\r\nanother analyst to reproduce which receipts supported the period's cash total and which\r\nitems were excluded or unresolved.\r\nDISTRIBUTABLE CASH\r\nBegin with period collections plus the opening unrestricted cash balance. Exclude money\r\nheld in the tax escrow and exclude unreceived sale proceeds. A signed equipment sale\r\ncontract is not collected cash. ",
+        "dual to the junior capital account. An\r\nunpaid fee above the cap is not moved into senior interest. Unpaid senior interest carries\r\nforward without interest on interest.\r\nAPPENDIX C | TAX ESCROW SEPARATION\r\nThe tax escrow ledger is maintained separately from the unrestricted operating ledger.\r\nStaff identify transfers into the escrow, authorized tax payments from it and any\r\nunresolved tax reconciliation item. An escrow balance may be shown in an overall custody\r\nreport for completeness, but its inclusion in that report does not make it part of\r\ndistributable cash. The distribution analyst checks the account purpose as well as the\r\ncurrency and balance.\r\nA tax invoice and a completed escrow payment are different records. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "4547e0a8c4db455c8eaea36158539467",
+      "question": "Oriole换券时对手方已同意、承诺交付面值更高的新券，能立即释放旧券吗？",
+      "gold": {
+        "referenceAnswer": "不能。须收到合格替代抵押物，折后价值至少等于被释放价值，并由托管确认收妥，承诺邮件或高面值不够。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "高面值承诺即可释放",
+          "报价中断可无报价替换"
+        ],
+        "requiredFacts": [
+          "先获对手方同意",
+          "替代券合格且折后价值足够",
+          "托管确认收妥后放旧券"
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 345,
+            "text": "ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01\r\nAll entities and trades in this schedule are fictional. Currency amounts are in thousands\r\nof CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.\r\nCollateral value is the clean market value after the applicable haircut; it is not the\r\nsecurity's face value."
+          },
+          {
+            "start": 2696,
+            "end": 3124,
+            "text": "SUBSTITUTION CONTROL\r\nA substitution requires prior counterparty consent and receipt of eligible replacement\r\ncollateral with adjusted value at least equal to the value released. The old security is\r\nreleased only after custody confirms receipt. An email promising delivery is insufficient.\r\nDuring a feed outage no substitution using an unquoted replacement is allowed, even if its\r\nface value exceeds the old security's value."
+          }
+        ]
+      },
+      "answer": "不能。换券需事先取得对手方同意，并收到合格替代担保品且调整后价值不低于所释放价值；旧券只有在托管确认收到后才释放，仅以邮件承诺交付不足够。若处于行情源中断期间，使用无报价替代品进行换券也不允许，即使其面值高于旧券。",
+      "grounded": true,
+      "citedTexts": [
+        "ne remains due\r\nfor its undisputed amount; the disputed part is escalated to both valuation leads.\r\nSUBSTITUTION CONTROL\r\nA substitution requires prior counterparty consent and receipt of eligible replacement\r\ncollateral with adjusted value at least equal to the value released. The old security is\r\nreleased only after custody confirms receipt. An email promising delivery is insufficient.\r\nDuring a feed outage no substitution using an unquoted replacement is allowed, even if its\r\nface value exceeds the old security's value.\r\nVERSION CONTROL\r\nOR-5 used a flat 10% haircut on approved corporate bonds without a watch-list add-on. OR-6\r\nreplaces that rule for every valuation dated on or after 2026-10-01, including trades\r\nopened earlier. Sovereign haircuts are unchanged. "
+      ],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "abe93bc543854d23a77de8619bf9dc71",
+      "question": "Cedar已触发后，一个月三月均值降至2.8%是否解除？解除后超额储备自动给次级吗？",
+      "gold": {
+        "referenceAnswer": "一个月不足，须连续两个观察月均不高于3.0%；解除后目标40，但超额释放仍需独立指令，不自动给次级。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "单月低于4%立即解除",
+          "解除自动释放全部超额"
+        ],
+        "requiredFacts": [
+          "连续两个月不高于3%",
+          "单月2.8%不足",
+          "目标恢复40千元",
+          "超额释放仍须独立指令"
+        ],
+        "evidence": [
+          {
+            "start": 8720,
+            "end": 9094,
+            "text": "RESERVE TARGET\r\nThe target is 40 while the performance trigger is clear. It becomes 70 when the trigger is\r\nactive. A refill uses the difference between the current reserve balance and the applicable\r\ntarget, with a floor of zero. A reserve already above target does not pay a negative\r\nrefill; excess reserve is released only by a separately authorized release instruction."
+          },
+          {
+            "start": 17569,
+            "end": 17959,
+            "text": "CURE AND RELEASE\r\nAn active trigger clears only after the three-month average is at or below 3.0% on two\r\nconsecutive monthly observation dates. One low month is insufficient. After cure, the\r\nordinary target of 40 applies, but any release of reserve above 40 still needs the separate\r\nrelease instruction. Cure alone does not turn previously suspended junior interest into\r\nsenior arrears."
+          }
+        ]
+      },
+      "answer": "不能仅凭一个月降至2.8%就解除：触发状态须在连续两个月度观察日的三个月均值均不高于3.0%后才清除，单月偏低不足够。解除后恢复40的常规目标，但超过40的储备释放仍需单独的释放指令，不会自动支付给次级；解除本身也不会把此前暂停的次级利息转为高级欠款。",
+      "grounded": true,
+      "citedTexts": [
+        " return. Staff do not invent\r\na future payment date or promise a yield from one period's worksheet. The main memorandum\r\ndetermines the current distribution, and later distributions require their own\r\nobservations, cash position and approvals.\r\nCURE AND RELEASE\r\nAn active trigger clears only after the three-month average is at or below 3.0% on two\r\nconsecutive monthly observation dates. One low month is insufficient. After cure, the\r\nordinary target of 40 applies, but any release of reserve above 40 still needs the separate\r\nrelease instruction. Cure alone does not turn previously suspended junior interest into\r\nsenior arrears.\r\n",
+        "rent roles.\r\nA proposed reserve release remains a proposal until its separate authority is present. A\r\nworksheet can show an amount above the ordinary target without establishing that the\r\nsurplus has been released. Likewise, the restoration of a lower target after cure does not\r\nitself prove that a bank transfer occurred. The archive separates the target calculation,\r\napproval to release and actual execution evidence.\r\nWhen a draw has been authorized for a permitted current senior shortfall, the subsequent\r\nrefill uses the actual reduced reserve balance under the main sequence. Staff do not carry\r\nthe pre-draw balance into the refill calculation merely because it appeared in an earlier\r\ndraft. The records explain which balance was current at each step. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "3e9d952130104bb5bf33aeaf0f3c7004",
+      "question": "Oriole这只债券明天收盘价会是多少？",
+      "gold": {
+        "referenceAnswer": "文档未提供未来债券价格预测，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "将500千元演练市值当明日报价"
+        ],
+        "requiredFacts": [
+          "文档未提供未来债券价格预测",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "f7bfed4db5b67071415bd4c1cd779428cf0455683ed5388b7addc0c926c0f6d8"
+    },
+    {
+      "token": "5734bbecdc0749a8a2ba9b431ca28bb1",
+      "question": "Morrow同时有Standard和Elevated标记的商户，留存是几成或百分之几？",
+      "gold": {
+        "referenceAnswer": "只用Elevated的12%，不把6%和12%相加。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "18%",
+          "6%"
+        ],
+        "requiredFacts": [
+          "12%",
+          "不叠加为18%"
+        ],
+        "evidence": [
+          {
+            "start": 583,
+            "end": 931,
+            "text": "RESERVE MATRIX\r\nStandard merchant: withhold 6% of gross accepted sales.\r\nElevated merchant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve\r\nbase of the batch in which they are paid. Transaction fees are separate deductions and do\r\nnot reduce the reserve base either."
+          }
+        ]
+      },
+      "answer": "同时具有Standard和Elevated标记的商户只按Elevated处理，留存比例为毛受理销售额的12%（即一成二），而不是两者相加的18%。",
+      "grounded": true,
+      "citedTexts": [
+        "MORROW ACQUIRING | OPERATING NOTE M-4 | 2026-08-01\r\nFictional merchant settlement rules. Currency: CNY. A settlement batch and a dispute case\r\nhave different identifiers. A case reference is not a payout instruction. This note governs\r\nreserve movements, not cardholder credit limits.\r\nBATCH CLOCK\r\nTransactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters\r\nthe next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and\r\nthe published closed days are skipped. The examples below assume no closed days other than\r\nweekends.\r\nRESERVE MATRIX\r\nStandard merchant: withhold 6% of gross accepted sales.\r\nElevated merchant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. ",
+        "ant: withhold 12% of gross accepted sales.\r\nA merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve\r\nbase of the batch in which they are paid. Transaction fees are separate deductions and do\r\nnot reduce the reserve base either.\r\nLEDGER DISCIPLINE\r\nOperations reconcile accepted sale IDs to the terminal report before sending the batch for\r\nreview. A void made before acceptance never becomes a gross sale. A refund made after\r\nacceptance is a separate debit, even when its amount equals the original sale. Reviewers\r\nmay attach card scheme messages as context; those messages cannot replace a matched sale\r\nID. A manual note does not change an accepted timestamp. Archived batch reports retain the\r\noriginal risk flag to explain historical reserves.\r\n"
+      ],
+      "sourceRef": "5979210a174a437611c67d650d1064f5c8c62034dbfc9bdcb0e881d2a300408c"
+    },
+    {
+      "token": "1bbbefea3fb147cb85b27976b3fb634e",
+      "question": "Cedar未付款设备最终将按什么价格出售？",
+      "gold": {
+        "referenceAnswer": "文档未提供未来设备出售价格，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "将30千元未收款当已确定最终成交预测"
+        ],
+        "requiredFacts": [
+          "文档未提供未来设备出售价格",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    },
+    {
+      "token": "0777973bfbaa4f859673f0299c682d87",
+      "question": "Cedar演算中可分配现金多少？税款专户与未收销售款算吗？",
+      "gold": {
+        "referenceAnswer": "140+10=150千元；20千元税款专户和30千元未收销售款都排除，储备也不能重复计入。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "可分配200千元",
+          "把签约视为收款"
+        ],
+        "requiredFacts": [
+          "150千元",
+          "排除税款专户20千元",
+          "排除未收销售款30千元"
+        ],
+        "evidence": [
+          {
+            "start": 1733,
+            "end": 2066,
+            "text": "DISTRIBUTABLE CASH\r\nBegin with period collections plus the opening unrestricted cash balance. Exclude money\r\nheld in the tax escrow and exclude unreceived sale proceeds. A signed equipment sale\r\ncontract is not collected cash. Restricted reserve cash is separate from the opening\r\nunrestricted balance and is not added a second time."
+          },
+          {
+            "start": 13729,
+            "end": 14141,
+            "text": "DISTRIBUTION EXERCISE\r\nPeriod collections are 140, opening unrestricted cash is 10, and tax escrow is 20. A signed\r\nbut unpaid sale is 30. The reserve balance is 15. The trustee requests 7 in fees, senior\r\ncurrent interest is 50, senior interest arrears are 10, and junior current interest is 25.\r\nThe three-month delinquency average is 4.2%. No reserve release instruction exists and no\r\nother deductions apply."
+          }
+        ]
+      },
+      "answer": "原文未给出Cedar可分配现金的具体金额，只说明了计算口径：以期间收款加上期初未受限现金余额为起点，并明确排除税款专户中的资金和未收到的销售款；已签署的设备销售合同不等于已收现金。因此税款专户与未收销售款均不计入可分配现金。",
+      "grounded": true,
+      "citedTexts": [
+        " asset reference is missing, the receipt is held for identification under the\r\noperational process. Review staff preserve the payer's message and the bank record while\r\nasking the servicer to explain the association. They do not choose the asset with the most\r\noverdue lease simply to improve a delinquency report. The completed file should allow\r\nanother analyst to reproduce which receipts supported the period's cash total and which\r\nitems were excluded or unresolved.\r\nDISTRIBUTABLE CASH\r\nBegin with period collections plus the opening unrestricted cash balance. Exclude money\r\nheld in the tax escrow and exclude unreceived sale proceeds. A signed equipment sale\r\ncontract is not collected cash. ",
+        "dual to the junior capital account. An\r\nunpaid fee above the cap is not moved into senior interest. Unpaid senior interest carries\r\nforward without interest on interest.\r\nAPPENDIX C | TAX ESCROW SEPARATION\r\nThe tax escrow ledger is maintained separately from the unrestricted operating ledger.\r\nStaff identify transfers into the escrow, authorized tax payments from it and any\r\nunresolved tax reconciliation item. An escrow balance may be shown in an overall custody\r\nreport for completeness, but its inclusion in that report does not make it part of\r\ndistributable cash. The distribution analyst checks the account purpose as well as the\r\ncurrency and balance.\r\nA tax invoice and a completed escrow payment are different records. "
+      ],
+      "sourceRef": "ad0bb2b4945cab6693a1965bfc5d4afea2e81d7f7210d0fcd793cc3f736e6863"
+    }
+  ]
+}

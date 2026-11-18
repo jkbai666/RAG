@@ -1,0 +1,100 @@
+{
+  "schemaVersion" : 1,
+  "runId" : "20261118091558914565500-67f90528",
+  "startedAt" : "2026-11-18T09:15:58.959772700Z",
+  "mode" : "live",
+  "status" : "awaiting_review",
+  "acquisitionComplete" : true,
+  "reviewComplete" : false,
+  "cleanupComplete" : true,
+  "collections" : [ {
+    "name" : "eval_fddb2b6071c64635af5db25c3354dc45",
+    "split" : "dev",
+    "arm" : "A",
+    "created" : true,
+    "cleaned" : true
+  }, {
+    "name" : "eval_44b14439b1c44a45860ca4f926303f98",
+    "split" : "dev",
+    "arm" : "B",
+    "created" : true,
+    "cleaned" : true
+  }, {
+    "name" : "eval_450650b5c582459e83e45a130bfb94ee",
+    "split" : "validation",
+    "arm" : "A",
+    "created" : true,
+    "cleaned" : true
+  }, {
+    "name" : "eval_8832a4028f9642c6b35db8ceb8188763",
+    "split" : "validation",
+    "arm" : "B",
+    "created" : true,
+    "cleaned" : true
+  } ],
+  "regressionComplete" : true,
+  "productionSourceSha256" : {
+    "backend/src/main/java/local/rag/ChunkingService.java" : "60cefdbbf623f82b297e124b2ab0144813a1dd7b9779c3ddb7293502c70667c9",
+    "backend/src/main/java/local/rag/DocumentParser.java" : "2fc0bc1ce5e90258061f97ba43a4088ef73743a79c0dcea31629d06be7399a49",
+    "backend/src/main/java/local/rag/RagService.java" : "2b7eff24f35e0deae094f72628e439df1988ea42143d40016b52a8d5937d55fb",
+    "backend/src/main/java/local/rag/LangChainGateway.java" : "e43fe432f485b9da78540c985789cf3a52d3e4d18dac22aede240595db5e1030",
+    "backend/src/main/java/local/rag/ModelGateway.java" : "f1b1fcb846f0b706266a8292e5ca97872a3c536729e2cc07ef2349a531eb6eb0"
+  },
+  "promptSha256" : {
+    "answerSystem" : "4cd867fb6747ede4f040817004dbb72c01c1efbfa54529a3a00db20bf7d0c77c",
+    "chunkSystem" : "bb156cea4eb1ec5c6b5feb74df0ff46269d83334864db10b5927550026f9b344",
+    "rewriteSystem" : "b7115a002109478a91fab88653832f5b133d8dca8b70b93ad5af5d12837d7326"
+  },
+  "datasetVerified" : true,
+  "manifestSha256" : "2ac087a3852998cd73407c7e8387d9e7eb912fd449f33135228b149ee5c9a47f",
+  "freezeSha256" : "d465c4bd7e32fd540ddedab4526b616f9f3ae2854a9f86d3ee02d4e926054fff",
+  "expectedDocuments" : 24,
+  "expectedQuestions" : 240,
+  "seed" : 20261118,
+  "armA" : "RULE",
+  "armB" : "LLM",
+  "pricingSha256" : "b5e4bd70d2331fd528c691abf6ae845a2fee6185e3fb4e619f5f975b532835fe",
+  "settings" : {
+    "chunkOverlap" : 100,
+    "timeoutSeconds" : 90,
+    "chunkSize" : 800,
+    "chatModel" : "deepseek-v4-flash",
+    "minScore" : 0.6,
+    "topK" : 5,
+    "embeddingModel" : "text-embedding-v4",
+    "chatContextBudget" : 7000,
+    "embeddingDimensions" : 1024,
+    "chatMaxOutputTokens" : 700
+  },
+  "chunkingSettingsA" : {
+    "strategy" : "RULE",
+    "contextBudget" : 16000,
+    "maxOutputTokens" : 2048,
+    "maxUnitsPerWindow" : 120,
+    "maxCallsPerDocument" : 24,
+    "requestTimeoutSeconds" : 60,
+    "deadlineSeconds" : 300
+  },
+  "chunkingSettingsB" : {
+    "strategy" : "LLM",
+    "contextBudget" : 16000,
+    "maxOutputTokens" : 2048,
+    "maxUnitsPerWindow" : 120,
+    "maxCallsPerDocument" : 24,
+    "requestTimeoutSeconds" : 60,
+    "deadlineSeconds" : 300
+  },
+  "budgetScope" : "all_live_runs_in_this_evaluation_directory",
+  "priorAccountedRmb" : 0,
+  "priorDeepSeekCalls" : 0,
+  "priorQwenCalls" : 0,
+  "stopNewRequestsRmb" : 16,
+  "totalCapRmb" : 20,
+  "accountedRmb" : 0.815007940,
+  "runAccountedRmb" : 0.815007940,
+  "deepSeekCalls" : 256,
+  "qwenCalls" : 191,
+  "budgetBlocked" : false,
+  "budgetBlockedReason" : "",
+  "finishedAt" : "2026-11-18T09:21:41.493382800Z"
+}

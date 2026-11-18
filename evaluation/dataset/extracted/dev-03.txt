@@ -1,0 +1,51 @@
+MORROW ACQUIRING | OPERATING NOTE M-4 | 2026-08-01
+Fictional merchant settlement rules. Currency: CNY. A settlement batch and a dispute case
+have different identifiers. A case reference is not a payout instruction. This note governs
+reserve movements, not cardholder credit limits.
+BATCH CLOCK
+Transactions accepted before 18:00 enter that business day's batch; exactly 18:00 enters
+the next business day's batch. Settlement is on T+2 business days. Saturdays, Sundays and
+the published closed days are skipped. The examples below assume no closed days other than
+weekends.
+RESERVE MATRIX
+Standard merchant: withhold 6% of gross accepted sales.
+Elevated merchant: withhold 12% of gross accepted sales.
+A merchant with both flags uses Elevated only, not 18%. Refunds do not reduce the reserve
+base of the batch in which they are paid. Transaction fees are separate deductions and do
+not reduce the reserve base either.
+LEDGER DISCIPLINE
+Operations reconcile accepted sale IDs to the terminal report before sending the batch for
+review. A void made before acceptance never becomes a gross sale. A refund made after
+acceptance is a separate debit, even when its amount equals the original sale. Reviewers
+may attach card scheme messages as context; those messages cannot replace a matched sale
+ID. A manual note does not change an accepted timestamp. Archived batch reports retain the
+original risk flag to explain historical reserves.
+WORKED BATCH
+A Standard merchant has gross accepted sales of 50,000, refunds of 8,000, transaction fees
+of 500 and a matured old reserve release of 1,000. No other debit applies. Payout equals
+gross sales minus refunds, fees and the new reserve, plus the matured release. An unrelated
+open dispute has no deduction until a provisional debit is posted.
+DISPUTE PATH
+A provisional dispute debit is posted when a case is opened with a scheme debit notice. The
+merchant has 7 calendar days after notice to submit a matched receipt and delivery proof. A
+response with only a receipt is incomplete. Winning a case reverses the provisional debit;
+it does not create another sale or reduce a reserve that was correctly withheld.
+RESERVE RELEASE
+Each reserve lot matures 90 calendar days after its batch date. Release requires maturity
+and no open dispute linked to that lot. An unlinked dispute does not block that lot. Lots
+are tracked separately: one blocked lot cannot justify retaining every other mature lot. No
+interest is paid on held reserves under M-4.
+OUTAGE EXCEPTION
+A documented terminal clock outage may move an accepted transaction back by one batch only
+after both reconciliation and risk officers approve. It cannot move a transaction across
+two batches. The outage exception does not shorten T+2 settlement or the 90-day reserve
+maturity period.
+VERSION REGISTER
+M-3 used 5% for Standard merchants. M-4 uses 6% for batches dated on or after 2026-08-01.
+Existing M-3 reserve lots keep their original amounts; they are not topped up. The 90-day
+maturity rule is unchanged. Do not recalculate an old lot using the current withholding
+rate.
+SCOPE LIMIT
+This fictional note does not list actual merchant bank account numbers, the card scheme's
+arbitration fee, or the issuer's internal fraud score. Those items cannot be derived from
+reserve percentages or settlement dates.

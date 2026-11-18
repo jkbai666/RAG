@@ -1,0 +1,5292 @@
+{
+  "schemaVersion": 1,
+  "runId": "20261118091558914565500-67f90528",
+  "status": "fail",
+  "complete": true,
+  "incompleteReasons": [],
+  "gates": {
+    "holdoutEvidenceRecall@5ImprovementAtLeast0.05": true,
+    "holdoutAnswerNonRegression": true,
+    "holdoutRefusalNonRegression": true,
+    "holdoutCitationSupportNonRegression": true,
+    "holdoutStrictPassNonRegression": true,
+    "validationLlmDocumentSuccessAtLeast90Percent": false,
+    "fullRegression": true,
+    "completeIndependentReview": true,
+    "costLedger": true
+  },
+  "metrics": {
+    "dev": {
+      "evidenceRecall@5": {
+        "A": 0.734375,
+        "B": 0.78125,
+        "deltaBminusA": 0.046875,
+        "paired95CI": [
+          0.0,
+          0.140625
+        ],
+        "documents": 4,
+        "pairs": 32,
+        "bootstrapIterations": 5000
+      },
+      "contextEvidenceRecall": {
+        "A": 0.734375,
+        "B": 0.78125,
+        "deltaBminusA": 0.046875,
+        "paired95CI": [
+          0.0,
+          0.140625
+        ],
+        "documents": 4,
+        "pairs": 32,
+        "bootstrapIterations": 5000
+      },
+      "citedEvidenceRecall": {
+        "A": 0.6458333333333334,
+        "B": 0.7552083333333334,
+        "deltaBminusA": 0.109375,
+        "paired95CI": [
+          0.0,
+          0.234375
+        ],
+        "documents": 4,
+        "pairs": 32,
+        "bootstrapIterations": 5000
+      },
+      "evidenceRecall@5Utf16Coverage": {
+        "A": 0.8159973579750106,
+        "B": 0.8367793447860923,
+        "deltaBminusA": 0.020781986811081676,
+        "paired95CI": [
+          0.0,
+          0.0415639736221633
+        ],
+        "documents": 4,
+        "pairs": 32,
+        "bootstrapIterations": 5000
+      },
+      "evidenceRecall@5AllRequired": {
+        "A": 0.625,
+        "B": 0.6875,
+        "deltaBminusA": 0.0625,
+        "paired95CI": [
+          0.0,
+          0.1875
+        ],
+        "documents": 4,
+        "pairs": 32,
+        "bootstrapIterations": 5000
+      },
+      "contextEvidenceRecallAllRequired": {
+        "A": 0.625,
+        "B": 0.6875,
+        "deltaBminusA": 0.0625,
+        "paired95CI": [
+          0.0,
+          0.1875
+        ],
+        "documents": 4,
+        "pairs": 32,
+        "bootstrapIterations": 5000
+      },
+      "citedEvidenceRecallAllRequired": {
+        "A": 0.53125,
+        "B": 0.65625,
+        "deltaBminusA": 0.125,
+        "paired95CI": [
+          0.0,
+          0.28125
+        ],
+        "documents": 4,
+        "pairs": 32,
+        "bootstrapIterations": 5000
+      },
+      "answerAccuracy": {
+        "A": 0.65625,
+        "B": 0.71875,
+        "deltaBminusA": 0.0625,
+        "paired95CI": [
+          0.0,
+          0.125
+        ],
+        "documents": 4,
+        "pairs": 32,
+        "bootstrapIterations": 5000
+      },
+      "refusalAccuracy": {
+        "A": 1.0,
+        "B": 1.0,
+        "deltaBminusA": 0.0,
+        "paired95CI": [
+          0.0,
+          0.0
+        ],
+        "documents": 4,
+        "pairs": 8,
+        "bootstrapIterations": 5000
+      },
+      "citationSupport": {
+        "A": 0.53125,
+        "B": 0.65625,
+        "deltaBminusA": 0.125,
+        "paired95CI": [
+          0.0,
+          0.28125
+        ],
+        "documents": 4,
+        "pairs": 32,
+        "bootstrapIterations": 5000
+      },
+      "strictPassAccuracy": {
+        "A": 0.575,
+        "B": 0.675,
+        "deltaBminusA": 0.10000000000000009,
+        "paired95CI": [
+          0.0,
+          0.22500000000000003
+        ],
+        "documents": 4,
+        "pairs": 40,
+        "bootstrapIterations": 5000
+      }
+    },
+    "validation": {
+      "evidenceRecall@5": {
+        "A": 0.57421875,
+        "B": 0.6888020833333334,
+        "deltaBminusA": 0.11458333333333337,
+        "paired95CI": [
+          0.02083333333333333,
+          0.2552083333333333
+        ],
+        "documents": 8,
+        "pairs": 64,
+        "bootstrapIterations": 5000
+      },
+      "contextEvidenceRecall": {
+        "A": 0.57421875,
+        "B": 0.6497395833333334,
+        "deltaBminusA": 0.07552083333333337,
+        "paired95CI": [
+          -0.0078125,
+          0.19270833333333331
+        ],
+        "documents": 8,
+        "pairs": 64,
+        "bootstrapIterations": 5000
+      },
+      "citedEvidenceRecall": {
+        "A": 0.5377604166666666,
+        "B": 0.5963541666666666,
+        "deltaBminusA": 0.05859375,
+        "paired95CI": [
+          -0.03525390624999997,
+          0.19921875
+        ],
+        "documents": 8,
+        "pairs": 64,
+        "bootstrapIterations": 5000
+      },
+      "evidenceRecall@5Utf16Coverage": {
+        "A": 0.7306907888152008,
+        "B": 0.770787537831546,
+        "deltaBminusA": 0.04009674901634519,
+        "paired95CI": [
+          0.008638731535079172,
+          0.08724824628369914
+        ],
+        "documents": 8,
+        "pairs": 64,
+        "bootstrapIterations": 5000
+      },
+      "evidenceRecall@5AllRequired": {
+        "A": 0.453125,
+        "B": 0.59375,
+        "deltaBminusA": 0.140625,
+        "paired95CI": [
+          0.03125,
+          0.296875
+        ],
+        "documents": 8,
+        "pairs": 64,
+        "bootstrapIterations": 5000
+      },
+      "contextEvidenceRecallAllRequired": {
+        "A": 0.453125,
+        "B": 0.5625,
+        "deltaBminusA": 0.109375,
+        "paired95CI": [
+          0.015625,
+          0.234375
+        ],
+        "documents": 8,
+        "pairs": 64,
+        "bootstrapIterations": 5000
+      },
+      "citedEvidenceRecallAllRequired": {
+        "A": 0.4375,
+        "B": 0.484375,
+        "deltaBminusA": 0.046875,
+        "paired95CI": [
+          -0.078125,
+          0.203125
+        ],
+        "documents": 8,
+        "pairs": 64,
+        "bootstrapIterations": 5000
+      },
+      "answerAccuracy": {
+        "A": 0.59375,
+        "B": 0.640625,
+        "deltaBminusA": 0.046875,
+        "paired95CI": [
+          -0.04726562499999987,
+          0.171875
+        ],
+        "documents": 8,
+        "pairs": 64,
+        "bootstrapIterations": 5000
+      },
+      "refusalAccuracy": {
+        "A": 1.0,
+        "B": 1.0,
+        "deltaBminusA": 0.0,
+        "paired95CI": [
+          0.0,
+          0.0
+        ],
+        "documents": 8,
+        "pairs": 16,
+        "bootstrapIterations": 5000
+      },
+      "citationSupport": {
+        "A": 0.4375,
+        "B": 0.484375,
+        "deltaBminusA": 0.046875,
+        "paired95CI": [
+          -0.078125,
+          0.203125
+        ],
+        "documents": 8,
+        "pairs": 64,
+        "bootstrapIterations": 5000
+      },
+      "strictPassAccuracy": {
+        "A": 0.5125,
+        "B": 0.575,
+        "deltaBminusA": 0.0625,
+        "paired95CI": [
+          -0.049999999999999996,
+          0.1875
+        ],
+        "documents": 8,
+        "pairs": 80,
+        "bootstrapIterations": 5000
+      }
+    }
+  },
+  "counts": {
+    "expectedDocuments": 24,
+    "observedDocuments": 24,
+    "expectedQuestions": 240,
+    "observedQuestions": 240,
+    "reviewedQuestions": 240,
+    "pairedQuestions": 120
+  },
+  "llmDocumentSuccess": {
+    "overall": {
+      "successes": 9,
+      "expected": 12,
+      "rate": 0.75,
+      "fallbacks": [
+        "dev-01",
+        "val-05",
+        "val-06"
+      ]
+    },
+    "dev": {
+      "successes": 3,
+      "expected": 4,
+      "rate": 0.75,
+      "fallbacks": [
+        "dev-01"
+      ]
+    },
+    "validation": {
+      "successes": 6,
+      "expected": 8,
+      "rate": 0.75,
+      "fallbacks": [
+        "val-05",
+        "val-06"
+      ]
+    }
+  },
+  "budget": {
+    "valid": true,
+    "issues": [],
+    "blocked": false,
+    "priorAccountedRmb": 0.0,
+    "runAccountedRmb": 0.81500794,
+    "accountedRmb": 0.81500794,
+    "deepSeekCalls": 256,
+    "qwenCalls": 191,
+    "priorDeepSeekCalls": 0,
+    "priorQwenCalls": 0,
+    "byStageRmb": {
+      "chat": 0.722188,
+      "embedding": 0.03300394,
+      "chunk": 0.059816
+    },
+    "byArmRmb": {
+      "shared": 0.000118056,
+      "A": 0.360209612,
+      "B": 0.454680272
+    },
+    "tokensByStage": {
+      "chat": {
+        "requests": 241,
+        "reservedInputUpperBound": 1127941,
+        "reservedMaxOutputTokens": 168700,
+        "actualInputTokensKnown": 279106,
+        "actualOutputTokensKnown": 20497,
+        "missingUsageOrFailureRequests": 0
+      },
+      "embedding": {
+        "requests": 191,
+        "reservedInputUpperBound": 334029,
+        "reservedMaxOutputTokens": 0,
+        "actualInputTokensKnown": 64210,
+        "actualOutputTokensKnown": 0,
+        "missingUsageOrFailureRequests": 0
+      },
+      "chunk": {
+        "requests": 15,
+        "reservedInputUpperBound": 127105,
+        "reservedMaxOutputTokens": 30720,
+        "actualInputTokensKnown": 28376,
+        "actualOutputTokensKnown": 383,
+        "missingUsageOrFailureRequests": 0
+      }
+    },
+    "missingUsageOrFailureRequests": 0,
+    "stopNewRequestsRmb": 16,
+    "totalCapRmb": 20
+  },
+  "latency": {
+    "A.import": {
+      "n": 12,
+      "p50Ms": 669.0,
+      "p95Ms": 3369.199999999999
+    },
+    "A.question": {
+      "n": 120,
+      "p50Ms": 1378.0,
+      "p95Ms": 1861.0
+    },
+    "B.import": {
+      "n": 12,
+      "p50Ms": 1615.0,
+      "p95Ms": 5366.399999999999
+    },
+    "B.question": {
+      "n": 120,
+      "p50Ms": 1081.0,
+      "p95Ms": 1573.45
+    }
+  },
+  "chunkLengths": {
+    "A.overall": {
+      "codePoints": {
+        "count": 253,
+        "p50": 530.0,
+        "p95": 775.4,
+        "max": 800
+      },
+      "utf16Units": {
+        "count": 253,
+        "p50": 530.0,
+        "p95": 775.4,
+        "max": 800
+      }
+    },
+    "A.dev": {
+      "codePoints": {
+        "count": 79,
+        "p50": 537.0,
+        "p95": 703.5999999999999,
+        "max": 785
+      },
+      "utf16Units": {
+        "count": 79,
+        "p50": 537.0,
+        "p95": 703.5999999999999,
+        "max": 785
+      }
+    },
+    "A.validation": {
+      "codePoints": {
+        "count": 174,
+        "p50": 500.0,
+        "p95": 776.35,
+        "max": 800
+      },
+      "utf16Units": {
+        "count": 174,
+        "p50": 500.0,
+        "p95": 776.35,
+        "max": 800
+      }
+    },
+    "B.overall": {
+      "codePoints": {
+        "count": 216,
+        "p50": 559.5,
+        "p95": 776.25,
+        "max": 800
+      },
+      "utf16Units": {
+        "count": 216,
+        "p50": 559.5,
+        "p95": 776.25,
+        "max": 800
+      }
+    },
+    "B.dev": {
+      "codePoints": {
+        "count": 69,
+        "p50": 556.0,
+        "p95": 716.5999999999999,
+        "max": 785
+      },
+      "utf16Units": {
+        "count": 69,
+        "p50": 556.0,
+        "p95": 716.5999999999999,
+        "max": 785
+      }
+    },
+    "B.validation": {
+      "codePoints": {
+        "count": 147,
+        "p50": 565.0,
+        "p95": 779.0999999999999,
+        "max": 800
+      },
+      "utf16Units": {
+        "count": 147,
+        "p50": 565.0,
+        "p95": 779.0999999999999,
+        "max": 800
+      }
+    }
+  },
+  "perQuestion": [
+    {
+      "questionId": "dev-01-q01",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.856140350877193,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.856140350877193,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4070175438596491,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q02",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q03",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.3333333333333333,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.5656565656565656,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.5656565656565656,
+        "citedEvidenceRecall": 0.3333333333333333,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.5656565656565656,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q04",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8613445378151261,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8613445378151261,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4495798319327731,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q05",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q06",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.43666666666666665,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.43666666666666665,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.43666666666666665,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 1.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q07",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q08",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q09",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q10",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q01",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.6666666666666666,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.638095238095238,
+        "contextEvidenceRecall": 0.6666666666666666,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.638095238095238,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q02",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.9436201780415431,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q03",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q04",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q05",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q06",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q07",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q08",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q09",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q10",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q01",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.4950213371266003,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.4950213371266003,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q02",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 1.0
+      }
+    },
+    {
+      "questionId": "dev-03-q03",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q04",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.6129032258064516,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.6129032258064516,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q05",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q06",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6848290598290598,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q07",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q08",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q09",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q10",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q01",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q02",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 1.0
+      }
+    },
+    {
+      "questionId": "dev-04-q03",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.9840637450199203,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q04",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q05",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q06",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8922413793103449,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8922413793103449,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4224137931034483,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q07",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.7538461538461538,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.7538461538461538,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.7538461538461538,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q08",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q09",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q10",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q01",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.856140350877193,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.856140350877193,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4070175438596491,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q02",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q03",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.3333333333333333,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.5656565656565656,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.5656565656565656,
+        "citedEvidenceRecall": 0.3333333333333333,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.5656565656565656,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q04",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8613445378151261,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8613445378151261,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4495798319327731,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q05",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q06",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.43666666666666665,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.43666666666666665,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.43666666666666665,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 1.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q07",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q08",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q09",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-01-q10",
+      "documentId": "dev-01",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q01",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.6666666666666666,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.9492063492063492,
+        "contextEvidenceRecall": 0.6666666666666666,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.9492063492063492,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.9492063492063492,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q02",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q03",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q04",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q05",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q06",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q07",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q08",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q09",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-02-q10",
+      "documentId": "dev-02",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q01",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.4950213371266003,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.4950213371266003,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q02",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 1.0
+      }
+    },
+    {
+      "questionId": "dev-03-q03",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q04",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.6129032258064516,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.6129032258064516,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q05",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q06",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6848290598290598,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q07",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q08",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q09",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-03-q10",
+      "documentId": "dev-03",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q01",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q02",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 1.0
+      }
+    },
+    {
+      "questionId": "dev-04-q03",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q04",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q05",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q06",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q07",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.75,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q08",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q09",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "dev-04-q10",
+      "documentId": "dev-04",
+      "split": "dev",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q01",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.25,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.27044025157232704,
+        "contextEvidenceRecall": 0.25,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.27044025157232704,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q02",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q03",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q04",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q05",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.553686934023286,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.553686934023286,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.553686934023286,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q06",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q07",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q08",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q09",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q10",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q01",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.3524355300859599,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.3524355300859599,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q02",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.16279069767441862,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.16279069767441862,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.16279069767441862,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q03",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q04",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.43781094527363185,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.43781094527363185,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.43781094527363185,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q05",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q06",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8862745098039215,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8862745098039215,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.8862745098039215,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q07",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.915929203539823,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.915929203539823,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.915929203539823,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q08",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.25,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q09",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q10",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q01",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q02",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.3333333333333333,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.3218390804597701,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.3218390804597701,
+        "citedEvidenceRecall": 0.3333333333333333,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.3218390804597701,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q03",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q04",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8235294117647058,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8235294117647058,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.8235294117647058,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q05",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q06",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q07",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.9102564102564102,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.9102564102564102,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.9102564102564102,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q08",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 1.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q09",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q10",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q01",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q02",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q03",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.7903225806451613,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.7903225806451613,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.7903225806451613,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q04",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.6666666666666666,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.9202733485193622,
+        "contextEvidenceRecall": 0.6666666666666666,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.9202733485193622,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6970387243735763,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q05",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q06",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q07",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q08",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q09",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q10",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q01",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.4657039711191336,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.4657039711191336,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4657039711191336,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q02",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.4604051565377532,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.4604051565377532,
+        "citedEvidenceRecall": 0.25,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.23756906077348067,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q03",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.4657039711191336,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.4657039711191336,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4657039711191336,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q04",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q05",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q06",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q07",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4692982456140351,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q08",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q09",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q10",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q01",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.3046979865771812,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.3046979865771812,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.3046979865771812,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q02",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.12429667519181585,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.12429667519181585,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q03",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.7541766109785203,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.7541766109785203,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.7541766109785203,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q04",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.5104712041884817,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.5104712041884817,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.5104712041884817,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q05",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q06",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q07",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8345323741007195,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8345323741007195,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.8345323741007195,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q08",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.6176470588235294,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.6176470588235294,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6176470588235294,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q09",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q10",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q01",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.3333333333333333,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.7659137577002053,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.7659137577002053,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q02",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.6666666666666666,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8480492813141683,
+        "contextEvidenceRecall": 0.6666666666666666,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8480492813141683,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.7474332648870636,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q03",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.7938718662952646,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.7938718662952646,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6573816155988857,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q04",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q05",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q06",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q07",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q08",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.25,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q09",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q10",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q01",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q02",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.6381322957198443,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.6381322957198443,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q03",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.6363636363636364,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.6363636363636364,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6363636363636364,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q04",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q05",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8672566371681416,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8672566371681416,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.8672566371681416,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.25,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q06",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q07",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.6363636363636364,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.6363636363636364,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6363636363636364,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q08",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.6950354609929078,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.6950354609929078,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q09",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q10",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "A",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q01",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.25,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.27044025157232704,
+        "contextEvidenceRecall": 0.25,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.27044025157232704,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q02",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q03",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q04",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q05",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.553686934023286,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.553686934023286,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.553686934023286,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q06",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q07",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.9081779053084649,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q08",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.5194986072423399,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q09",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-01-q10",
+      "documentId": "val-01",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q01",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.6332378223495702,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.2808022922636103,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q02",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.16279069767441862,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.16279069767441862,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.16279069767441862,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q03",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q04",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.43781094527363185,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.43781094527363185,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.43781094527363185,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q05",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q06",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.5019607843137255,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.5019607843137255,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.5019607843137255,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q07",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.4336283185840708,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4336283185840708,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q08",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.25,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q09",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-02-q10",
+      "documentId": "val-02",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q01",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q02",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.3333333333333333,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.6436781609195402,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.6436781609195402,
+        "citedEvidenceRecall": 0.3333333333333333,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6436781609195402,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q03",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q04",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8235294117647058,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8235294117647058,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.8235294117647058,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q05",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q06",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q07",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.9102564102564102,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q08",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q09",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-03-q10",
+      "documentId": "val-03",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q01",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q02",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q03",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q04",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6970387243735763,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q05",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q06",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q07",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q08",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q09",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-04-q10",
+      "documentId": "val-04",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q01",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.4657039711191336,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.4657039711191336,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4657039711191336,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q02",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.4604051565377532,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.4604051565377532,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q03",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.4657039711191336,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.4657039711191336,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4657039711191336,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q04",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q05",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q06",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q07",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.4692982456140351,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q08",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q09",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-05-q10",
+      "documentId": "val-05",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q01",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.3046979865771812,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.3046979865771812,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.3046979865771812,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q02",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.12429667519181585,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.12429667519181585,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q03",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.7541766109785203,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.7541766109785203,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.7541766109785203,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q04",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.81282722513089,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.81282722513089,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.5104712041884817,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q05",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q06",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q07",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8345323741007195,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8345323741007195,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.8345323741007195,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q08",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.6176470588235294,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.6176470588235294,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6176470588235294,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q09",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-06-q10",
+      "documentId": "val-06",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q01",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.3333333333333333,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8213552361396304,
+        "contextEvidenceRecall": 0.3333333333333333,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8213552361396304,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q02",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.6666666666666666,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.8480492813141683,
+        "contextEvidenceRecall": 0.6666666666666666,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.8480492813141683,
+        "citedEvidenceRecall": 0.6666666666666666,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.7474332648870636,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q03",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.5,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.7938718662952646,
+        "contextEvidenceRecall": 0.5,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.7938718662952646,
+        "citedEvidenceRecall": 0.5,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.6573816155988857,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q04",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q05",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q06",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q07",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.6666666666666666,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q08",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.25,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q09",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-07-q10",
+      "documentId": "val-07",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q01",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q02",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q03",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q04",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q05",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q06",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.3333333333333333,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q07",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 1.0,
+        "evidenceRecall@5AllRequired": 1.0,
+        "evidenceRecall@5Utf16Coverage": 1.0,
+        "contextEvidenceRecall": 1.0,
+        "contextEvidenceRecallAllRequired": 1.0,
+        "contextEvidenceRecallUtf16Coverage": 1.0,
+        "citedEvidenceRecall": 1.0,
+        "citedEvidenceRecallAllRequired": 1.0,
+        "citedEvidenceRecallUtf16Coverage": 1.0,
+        "answerAccuracy": 1.0,
+        "citationSupport": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.5,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q08",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "evidenceRecall@5": 0.0,
+        "evidenceRecall@5AllRequired": 0.0,
+        "evidenceRecall@5Utf16Coverage": 0.0,
+        "contextEvidenceRecall": 0.0,
+        "contextEvidenceRecallAllRequired": 0.0,
+        "contextEvidenceRecallUtf16Coverage": 0.0,
+        "citedEvidenceRecall": 0.0,
+        "citedEvidenceRecallAllRequired": 0.0,
+        "citedEvidenceRecallUtf16Coverage": 0.0,
+        "answerAccuracy": 0.0,
+        "citationSupport": 0.0,
+        "strictPassAccuracy": 0.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q09",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    },
+    {
+      "questionId": "val-08-q10",
+      "documentId": "val-08",
+      "split": "validation",
+      "arm": "B",
+      "scores": {
+        "refusalAccuracy": 1.0,
+        "strictPassAccuracy": 1.0,
+        "auxRequiredFactStringRecall": 0.0,
+        "auxForbiddenStringHit": 0.0
+      }
+    }
+  ],
+  "method": {
+    "aggregation": "document macro mean; answerable evidence items fully covered by union of original UTF-16 intervals",
+    "confidenceInterval": "paired document-cluster percentile bootstrap, 95%, seed 20261118; descriptive, gate uses point delta",
+    "unanswerable": "excluded from evidence recall; independent refusal review required",
+    "auxiliary": "string/numeric checks cannot approve answers or citation support"
+  }
+}

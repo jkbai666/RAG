@@ -1,0 +1,183 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Length 1885 >>
+stream
+BT /F1 10 Tf 48 788 Td 13 TL
+(ORIOLE REPO | COLLATERAL SCHEDULE OR-6 | 2026-10-01) Tj
+T*
+(All entities and trades in this schedule are fictional. Currency amounts are in thousands) Tj
+T*
+(of CNY unless stated otherwise. Exposure means cash principal plus accrued repo interest.) Tj
+T*
+(Collateral value is the clean market value after the applicable haircut; it is not the) Tj
+T*
+(security's face value.) Tj
+T*
+() Tj
+T*
+(HAIRCUT SCHEDULE) Tj
+T*
+(Sovereign bonds with remaining maturity up to 1 year: 2%.) Tj
+T*
+(Sovereign bonds with remaining maturity above 1 year: 4%.) Tj
+T*
+(Approved corporate bonds: 9%.) Tj
+T*
+(A corporate issue on the watch list receives an additional 6 percentage points. A missing) Tj
+T*
+(quote makes that issue ineligible, rather than assigning a zero haircut. The watch-list) Tj
+T*
+(add-on never applies to sovereign bonds.) Tj
+T*
+() Tj
+T*
+(VALUATION AND ROUNDING) Tj
+T*
+(Each issue is valued separately: clean market value multiplied by one minus its total) Tj
+T*
+(haircut. Sum the issue values without intermediate rounding, then round the total down to) Tj
+T*
+(the nearest 1 thousand. Accrued bond coupon is excluded. Exposure, in contrast, includes) Tj
+T*
+(accrued repo interest. The two kinds of accrued amounts must not be interchanged.) Tj
+T*
+() Tj
+T*
+(MARKET RECORDS) Tj
+T*
+(The valuation analyst stores the quote time and source with the issue code. A dealer's) Tj
+T*
+(indicative email may explain a price change, but is not a substitute for the approved) Tj
+T*
+(closing quote. A stale quote is treated under the missing-quote rule if it is outside the) Tj
+T*
+(permitted feed window. Custody receipts describe location and ownership; they do not) Tj
+T*
+(establish a market price. Reconciliation staff keep the exposure file separate from the) Tj
+T*
+(collateral file so that a coupon receipt cannot accidentally reduce repo principal.) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 1203 >>
+stream
+BT /F1 10 Tf 48 788 Td 13 TL
+(MARGIN CALL) Tj
+T*
+(Deficit is exposure minus rounded collateral value. A call is issued only when the deficit) Tj
+T*
+(is strictly greater than 20. A deficit equal to 20 is logged but not called. The transfer) Tj
+T*
+(due on a call is the entire deficit, not just the portion above 20. The minimum transfer) Tj
+T*
+(threshold is a trigger, not a deductible.) Tj
+T*
+() Tj
+T*
+(VALUATION EXERCISE) Tj
+T*
+(Exposure is 1,000. Collateral consists of a long sovereign bond worth 500 and a) Tj
+T*
+(watch-listed approved corporate bond worth 500. Both have valid quotes. There are no other) Tj
+T*
+(securities, cash credits or pending transfers. A transfer accepted after the call is) Tj
+T*
+(reconciled as a new movement; it is not assumed in this snapshot.) Tj
+T*
+() Tj
+T*
+(CALL TIMING) Tj
+T*
+(A call delivered by 11:00 inclusive is due at 15:00 on the same business day. A later call) Tj
+T*
+(is due at 10:00 on the next business day. Delivery means receipt in the agreed margin) Tj
+T*
+(inbox, not when an analyst began drafting. A call disputed before its deadline remains due) Tj
+T*
+(for its undisputed amount; the disputed part is escalated to both valuation leads.) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 1151 >>
+stream
+BT /F1 10 Tf 48 788 Td 13 TL
+(SUBSTITUTION CONTROL) Tj
+T*
+(A substitution requires prior counterparty consent and receipt of eligible replacement) Tj
+T*
+(collateral with adjusted value at least equal to the value released. The old security is) Tj
+T*
+(released only after custody confirms receipt. An email promising delivery is insufficient.) Tj
+T*
+(During a feed outage no substitution using an unquoted replacement is allowed, even if its) Tj
+T*
+(face value exceeds the old security's value.) Tj
+T*
+() Tj
+T*
+(VERSION CONTROL) Tj
+T*
+(OR-5 used a flat 10% haircut on approved corporate bonds without a watch-list add-on. OR-6) Tj
+T*
+(replaces that rule for every valuation dated on or after 2026-10-01, including trades) Tj
+T*
+(opened earlier. Sovereign haircuts are unchanged. An old trade date does not preserve the) Tj
+T*
+(OR-5 corporate haircut.) Tj
+T*
+() Tj
+T*
+(INFORMATION LIMIT) Tj
+T*
+(This schedule does not disclose actual security identifiers, the repo counterparty's legal) Tj
+T*
+(entity code, or a forecast of tomorrow's bond price. The exercise is a closed fictional) Tj
+T*
+(snapshot and does not authorize real transfers.) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000133 00000 n 
+0000000230 00000 n 
+0000002167 00000 n 
+0000002293 00000 n 
+0000003548 00000 n 
+0000003674 00000 n 
+0000004877 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+5003
+%%EOF

@@ -1,0 +1,1867 @@
+{
+  "schemaVersion": 1,
+  "blindPackageSha256": "bea8d62bdcf047e08fdd83cccb3cb6267d93bd6ee5395a367e3debf7dbf74a10",
+  "instructions": "Review only this bundle and frozen rubric. No strategy, split or arm mapping is supplied.",
+  "sources": {
+    "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67": "苔原农机循环授信作业卡 TY-2026B\n2026年7月15日起生效。仅用于虚构的农机经销商季节性周转贷款。授信总额120万元，任何一笔借款都必须先通过库存盘点；未用额度不是存款，不能抵扣已发生利息。\n\n占额按尚未归还本金加已承兑未到期银票票面额计算。应计利息和未承兑订单不占额。当天还款只有清算成功才释放占额；‘已提交’状态不释放。系统展示的可用额为总额减占额，负值时冻结新增提款，不对存量合同自动加息。\n\n经销商提交每台农机的序列号和库存地，核验员抽样核对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。\n\n利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。\n\n演练记录：2026年8月10日以常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。\n\n风险例外：连续两期未交盘点表时，冻结新增提款；既有借款仍按原借据还本计息。补齐两期盘点表并经核验岗解除标记后恢复，客户经理单独签字不能解除。灾害展期只延后本金到期日，不自动免息或提高120万元授信额。\n\nTY-2026A曾把‘提交还款申请’作为释放时点。TY-2026B取消该处理，从生效日起所有释放均以清算成功为准，不区分借据签署日期。历史上已释放的额度不倒算，但仍未清算的申请不能被再次计算为可用额度。\n\n本卡不载明客户真实身份、他行负债、最终核定授信模型参数或未来基准利率预测。实际审批另有独立档案，本作业卡的演练不构成真实授信。\n",
+    "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41": "栖衡碳配额远期交收约定 QH-4\n本约定为虚构企业间人民币结算业务，不是真实交易所规则。2026年10月1日起签订的合同适用。标的是指定年度碳配额，单位为吨，不能以项目减排量替代。交收量以登记系统实际划入合约约定账户的可用配额为准；转出申请截图不是交收回单。\n\n附录甲：Counterparty preparation and authority records\n\nBefore a new fictional carbon forward is placed in the delivery queue, the operations team associates the legal party name on the signed contract with the party name in the registry instructions. A trading desk nickname is not sufficient to establish that association. Staff keep the signed authority record and the registry instruction together so a later reviewer can identify which party authorized the nominated receiving account. This appendix intentionally supplies no real registry account number.\n\nThe file distinguishes authority to negotiate a trade from authority to change the account used for delivery. A trader may explain a commercial instruction while the controlled account amendment still requires verification through the agreed business channel. An attachment received in a chat is checked against the formal record instead of being treated as an executable instruction merely because it contains the correct nominal quantity.\n\nIf two companies in the same group use similar names, staff do not assume that their accounts or contracts are interchangeable. The exception is referred back for a documented party mapping or an authorized contract amendment. Neither a shared office address nor a common parent permits a clerk to reroute allowance delivery. The original instructions remain available in the archive alongside any later approved correction, with the scope of the correction stated explicitly.\n\n交收前一工作日17:00前双方确认可交割名册。交收日12:00前卖方完成配额过户，买方在15:00前付对应已交量货款，未交量不先付款。合同允许交量在名义量的98%至102%之间（含边界），双方不另签数量变更；货款按实际合格交量乘合同单价，不能按名义量付款。年度或账户不匹配的配额一律不计合格交量。\n\n附录乙：Vintage checks in the registry export\n\nThe registry export may show balances for several allowance years in neighboring columns. The allocation analyst first locates the year named by the contract, then checks whether the listed balance is available for transfer. A positive total at the bottom of the export is not proof that the contracted year has enough available units. Historical holdings and surrendered units can appear in an export for information without becoming eligible delivery inventory.\n\nThe analyst stores the export time and the field definitions with the file. A spreadsheet that has lost its headers is returned for clarification rather than reconstructed from column position alone. When the registry changes the order of columns, an old spreadsheet formula may still produce a plausible total while selecting the wrong year. The reviewer therefore checks the source labels instead of relying only on the absence of a spreadsheet error message.\n\nIn a training file, the seller initially supplied a balance page containing the correct company but a different vintage. Staff retained it as an incorrect submission and asked for the relevant record. The later correct-year export was assessed on its own availability and timestamp. The first submission did not reserve delivery time for a later transfer, and a correct party name could not cure the wrong allowance year.\n\n数量容差仅用于交收完成的判断。若实际合格交量落在98%至102%之外，买方可选择接受实际量并以名义量和实交量的差额结算违约，或拒绝整批并启动全量平仓；须在当日16:00前通知。买方没有在期限内选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。\n\n附录丙：Nomination lists and later corrections\n\nThe pre-delivery nomination list records which contract, allowance year and delivery instruction the parties have confirmed. Its purpose is to make the coming transfer identifiable. It is not evidence that the transfer has already happened. Operations archive the confirmed list and retain later amendments separately, so a reviewer can distinguish a planning change from an actual registry movement.\n\nWhere a list contains a duplicated line, the parties correct the list by identifying the duplicated contract reference and preserving the reason for removal. Staff do not delete an actual transfer simply because the nomination spreadsheet once contained an error. Registry movement evidence and the parties' list are reconciled, and unexplained differences are escalated rather than forced to agree by changing a quantity in the bank reconciliation.\n\nA seller may discuss an anticipated inventory change before delivery. That discussion is recorded as context until the formal instruction is confirmed. It does not expand the quantity tolerance or replace the contract's year requirement. The reviewer checks whether a proposed correction changes a commercial term that needs an authorized amendment, or merely fixes an obvious clerical label. A clerical label repair cannot be used to conceal a change of buyer or a substitution of a different environmental asset.\n\n登记与资金核对分两组操作。配额组查验配额年度、账户及可用状态，资金组查验交易号、到账金额和付款户名；单组完成核对不能代替另一组结论。同一企业可能在多个年度有配额余额，导出的余额总表只可用来定位记录，不能把不同年度配额加总当作本合约可交量。过户过程中被冻结的配额不计入可用量，解除冻结后也要按实际可用时点判断是否逾期。\n\n业务员可以联系客户解释缺件，但不得在对账表中手工把‘待审核’改成‘已过户’。配额组发现年度错误时应保留错误回单及更正轨迹；如果正确年度的替代配额在截止后才到账，需按迟延条款重新核对，不得把错误年度的首次提交时间移作正确到账时间。资金组发现付款户名与合约不同，先走第三方付款核验，不能因为金额刚好匹配就直接结清。\n\n附录丁：Transfer status and the receiving ledger\n\nA transfer can be prepared, submitted, under review, rejected or completed. The operations ledger uses these labels to track work without implying that every submitted transfer has reached the receiving account. Staff retrieve the registry evidence associated with the final completed movement and check the eligible available balance it created for the nominated receiver. An intermediate screen can explain a delay but does not replace completed delivery evidence.\n\nIf the registry rejects a submission and the seller resubmits, the new attempt is linked to the rejected attempt. Both histories remain visible. Reusing the commercial contract reference does not make the rejected attempt a second delivery, and it does not backdate the completed attempt. The analyst avoids adding quantities from status messages that describe different stages of the same movement.\n\nThe receiving side reconciles actual credited quantities to the contract and sends any disagreement through the agreed channel. A missing acknowledgement email is investigated using the registry record; an acknowledgement alone is not used to invent a credit that the registry cannot show. The file should allow another analyst to determine what was actually available, in which year, for which receiver and at what time, without relying on either trader's recollection of a telephone conversation.\n\n附录戊：Combined deliveries for separate contracts\n\nA seller may arrange several transfers during one session, and a registry movement report may show them next to each other. The analyst matches each movement to its designated contract before comparing delivery quantities. One contract's overdelivery is not automatically credited to another contract's shortfall, even when the parties are the same. A commercial offset requires its own documented agreement rather than an arithmetic shortcut in the reconciliation workbook.\n\nWhen the parties authorize a combined operational instruction covering several contracts, the file retains the agreed allocation of the resulting quantities. The allocation should be identifiable from the instruction and completed movement evidence. Staff do not choose an allocation after seeing which contract would otherwise incur a shortfall, because that would replace the parties' agreed delivery record with an outcome-driven reconstruction.\n\nA separate worksheet is kept for each contract's nominal quantity, eligible actual quantity and settlement decision. A summary can aggregate payment planning, but must leave a route back to those worksheets. The same registry units cannot be counted in two contracts. If the allocation remains disputed, the disputed contracts stay visibly unresolved and staff do not describe the portfolio as completely delivered merely because the aggregate number of units matches a portfolio total.\n\n差额平仓：卖方少交且买方选择接受实际量时，少交差额=名义量−实际合格交量；赔偿额=少交差额×max(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。\n\n附录己：Payment instructions and separate bank evidence\n\nThe funding desk prepares a payment instruction after the eligible delivered amount is known under the applicable procedure. A bank message saying an instruction was created is different from a completed account debit. The desk retains the execution evidence and matches it to the agreed commercial reference. It does not use an expected payment in a treasury forecast to close an outstanding purchase price obligation.\n\nIf a bank rejects a payment because the receiving party details do not match, the rejected attempt remains in the record. The desk investigates the mismatch through controlled contact details and resubmits only after verification. A document claiming to correct a beneficiary name is treated as a proposed correction, not as automatic authority to replace the account instruction. This fictional casebook contains no real beneficiary data to be copied into an operational payment.\n\nThe accounts team tracks ordinary purchase price, agreed compensation, late charges and security movements as distinct items. A net display can be useful for management, but its underlying components must remain reconstructible. The fact that two amounts happen to be equal does not establish that one legally extinguished the other. Staff apply only the settlement treatment supported by the contract and the documented agreement, rather than inferring a right of set-off from a convenient bank transfer amount.\n\n担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。\n\n附录庚：Buyer election records outside the quantity band\n\nWhere actual eligible delivery falls outside the permitted quantity band, operations obtain the buyer's recorded election and associate it with the specific contract and delivery snapshot. A draft written by the seller does not establish what the buyer elected. The record should be clear enough to distinguish acceptance of the actual delivered quantity with a difference settlement from rejection of the entire batch and a full closeout path.\n\nStaff retain the received time and the communication channel agreed for the election. A later discussion of possible settlement options is not silently substituted for the original election notice. If the notice is ambiguous, the ambiguity is referred to both parties for resolution and remains visible in the control log. The desk does not choose whichever interpretation produces the smaller compensation merely to close its daily report.\n\nAn election for one contract does not become a standing election for all contracts with the same seller. Likewise, acceptance of an earlier small deviation does not imply consent to a later outside-band delivery. The individual file records what was chosen for this delivery and what remained disputed. Silence is not converted into either acceptance or rejection by a spreadsheet default value, and unresolved security treatment remains subject to the original dispute procedure.\n\n少交演练：合同名义1000吨，单价80元/吨；交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。\n\n附录辛：Evidence for the reference quotation\n\nThe quotation evidence identifies the agreed source page, its displayed date and the observation time relevant to the contract. An isolated number in a chat message cannot demonstrate that it came from that page at the required time. Analysts save enough of the original view to preserve qualifiers such as indicative, delayed or unavailable. Cropping away a qualifier can change the meaning of the quoted value and make a settlement calculation appear better supported than it is.\n\nThe analyst also records the unit and currency associated with the source. A page containing several instruments can display a plausible price next to the wrong allowance year or asset type. Staff match the instrument to the agreement before using the number. This appendix does not introduce a replacement source or authorize staff to average unrelated prices when the agreed value is absent.\n\nWhen a quotation is corrected by the source publisher, operations keep the original capture and the correction notice, then refer the effect on settlement through the parties' documented resolution process. A clerk must not overwrite a previously used price without preserving why it changed. The calculation file needs to explain which verifiable input supported the agreed result. A numerical answer can be arithmetically correct yet unsupported if the source, time or instrument cannot be established.\n\n登记系统故障例外：只有登记服务方公告覆盖该合约交收窗口的故障，才把配额过户期限延至恢复后首个工作日12:00。卖方本地网络故障不适用。付款时限改为实际合格过户当日15:00，担保款在实际完成对账前不释放；例外只调整时点，不把无效年度配额变为合格。\n\n附录壬：Closeout calculation workbook review\n\nThe workbook separates the physical shortfall calculation from the price-difference calculation. Inputs are named so a reviewer can see whether the quantity is the nominal contracted amount or the actual eligible amount. This reduces the risk that an analyst uses the quantity tolerance as though it were an insurance deductible. The core closeout formula remains the governing formula; this casebook does not modify its treatment of the whole shortfall or the nonnegative price difference.\n\nReviewers compare the workbook to the recorded buyer election before checking the arithmetic. A worksheet for accepted actual delivery cannot be reused without review for a rejected batch, because the commercial path is different even if some input cells have the same values. A saved spreadsheet from another contract is a template for layout only. Its price, year, quantity and election must not silently become evidence for the present contract.\n\nThe signed calculation retains the input sources, workbook version and review conclusion. If the analyst finds a formula that references a hidden column, the error is corrected with an explanation and the prior draft is preserved. Staff do not treat a locked spreadsheet as proof of correctness. A second reviewer should be able to reproduce the result from the recorded contract and movement evidence without depending on undocumented formulas or a trader's private notes.\n\n附录癸：Security ledger and unresolved items\n\nSecurity receipts are matched to the party and contract for which the money was lodged. A group treasury transfer may cover several contracts, but the allocation needs a traceable record. The ledger does not assume that money pledged for one buyer can be applied to another buyer's claim. Unallocated receipts remain visibly unallocated until their purpose is verified, rather than being used to make a shortfall report appear fully funded.\n\nThe clearing officer distinguishes a claimed amount from an amount established for settlement. A claim letter may start a review without making every line immediately payable from security. The file shows which components are determined, which remain disputed and what authority supports any release or application. An operational hold is documented with its scope; staff should not expand a disputed component into a permanent retention of unrelated balances.\n\nFollowing resolution, the officer reconciles security received, authorized applications and the remaining balance. A security statement and a purchase price statement remain distinct even when presented in one report. The remaining obligation is not automatically capped by the cash already lodged. The original contractual responsibility and the available security are different concepts, and a reconciliation must preserve that distinction instead of simply marking the file closed when the security account reaches zero.\n\n交收档案必须能够重建一条完整时间线，包括名册确认、登记系统回单、买方数量选择通知、参考价截屏和最终资金对账表。参考价截屏要显示报价页名称、日期和时点；转发聊天中的一个数字无法证明它是约定16:00参考价。补录说明可以帮助复核，却不能改写原始回单时间。\n\n如果报价页当日没有可核验的16:00值，按合同争议流程另行确定，不允许经办员从上周平均价、客户口述价或下一日成交价中任选一个。已确定赔偿项目和仍有争议的项目分栏列示，清算人员只能对已确定部分动用担保款；双方达成新和解时须保存书面版本和对应交易号。结算表的‘计划支付’用于资金安排，不是资金到账证明；‘已匹配到账’才可进入最终清偿记录。档案查询仅限本合同，不能将另一个年度合同的价格或数量直接带入。\n\n附录子：Registry service interruption record\n\nA reported interruption is checked against the registry service provider's notice and the contract's delivery window. A seller's workstation error, an expired local login and a service-wide outage are different events. Operations retain the provider's notice as well as the seller's incident report, so a reviewer can determine which event actually prevented processing. The presence of a help-desk ticket alone does not establish that the core service-outage exception applies.\n\nThe chronology records the announced service interruption, the announced restoration and the completed eligible transfer. If the seller continues to have a local problem after the service is restored, staff do not automatically extend the provider's outage period to match that local difficulty. The controlling exception remains the one in the core agreement, and the resulting payment timing is linked to actual eligible delivery.\n\nDuring recovery, the operations team reconciles queued attempts before encouraging a resubmission. Otherwise a delayed original and a new attempt can both execute. If that happens, the extra transfer is not erased from the record; the parties identify and resolve it through the controlled correction process. Recovery work does not make the wrong allowance year eligible, eliminate the need for registry evidence or release security before the required reconciliation is complete.\n\nQH-3把少交赔偿限定为担保款金额。QH-4取消此上限，以实际公式计算并可追补。10月1日前已签合同仍用QH-3；10月1日起新签合同用QH-4，不因沿用旧交易号前缀而适用旧版。交量98%至102%的容差两版相同。\n\n附录丑：Year-end reporting and surrender context\n\nAn enterprise may discuss its expected compliance needs when negotiating the forward, but those commercial forecasts do not establish the enterprise's actual annual emissions gap. The delivery team records only the contract and eligible movement facts needed for this agreement. It does not certify the buyer's environmental compliance, issue a public sustainability claim or infer a surrendered quantity from the volume bought under one fictional contract.\n\nThe contract archive keeps delivery records separate from any later surrender records provided for context. Transfer to a buyer and surrender by that buyer are distinct registry events. A buyer can receive allowances without this casebook establishing what happens to them afterward. Staff therefore avoid describing a completed transfer as proof that a compliance obligation has been discharged, unless the relevant separate evidence is actually in the authorized file.\n\nMarketing language about environmental benefits is not used as a price input, delivery confirmation or eligibility substitute. Analysts may quote the contractual purpose in a narrative, but must not replace the specified asset with a different environmental instrument because it appears to serve a similar purpose. This distinction is particularly important when a supporting presentation uses broad terms such as carbon units while the operative contract names a specific allowance year and receiving instruction.\n\n本约定不载明实际配额登记账户号、未来市场碳价、企业年度排放履约缺口或另一个交易所的正式规则。演练参考价92元仅是设定，不是实时市场报价。\n\n附录寅：Amendments, settlement letters and historical versions\n\nA proposed commercial amendment is kept as a draft until the parties have executed it through their authorized process. Operations label drafts, signed amendments and settlement letters distinctly. A draft attached to an email does not automatically replace the original contract, and a settlement letter resolving one disputed amount does not necessarily rewrite all delivery terms for future contracts. The file states the scope actually agreed rather than assuming the broadest possible effect.\n\nHistorical versions of the agreement remain available to explain older transactions. The relevant signing event is verified from the contract record, not inferred from a copied filename or a reused trading reference. A new transaction using a familiar identifier prefix can still belong to the current version. Conversely, a historical contract is not silently moved into the new regime because staff scanned it with newer software.\n\nWhen parties agree an exceptional resolution, the archive shows the original claim, the agreed outcome and the authority for that outcome. Analysts do not rewrite the original core rule to make the exceptional settlement look ordinary. This distinction allows later reviewers to understand both what the standard agreement required and what the parties subsequently resolved for a particular file. A historical compromise is not a universal precedent that staff can apply without checking its scope.\n\n附录卯：Record corrections and independent reconciliation\n\nCorrection requests identify the specific record, proposed change and supporting evidence. A clerical transposition in a narrative may be corrected without changing the underlying movement. A proposed change to actual delivered quantity is a different matter and must be supported by the registry evidence. Staff keep these categories separate so the authority to fix a typo does not become authority to change the settlement basis.\n\nThe independent reconciler follows a chain from contract to nomination, movement, election, quotation, calculation and bank execution. Missing links are recorded as missing, with the affected conclusion left unresolved where necessary. A management summary that repeats the same unsupported figure is not independent corroboration. More copies of an error do not create additional evidence for it.\n\nThe final closing pack identifies the state of each obligation and the source of each material input. Forecast amounts remain labeled forecasts and disputed amounts remain labeled disputed. If a late document changes a conclusion, the pack preserves the earlier version and explains the change. The object is a reproducible business record rather than a visually tidy folder. Staff should be able to demonstrate which facts were known, which were agreed and which were still unavailable when each decision was made.\n",
+    "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558": "# 绛帆保费融资清算 JF-2\n\n2026年9月18日起适用于新增融资合同，以下名称与金额均为虚构。融资方先代投保人向保险人支付全年保费，投保人再向融资方分期偿还。保险赔款归属仍由保单决定；分期融资余额不等同于保险责任限额。\n\n## 清偿项的边界\n\n解约应清偿额由未偿融资本金、截至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n## 操作与核对\n\n经办核验退保申请签名、保单号、融资合同号三者关联后，向保险人请求确认退费净额。保险人的试算书与实付回单分开归档，试算书可能因结算日期变动而变化，因此不得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。\n\n## 利息口径\n\n实收退费前，剩余本金按年单利7.2%、实际天数/360继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。\n\n## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。\n\n## 监管强制撤销例外\n\n因保险人产品备案问题被监管要求撤销的合同，免收300元解约手续费；已发生融资利息仍清偿。投保人自愿退保、无力继续缴费或自行投诉，不自动视为监管强制撤销，须有针对该产品的正式撤销决定。\n\n## 版本过渡\n\nJF-1约定固定解约手续费500元。2026年9月18日前签订且未变更的存量融资合同继续执行JF-1；之后新签的合同用JF-2的300元。单纯更换联系地址不是合同重签，不把老合同自动迁为新版。监管强制撤销免手续费的例外对两版均适用。\n\n## 未提供内容\n\n本规则不含各险种的退保现金价值公式、被保险人健康资料或投资收益预测。退费净额需要保险人确认，不可由融资年利率反推出保单现金价值。\n"
+  },
+  "items": [
+    {
+      "token": "cec8b0a123654786abbc81dcb6dae693",
+      "question": "苔原逾期本金相对适用正常年利率加多少，能对利息加收吗？",
+      "gold": {
+        "referenceAnswer": "加1.8个百分点，只对逾期本金，不对已计利息加收。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "乘以1.8%",
+          "正常本金也一律罚息"
+        ],
+        "requiredFacts": [
+          "加1.8个百分点",
+          "仅逾期本金",
+          "不对已计利息加收"
+        ],
+        "evidence": [
+          {
+            "start": 329,
+            "end": 446,
+            "text": "利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。"
+          }
+        ]
+      },
+      "answer": "逾期本金在适用正常年利率基础上加收1.8个百分点；该逾期附加只作用于逾期本金，不作用于正常本金或已计利息，因此不能对利息加收。",
+      "grounded": true,
+      "citedTexts": [
+        "尚未归还本金加已承兑未到期银票票面额计算。应计利息和未承兑订单不占额。当天还款只有清算成功才释放占额；‘已提交’状态不释放。系统展示的可用额为总额减占额，负值时冻结新增提款，不对存量合同自动加息。\n\n经销商提交每台农机的序列号和库存地，核验员抽样核对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。\n\n利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n",
+        "季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。\n\n演练记录：2026年8月10日以常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "dca83dd642b34b89b67417d936873f6e",
+      "question": "绛帆客户收到保险试算书但退费还没到账，是否已经降低融资本金？",
+      "gold": {
+        "referenceAnswer": "没有。预计退费只登记，实收前不算还本，剩余本金按7.2%年单利、实际天数/360继续计息。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "试算书即结清证明",
+          "停止所有计息"
+        ],
+        "requiredFacts": [
+          "未实收不算还本",
+          "7.2%年单利",
+          "实际天数/360"
+        ],
+        "evidence": [
+          {
+            "start": 240,
+            "end": 363,
+            "text": "## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。"
+          },
+          {
+            "start": 365,
+            "end": 548,
+            "text": "## 操作与核对\n\n经办核验退保申请签名、保单号、融资合同号三者关联后，向保险人请求确认退费净额。保险人的试算书与实付回单分开归档，试算书可能因结算日期变动而变化，因此不得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。"
+          },
+          {
+            "start": 550,
+            "end": 683,
+            "text": "## 利息口径\n\n实收退费前，剩余本金按年单利7.2%、实际天数/360继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。"
+          }
+        ]
+      },
+      "answer": "没有。退费未实收前只登记预计款，不能当作本金已经偿还；且试算书可能因结算日期变动而变化，不得提前制作“结清”证明。因此收到保险试算书但退费尚未到账，不能视为融资本金已经降低。",
+      "grounded": true,
+      "citedTexts": [
+        "至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n",
+        "，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n## 操作与核对\n\n经办核验退保申请签名、保单号、融资合同号三者关联后，向保险人请求确认退费净额。保险人的试算书与实付回单分开归档，试算书可能因结算日期变动而变化，因此不得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "fd1be2c6c79848009991f614a5b44f6f",
+      "question": "绛帆解约时可收未来未发生利息、重复退保损失或管理费吗？",
+      "gold": {
+        "referenceAnswer": "不收未发生未来利息；退保损失已体现在保险净退费中不可再扣，正常分期管理费不重复征收。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "把所有剩余期利息一并收清"
+        ],
+        "requiredFacts": [
+          "不收未来利息",
+          "不重复扣退保损失",
+          "不重复收管理费"
+        ],
+        "evidence": [
+          {
+            "start": 114,
+            "end": 238,
+            "text": "## 清偿项的边界\n\n解约应清偿额由未偿融资本金、截至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。"
+          }
+        ]
+      },
+      "answer": "不可以。解约结算仅包括截至结算日已发生的融资利息和固定解约手续费300元；未发生的未来利息不提前收取；保单退保损失已体现在保险人退费净额中，融资方不得以同一名目再扣一次；正常分期的账户管理费不在解约结算中重复征收。",
+      "grounded": true,
+      "citedTexts": [
+        "至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "08673d3f08b2459e9c2c8997fcd8dbb8",
+      "question": "苔原常规借款30万元8月10日提款、8月20日还清，利息多少？",
+      "gold": {
+        "referenceAnswer": "计息10天，300000×3.6%×10÷360=300元，起息日计入、还清日不计入。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "11天330元",
+          "按365天计息"
+        ],
+        "requiredFacts": [
+          "10天",
+          "3.6%",
+          "利息300元"
+        ],
+        "evidence": [
+          {
+            "start": 329,
+            "end": 446,
+            "text": "利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。"
+          },
+          {
+            "start": 448,
+            "end": 554,
+            "text": "每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。"
+          },
+          {
+            "start": 556,
+            "end": 670,
+            "text": "演练记录：2026年8月10日以常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。"
+          }
+        ]
+      },
+      "answer": "按演练记录，2026年8月10日以常规利率提款30万元、8月20日全额清算还清，中间无还款也未逾期。常规年利率3.6%，起息日计入、还清日不计入，实际计息10天，利息=300000×3.6%×10÷360=300元。",
+      "grounded": true,
+      "citedTexts": [
+        "季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。\n\n",
+        "际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。\n\n演练记录：2026年8月10日以常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "c0287d9930b748d6aae0f6514fa8fe74",
+      "question": "绛帆因产品备案问题被监管正式撤销，解约手续费和已发生融资利息怎样处理？",
+      "gold": {
+        "referenceAnswer": "免300元解约手续费，已发生融资利息仍清偿，须有针对产品的正式撤销决定。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "已发生利息也一律免除",
+          "自行投诉即满足"
+        ],
+        "requiredFacts": [
+          "免解约手续费",
+          "已发生融资利息仍清偿",
+          "正式监管撤销决定"
+        ],
+        "evidence": [
+          {
+            "start": 802,
+            "end": 906,
+            "text": "## 监管强制撤销例外\n\n因保险人产品备案问题被监管要求撤销的合同，免收300元解约手续费；已发生融资利息仍清偿。投保人自愿退保、无力继续缴费或自行投诉，不自动视为监管强制撤销，须有针对该产品的正式撤销决定。"
+          }
+        ]
+      },
+      "answer": "因保险人产品备案问题被监管要求撤销的合同，免收300元解约手续费；已发生的融资利息仍需清偿。该免手续费例外对JF-1和JF-2两版均适用。",
+      "grounded": true,
+      "citedTexts": [
+        "000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。\n\n## 监管强制撤销例外\n\n因保险人产品备案问题被监管要求撤销的合同，免收300元解约手续费；已发生融资利息仍清偿。投保人自愿退保、无力继续缴费或自行投诉，不自动视为监管强制撤销，须有针对该产品的正式撤销决定。\n\n## 版本过渡\n\nJF-1约定固定解约手续费500元。2026年9月18日前签订且未变更的存量融资合同继续执行JF-1；之后新签的合同用JF-2的300元。单纯更换联系地址不是合同重签，不把老合同自动迁为新版。监管强制撤销免手续费的例外对两版均适用。\n\n## 未提供内容\n\n本规则不含各险种的退保现金价值公式、被保险人健康资料或投资收益预测。退费净额需要保险人确认，不可由融资年利率反推出保单现金价值。\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "fadc74b7ce2d4959b61de822955d5d7d",
+      "question": "栖衡买方对容差外交量未在16:00前选择，是否自动接受并退担保？",
+      "gold": {
+        "referenceAnswer": "不自动接受或拒绝，进入争议挂起，不释放担保款。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "沉默即接受",
+          "未选即全量拒绝"
+        ],
+        "requiredFacts": [
+          "不自动接受或拒绝",
+          "争议挂起",
+          "不释放担保款"
+        ],
+        "evidence": [
+          {
+            "start": 3153,
+            "end": 3280,
+            "text": "数量容差仅用于交收完成的判断。若实际合格交量落在98%至102%之外，买方可选择接受实际量并以名义量和实交量的差额结算违约，或拒绝整批并启动全量平仓；须在当日16:00前通知。买方没有在期限内选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。"
+          }
+        ]
+      },
+      "answer": "不是。买方未在当日16:00前选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。",
+      "grounded": true,
+      "citedTexts": [
+        "ivery time for a later transfer, and a correct party name could not cure the wrong allowance year.\n\n数量容差仅用于交收完成的判断。若实际合格交量落在98%至102%之外，买方可选择接受实际量并以名义量和实交量的差额结算违约，或拒绝整批并启动全量平仓；须在当日16:00前通知。买方没有在期限内选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。\n\n",
+        "02%之外，买方可选择接受实际量并以名义量和实交量的差额结算违约，或拒绝整批并启动全量平仓；须在当日16:00前通知。买方没有在期限内选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。\n\n附录丙：Nomination lists and later corrections\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "ee85a2280a8a44109b65b35d12037c88",
+      "question": "绛帆解约时可收未来未发生利息、重复退保损失或管理费吗？",
+      "gold": {
+        "referenceAnswer": "不收未发生未来利息；退保损失已体现在保险净退费中不可再扣，正常分期管理费不重复征收。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "把所有剩余期利息一并收清"
+        ],
+        "requiredFacts": [
+          "不收未来利息",
+          "不重复扣退保损失",
+          "不重复收管理费"
+        ],
+        "evidence": [
+          {
+            "start": 114,
+            "end": 238,
+            "text": "## 清偿项的边界\n\n解约应清偿额由未偿融资本金、截至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。"
+          }
+        ]
+      },
+      "answer": "不可以。解约应清偿额仅由未偿融资本金、截至结算日已发生的融资利息和固定解约手续费300元构成；未发生的未来利息不提前收取，保单退保损失已体现在保险人退费净额中，融资方不得以同一名目再扣一次，正常分期的账户管理费也不在解约结算中重复征收。",
+      "grounded": true,
+      "citedTexts": [
+        "# 绛帆保费融资清算 JF-2\n\n2026年9月18日起适用于新增融资合同，以下名称与金额均为虚构。融资方先代投保人向保险人支付全年保费，投保人再向融资方分期偿还。保险赔款归属仍由保单决定；分期融资余额不等同于保险责任限额。\n\n## 清偿项的边界\n\n解约应清偿额由未偿融资本金、截至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "c3127f14dace48f2bb43a90c30806f33",
+      "question": "栖衡正常演练实交990吨可算完成吗，应付货款多少？",
+      "gold": {
+        "referenceAnswer": "990在980至1020吨内且年度账户匹配，可按容差完成；货款990×80=79200元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按1000吨付80000元",
+          "990吨必定违约"
+        ],
+        "requiredFacts": [
+          "990吨在98%至102%容差内",
+          "按实交量",
+          "货款79200元"
+        ],
+        "evidence": [
+          {
+            "start": 1609,
+            "end": 1757,
+            "text": "交收前一工作日17:00前双方确认可交割名册。交收日12:00前卖方完成配额过户，买方在15:00前付对应已交量货款，未交量不先付款。合同允许交量在名义量的98%至102%之间（含边界），双方不另签数量变更；货款按实际合格交量乘合同单价，不能按名义量付款。年度或账户不匹配的配额一律不计合格交量。"
+          },
+          {
+            "start": 11053,
+            "end": 11182,
+            "text": "少交演练：合同名义1000吨，单价80元/吨；交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。"
+          }
+        ]
+      },
+      "answer": "可以算完成。合同名义1000吨，正常演练实交990吨，处于98%至102%的容差范围内，且年度账户匹配，因此可视为正常完成交收。应付货款按单价80元/吨计算：990×80=79,200元。",
+      "grounded": true,
+      "citedTexts": [
+        "efault value, and unresolved security treatment remains subject to the original dispute procedure.\n\n少交演练：合同名义1000吨，单价80元/吨；交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。\n\n",
+        "the need for registry evidence or release security before the required reconciliation is complete.\n\nQH-3把少交赔偿限定为担保款金额。QH-4取消此上限，以实际公式计算并可追补。10月1日前已签合同仍用QH-3；10月1日起新签合同用QH-4，不因沿用旧交易号前缀而适用旧版。交量98%至102%的容差两版相同。\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "c8f8124b76544caa9e0aecc35b42efd7",
+      "question": "绛帆9月1日旧合同只在10月更新联系地址，普通自愿退保收300还是500元手续费？",
+      "gold": {
+        "referenceAnswer": "继续按JF-1收500元；更新地址不是重签，不自动适用JF-2。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按退保时新版收300元"
+        ],
+        "requiredFacts": [
+          "JF-1",
+          "500元",
+          "更改地址不等于重签"
+        ],
+        "evidence": [
+          {
+            "start": 908,
+            "end": 1033,
+            "text": "## 版本过渡\n\nJF-1约定固定解约手续费500元。2026年9月18日前签订且未变更的存量融资合同继续执行JF-1；之后新签的合同用JF-2的300元。单纯更换联系地址不是合同重签，不把老合同自动迁为新版。监管强制撤销免手续费的例外对两版均适用。"
+          }
+        ]
+      },
+      "answer": "该合同签订于2026年9月18日之前，且仅更新联系地址不构成合同重签，因此继续执行JF-1，普通自愿退保应收取500元固定解约手续费。普通自愿退保不属于监管强制撤销，不适用免收300元手续费的例外。",
+      "grounded": true,
+      "citedTexts": [
+        "制撤销例外\n\n因保险人产品备案问题被监管要求撤销的合同，免收300元解约手续费；已发生融资利息仍清偿。投保人自愿退保、无力继续缴费或自行投诉，不自动视为监管强制撤销，须有针对该产品的正式撤销决定。\n\n## 版本过渡\n\nJF-1约定固定解约手续费500元。2026年9月18日前签订且未变更的存量融资合同继续执行JF-1；之后新签的合同用JF-2的300元。单纯更换联系地址不是合同重签，不把老合同自动迁为新版。监管强制撤销免手续费的例外对两版均适用。\n\n",
+        "2026年9月18日前签订且未变更的存量融资合同继续执行JF-1；之后新签的合同用JF-2的300元。单纯更换联系地址不是合同重签，不把老合同自动迁为新版。监管强制撤销免手续费的例外对两版均适用。\n\n## 未提供内容\n\n本规则不含各险种的退保现金价值公式、被保险人健康资料或投资收益预测。退费净额需要保险人确认，不可由融资年利率反推出保单现金价值。\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "94af3107ffec445082e84b4cc8ced90e",
+      "question": "绛帆演算客户是否患有既往疾病？",
+      "gold": {
+        "referenceAnswer": "文档未提供被保险人健康资料，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "推测客户健康状况"
+        ],
+        "requiredFacts": [
+          "文档未提供被保险人健康资料",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "d291adb86fe944058efacb73a8665cd8",
+      "question": "苔原授信下个季度的基准利率会是多少？",
+      "gold": {
+        "referenceAnswer": "文档未提供未来基准利率预测，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把固定演练年利率当未来预测"
+        ],
+        "requiredFacts": [
+          "文档未提供未来基准利率预测",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "b7797d63533b40afa54e63f78e087884",
+      "question": "栖衡10月2日新签却使用旧号前缀的合同，赔偿仍以担保款封顶吗？",
+      "gold": {
+        "referenceAnswer": "按QH-4，旧号前缀不改变版本，取消担保款封顶，不足仍须追补。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "旧号就按QH-3"
+        ],
+        "requiredFacts": [
+          "QH-4",
+          "不按旧号前缀决定",
+          "赔偿不以担保款封顶"
+        ],
+        "evidence": [
+          {
+            "start": 9506,
+            "end": 9627,
+            "text": "担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。"
+          },
+          {
+            "start": 17431,
+            "end": 17538,
+            "text": "QH-3把少交赔偿限定为担保款金额。QH-4取消此上限，以实际公式计算并可追补。10月1日前已签合同仍用QH-3；10月1日起新签合同用QH-4，不因沿用旧交易号前缀而适用旧版。交量98%至102%的容差两版相同。"
+          }
+        ]
+      },
+      "answer": "不以担保款封顶。10月1日起新签合同适用QH-4，QH-4取消担保款金额上限，按实际公式计算并可追补；不因沿用旧交易号前缀而适用旧版QH-3。",
+      "grounded": true,
+      "citedTexts": [
+        "the need for registry evidence or release security before the required reconciliation is complete.\n\nQH-3把少交赔偿限定为担保款金额。QH-4取消此上限，以实际公式计算并可追补。10月1日前已签合同仍用QH-3；10月1日起新签合同用QH-4，不因沿用旧交易号前缀而适用旧版。交量98%至102%的容差两版相同。\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "178aa8b79e724e7db6ac44b35a37c3ef",
+      "question": "栖衡真实配额登记账户号码是多少？",
+      "gold": {
+        "referenceAnswer": "文档未提供实际配额登记账户号，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "将交易号或金额编成账户号"
+        ],
+        "requiredFacts": [
+          "文档未提供实际配额登记账户号",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "ecf185aaad2c49a09eb545bfb426af19",
+      "question": "绛帆客户收到保险试算书但退费还没到账，是否已经降低融资本金？",
+      "gold": {
+        "referenceAnswer": "没有。预计退费只登记，实收前不算还本，剩余本金按7.2%年单利、实际天数/360继续计息。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "试算书即结清证明",
+          "停止所有计息"
+        ],
+        "requiredFacts": [
+          "未实收不算还本",
+          "7.2%年单利",
+          "实际天数/360"
+        ],
+        "evidence": [
+          {
+            "start": 240,
+            "end": 363,
+            "text": "## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。"
+          },
+          {
+            "start": 365,
+            "end": 548,
+            "text": "## 操作与核对\n\n经办核验退保申请签名、保单号、融资合同号三者关联后，向保险人请求确认退费净额。保险人的试算书与实付回单分开归档，试算书可能因结算日期变动而变化，因此不得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。"
+          },
+          {
+            "start": 550,
+            "end": 683,
+            "text": "## 利息口径\n\n实收退费前，剩余本金按年单利7.2%、实际天数/360继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。"
+          }
+        ]
+      },
+      "answer": "没有。退费未实收前只登记预计款，不能当作本金已经偿还；保险人的试算书可能因结算日期变动而变化，也不得提前制作“结清”证明。因此仅收到试算书、退费尚未到账时，未偿融资本金并未降低。",
+      "grounded": true,
+      "citedTexts": [
+        "至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n## 操作与核对\n\n经办核验退保申请签名、保单号、融资合同号三者关联后，向保险人请求确认退费净额。保险人的试算书与实付回单分开归档，试算书可能因结算日期变动而变化，因此不得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "8a44374575ca4f918ca61a565bd4fc85",
+      "question": "栖衡交入的是减排量而非指定年度配额，转出申请已提交，算交收了吗？",
+      "gold": {
+        "referenceAnswer": "不算，不能用项目减排量替代；须指定年度配额实际划入约定账户且可用，截图不算回单。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "有截图即可算交收"
+        ],
+        "requiredFacts": [
+          "项目减排量不可替代",
+          "指定年度配额实际划入且可用",
+          "申请截图不算完成"
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 129,
+            "text": "栖衡碳配额远期交收约定 QH-4\n本约定为虚构企业间人民币结算业务，不是真实交易所规则。2026年10月1日起签订的合同适用。标的是指定年度碳配额，单位为吨，不能以项目减排量替代。交收量以登记系统实际划入合约约定账户的可用配额为准；转出申请截图不是交收回单。"
+          },
+          {
+            "start": 1609,
+            "end": 1757,
+            "text": "交收前一工作日17:00前双方确认可交割名册。交收日12:00前卖方完成配额过户，买方在15:00前付对应已交量货款，未交量不先付款。合同允许交量在名义量的98%至102%之间（含边界），双方不另签数量变更；货款按实际合格交量乘合同单价，不能按名义量付款。年度或账户不匹配的配额一律不计合格交量。"
+          }
+        ]
+      },
+      "answer": "不算。该约定明确标的为指定年度碳配额，不能以项目减排量替代；交收量以登记系统实际划入合约约定账户的可用配额为准，转出申请截图不是交收回单。因此，交入减排量且仅提交转出申请，不构成交收。",
+      "grounded": true,
+      "citedTexts": [
+        "栖衡碳配额远期交收约定 QH-4\n本约定为虚构企业间人民币结算业务，不是真实交易所规则。2026年10月1日起签订的合同适用。标的是指定年度碳配额，单位为吨，不能以项目减排量替代。交收量以登记系统实际划入合约约定账户的可用配额为准；转出申请截图不是交收回单。\n\n",
+        "业务，不是真实交易所规则。2026年10月1日起签订的合同适用。标的是指定年度碳配额，单位为吨，不能以项目减排量替代。交收量以登记系统实际划入合约约定账户的可用配额为准；转出申请截图不是交收回单。\n\n附录甲：Counterparty preparation and authority records\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "72a6607cf1214d899a1f4afb8fd929fc",
+      "question": "苔原额度快照中还有多少万元可用？哪些金额不占额？",
+      "gold": {
+        "referenceAnswer": "占额60+30=90万元，可用120−90=30万元；0.2万元应计利息和10万元未承兑订单不占额。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "可用19.8万元",
+          "已提交还款立即释放"
+        ],
+        "requiredFacts": [
+          "占额90万元",
+          "可用30万元",
+          "应计利息与未承兑订单不占额"
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 100,
+            "text": "苔原农机循环授信作业卡 TY-2026B\n2026年7月15日起生效。仅用于虚构的农机经销商季节性周转贷款。授信总额120万元，任何一笔借款都必须先通过库存盘点；未用额度不是存款，不能抵扣已发生利息。"
+          },
+          {
+            "start": 102,
+            "end": 203,
+            "text": "占额按尚未归还本金加已承兑未到期银票票面额计算。应计利息和未承兑订单不占额。当天还款只有清算成功才释放占额；‘已提交’状态不释放。系统展示的可用额为总额减占额，负值时冻结新增提款，不对存量合同自动加息。"
+          },
+          {
+            "start": 556,
+            "end": 670,
+            "text": "演练记录：2026年8月10日以常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。"
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "66651d07d576462287fcff58f083ceb2",
+      "question": "栖衡真实配额登记账户号码是多少？",
+      "gold": {
+        "referenceAnswer": "文档未提供实际配额登记账户号，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "将交易号或金额编成账户号"
+        ],
+        "requiredFacts": [
+          "文档未提供实际配额登记账户号",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "901076005ec14b58b1bf4b61f88dd1b1",
+      "question": "苔原授信下个季度的基准利率会是多少？",
+      "gold": {
+        "referenceAnswer": "文档未提供未来基准利率预测，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把固定演练年利率当未来预测"
+        ],
+        "requiredFacts": [
+          "文档未提供未来基准利率预测",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "737af15e4ce749cd9286e9b245b469d1",
+      "question": "栖衡买方对容差外交量未在16:00前选择，是否自动接受并退担保？",
+      "gold": {
+        "referenceAnswer": "不自动接受或拒绝，进入争议挂起，不释放担保款。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "沉默即接受",
+          "未选即全量拒绝"
+        ],
+        "requiredFacts": [
+          "不自动接受或拒绝",
+          "争议挂起",
+          "不释放担保款"
+        ],
+        "evidence": [
+          {
+            "start": 3153,
+            "end": 3280,
+            "text": "数量容差仅用于交收完成的判断。若实际合格交量落在98%至102%之外，买方可选择接受实际量并以名义量和实交量的差额结算违约，或拒绝整批并启动全量平仓；须在当日16:00前通知。买方没有在期限内选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。"
+          }
+        ]
+      },
+      "answer": "不是。买方未在当日16:00前选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。",
+      "grounded": true,
+      "citedTexts": [
+        "ivery time for a later transfer, and a correct party name could not cure the wrong allowance year.\n\n数量容差仅用于交收完成的判断。若实际合格交量落在98%至102%之外，买方可选择接受实际量并以名义量和实交量的差额结算违约，或拒绝整批并启动全量平仓；须在当日16:00前通知。买方没有在期限内选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。\n\n",
+        "02%之外，买方可选择接受实际量并以名义量和实交量的差额结算违约，或拒绝整批并启动全量平仓；须在当日16:00前通知。买方没有在期限内选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。\n\n附录丙：Nomination lists and later corrections\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "86e6e1de0fde4ae0a0dad8f2cea3ad10",
+      "question": "绛帆演算乙退费7600元后，还欠多少？款项先后抵什么？",
+      "gold": {
+        "referenceAnswer": "先抵120元利息、300元手续费，余7180元抵本金；剩余本金820元由投保人补齐。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "只欠400元",
+          "退费自动抹去所有欠款"
+        ],
+        "requiredFacts": [
+          "先利息120元再手续费300元再本金",
+          "抵本金7180元",
+          "补齐820元"
+        ],
+        "evidence": [
+          {
+            "start": 240,
+            "end": 363,
+            "text": "## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。"
+          },
+          {
+            "start": 685,
+            "end": 800,
+            "text": "## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。"
+          }
+        ]
+      },
+      "answer": "演算乙未偿本金8000元、截至结算日利息120元，实收退费7600元。按退费流向，款项依次抵扣已发生利息120元、300元手续费、未偿本金，合计需清偿8420元；7600元不足，尚欠820元，由投保人补齐。",
+      "grounded": true,
+      "citedTexts": [
+        "0继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。\n\n## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。\n\n",
+        "至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "98c1d0ed8aff438ebe7ae0e0315a3320",
+      "question": "苔原常规借款30万元8月10日提款、8月20日还清，利息多少？",
+      "gold": {
+        "referenceAnswer": "计息10天，300000×3.6%×10÷360=300元，起息日计入、还清日不计入。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "11天330元",
+          "按365天计息"
+        ],
+        "requiredFacts": [
+          "10天",
+          "3.6%",
+          "利息300元"
+        ],
+        "evidence": [
+          {
+            "start": 329,
+            "end": 446,
+            "text": "利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。"
+          },
+          {
+            "start": 448,
+            "end": 554,
+            "text": "每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。"
+          },
+          {
+            "start": 556,
+            "end": 670,
+            "text": "演练记录：2026年8月10日以常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。"
+          }
+        ]
+      },
+      "answer": "按常规年利率3.6%、起息日计入且还清日不计入，实际计息10天（8月10日至8月19日），利息=300000×3.6%×10÷360=300元。",
+      "grounded": true,
+      "citedTexts": [
+        "季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。\n\n演练记录：2026年8月10日以常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。\n\n",
+        "尚未归还本金加已承兑未到期银票票面额计算。应计利息和未承兑订单不占额。当天还款只有清算成功才释放占额；‘已提交’状态不释放。系统展示的可用额为总额减占额，负值时冻结新增提款，不对存量合同自动加息。\n\n经销商提交每台农机的序列号和库存地，核验员抽样核对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。\n\n利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "3aded813cd5045d493a5b0067c83e3a2",
+      "question": "栖衡10月2日新签却使用旧号前缀的合同，赔偿仍以担保款封顶吗？",
+      "gold": {
+        "referenceAnswer": "按QH-4，旧号前缀不改变版本，取消担保款封顶，不足仍须追补。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "旧号就按QH-3"
+        ],
+        "requiredFacts": [
+          "QH-4",
+          "不按旧号前缀决定",
+          "赔偿不以担保款封顶"
+        ],
+        "evidence": [
+          {
+            "start": 9506,
+            "end": 9627,
+            "text": "担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。"
+          },
+          {
+            "start": 17431,
+            "end": 17538,
+            "text": "QH-3把少交赔偿限定为担保款金额。QH-4取消此上限，以实际公式计算并可追补。10月1日前已签合同仍用QH-3；10月1日起新签合同用QH-4，不因沿用旧交易号前缀而适用旧版。交量98%至102%的容差两版相同。"
+          }
+        ]
+      },
+      "answer": "不封顶。10月1日起新签合同适用QH-4，QH-4取消以担保款金额为上限，改按实际公式计算并可追补；且不因沿用旧交易号前缀而适用旧版QH-3。",
+      "grounded": true,
+      "citedTexts": [
+        "the need for registry evidence or release security before the required reconciliation is complete.\n\nQH-3把少交赔偿限定为担保款金额。QH-4取消此上限，以实际公式计算并可追补。10月1日前已签合同仍用QH-3；10月1日起新签合同用QH-4，不因沿用旧交易号前缀而适用旧版。交量98%至102%的容差两版相同。\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "ab69cb16575240dfb5bdc7db9ea3338c",
+      "question": "栖衡少交跌出容差后，参考价低于合同价时赔偿是否为负数？",
+      "gold": {
+        "referenceAnswer": "不为负，公式使用max(参考价−合同价,0)，赔偿为零，不让买方倒贴。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按负赔偿退卖方款"
+        ],
+        "requiredFacts": [
+          "价差下限零",
+          "赔偿为零",
+          "买方不倒贴"
+        ],
+        "evidence": [
+          {
+            "start": 7889,
+            "end": 8034,
+            "text": "差额平仓：卖方少交且买方选择接受实际量时，少交差额=名义量−实际合格交量；赔偿额=少交差额×max(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。"
+          }
+        ]
+      },
+      "answer": "不是负数。赔偿额按“少交差额×max(替代采购参考价−合同单价,0)”计算，价格差为负时赔偿为零，不要求买方倒贴。",
+      "grounded": true,
+      "citedTexts": [
+        "ax(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。\n\n附录己：Payment instructions and separate bank evidence\n\n",
+        "io as completely delivered merely because the aggregate number of units matches a portfolio total.\n\n差额平仓：卖方少交且买方选择接受实际量时，少交差额=名义量−实际合格交量；赔偿额=少交差额×max(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "7d8625e9bebb409e8261a665dd0587c1",
+      "question": "栖衡少交演练接受950吨，货款、违约赔偿、担保外补赔各多少？",
+      "gold": {
+        "referenceAnswer": "货款950×80=76000元；全差额50吨×(92−80)=600元赔偿；500元担保先抵赔偿，仍补100元，不自动抵货款。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "仅按30吨赔360元",
+          "赔偿上限500元",
+          "把担保500从货款抵扣"
+        ],
+        "requiredFacts": [
+          "货款76000元",
+          "赔偿600元",
+          "担保外补赔100元",
+          "担保不自动抵正常货款"
+        ],
+        "evidence": [
+          {
+            "start": 1609,
+            "end": 1757,
+            "text": "交收前一工作日17:00前双方确认可交割名册。交收日12:00前卖方完成配额过户，买方在15:00前付对应已交量货款，未交量不先付款。合同允许交量在名义量的98%至102%之间（含边界），双方不另签数量变更；货款按实际合格交量乘合同单价，不能按名义量付款。年度或账户不匹配的配额一律不计合格交量。"
+          },
+          {
+            "start": 7889,
+            "end": 8034,
+            "text": "差额平仓：卖方少交且买方选择接受实际量时，少交差额=名义量−实际合格交量；赔偿额=少交差额×max(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。"
+          },
+          {
+            "start": 9506,
+            "end": 9627,
+            "text": "担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。"
+          },
+          {
+            "start": 11053,
+            "end": 11182,
+            "text": "少交演练：合同名义1000吨，单价80元/吨；交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。"
+          }
+        ]
+      },
+      "answer": "根据原文，少交演练的合同名义为1000吨、单价80元/吨，交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨；卖方已缴担保款500元，没有迟延费。原文未给出货款、违约赔偿及担保外补赔的具体计算公式或金额，因此无法据此算出各项数额。",
+      "grounded": true,
+      "citedTexts": [
+        "efault value, and unresolved security treatment remains subject to the original dispute procedure.\n\n少交演练：合同名义1000吨，单价80元/吨；交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。\n\n",
+        "50吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。\n\n附录辛：Evidence for the reference quotation\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "a3a1f3befb4f4aeab9012670b140f292",
+      "question": "苔原授信客户在其他银行还有多少负债？",
+      "gold": {
+        "referenceAnswer": "文档未提供客户他行负债，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把60万元本行本金当他行负债"
+        ],
+        "requiredFacts": [
+          "文档未提供客户他行负债",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "d41ce9aa343d47f08be765fc9b6004d1",
+      "question": "7月15日以后苔原旧借据提交还款但未清算，按哪版释放规则？",
+      "gold": {
+        "referenceAnswer": "按TY-2026B，所有释放均以清算成功为准，旧借据也不能凭提交申请释放。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "旧借据沿用提交即释放"
+        ],
+        "requiredFacts": [
+          "TY-2026B",
+          "清算成功才释放",
+          "不区分借据签署日期"
+        ],
+        "evidence": [
+          {
+            "start": 774,
+            "end": 875,
+            "text": "TY-2026A曾把‘提交还款申请’作为释放时点。TY-2026B取消该处理，从生效日起所有释放均以清算成功为准，不区分借据签署日期。历史上已释放的额度不倒算，但仍未清算的申请不能被再次计算为可用额度。"
+          }
+        ]
+      },
+      "answer": "7月15日以后，苔原旧借据提交还款但未清算的，应按TY-2026B的释放规则处理：从生效日起所有释放均以清算成功为准，不区分借据签署日期；仅“提交还款申请”不再作为释放时点，未清算的申请不能计算为可用额度。",
+      "grounded": true,
+      "citedTexts": [
+        "2026A曾把‘提交还款申请’作为释放时点。TY-2026B取消该处理，从生效日起所有释放均以清算成功为准，不区分借据签署日期。历史上已释放的额度不倒算，但仍未清算的申请不能被再次计算为可用额度。\n\n本卡不载明客户真实身份、他行负债、最终核定授信模型参数或未来基准利率预测。实际审批另有独立档案，本作业卡的演练不构成真实授信。\n",
+        "例外：连续两期未交盘点表时，冻结新增提款；既有借款仍按原借据还本计息。补齐两期盘点表并经核验岗解除标记后恢复，客户经理单独签字不能解除。灾害展期只延后本金到期日，不自动免息或提高120万元授信额。\n\nTY-2026A曾把‘提交还款申请’作为释放时点。TY-2026B取消该处理，从生效日起所有释放均以清算成功为准，不区分借据签署日期。历史上已释放的额度不倒算，但仍未清算的申请不能被再次计算为可用额度。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "3ff590b7f6624d938526a59933d7f825",
+      "question": "苔原额度快照中还有多少万元可用？哪些金额不占额？",
+      "gold": {
+        "referenceAnswer": "占额60+30=90万元，可用120−90=30万元；0.2万元应计利息和10万元未承兑订单不占额。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "可用19.8万元",
+          "已提交还款立即释放"
+        ],
+        "requiredFacts": [
+          "占额90万元",
+          "可用30万元",
+          "应计利息与未承兑订单不占额"
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 100,
+            "text": "苔原农机循环授信作业卡 TY-2026B\n2026年7月15日起生效。仅用于虚构的农机经销商季节性周转贷款。授信总额120万元，任何一笔借款都必须先通过库存盘点；未用额度不是存款，不能抵扣已发生利息。"
+          },
+          {
+            "start": 102,
+            "end": 203,
+            "text": "占额按尚未归还本金加已承兑未到期银票票面额计算。应计利息和未承兑订单不占额。当天还款只有清算成功才释放占额；‘已提交’状态不释放。系统展示的可用额为总额减占额，负值时冻结新增提款，不对存量合同自动加息。"
+          },
+          {
+            "start": 556,
+            "end": 670,
+            "text": "演练记录：2026年8月10日以常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。"
+          }
+        ]
+      },
+      "answer": "根据额度快照记录：本金余额60万元、已承兑未到期票面30万元，占额合计90万元；授信总额120万元，因此可用额为120-90=30万元。应计利息0.2万元和未承兑订单10万元不占额。",
+      "grounded": true,
+      "citedTexts": [
+        "苔原农机循环授信作业卡 TY-2026B\n2026年7月15日起生效。仅用于虚构的农机经销商季节性周转贷款。授信总额120万元，任何一笔借款都必须先通过库存盘点；未用额度不是存款，不能抵扣已发生利息。\n\n占额按尚未归还本金加已承兑未到期银票票面额计算。应计利息和未承兑订单不占额。当天还款只有清算成功才释放占额；‘已提交’状态不释放。系统展示的可用额为总额减占额，负值时冻结新增提款，不对存量合同自动加息。\n\n",
+        "常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。\n\n风险例外：连续两期未交盘点表时，冻结新增提款；既有借款仍按原借据还本计息。补齐两期盘点表并经核验岗解除标记后恢复，客户经理单独签字不能解除。灾害展期只延后本金到期日，不自动免息或提高120万元授信额。\n\nTY-2026A曾把‘提交还款申请’作为释放时点。TY-2026B取消该处理，从生效日起所有释放均以清算成功为准，不区分借据签署日期。历史上已释放的额度不倒算，但仍未清算的申请不能被再次计算为可用额度。\n\n本卡不载明客户真实身份、他行负债、最终核定授信模型参数或未来基准利率预测。实际审批另有独立档案，本作业卡的演练不构成真实授信。\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "a7a87fd35abb4805be2552e2b069b3dc",
+      "question": "绛帆融资方能因分期欠款自行宣布保单失效吗？退保由谁发起确认？",
+      "gold": {
+        "referenceAnswer": "不能自行宣布失效；投保人发起，取得保险人确认。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "融资方单方终止保险责任"
+        ],
+        "requiredFacts": [
+          "融资方不能自行宣布失效",
+          "投保人发起",
+          "保险人确认"
+        ],
+        "evidence": [
+          {
+            "start": 240,
+            "end": 363,
+            "text": "## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。"
+          }
+        ]
+      },
+      "answer": "不能。退保须由投保人发起并取得保险人确认，融资方不能自行宣布保单失效。",
+      "grounded": true,
+      "citedTexts": [
+        "至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n## 操作与核对\n\n经办核验退保申请签名、保单号、融资合同号三者关联后，向保险人请求确认退费净额。保险人的试算书与实付回单分开归档，试算书可能因结算日期变动而变化，因此不得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "99ac7e091d894fa6a53b62e081a51f57",
+      "question": "苔原连续两期没交盘点表，能否用灾害展期使新增提款自动恢复？",
+      "gold": {
+        "referenceAnswer": "不能。须补齐两期表并由核验岗解除；展期仅延本金到期日，不提高授信也不自动免息。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "客户经理单签可解除",
+          "展期自动扩大额度"
+        ],
+        "requiredFacts": [
+          "补齐两期盘点表",
+          "核验岗解除标记",
+          "展期不恢复新增提款"
+        ],
+        "evidence": [
+          {
+            "start": 672,
+            "end": 772,
+            "text": "风险例外：连续两期未交盘点表时，冻结新增提款；既有借款仍按原借据还本计息。补齐两期盘点表并经核验岗解除标记后恢复，客户经理单独签字不能解除。灾害展期只延后本金到期日，不自动免息或提高120万元授信额。"
+          }
+        ]
+      },
+      "answer": "不能。连续两期未交盘点表时，会冻结新增提款；必须补齐两期盘点表并经核验岗解除标记后才能恢复，客户经理单独签字不能解除。灾害展期只延后本金到期日，不自动免息或提高授信额，因此不能使新增提款自动恢复。",
+      "grounded": true,
+      "citedTexts": [
+        "常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。\n\n风险例外：连续两期未交盘点表时，冻结新增提款；既有借款仍按原借据还本计息。补齐两期盘点表并经核验岗解除标记后恢复，客户经理单独签字不能解除。灾害展期只延后本金到期日，不自动免息或提高120万元授信额。\n\nTY-2026A曾把‘提交还款申请’作为释放时点。TY-2026B取消该处理，从生效日起所有释放均以清算成功为准，不区分借据签署日期。历史上已释放的额度不倒算，但仍未清算的申请不能被再次计算为可用额度。\n\n本卡不载明客户真实身份、他行负债、最终核定授信模型参数或未来基准利率预测。实际审批另有独立档案，本作业卡的演练不构成真实授信。\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "c9a8bad07d724ce7b4b1bf8384e76dc8",
+      "question": "绛帆因产品备案问题被监管正式撤销，解约手续费和已发生融资利息怎样处理？",
+      "gold": {
+        "referenceAnswer": "免300元解约手续费，已发生融资利息仍清偿，须有针对产品的正式撤销决定。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "已发生利息也一律免除",
+          "自行投诉即满足"
+        ],
+        "requiredFacts": [
+          "免解约手续费",
+          "已发生融资利息仍清偿",
+          "正式监管撤销决定"
+        ],
+        "evidence": [
+          {
+            "start": 802,
+            "end": 906,
+            "text": "## 监管强制撤销例外\n\n因保险人产品备案问题被监管要求撤销的合同，免收300元解约手续费；已发生融资利息仍清偿。投保人自愿退保、无力继续缴费或自行投诉，不自动视为监管强制撤销，须有针对该产品的正式撤销决定。"
+          }
+        ]
+      },
+      "answer": "因保险人产品备案问题被监管要求撤销的合同，免收300元解约手续费；已发生融资利息仍须清偿。该免手续费例外对JF-1和JF-2两版均适用。需注意，投保人自愿退保、无力继续缴费或自行投诉，不自动视为监管强制撤销，须有针对该产品的正式撤销决定。",
+      "grounded": true,
+      "citedTexts": [
+        "制撤销例外\n\n因保险人产品备案问题被监管要求撤销的合同，免收300元解约手续费；已发生融资利息仍清偿。投保人自愿退保、无力继续缴费或自行投诉，不自动视为监管强制撤销，须有针对该产品的正式撤销决定。\n\n## 版本过渡\n\nJF-1约定固定解约手续费500元。2026年9月18日前签订且未变更的存量融资合同继续执行JF-1；之后新签的合同用JF-2的300元。单纯更换联系地址不是合同重签，不把老合同自动迁为新版。监管强制撤销免手续费的例外对两版均适用。\n\n",
+        "000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。\n\n## 监管强制撤销例外\n\n因保险人产品备案问题被监管要求撤销的合同，免收300元解约手续费；已发生融资利息仍清偿。投保人自愿退保、无力继续缴费或自行投诉，不自动视为监管强制撤销，须有针对该产品的正式撤销决定。\n\n",
+        "2026年9月18日前签订且未变更的存量融资合同继续执行JF-1；之后新签的合同用JF-2的300元。单纯更换联系地址不是合同重签，不把老合同自动迁为新版。监管强制撤销免手续费的例外对两版均适用。\n\n## 未提供内容\n\n本规则不含各险种的退保现金价值公式、被保险人健康资料或投资收益预测。退费净额需要保险人确认，不可由融资年利率反推出保单现金价值。\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "b543c236855a4983a5bc57a7fe60c4d5",
+      "question": "苔原授信客户在其他银行还有多少负债？",
+      "gold": {
+        "referenceAnswer": "文档未提供客户他行负债，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把60万元本行本金当他行负债"
+        ],
+        "requiredFacts": [
+          "文档未提供客户他行负债",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "790f21e40c1d4dab84ad0d5bc0df36d4",
+      "question": "苔原连续两期没交盘点表，能否用灾害展期使新增提款自动恢复？",
+      "gold": {
+        "referenceAnswer": "不能。须补齐两期表并由核验岗解除；展期仅延本金到期日，不提高授信也不自动免息。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "客户经理单签可解除",
+          "展期自动扩大额度"
+        ],
+        "requiredFacts": [
+          "补齐两期盘点表",
+          "核验岗解除标记",
+          "展期不恢复新增提款"
+        ],
+        "evidence": [
+          {
+            "start": 672,
+            "end": 772,
+            "text": "风险例外：连续两期未交盘点表时，冻结新增提款；既有借款仍按原借据还本计息。补齐两期盘点表并经核验岗解除标记后恢复，客户经理单独签字不能解除。灾害展期只延后本金到期日，不自动免息或提高120万元授信额。"
+          }
+        ]
+      },
+      "answer": "不能。连续两期未交盘点表会冻结新增提款；灾害展期只延后本金到期日，不自动免息或提高授信额，因此不能使新增提款自动恢复。需补齐两期盘点表并经核验岗解除标记后才能恢复，客户经理单独签字不能解除。",
+      "grounded": true,
+      "citedTexts": [
+        "例外：连续两期未交盘点表时，冻结新增提款；既有借款仍按原借据还本计息。补齐两期盘点表并经核验岗解除标记后恢复，客户经理单独签字不能解除。灾害展期只延后本金到期日，不自动免息或提高120万元授信额。\n\nTY-2026A曾把‘提交还款申请’作为释放时点。TY-2026B取消该处理，从生效日起所有释放均以清算成功为准，不区分借据签署日期。历史上已释放的额度不倒算，但仍未清算的申请不能被再次计算为可用额度。\n\n",
+        "常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。\n\n风险例外：连续两期未交盘点表时，冻结新增提款；既有借款仍按原借据还本计息。补齐两期盘点表并经核验岗解除标记后恢复，客户经理单独签字不能解除。灾害展期只延后本金到期日，不自动免息或提高120万元授信额。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "0de4639e24924045af34614b2a4757a2",
+      "question": "绛帆这份保单的退保现金价值具体怎么算？",
+      "gold": {
+        "referenceAnswer": "文档未提供险种退保现金价值公式，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "用7.2%融资利率推算现金价值"
+        ],
+        "requiredFacts": [
+          "文档未提供险种退保现金价值公式",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "c2ee78e76fbd4e9ca92bad03b4d31995",
+      "question": "绛帆实收退费日如何处理已偿本金的利息？演算给出的120元要再叠加日息吗？",
+      "gold": {
+        "referenceAnswer": "实收当日不再计已偿本金利息；示例120元已含全部应计天数，不再重复叠加日息。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "实收当日仍对已偿本金计息",
+          "120元之外再加一次"
+        ],
+        "requiredFacts": [
+          "实收当日不再计已偿本金利息",
+          "120元不重复加日息"
+        ],
+        "evidence": [
+          {
+            "start": 550,
+            "end": 683,
+            "text": "## 利息口径\n\n实收退费前，剩余本金按年单利7.2%、实际天数/360继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。"
+          },
+          {
+            "start": 685,
+            "end": 800,
+            "text": "## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。"
+          }
+        ]
+      },
+      "answer": "实收退费当日，不再对已偿还的本金计算利息；示例中的“截至结算日利息”已经包含全部应计天数，因此不得再另外叠加一次日息。所以演算给出的120元不需要再叠加日息。",
+      "grounded": true,
+      "citedTexts": [
+        "0继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。\n\n## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。\n\n",
+        "得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。\n\n## 利息口径\n\n实收退费前，剩余本金按年单利7.2%、实际天数/360继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "92991453ae5a44bc8e636607e05d5da1",
+      "question": "苔原旺季3.2%优惠需要同时满足什么，能否追溯旧借据？",
+      "gold": {
+        "referenceAnswer": "至少提前5个工作日预约且在预约日期提款；不能追溯旧借据。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "预约后任何日期提款均优惠",
+          "周末算工作日"
+        ],
+        "requiredFacts": [
+          "提前至少5个工作日预约",
+          "预约日期提款",
+          "不追溯既往借据"
+        ],
+        "evidence": [
+          {
+            "start": 329,
+            "end": 446,
+            "text": "利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。"
+          }
+        ]
+      },
+      "answer": "需同时满足：至少提前5个工作日预约，并在预约日期提款；预约失败则按常规利率。该优惠不追溯既往借据。",
+      "grounded": true,
+      "citedTexts": [
+        "尚未归还本金加已承兑未到期银票票面额计算。应计利息和未承兑订单不占额。当天还款只有清算成功才释放占额；‘已提交’状态不释放。系统展示的可用额为总额减占额，负值时冻结新增提款，不对存量合同自动加息。\n\n经销商提交每台农机的序列号和库存地，核验员抽样核对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。\n\n利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "1cbbf7a014554ab881b809b1af11715e",
+      "question": "栖衡交入的是减排量而非指定年度配额，转出申请已提交，算交收了吗？",
+      "gold": {
+        "referenceAnswer": "不算，不能用项目减排量替代；须指定年度配额实际划入约定账户且可用，截图不算回单。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "有截图即可算交收"
+        ],
+        "requiredFacts": [
+          "项目减排量不可替代",
+          "指定年度配额实际划入且可用",
+          "申请截图不算完成"
+        ],
+        "evidence": [
+          {
+            "start": 0,
+            "end": 129,
+            "text": "栖衡碳配额远期交收约定 QH-4\n本约定为虚构企业间人民币结算业务，不是真实交易所规则。2026年10月1日起签订的合同适用。标的是指定年度碳配额，单位为吨，不能以项目减排量替代。交收量以登记系统实际划入合约约定账户的可用配额为准；转出申请截图不是交收回单。"
+          },
+          {
+            "start": 1609,
+            "end": 1757,
+            "text": "交收前一工作日17:00前双方确认可交割名册。交收日12:00前卖方完成配额过户，买方在15:00前付对应已交量货款，未交量不先付款。合同允许交量在名义量的98%至102%之间（含边界），双方不另签数量变更；货款按实际合格交量乘合同单价，不能按名义量付款。年度或账户不匹配的配额一律不计合格交量。"
+          }
+        ]
+      },
+      "answer": "不算。栖衡碳配额远期交收约定明确，标的是指定年度碳配额，不能以项目减排量替代；交收量以登记系统实际划入合约约定账户的可用配额为准，转出申请截图不是交收回单。因此，交入减排量且仅提交转出申请，不构成有效交收。",
+      "grounded": true,
+      "citedTexts": [
+        "栖衡碳配额远期交收约定 QH-4\n本约定为虚构企业间人民币结算业务，不是真实交易所规则。2026年10月1日起签订的合同适用。标的是指定年度碳配额，单位为吨，不能以项目减排量替代。交收量以登记系统实际划入合约约定账户的可用配额为准；转出申请截图不是交收回单。\n\n",
+        "业务，不是真实交易所规则。2026年10月1日起签订的合同适用。标的是指定年度碳配额，单位为吨，不能以项目减排量替代。交收量以登记系统实际划入合约约定账户的可用配额为准；转出申请截图不是交收回单。\n\n附录甲：Counterparty preparation and authority records\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "e8d3cf6de09b4fa8bac39b9c53682346",
+      "question": "栖衡明年的市场碳价会涨到多少元？",
+      "gold": {
+        "referenceAnswer": "文档未提供未来市场碳价，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把92元演练参考价当预测"
+        ],
+        "requiredFacts": [
+          "文档未提供未来市场碳价",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "ad1f248900214dc5983d74d3583cc495",
+      "question": "栖衡少交演练接受950吨，货款、违约赔偿、担保外补赔各多少？",
+      "gold": {
+        "referenceAnswer": "货款950×80=76000元；全差额50吨×(92−80)=600元赔偿；500元担保先抵赔偿，仍补100元，不自动抵货款。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "仅按30吨赔360元",
+          "赔偿上限500元",
+          "把担保500从货款抵扣"
+        ],
+        "requiredFacts": [
+          "货款76000元",
+          "赔偿600元",
+          "担保外补赔100元",
+          "担保不自动抵正常货款"
+        ],
+        "evidence": [
+          {
+            "start": 1609,
+            "end": 1757,
+            "text": "交收前一工作日17:00前双方确认可交割名册。交收日12:00前卖方完成配额过户，买方在15:00前付对应已交量货款，未交量不先付款。合同允许交量在名义量的98%至102%之间（含边界），双方不另签数量变更；货款按实际合格交量乘合同单价，不能按名义量付款。年度或账户不匹配的配额一律不计合格交量。"
+          },
+          {
+            "start": 7889,
+            "end": 8034,
+            "text": "差额平仓：卖方少交且买方选择接受实际量时，少交差额=名义量−实际合格交量；赔偿额=少交差额×max(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。"
+          },
+          {
+            "start": 9506,
+            "end": 9627,
+            "text": "担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。"
+          },
+          {
+            "start": 11053,
+            "end": 11182,
+            "text": "少交演练：合同名义1000吨，单价80元/吨；交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。"
+          }
+        ]
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "959e647396fb474ab9973e0760ee7b32",
+      "question": "绛帆实收退费日如何处理已偿本金的利息？演算给出的120元要再叠加日息吗？",
+      "gold": {
+        "referenceAnswer": "实收当日不再计已偿本金利息；示例120元已含全部应计天数，不再重复叠加日息。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "实收当日仍对已偿本金计息",
+          "120元之外再加一次"
+        ],
+        "requiredFacts": [
+          "实收当日不再计已偿本金利息",
+          "120元不重复加日息"
+        ],
+        "evidence": [
+          {
+            "start": 550,
+            "end": 683,
+            "text": "## 利息口径\n\n实收退费前，剩余本金按年单利7.2%、实际天数/360继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。"
+          },
+          {
+            "start": 685,
+            "end": 800,
+            "text": "## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。"
+          }
+        ]
+      },
+      "answer": "实收退费当日不再计该已偿本金的利息；示例中的“截至结算日利息”已包含全部应计天数，120元不得再另外叠加一次日息。",
+      "grounded": true,
+      "citedTexts": [
+        "得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。\n\n## 利息口径\n\n实收退费前，剩余本金按年单利7.2%、实际天数/360继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。\n\n## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "a5ed4f934a5c42f5a27df580a7133837",
+      "question": "绛帆演算乙退费7600元后，还欠多少？款项先后抵什么？",
+      "gold": {
+        "referenceAnswer": "先抵120元利息、300元手续费，余7180元抵本金；剩余本金820元由投保人补齐。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "只欠400元",
+          "退费自动抹去所有欠款"
+        ],
+        "requiredFacts": [
+          "先利息120元再手续费300元再本金",
+          "抵本金7180元",
+          "补齐820元"
+        ],
+        "evidence": [
+          {
+            "start": 240,
+            "end": 363,
+            "text": "## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。"
+          },
+          {
+            "start": 685,
+            "end": 800,
+            "text": "## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。"
+          }
+        ]
+      },
+      "answer": "演算乙中，未偿本金为8000元，截至结算日利息为120元，固定解约手续费为300元，应清偿总额为8420元。实收退费7600元后，尚欠820元，由投保人补齐。款项依次抵扣：先抵已发生利息120元，再抵300元手续费，最后抵未偿本金；因此7600元中先抵利息120元、手续费300元，余下7180元抵本金，本金尚余820元。",
+      "grounded": true,
+      "citedTexts": [
+        "得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。\n\n## 利息口径\n\n实收退费前，剩余本金按年单利7.2%、实际天数/360继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。\n\n## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。\n\n",
+        "至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n## 操作与核对\n\n经办核验退保申请签名、保单号、融资合同号三者关联后，向保险人请求确认退费净额。保险人的试算书与实付回单分开归档，试算书可能因结算日期变动而变化，因此不得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "54d235e135f54d23a5a5bf96c04c40c9",
+      "question": "苔原旺季3.2%优惠需要同时满足什么，能否追溯旧借据？",
+      "gold": {
+        "referenceAnswer": "至少提前5个工作日预约且在预约日期提款；不能追溯旧借据。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "预约后任何日期提款均优惠",
+          "周末算工作日"
+        ],
+        "requiredFacts": [
+          "提前至少5个工作日预约",
+          "预约日期提款",
+          "不追溯既往借据"
+        ],
+        "evidence": [
+          {
+            "start": 329,
+            "end": 446,
+            "text": "利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。"
+          }
+        ]
+      },
+      "answer": "需同时满足：至少提前5个工作日预约，并在预约日期提款；预约失败则按常规利率。该优惠不追溯既往借据。",
+      "grounded": true,
+      "citedTexts": [
+        "季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。\n\n",
+        "对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。\n\n利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "5139424c14624c8ea6f0fba2e164f55d",
+      "question": "苔原分次还款何时降低计息本金，多笔利息如何取整？",
+      "gold": {
+        "referenceAnswer": "清算成功当日降低本金，每笔到分四舍五入后合计。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "次日才降低本金",
+          "整户合计后取整"
+        ],
+        "requiredFacts": [
+          "清算成功当日",
+          "按笔到分四舍五入后合计"
+        ],
+        "evidence": [
+          {
+            "start": 448,
+            "end": 554,
+            "text": "每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。"
+          }
+        ]
+      },
+      "answer": "分次偿还从清算成功的当日降低计息本金。每笔利息按该笔实际本金×年利率×实际计息天数÷360计算，按笔到分四舍五入后再合计，不按整户合并取整。",
+      "grounded": true,
+      "citedTexts": [
+        "季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。\n\n演练记录：2026年8月10日以常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "538a719a471e4dc390e3be1dcedcda03",
+      "question": "绛帆9月1日旧合同只在10月更新联系地址，普通自愿退保收300还是500元手续费？",
+      "gold": {
+        "referenceAnswer": "继续按JF-1收500元；更新地址不是重签，不自动适用JF-2。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按退保时新版收300元"
+        ],
+        "requiredFacts": [
+          "JF-1",
+          "500元",
+          "更改地址不等于重签"
+        ],
+        "evidence": [
+          {
+            "start": 908,
+            "end": 1033,
+            "text": "## 版本过渡\n\nJF-1约定固定解约手续费500元。2026年9月18日前签订且未变更的存量融资合同继续执行JF-1；之后新签的合同用JF-2的300元。单纯更换联系地址不是合同重签，不把老合同自动迁为新版。监管强制撤销免手续费的例外对两版均适用。"
+          }
+        ]
+      },
+      "answer": "应适用JF-1，收取500元手续费。依据是：2026年9月18日前签订且未变更的存量融资合同继续执行JF-1，而JF-1约定固定解约手续费500元；单纯更换联系地址不是合同重签，不会把老合同自动迁为新版。普通自愿退保也不属于监管强制撤销，不能免收手续费。",
+      "grounded": true,
+      "citedTexts": [
+        "000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。\n\n## 监管强制撤销例外\n\n因保险人产品备案问题被监管要求撤销的合同，免收300元解约手续费；已发生融资利息仍清偿。投保人自愿退保、无力继续缴费或自行投诉，不自动视为监管强制撤销，须有针对该产品的正式撤销决定。\n\n## 版本过渡\n\nJF-1约定固定解约手续费500元。2026年9月18日前签订且未变更的存量融资合同继续执行JF-1；之后新签的合同用JF-2的300元。单纯更换联系地址不是合同重签，不把老合同自动迁为新版。监管强制撤销免手续费的例外对两版均适用。\n\n## 未提供内容\n\n本规则不含各险种的退保现金价值公式、被保险人健康资料或投资收益预测。退费净额需要保险人确认，不可由融资年利率反推出保单现金价值。\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "3be03b9742644bd1b1ed481fbd548aac",
+      "question": "栖衡卖方自家断网能用系统故障顺延吗？登记方覆盖窗口的公告故障又如何？",
+      "gold": {
+        "referenceAnswer": "本地断网不能；登记服务方公告覆盖交收窗口，过户延至恢复后首工作日12:00，付款实际合格过户当日15:00。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "任意断网自动延长",
+          "例外让错误年度配额合格"
+        ],
+        "requiredFacts": [
+          "本地故障不适用",
+          "登记服务方公告覆盖窗口",
+          "恢复后首工作日12:00",
+          "实际合格过户当日15:00付款"
+        ],
+        "evidence": [
+          {
+            "start": 12610,
+            "end": 12733,
+            "text": "登记系统故障例外：只有登记服务方公告覆盖该合约交收窗口的故障，才把配额过户期限延至恢复后首个工作日12:00。卖方本地网络故障不适用。付款时限改为实际合格过户当日15:00，担保款在实际完成对账前不释放；例外只调整时点，不把无效年度配额变为合格。"
+          }
+        ]
+      },
+      "answer": "卖方自家断网不能适用系统故障顺延：只有登记服务方公告覆盖该合约交收窗口的故障，才把配额过户期限延至恢复后首个工作日12:00，卖方本地网络故障不适用；仅凭服务台工单也不能证明核心服务中断例外成立。若属登记方公告覆盖窗口的故障，则期限延至恢复后首个工作日12:00，付款时限改为实际合格过户当日15:00，担保款在实际完成对账前不释放，且例外只调整时点，不把无效年度配额变为合格。",
+      "grounded": true,
+      "citedTexts": [
+        "be arithmetically correct yet unsupported if the source, time or instrument cannot be established.\n\n登记系统故障例外：只有登记服务方公告覆盖该合约交收窗口的故障，才把配额过户期限延至恢复后首个工作日12:00。卖方本地网络故障不适用。付款时限改为实际合格过户当日15:00，担保款在实际完成对账前不释放；例外只调整时点，不把无效年度配额变为合格。\n\n",
+        "资金到账证明；‘已匹配到账’才可进入最终清偿记录。档案查询仅限本合同，不能将另一个年度合同的价格或数量直接带入。\n\n附录子：Registry service interruption record\n\nA reported interruption is checked against the registry service provider's notice and the contract's delivery window. A seller's workstation error, an expired local login and a service-wide outage are different events. Operations retain the provider's notice as well as the seller's incident report, so a reviewer can determine which event actually prevented processing. The presence of a help-desk ticket alone does not establish that the core service-outage exception applies.\n\n",
+        "nce of a help-desk ticket alone does not establish that the core service-outage exception applies.\n\nThe chronology records the announced service interruption, the announced restoration and the completed eligible transfer. If the seller continues to have a local problem after the service is restored, staff do not automatically extend the provider's outage period to match that local difficulty. The controlling exception remains the one in the core agreement, and the resulting payment timing is linked to actual eligible delivery.\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "3bcb10cfe2cf4a1b82a7ba7e37833a3d",
+      "question": "7月15日以后苔原旧借据提交还款但未清算，按哪版释放规则？",
+      "gold": {
+        "referenceAnswer": "按TY-2026B，所有释放均以清算成功为准，旧借据也不能凭提交申请释放。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "旧借据沿用提交即释放"
+        ],
+        "requiredFacts": [
+          "TY-2026B",
+          "清算成功才释放",
+          "不区分借据签署日期"
+        ],
+        "evidence": [
+          {
+            "start": 774,
+            "end": 875,
+            "text": "TY-2026A曾把‘提交还款申请’作为释放时点。TY-2026B取消该处理，从生效日起所有释放均以清算成功为准，不区分借据签署日期。历史上已释放的额度不倒算，但仍未清算的申请不能被再次计算为可用额度。"
+          }
+        ]
+      },
+      "answer": "按TY-2026B版规则：自2026年7月15日生效起，所有释放均以清算成功为准，不区分借据签署日期；仅“提交还款申请”不释放占额，仍未清算的申请不能被再次计算为可用额度。",
+      "grounded": true,
+      "citedTexts": [
+        "常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。\n\n风险例外：连续两期未交盘点表时，冻结新增提款；既有借款仍按原借据还本计息。补齐两期盘点表并经核验岗解除标记后恢复，客户经理单独签字不能解除。灾害展期只延后本金到期日，不自动免息或提高120万元授信额。\n\nTY-2026A曾把‘提交还款申请’作为释放时点。TY-2026B取消该处理，从生效日起所有释放均以清算成功为准，不区分借据签署日期。历史上已释放的额度不倒算，但仍未清算的申请不能被再次计算为可用额度。\n\n本卡不载明客户真实身份、他行负债、最终核定授信模型参数或未来基准利率预测。实际审批另有独立档案，本作业卡的演练不构成真实授信。\n",
+        "苔原农机循环授信作业卡 TY-2026B\n2026年7月15日起生效。仅用于虚构的农机经销商季节性周转贷款。授信总额120万元，任何一笔借款都必须先通过库存盘点；未用额度不是存款，不能抵扣已发生利息。\n\n占额按尚未归还本金加已承兑未到期银票票面额计算。应计利息和未承兑订单不占额。当天还款只有清算成功才释放占额；‘已提交’状态不释放。系统展示的可用额为总额减占额，负值时冻结新增提款，不对存量合同自动加息。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "513bbfe5c44e4109a2b2eb1211006474",
+      "question": "苔原寄售在途设备可以直接计入融资库存吗？借据获批后还缺哪一步？",
+      "gold": {
+        "referenceAnswer": "在途设备只能备注，不能计入融资库存；客户须确认借据金额和到账账户，未确认次日失效。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "审批通过即自动放款"
+        ],
+        "requiredFacts": [
+          "在途设备不列可融资库存",
+          "确认借据金额和到账账户",
+          "未确认次日失效"
+        ],
+        "evidence": [
+          {
+            "start": 205,
+            "end": 327,
+            "text": "经销商提交每台农机的序列号和库存地，核验员抽样核对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。"
+          }
+        ]
+      },
+      "answer": "寄售在途设备不能直接计入可融资库存，只能进入备注栏，不列入可融资库存。支用审批通过后，客户还需确认借据金额和到账账户；未确认的借据次日失效，并需重新核验可用额。",
+      "grounded": true,
+      "citedTexts": [
+        "尚未归还本金加已承兑未到期银票票面额计算。应计利息和未承兑订单不占额。当天还款只有清算成功才释放占额；‘已提交’状态不释放。系统展示的可用额为总额减占额，负值时冻结新增提款，不对存量合同自动加息。\n\n经销商提交每台农机的序列号和库存地，核验员抽样核对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。\n\n利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "c998126a8c9440c587d9fab82add563c",
+      "question": "栖衡正常演练实交990吨可算完成吗，应付货款多少？",
+      "gold": {
+        "referenceAnswer": "990在980至1020吨内且年度账户匹配，可按容差完成；货款990×80=79200元。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按1000吨付80000元",
+          "990吨必定违约"
+        ],
+        "requiredFacts": [
+          "990吨在98%至102%容差内",
+          "按实交量",
+          "货款79200元"
+        ],
+        "evidence": [
+          {
+            "start": 1609,
+            "end": 1757,
+            "text": "交收前一工作日17:00前双方确认可交割名册。交收日12:00前卖方完成配额过户，买方在15:00前付对应已交量货款，未交量不先付款。合同允许交量在名义量的98%至102%之间（含边界），双方不另签数量变更；货款按实际合格交量乘合同单价，不能按名义量付款。年度或账户不匹配的配额一律不计合格交量。"
+          },
+          {
+            "start": 11053,
+            "end": 11182,
+            "text": "少交演练：合同名义1000吨，单价80元/吨；交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。"
+          }
+        ]
+      },
+      "answer": "可算完成：正常演练到账990吨且年度账户匹配，990吨处于1000吨名义量的98%至102%容差范围内，因此属于正常完成交收。应付货款按单价80元/吨计算为990×80=79,200元。",
+      "grounded": true,
+      "citedTexts": [
+        "efault value, and unresolved security treatment remains subject to the original dispute procedure.\n\n少交演练：合同名义1000吨，单价80元/吨；交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。\n\n",
+        "the need for registry evidence or release security before the required reconciliation is complete.\n\nQH-3把少交赔偿限定为担保款金额。QH-4取消此上限，以实际公式计算并可追补。10月1日前已签合同仍用QH-3；10月1日起新签合同用QH-4，不因沿用旧交易号前缀而适用旧版。交量98%至102%的容差两版相同。\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "bd3acec2cbd7412b92842e1b5bf75cee",
+      "question": "栖衡正常完成并对账后担保多久退？有部分争议能扣住全部吗？",
+      "gold": {
+        "referenceAnswer": "两个工作日内退；争议只保留争议部分，未争议余额按期退，不能全扣。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "两个自然日",
+          "任一争议冻结全部"
+        ],
+        "requiredFacts": [
+          "完成交收且双方对账",
+          "两个工作日",
+          "仅保留争议部分"
+        ],
+        "evidence": [
+          {
+            "start": 9506,
+            "end": 9627,
+            "text": "担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。"
+          }
+        ]
+      },
+      "answer": "正常完成交收并完成双方对账后，担保款应在两个工作日内退还。若存在挂起争议，只保留争议部分，未争议余额仍按期退回，因此不能扣住全部担保款。",
+      "grounded": true,
+      "citedTexts": [
+        "mented agreement, rather than inferring a right of set-off from a convenient bank transfer amount.\n\n担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。\n\n",
+        "迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。\n\n附录庚：Buyer election records outside the quantity band\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "8b4e3684fffa420a81b3551eec0b178b",
+      "question": "绛帆这份保单的退保现金价值具体怎么算？",
+      "gold": {
+        "referenceAnswer": "文档未提供险种退保现金价值公式，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "用7.2%融资利率推算现金价值"
+        ],
+        "requiredFacts": [
+          "文档未提供险种退保现金价值公式",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "e952eaf4ffd84369b575440dc37d8fbf",
+      "question": "栖衡正常完成并对账后担保多久退？有部分争议能扣住全部吗？",
+      "gold": {
+        "referenceAnswer": "两个工作日内退；争议只保留争议部分，未争议余额按期退，不能全扣。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "两个自然日",
+          "任一争议冻结全部"
+        ],
+        "requiredFacts": [
+          "完成交收且双方对账",
+          "两个工作日",
+          "仅保留争议部分"
+        ],
+        "evidence": [
+          {
+            "start": 9506,
+            "end": 9627,
+            "text": "担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。"
+          }
+        ]
+      },
+      "answer": "正常完成交收并完成双方对账后，两个工作日内退担保款；有挂起争议的，只保留争议部分，未争议余额按期退回，不能扣住全部。",
+      "grounded": true,
+      "citedTexts": [
+        "mented agreement, rather than inferring a right of set-off from a convenient bank transfer amount.\n\n担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "31eaf05aff3945d78c809a7412b7bbf7",
+      "question": "苔原寄售在途设备可以直接计入融资库存吗？借据获批后还缺哪一步？",
+      "gold": {
+        "referenceAnswer": "在途设备只能备注，不能计入融资库存；客户须确认借据金额和到账账户，未确认次日失效。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "审批通过即自动放款"
+        ],
+        "requiredFacts": [
+          "在途设备不列可融资库存",
+          "确认借据金额和到账账户",
+          "未确认次日失效"
+        ],
+        "evidence": [
+          {
+            "start": 205,
+            "end": 327,
+            "text": "经销商提交每台农机的序列号和库存地，核验员抽样核对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。"
+          }
+        ]
+      },
+      "answer": "寄售在途设备不能直接计入可融资库存，只能进入备注栏，不列入可融资库存。支用审批通过后，客户还需确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。",
+      "grounded": true,
+      "citedTexts": [
+        "对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。\n\n利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n",
+        "尚未归还本金加已承兑未到期银票票面额计算。应计利息和未承兑订单不占额。当天还款只有清算成功才释放占额；‘已提交’状态不释放。系统展示的可用额为总额减占额，负值时冻结新增提款，不对存量合同自动加息。\n\n经销商提交每台农机的序列号和库存地，核验员抽样核对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "d8b8fbea581c418aa147c56c6795dd15",
+      "question": "苔原分次还款何时降低计息本金，多笔利息如何取整？",
+      "gold": {
+        "referenceAnswer": "清算成功当日降低本金，每笔到分四舍五入后合计。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "次日才降低本金",
+          "整户合计后取整"
+        ],
+        "requiredFacts": [
+          "清算成功当日",
+          "按笔到分四舍五入后合计"
+        ],
+        "evidence": [
+          {
+            "start": 448,
+            "end": 554,
+            "text": "每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。"
+          }
+        ]
+      },
+      "answer": "分次偿还从清算成功的当日降低计息本金。多笔利息按笔到分四舍五入后再合计，不按整户合并取整。",
+      "grounded": true,
+      "citedTexts": [
+        "际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。\n\n演练记录：2026年8月10日以常规利率提款30万元，8月20日全额清算还清，中间无还款也未逾期。另一张额度快照记录本金余额60万元、已承兑未到期票面30万元、应计利息0.2万元、未承兑订单10万元；两张记录独立，不应互相叠加。\n\n",
+        "季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "30b65ba5302a400c9715ec44e0b9b306",
+      "question": "苔原逾期本金相对适用正常年利率加多少，能对利息加收吗？",
+      "gold": {
+        "referenceAnswer": "加1.8个百分点，只对逾期本金，不对已计利息加收。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "乘以1.8%",
+          "正常本金也一律罚息"
+        ],
+        "requiredFacts": [
+          "加1.8个百分点",
+          "仅逾期本金",
+          "不对已计利息加收"
+        ],
+        "evidence": [
+          {
+            "start": 329,
+            "end": 446,
+            "text": "利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。"
+          }
+        ]
+      },
+      "answer": "逾期本金在适用正常年利率基础上加收1.8个百分点；该逾期附加只作用于逾期本金，不作用于正常本金或已计利息，因此不能对利息加收。",
+      "grounded": true,
+      "citedTexts": [
+        "季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n每笔利息=该笔实际本金×年利率×实际计息天数÷360。起息日计入、还清日不计入；分次偿还从清算成功的当日降低计息本金。按笔到分四舍五入后再合计，不按整户合并取整。周末仍是实际计息日，但预约期中的工作日不包含周末。\n\n",
+        "对实物。寄售在途设备可进入备注栏，但不列入可融资库存。月末盘点表与借款记录分别归档，盘点完成不等于已经放款。支用审批通过后，客户还要确认借据金额和到账账户；未确认的借据次日失效，需重新核验可用额。\n\n利率表（年单利）：常规支用3.6%；旺季预约支用3.2%；逾期本金加收1.8个百分点。旺季优惠要求至少提前5个工作日预约并在预约日期提款；预约失败则用常规利率。优惠不追溯既往借据，逾期附加只作用于逾期本金，不作用于正常本金或已计利息。\n\n"
+      ],
+      "sourceRef": "18cfc71015d4d3567bb338c28bd68260b2611e213f62b89064d43814e9cb7b67"
+    },
+    {
+      "token": "17f062ee0f2a46138dac4834eaa7a565",
+      "question": "栖衡少交跌出容差后，参考价低于合同价时赔偿是否为负数？",
+      "gold": {
+        "referenceAnswer": "不为负，公式使用max(参考价−合同价,0)，赔偿为零，不让买方倒贴。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "按负赔偿退卖方款"
+        ],
+        "requiredFacts": [
+          "价差下限零",
+          "赔偿为零",
+          "买方不倒贴"
+        ],
+        "evidence": [
+          {
+            "start": 7889,
+            "end": 8034,
+            "text": "差额平仓：卖方少交且买方选择接受实际量时，少交差额=名义量−实际合格交量；赔偿额=少交差额×max(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。"
+          }
+        ]
+      },
+      "answer": "不是负数。赔偿额按“少交差额×max(替代采购参考价−合同单价,0)”计算；当参考价低于合同价、价格差为负时，赔偿为零，不要求买方倒贴。",
+      "grounded": true,
+      "citedTexts": [
+        "ax(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。\n\n附录己：Payment instructions and separate bank evidence\n\n",
+        "io as completely delivered merely because the aggregate number of units matches a portfolio total.\n\n差额平仓：卖方少交且买方选择接受实际量时，少交差额=名义量−实际合格交量；赔偿额=少交差额×max(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "bb484f01b29f46b697e0aecc68294699",
+      "question": "绛帆融资方能因分期欠款自行宣布保单失效吗？退保由谁发起确认？",
+      "gold": {
+        "referenceAnswer": "不能自行宣布失效；投保人发起，取得保险人确认。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "融资方单方终止保险责任"
+        ],
+        "requiredFacts": [
+          "融资方不能自行宣布失效",
+          "投保人发起",
+          "保险人确认"
+        ],
+        "evidence": [
+          {
+            "start": 240,
+            "end": 363,
+            "text": "## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。"
+          }
+        ]
+      },
+      "answer": "不能。退保须由投保人发起并取得保险人确认，融资方不能自行宣布保单失效。",
+      "grounded": true,
+      "citedTexts": [
+        "至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "dc4638a7754d42219d485b5c14f46601",
+      "question": "绛帆演算甲应清偿多少，最终退投保人多少元？",
+      "gold": {
+        "referenceAnswer": "清偿8000+120+300=8420元，退费9000元，剩余580元退投保人。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "退1000元忽略利息手续费",
+          "再扣未来利息"
+        ],
+        "requiredFacts": [
+          "清偿8420元",
+          "退投保人580元"
+        ],
+        "evidence": [
+          {
+            "start": 114,
+            "end": 238,
+            "text": "## 清偿项的边界\n\n解约应清偿额由未偿融资本金、截至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。"
+          },
+          {
+            "start": 240,
+            "end": 363,
+            "text": "## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。"
+          },
+          {
+            "start": 685,
+            "end": 800,
+            "text": "## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。"
+          }
+        ]
+      },
+      "answer": "甲应清偿额为未偿本金8000元＋截至结算日利息120元＋固定解约手续费300元，合计8420元。保险人实收退费9000元，依次抵扣已发生利息120元、手续费300元、未偿本金8000元后，剩余160元退投保人。",
+      "grounded": true,
+      "citedTexts": [
+        "0继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。\n\n## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。\n\n",
+        "2\n\n2026年9月18日起适用于新增融资合同，以下名称与金额均为虚构。融资方先代投保人向保险人支付全年保费，投保人再向融资方分期偿还。保险赔款归属仍由保单决定；分期融资余额不等同于保险责任限额。\n\n## 清偿项的边界\n\n解约应清偿额由未偿融资本金、截至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n",
+        "至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "eb80ccb04e1d4572b2f28523057e2fe7",
+      "question": "栖衡卖方自家断网能用系统故障顺延吗？登记方覆盖窗口的公告故障又如何？",
+      "gold": {
+        "referenceAnswer": "本地断网不能；登记服务方公告覆盖交收窗口，过户延至恢复后首工作日12:00，付款实际合格过户当日15:00。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "任意断网自动延长",
+          "例外让错误年度配额合格"
+        ],
+        "requiredFacts": [
+          "本地故障不适用",
+          "登记服务方公告覆盖窗口",
+          "恢复后首工作日12:00",
+          "实际合格过户当日15:00付款"
+        ],
+        "evidence": [
+          {
+            "start": 12610,
+            "end": 12733,
+            "text": "登记系统故障例外：只有登记服务方公告覆盖该合约交收窗口的故障，才把配额过户期限延至恢复后首个工作日12:00。卖方本地网络故障不适用。付款时限改为实际合格过户当日15:00，担保款在实际完成对账前不释放；例外只调整时点，不把无效年度配额变为合格。"
+          }
+        ]
+      },
+      "answer": "卖方自家断网不能适用系统故障顺延：只有登记服务方公告覆盖该合约交收窗口的故障，才把配额过户期限延至恢复后首个工作日12:00，卖方本地网络故障不适用；仅凭服务台工单也不能确立核心服务中断例外。若属登记方公告覆盖窗口的故障，则期限延至恢复后首个工作日12:00，付款时限改为实际合格过户当日15:00，担保款在实际完成对账前不释放，且例外只调整时点，不把无效年度配额变为合格。",
+      "grounded": true,
+      "citedTexts": [
+        "be arithmetically correct yet unsupported if the source, time or instrument cannot be established.\n\n登记系统故障例外：只有登记服务方公告覆盖该合约交收窗口的故障，才把配额过户期限延至恢复后首个工作日12:00。卖方本地网络故障不适用。付款时限改为实际合格过户当日15:00，担保款在实际完成对账前不释放；例外只调整时点，不把无效年度配额变为合格。\n\n",
+        "资金到账证明；‘已匹配到账’才可进入最终清偿记录。档案查询仅限本合同，不能将另一个年度合同的价格或数量直接带入。\n\n附录子：Registry service interruption record\n\nA reported interruption is checked against the registry service provider's notice and the contract's delivery window. A seller's workstation error, an expired local login and a service-wide outage are different events. Operations retain the provider's notice as well as the seller's incident report, so a reviewer can determine which event actually prevented processing. The presence of a help-desk ticket alone does not establish that the core service-outage exception applies.\n\n"
+      ],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "c090975223db42b8a062a3529e4c7754",
+      "question": "绛帆演算甲应清偿多少，最终退投保人多少元？",
+      "gold": {
+        "referenceAnswer": "清偿8000+120+300=8420元，退费9000元，剩余580元退投保人。",
+        "answerable": true,
+        "forbiddenConfusions": [
+          "退1000元忽略利息手续费",
+          "再扣未来利息"
+        ],
+        "requiredFacts": [
+          "清偿8420元",
+          "退投保人580元"
+        ],
+        "evidence": [
+          {
+            "start": 114,
+            "end": 238,
+            "text": "## 清偿项的边界\n\n解约应清偿额由未偿融资本金、截至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。"
+          },
+          {
+            "start": 240,
+            "end": 363,
+            "text": "## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。"
+          },
+          {
+            "start": 685,
+            "end": 800,
+            "text": "## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。"
+          }
+        ]
+      },
+      "answer": "甲应清偿额为8000元本金＋120元已发生利息＋300元固定解约手续费＝8420元。保险人实收退费9000元，依次抵扣后剩余600元，因此最终退投保人600元。",
+      "grounded": true,
+      "citedTexts": [
+        "# 绛帆保费融资清算 JF-2\n\n2026年9月18日起适用于新增融资合同，以下名称与金额均为虚构。融资方先代投保人向保险人支付全年保费，投保人再向融资方分期偿还。保险赔款归属仍由保单决定；分期融资余额不等同于保险责任限额。\n\n## 清偿项的边界\n\n解约应清偿额由未偿融资本金、截至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n",
+        "得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。\n\n## 利息口径\n\n实收退费前，剩余本金按年单利7.2%、实际天数/360继续计息；实收当日不再计该已偿本金利息。示例中的‘截至结算日利息’已经包含全部应计天数，不得再另外叠加一次日息。若客户先自行清偿本金，之后收到的退费应按剩余应清偿项核对，不能再次收回同一笔本金。\n\n## 两张演算卡\n\n甲：未偿本金8000元，截至结算日利息120元，保险人实收退费9000元，未发生其他费用。乙：未偿本金8000元，截至结算日利息120元，实收退费7600元，未发生其他费用。两卡均适用JF-2且非监管强制撤销。\n\n",
+        "至结算日已发生的融资利息和固定解约手续费300元构成。未发生的未来利息不提前收取；保单退保损失已经体现在保险人退费净额中，融资方不得以同一名目再扣一次。正常分期的账户管理费不在解约结算中重复征收。\n\n## 退费流向\n\n退保须投保人发起并取得保险人确认，融资方不能自行宣布保单失效。保险人退费直接进入融资清算专户，依次抵扣已发生利息、300元手续费、未偿本金；有剩余才退投保人，不足部分由投保人补齐。退费未实收前只登记预计款，不能当作本金已经偿还。\n\n## 操作与核对\n\n经办核验退保申请签名、保单号、融资合同号三者关联后，向保险人请求确认退费净额。保险人的试算书与实付回单分开归档，试算书可能因结算日期变动而变化，因此不得提前制作‘结清’证明。清算专户的每笔来款先做保单归属核对，多保单同一转账也要拆为对应合同，不以客户姓名相同自动冲抵另一合同。客户争议应记录具体项目和凭证，不能把争议金额从所有合同本金中统一扣除。\n\n"
+      ],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    },
+    {
+      "token": "c96d7e66180d422cba943c56b28273d1",
+      "question": "栖衡明年的市场碳价会涨到多少元？",
+      "gold": {
+        "referenceAnswer": "文档未提供未来市场碳价，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "把92元演练参考价当预测"
+        ],
+        "requiredFacts": [
+          "文档未提供未来市场碳价",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "5af9995d7a9764a3e0e1ee21acd42dd5738fa1d650ef8ddaeb48b5eceb032c41"
+    },
+    {
+      "token": "f9f6c087b85446e7b707548daf992e46",
+      "question": "绛帆演算客户是否患有既往疾病？",
+      "gold": {
+        "referenceAnswer": "文档未提供被保险人健康资料，无法据此确定。",
+        "answerable": false,
+        "forbiddenConfusions": [
+          "推测客户健康状况"
+        ],
+        "requiredFacts": [
+          "文档未提供被保险人健康资料",
+          "明确拒绝猜测"
+        ],
+        "evidence": []
+      },
+      "answer": "当前知识库中未找到足够的相关依据，无法回答该问题。",
+      "grounded": false,
+      "citedTexts": [],
+      "sourceRef": "d5959debbcb6aff75fbf861dfc2b7862007c3ddf352810eaf7fd43b5e0a6d558"
+    }
+  ]
+}

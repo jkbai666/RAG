@@ -1,0 +1,24 @@
+{
+  "assignments": [
+    {
+      "agentId": "01a1edf7-2789-77a3-b877-62e709e9c10b",
+      "input": "review-inputs/part-01.json",
+      "output": "review-output-01.json"
+    },
+    {
+      "agentId": "01a1edf7-27a9-7c30-b939-fb7f1a5bcb83",
+      "input": "review-inputs/part-02.json",
+      "output": "review-output-02.json"
+    },
+    {
+      "agentId": "01a1edf7-27cb-7b23-9813-d64d87d303e0",
+      "input": "review-inputs/part-03.json",
+      "output": "review-output-03.json"
+    },
+    {
+      "agentId": "01a1edf7-27eb-7991-a82b-42fcb8489160",
+      "input": "review-inputs/part-04.json",
+      "output": "review-output-04.json"
+    }
+  ]
+}

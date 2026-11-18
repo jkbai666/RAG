@@ -25,14 +25,22 @@ public class DocumentParser {
     private static final Set<String> ABBREVIATIONS = Set.of("mr", "mrs", "ms", "dr", "prof", "sr", "jr", "st", "vs", "etc", "e.g", "i.e");
     record PageSpan(int start, int end, int page) {}
     record Extracted(String text, List<PageSpan> pages) {}
-    private enum Kind { PROSE, LIST, CODE }
+    record SourceSpan(int bodyStart, int bodyEnd, int start, int end) {}
+    record Split(List<Chunk> chunks, List<SourceSpan> spans) {}
+    record Unit(int id, int start, int end, String kind) {}
+    private enum Kind { PROSE, LIST, CODE, TABLE }
     private record Block(int start, int end, Kind kind) {}
     private record Line(int start, int end, String content) {}
 
     public List<Chunk> parse(String documentId, String format, byte[] bytes, int size, int overlap) {
         validateParameters(size, overlap);
-        Extracted extracted = "pdf".equals(format) ? pdf(bytes) : utf8(bytes);
+        Extracted extracted = extract(format, bytes);
         return split(documentId, extracted, size, overlap);
+    }
+    Extracted extract(String format, byte[] bytes) {
+        Extracted extracted = "pdf".equals(format) ? pdf(bytes) : utf8(bytes);
+        validateText(extracted.text());
+        return extracted;
     }
     Extracted utf8(byte[] bytes) {
         try {
@@ -64,10 +72,12 @@ public class DocumentParser {
         } catch (IOException e) { throw new ApiException(422,"INVALID_PDF","PDF无法读取、已加密或文件损坏"); }
     }
     List<Chunk> split(String id, Extracted extracted, int size, int overlap) {
+        return splitWithSpans(id, extracted, size, overlap).chunks();
+    }
+    Split splitWithSpans(String id, Extracted extracted, int size, int overlap) {
         validateParameters(size, overlap);
         String text = extracted.text();
-        if (text.length() > MAX_TEXT_CHARS) throw new ApiException(422,"TEXT_TOO_LARGE","提取正文过长，超过400万UTF-16单元，请拆小文档后重新上传");
-        if (text.isBlank()) throw new ApiException(422,"NO_TEXT","文档没有可提取正文；扫描型PDF不支持OCR");
+        validateText(text);
 
         // All boundaries are original UTF-16 offsets; lengths and overlap are Unicode code points.
         int[] points = new int[text.length()+1];
@@ -98,26 +108,126 @@ public class DocumentParser {
             if (end > start) bodies.add(new Block(start, end, block.kind()));
         }
 
+        return materialize(id, extracted, bodies.stream().map(Block::end).toList(), size, overlap);
+    }
+
+    Split materialize(String id, Extracted extracted, List<Integer> bodyEnds, int size, int overlap) {
+        validateParameters(size, overlap);
+        String text = extracted.text();
+        validateText(text);
         List<Chunk> result = new ArrayList<>();
+        List<SourceSpan> spans = new ArrayList<>();
         int firstPage = 0;
-        for (Block body : bodies) {
-            int start = text.offsetByCodePoints(body.start(), -Math.min(overlap, points[body.start()]));
+        int bodyStart = 0;
+        for (int bodyEnd : bodyEnds) {
+            if (bodyEnd <= bodyStart || bodyEnd > text.length()
+                    || (bodyEnd < text.length() && Character.isLowSurrogate(text.charAt(bodyEnd))))
+                throw new IllegalArgumentException("invalid body boundary");
+            int start = bodyStart;
+            // Walk at most overlap code points; avoid scanning the entire prefix for each body.
+            for (int n=0; n<overlap && start>0; n++) start = text.offsetByCodePoints(start,-1);
+            if (text.codePointCount(start,bodyEnd) > size || text.substring(bodyStart,bodyEnd).isBlank())
+                throw unsplittable();
             while (firstPage < extracted.pages().size() && extracted.pages().get(firstPage).end() <= start) firstPage++;
             Integer pageStart = null, pageEnd = null;
             for (int p=firstPage; p<extracted.pages().size(); p++) {
                 PageSpan span = extracted.pages().get(p);
-                if (span.start() >= body.end()) break;
+                if (span.start() >= bodyEnd) break;
                 if (pageStart == null) pageStart = span.page();
                 pageEnd = span.page();
             }
             result.add(new Chunk(UUID.randomUUID().toString(),id,result.size()+1,
-                    text.substring(start,body.end()),pageStart,pageEnd));
+                    text.substring(start,bodyEnd),pageStart,pageEnd));
+            spans.add(new SourceSpan(bodyStart,bodyEnd,start,bodyEnd));
+            bodyStart = bodyEnd;
         }
-        return result;
+        if (bodyStart != text.length()) throw new IllegalArgumentException("incomplete body coverage");
+        return new Split(List.copyOf(result),List.copyOf(spans));
     }
 
-    private static void validateParameters(int size, int overlap) {
+    static void validateParameters(int size, int overlap) {
         if (size < 1 || overlap < 0 || overlap >= size) throw new IllegalArgumentException("invalid chunk parameters");
+    }
+    private static void validateText(String text) {
+        if (text.length() > MAX_TEXT_CHARS) throw new ApiException(422,"TEXT_TOO_LARGE","提取正文过长，超过400万UTF-16单元，请拆小文档后重新上传");
+        if (text.isBlank()) throw new ApiException(422,"NO_TEXT","文档没有可提取正文；扫描型PDF不支持OCR");
+    }
+
+    List<Unit> units(Extracted extracted, int size, int overlap) {
+        validateParameters(size,overlap);
+        String text = extracted.text();
+        validateText(text);
+        List<Unit> units = new ArrayList<>();
+        int precedingPoints = 0;
+        for (Block paragraph : paragraphs(text,!extracted.pages().isEmpty())) {
+            for (Block block : tableBlocks(text,paragraph)) {
+                int capacity = size - Math.min(overlap,precedingPoints);
+                int length = text.codePointCount(block.start(),block.end());
+                if (length <= capacity) {
+                    units.add(new Unit(units.size()+1,block.start(),block.end(),block.kind().name()));
+                } else {
+                    if (block.kind()==Kind.CODE) throw unsplittable();
+                    List<Integer> ends = block.kind()==Kind.TABLE ? tableRowEnds(text,block) : sentenceEnds(text,block);
+                    int start = block.start(), end = start, consumed = 0;
+                    for (int boundary : ends) {
+                        if (boundary <= end) continue;
+                        if (text.codePointCount(start,boundary)>capacity) {
+                            if (end==start) throw unsplittable();
+                            units.add(new Unit(units.size()+1,start,end,block.kind().name()));
+                            consumed += text.codePointCount(start,end);
+                            start = end;
+                            capacity = size - Math.min(overlap,precedingPoints+consumed);
+                            if (text.codePointCount(start,boundary)>capacity) throw unsplittable();
+                        }
+                        end = boundary;
+                    }
+                    if (end>start) units.add(new Unit(units.size()+1,start,end,block.kind().name()));
+                }
+                precedingPoints += length;
+            }
+        }
+        return List.copyOf(units);
+    }
+
+    private static List<Block> tableBlocks(String text, Block block) {
+        if (block.kind()!=Kind.PROSE) return List.of(block);
+        List<Line> lines = lines(text.substring(block.start(),block.end()));
+        List<Block> result = new ArrayList<>();
+        int cursor = block.start();
+        for (int i=0; i+1<lines.size(); i++) {
+            String header = lines.get(i).content(), delimiter = lines.get(i+1).content();
+            if (!header.contains("|") || !delimiter.matches("\\s*\\|?\\s*:?-{3,}:?\\s*(?:\\|\\s*:?-{3,}:?\\s*)*\\|?\\s*")) continue;
+            int tableStart = block.start()+lines.get(i).start();
+            if (!addBlock(result,text,cursor,tableStart,Kind.PROSE)) tableStart = cursor;
+            int last = i+1;
+            while (last+1<lines.size() && lines.get(last+1).content().contains("|") && !lines.get(last+1).content().isBlank()) last++;
+            while (last+1<lines.size() && lines.get(last+1).content().isBlank()) last++;
+            cursor = block.start()+lines.get(last).end();
+            result.add(new Block(tableStart,cursor,Kind.TABLE));
+            i = last;
+        }
+        if (cursor<block.end()) {
+            if (!addBlock(result,text,cursor,block.end(),Kind.PROSE) && !result.isEmpty()) {
+                Block last = result.remove(result.size()-1);
+                result.add(new Block(last.start(),block.end(),last.kind()));
+            }
+        }
+        return result.isEmpty() ? List.of(block) : result;
+    }
+
+    private static List<Integer> tableRowEnds(String text, Block block) {
+        List<Line> rows = lines(text.substring(block.start(),block.end()));
+        List<Integer> ends = new ArrayList<>();
+        int first = 0;
+        while (first<rows.size() && rows.get(first).content().isBlank()) first++;
+        // A header and delimiter stay with the first data row. Never cut inside a row.
+        for (int i=first+2; i<rows.size(); i++) {
+            int end = rows.get(i).end();
+            while (i+1<rows.size() && rows.get(i+1).content().isBlank()) end = rows.get(++i).end();
+            ends.add(block.start()+end);
+        }
+        if (ends.isEmpty() || ends.get(ends.size()-1)!=block.end()) ends.add(block.end());
+        return ends;
     }
     private static ApiException unsplittable() {
         return new ApiException(422,"UNSPLITTABLE_TEXT","完整句子或代码块超过切块安全上限（已预留重叠容量），请增加块大小或在原文补充段落/句子边界；不会按字符截断");

@@ -1,1 +1,5 @@
 *.pdf binary
+# Frozen evaluation inputs and reports are hashed as bytes; never normalize EOLs.
+evaluation/dataset/** -text
+evaluation/runs/** -text
+evaluation/validate_dataset.py -text

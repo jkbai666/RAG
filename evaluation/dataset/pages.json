@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "offsetEncoding": "UTF-16",
+  "documents": {
+    "dev-03": [
+      {
+        "page": 1,
+        "start": 0,
+        "end": 1455
+      },
+      {
+        "page": 2,
+        "start": 1455,
+        "end": 2524
+      },
+      {
+        "page": 3,
+        "start": 2524,
+        "end": 3364
+      }
+    ],
+    "val-01": [
+      {
+        "page": 1,
+        "start": 0,
+        "end": 1653
+      },
+      {
+        "page": 2,
+        "start": 1653,
+        "end": 2696
+      },
+      {
+        "page": 3,
+        "start": 2696,
+        "end": 3687
+      }
+    ],
+    "val-06": [
+      {
+        "page": 1,
+        "start": 0,
+        "end": 3497
+      },
+      {
+        "page": 2,
+        "start": 3497,
+        "end": 6758
+      },
+      {
+        "page": 3,
+        "start": 6758,
+        "end": 8720
+      },
+      {
+        "page": 4,
+        "start": 8720,
+        "end": 12340
+      },
+      {
+        "page": 5,
+        "start": 12340,
+        "end": 15518
+      },
+      {
+        "page": 6,
+        "start": 15518,
+        "end": 17569
+      },
+      {
+        "page": 7,
+        "start": 17569,
+        "end": 21072
+      },
+      {
+        "page": 8,
+        "start": 21072,
+        "end": 24545
+      },
+      {
+        "page": 9,
+        "start": 24545,
+        "end": 27302
+      }
+    ]
+  }
+}

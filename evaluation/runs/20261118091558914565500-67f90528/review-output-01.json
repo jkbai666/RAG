@@ -1,0 +1,2053 @@
+{
+  "reviewer": "blind-review-01",
+  "independent": true,
+  "items": [
+    {
+      "token": "cec8b0a123654786abbc81dcb6dae693",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "加1.8个百分点",
+          "correct": true,
+          "reason": "明确为百分点加收，未误写乘法。"
+        },
+        {
+          "fact": "仅逾期本金",
+          "correct": true,
+          "reason": "明确排除正常本金。"
+        },
+        {
+          "fact": "不对已计利息加收",
+          "correct": true,
+          "reason": "明确禁止利息上加收。"
+        }
+      ],
+      "notes": "两段引用均含完整利率及适用范围，未见禁止混淆。 执行记录：agent ID=blind-review-01；评分指令SHA-256=9f31ab3f4366537e24ff84424ef33e8daeb6f2aae17f61699f80e36456e54dac；唯一输入包文件SHA-256=0784eb11b20dc1e45b06b1bf873f5c63167a55b61be542c973f8776354308632；冻结rubric SHA-256=56f0b9a298e90a7c6027076d17872b8abf12c8b0b4ca25b3996a8b1059640066；底层精确模型标识及温度未由工具暴露，无法取得，未作推测。",
+      "goldIssue": null
+    },
+    {
+      "token": "dca83dd642b34b89b67417d936873f6e",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 0,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "未实收不算还本",
+          "correct": true,
+          "reason": "明确预计款不降低本金，试算书不作结清。"
+        },
+        {
+          "fact": "7.2%年单利",
+          "correct": false,
+          "reason": "未说明继续计息的利率及单利口径。"
+        },
+        {
+          "fact": "实际天数/360",
+          "correct": false,
+          "reason": "未给出日数及年基数口径。"
+        }
+      ],
+      "notes": "核心未还本判断正确，但漏两项冻结必要事实；两条引文支持该判断及试算书限制，均未覆盖继续计息条款。",
+      "goldIssue": null
+    },
+    {
+      "token": "fd1be2c6c79848009991f614a5b44f6f",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "不收未来利息",
+          "correct": true,
+          "reason": "明确未发生未来利息不提前收。"
+        },
+        {
+          "fact": "不重复扣退保损失",
+          "correct": true,
+          "reason": "明确已在净退费中体现，不再扣。"
+        },
+        {
+          "fact": "不重复收管理费",
+          "correct": true,
+          "reason": "明确正常分期管理费不重复征收。"
+        },
+        {
+          "fact": "应清偿额包含未偿本金",
+          "correct": false,
+          "reason": "附加声称结算仅包括利息和300元手续费，排除了原文明确的未偿本金。"
+        }
+      ],
+      "notes": "三项所问禁收规则均答对，但“仅包括”造成实质清偿范围错误；引文支持禁收规则和300元，不能支持排除本金。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "08673d3f08b2459e9c2c8997fcd8dbb8",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "10天",
+          "correct": true,
+          "reason": "8月10日计入、20日排除，计10天。"
+        },
+        {
+          "fact": "3.6%",
+          "correct": true,
+          "reason": "正确使用原文常规年利率。"
+        },
+        {
+          "fact": "利息300元",
+          "correct": true,
+          "reason": "300000×0.036×10÷360=300元。"
+        }
+      ],
+      "notes": "作答及运算完整正确；两段引文分别支持计息规则和演练输入，但都截掉了常规3.6%的利率规定，联合引用仍不足。",
+      "goldIssue": null
+    },
+    {
+      "token": "c0287d9930b748d6aae0f6514fa8fe74",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "免解约手续费",
+          "correct": true,
+          "reason": "明确免300元。"
+        },
+        {
+          "fact": "已发生融资利息仍清偿",
+          "correct": true,
+          "reason": "明确仍需清偿。"
+        },
+        {
+          "fact": "正式监管撤销决定",
+          "correct": true,
+          "reason": "题干已给正式撤销事实，回答保留产品备案问题及监管要求撤销的限定，未将自愿退保等同监管撤销。"
+        }
+      ],
+      "notes": "结合题干已成立的正式撤销条件，答案完整；两版均免手续费的补充也有引文支持。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "fadc74b7ce2d4959b61de822955d5d7d",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "不自动接受或拒绝",
+          "correct": true,
+          "reason": "明确沉默不构成任何自动选择。"
+        },
+        {
+          "fact": "争议挂起",
+          "correct": true,
+          "reason": "明确进入争议挂起。"
+        },
+        {
+          "fact": "不释放担保款",
+          "correct": true,
+          "reason": "明确不释放。"
+        }
+      ],
+      "notes": "保留当日16:00期限和容差外情境，两条引文均支持完整处置。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "ee85a2280a8a44109b65b35d12037c88",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "不收未来利息",
+          "correct": true,
+          "reason": "明确未发生未来利息不提前收。"
+        },
+        {
+          "fact": "不重复扣退保损失",
+          "correct": true,
+          "reason": "净退费已含损失，不再扣。"
+        },
+        {
+          "fact": "不重复收管理费",
+          "correct": true,
+          "reason": "明确正常分期管理费不重复征收。"
+        }
+      ],
+      "notes": "清偿额列入本金、已发生利息和300元手续费，三项禁止重复或提前收费均完整且有引用。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "c3127f14dace48f2bb43a90c30806f33",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "990吨在98%至102%容差内",
+          "correct": true,
+          "reason": "1000吨的容差为980至1020吨，990吨且年度账户匹配。"
+        },
+        {
+          "fact": "按实交量",
+          "correct": true,
+          "reason": "用990吨计算货款。"
+        },
+        {
+          "fact": "货款79200元",
+          "correct": true,
+          "reason": "990×80=79200元。"
+        }
+      ],
+      "notes": "答案正确。首引文提供演练数量单价，次引文支持容差比例；均未包含货款必须按实际合格交量支付的条款，必要规则引用不完整。",
+      "goldIssue": null
+    },
+    {
+      "token": "c8f8124b76544caa9e0aecc35b42efd7",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "JF-1",
+          "correct": true,
+          "reason": "9月1日签署早于9月18日，适用旧版。"
+        },
+        {
+          "fact": "500元",
+          "correct": true,
+          "reason": "明确自愿退保收500元。"
+        },
+        {
+          "fact": "更改地址不等于重签",
+          "correct": true,
+          "reason": "明确仅更新地址不迁移版本。"
+        }
+      ],
+      "notes": "两段引用联合覆盖签约边界、旧版500元及地址变更；附言“免300元”借用新版例外措辞，但未改变本题旧版收500元的明确结论。",
+      "goldIssue": null
+    },
+    {
+      "token": "94af3107ffec445082e84b4cc8ced90e",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供健康资料",
+          "correct": true,
+          "reason": "以相关依据不足明确拒答，原文确未提供健康资料。"
+        },
+        {
+          "fact": "不猜测既往疾病",
+          "correct": true,
+          "reason": "未推断患病或无病。"
+        }
+      ],
+      "notes": "简洁资料不足拒答符合不可答题要求，无引用也未伪造正面证据。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "d291adb86fe944058efacb73a8665cd8",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供未来基准利率预测",
+          "correct": true,
+          "reason": "明确缺少作答依据，符合原文未载预测。"
+        },
+        {
+          "fact": "不猜测未来利率",
+          "correct": true,
+          "reason": "未将演练固定利率用于未来季度。"
+        }
+      ],
+      "notes": "正确拒答且无预测数值；不要求复述具体缺失字段。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "b7797d63533b40afa54e63f78e087884",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "QH-4",
+          "correct": true,
+          "reason": "明确10月1日起新签适用QH-4。"
+        },
+        {
+          "fact": "不按旧号前缀决定",
+          "correct": true,
+          "reason": "明确复用旧号不适用QH-3。"
+        },
+        {
+          "fact": "赔偿不以担保款封顶",
+          "correct": true,
+          "reason": "明确取消上限、按公式计算且可追补。"
+        }
+      ],
+      "notes": "引用版本段已直接支持全部所需结论；虽未另引担保划付段，但重复表述的追补结论在本引用中完整成立。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "178aa8b79e724e7db6ac44b35a37c3ef",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供实际账户号",
+          "correct": true,
+          "reason": "明确依据不足，原文也声明未提供实际登记账户。"
+        },
+        {
+          "fact": "不编造账号",
+          "correct": true,
+          "reason": "没有把交易号或数值当作账户。"
+        }
+      ],
+      "notes": "资料不足拒答正确，没有无据账户信息或伪造引用。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "ecf185aaad2c49a09eb545bfb426af19",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 0,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "未实收不算还本",
+          "correct": true,
+          "reason": "正确区分试算书、预计款与实收还本。"
+        },
+        {
+          "fact": "7.2%年单利",
+          "correct": false,
+          "reason": "未说明实收前按7.2%年单利计息。"
+        },
+        {
+          "fact": "实际天数/360",
+          "correct": false,
+          "reason": "遗漏继续计息的实际天数及360口径。"
+        }
+      ],
+      "notes": "未降低本金的主结论正确，但遗漏冻结必要计息事实；唯一引用也止于操作核对段，未含利息口径。",
+      "goldIssue": null
+    },
+    {
+      "token": "8a44374575ca4f918ca61a565bd4fc85",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "项目减排量不可替代",
+          "correct": true,
+          "reason": "明确标的须为指定年度碳配额。"
+        },
+        {
+          "fact": "指定年度配额实际划入且可用",
+          "correct": true,
+          "reason": "明确实际入约定账户的可用配额才算。"
+        },
+        {
+          "fact": "申请截图不算完成",
+          "correct": true,
+          "reason": "明确截图不是回单，提交申请不构成交收。"
+        }
+      ],
+      "notes": "两条引用均覆盖标的、合格到账与截图限制，未把申请或其他资产当成交收。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "72a6607cf1214d899a1f4afb8fd929fc",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "占额90万元",
+          "correct": false,
+          "reason": "拒答，未合计60万元本金与30万元银票。"
+        },
+        {
+          "fact": "可用30万元",
+          "correct": false,
+          "reason": "未作120−90的可用额度计算。"
+        },
+        {
+          "fact": "利息与未承兑订单不占额",
+          "correct": false,
+          "reason": "拒答，未说明排除两项。"
+        }
+      ],
+      "notes": "完整原文已给足总额、快照和占额规则，无根据拒答；无引用覆盖任何必要结论。",
+      "goldIssue": null
+    },
+    {
+      "token": "66651d07d576462287fcff58f083ceb2",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供实际账户号",
+          "correct": true,
+          "reason": "依据不足拒答，符合完整约定未披露账号。"
+        },
+        {
+          "fact": "不猜测账号",
+          "correct": true,
+          "reason": "未把交易号、金额或其他信息编成账号。"
+        }
+      ],
+      "notes": "正确简洁拒答；不提供引用不构成伪造支持。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "901076005ec14b58b1bf4b61f88dd1b1",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供未来基准利率预测",
+          "correct": true,
+          "reason": "以资料不足拒答，与作业卡的信息边界相符。"
+        },
+        {
+          "fact": "不把演练利率当预测",
+          "correct": true,
+          "reason": "未报任何未来季度利率。"
+        }
+      ],
+      "notes": "拒答处置正确，不需要复述缺失字段。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "737af15e4ce749cd9286e9b245b469d1",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "不自动接受或拒绝",
+          "correct": true,
+          "reason": "明确未按期选择不代表接受或拒绝。"
+        },
+        {
+          "fact": "争议挂起",
+          "correct": true,
+          "reason": "明确挂起。"
+        },
+        {
+          "fact": "不释放担保款",
+          "correct": true,
+          "reason": "明确保留担保。"
+        }
+      ],
+      "notes": "当日16:00时限及三项处置均正确，两条引用实际支持结论。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "86e6e1de0fde4ae0a0dad8f2cea3ad10",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 3,
+        "conditions": 4,
+        "numbers": 2,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "先120元利息、再300元手续费、再本金",
+          "correct": true,
+          "reason": "明确给出抵扣顺序和前两项金额。"
+        },
+        {
+          "fact": "抵本金7180元",
+          "correct": false,
+          "reason": "未实际写出7600−120−300=7180元或等价的本金抵扣数值。"
+        },
+        {
+          "fact": "补齐820元",
+          "correct": true,
+          "reason": "应清偿8420元减实收7600元，正确得820元并说明补齐。"
+        }
+      ],
+      "notes": "顺序和最终欠款正确，未给冻结要求的7180元本金抵扣额；该值可由所给数据推出，存在将隐含推导视作充分的评判分歧，本次按必要数值未表达记缺失。引用联合足以支持全部正确计算所需规则和输入。",
+      "goldIssue": null
+    },
+    {
+      "token": "98c1d0ed8aff438ebe7ae0e0315a3320",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "10天",
+          "correct": true,
+          "reason": "明确8月10日至19日计息共10天。"
+        },
+        {
+          "fact": "3.6%",
+          "correct": true,
+          "reason": "正确使用常规年利率。"
+        },
+        {
+          "fact": "利息300元",
+          "correct": true,
+          "reason": "本金300000元×0.036×10÷360=300元。"
+        }
+      ],
+      "notes": "第一引文给计息规则与演练输入，第二引文补足常规3.6%利率，联合完整。",
+      "goldIssue": null
+    },
+    {
+      "token": "3aded813cd5045d493a5b0067c83e3a2",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "QH-4",
+          "correct": true,
+          "reason": "正确按10月1日新签边界认定。"
+        },
+        {
+          "fact": "旧号前缀不决定版本",
+          "correct": true,
+          "reason": "明确旧前缀不使新合同适用QH-3。"
+        },
+        {
+          "fact": "赔偿不以担保款封顶",
+          "correct": true,
+          "reason": "明确按实际公式且可追补。"
+        }
+      ],
+      "notes": "版本引用本身已经明确取消上限和可追补，全部必要结论获得实际支持。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "ab69cb16575240dfb5bdc7db9ea3338c",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "价差下限零",
+          "correct": true,
+          "reason": "明确max(参考价−合同价,0)。"
+        },
+        {
+          "fact": "赔偿为零",
+          "correct": true,
+          "reason": "负价差时赔偿零。"
+        },
+        {
+          "fact": "买方不倒贴",
+          "correct": true,
+          "reason": "明确不倒贴。"
+        }
+      ],
+      "notes": "非负价差、零赔偿和不倒贴均有两段引用支持，未出现负赔偿混淆。",
+      "goldIssue": null
+    },
+    {
+      "token": "7d8625e9bebb409e8261a665dd0587c1",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 1,
+        "conditions": 2,
+        "numbers": 1,
+        "disposition": 0,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "货款76000元",
+          "correct": false,
+          "reason": "只复述输入，未计算950×80。"
+        },
+        {
+          "fact": "赔偿600元",
+          "correct": false,
+          "reason": "未用全部50吨少交差额及12元价差计算。"
+        },
+        {
+          "fact": "担保外补赔100元",
+          "correct": false,
+          "reason": "未说明600元赔偿扣500元担保后补100元。"
+        },
+        {
+          "fact": "担保不自动抵正常货款",
+          "correct": false,
+          "reason": "未说明担保款用途限制。"
+        },
+        {
+          "fact": "原文有计算及担保规则",
+          "correct": false,
+          "reason": "称原文未给公式，实际完整约定已明确三项规则。"
+        }
+      ],
+      "notes": "引文支持所复述的演练输入，但不能支持“原文无公式”的拒答理由；完整原文充分可答，且引用缺货款、差额平仓及担保划付条款。",
+      "goldIssue": null
+    },
+    {
+      "token": "a3a1f3befb4f4aeab9012670b140f292",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供客户他行负债",
+          "correct": true,
+          "reason": "依据不足拒答，完整作业卡明确未载他行负债。"
+        },
+        {
+          "fact": "不猜测他行金额",
+          "correct": true,
+          "reason": "未将本行60万元本金用于他行负债。"
+        }
+      ],
+      "notes": "正确拒答，未提供无据数值或伪造引用。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "d41ce9aa343d47f08be765fc9b6004d1",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "TY-2026B",
+          "correct": true,
+          "reason": "明确生效后采用TY-2026B。"
+        },
+        {
+          "fact": "清算成功才释放",
+          "correct": true,
+          "reason": "明确提交申请不足以释放。"
+        },
+        {
+          "fact": "不区分借据签署日期",
+          "correct": true,
+          "reason": "明确旧借据同样适用新释放规则。"
+        }
+      ],
+      "notes": "新旧处理和未清算不算可用的限制完整，两条引用均有直接支持；生效日由题干及原文成立。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "3ff590b7f6624d938526a59933d7f825",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "占额90万元",
+          "correct": true,
+          "reason": "只合计60万元本金与30万元已承兑票面。"
+        },
+        {
+          "fact": "可用30万元",
+          "correct": true,
+          "reason": "120−90=30万元。"
+        },
+        {
+          "fact": "应计利息与未承兑订单不占额",
+          "correct": true,
+          "reason": "明确排除0.2万元利息和10万元未承兑订单。"
+        }
+      ],
+      "notes": "规则、授信总额与独立快照输入由两段引用联合覆盖，未叠加另一借款演练。",
+      "goldIssue": null
+    },
+    {
+      "token": "a7a87fd35abb4805be2552e2b069b3dc",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "融资方不能自行宣布失效",
+          "correct": true,
+          "reason": "明确不能单方宣布保单失效。"
+        },
+        {
+          "fact": "投保人发起",
+          "correct": true,
+          "reason": "正确指定退保发起方。"
+        },
+        {
+          "fact": "保险人确认",
+          "correct": true,
+          "reason": "明确须取得保险人确认。"
+        }
+      ],
+      "notes": "三方权限及确认条件完整，引用直接支持全部回答。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "99ac7e091d894fa6a53b62e081a51f57",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "补齐两期盘点表",
+          "correct": true,
+          "reason": "明确必须补齐两期。"
+        },
+        {
+          "fact": "核验岗解除标记",
+          "correct": true,
+          "reason": "明确须由核验岗解除，经理独签无效。"
+        },
+        {
+          "fact": "展期不恢复新增提款",
+          "correct": true,
+          "reason": "明确展期只延本金到期，不自动解除冻结。"
+        }
+      ],
+      "notes": "恢复所需双条件和灾害展期边界均准确，唯一引用完整包含风险例外。",
+      "goldIssue": null
+    },
+    {
+      "token": "c9a8bad07d724ce7b4b1bf8384e76dc8",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "免解约手续费",
+          "correct": true,
+          "reason": "明确免300元手续费。"
+        },
+        {
+          "fact": "已发生融资利息仍清偿",
+          "correct": true,
+          "reason": "明确已发生利息仍须清偿。"
+        },
+        {
+          "fact": "正式监管撤销决定",
+          "correct": true,
+          "reason": "明确须针对该产品正式撤销，自愿退保等不自动满足。"
+        }
+      ],
+      "notes": "三条引文分别支持正式监管条件、利息清偿和两版均免手续费，联合充分。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "b543c236855a4983a5bc57a7fe60c4d5",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供客户他行负债",
+          "correct": true,
+          "reason": "以相关依据不足拒答，符合原文的信息边界。"
+        },
+        {
+          "fact": "不猜测他行负债",
+          "correct": true,
+          "reason": "没有将本行演练本金混为他行负债。"
+        }
+      ],
+      "notes": "正确资料不足拒答，未猜测金额。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "790f21e40c1d4dab84ad0d5bc0df36d4",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "补齐两期盘点表",
+          "correct": true,
+          "reason": "明确两期均须补齐。"
+        },
+        {
+          "fact": "核验岗解除标记",
+          "correct": true,
+          "reason": "明确核验岗解除，经理独签不够。"
+        },
+        {
+          "fact": "展期不恢复新增提款",
+          "correct": true,
+          "reason": "明确延到期与解除新增提款冻结不同。"
+        }
+      ],
+      "notes": "两段引用均提供完整风险例外，回答保留两项恢复门槛及展期限制。",
+      "goldIssue": null
+    },
+    {
+      "token": "0de4639e24924045af34614b2a4757a2",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供退保现金价值公式",
+          "correct": true,
+          "reason": "明确依据不足，原文确未载险种现金价值算法。"
+        },
+        {
+          "fact": "不猜测现金价值",
+          "correct": true,
+          "reason": "未使用7.2%融资利率反推。"
+        }
+      ],
+      "notes": "简洁拒答正确，无虚构公式或金额。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "c2ee78e76fbd4e9ca92bad03b4d31995",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "实收当日不再计已偿本金利息",
+          "correct": true,
+          "reason": "明确实收当日停止对已偿本金计息。"
+        },
+        {
+          "fact": "120元不重复加日息",
+          "correct": true,
+          "reason": "明确120元已含全部天数，不再叠加。"
+        }
+      ],
+      "notes": "正确保留“已偿本金”范围，未扩大为所有本金；引用联合提供日息规则和120元演算输入。",
+      "goldIssue": null
+    },
+    {
+      "token": "92991453ae5a44bc8e636607e05d5da1",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "提前至少5个工作日预约",
+          "correct": true,
+          "reason": "明确至少5个工作日。"
+        },
+        {
+          "fact": "预约日期提款",
+          "correct": true,
+          "reason": "明确须与提前预约同时满足。"
+        },
+        {
+          "fact": "不追溯既往借据",
+          "correct": true,
+          "reason": "明确优惠不追溯。"
+        }
+      ],
+      "notes": "两项门槛、工作日口径及不追溯完整；预约失败用常规利率的补充也被引用支持。",
+      "goldIssue": null
+    },
+    {
+      "token": "1cbbf7a014554ab881b809b1af11715e",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "项目减排量不可替代",
+          "correct": true,
+          "reason": "明确不能替代指定年度碳配额。"
+        },
+        {
+          "fact": "指定年度配额实际划入且可用",
+          "correct": true,
+          "reason": "明确登记系统实际入约定账户且可用。"
+        },
+        {
+          "fact": "申请截图不算完成",
+          "correct": true,
+          "reason": "明确申请截图非交收回单，仅提交不完成。"
+        }
+      ],
+      "notes": "两段引文均包含全部必要资产、到账及可用条件；不需机械增加重复证据。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "e8d3cf6de09b4fa8bac39b9c53682346",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供未来市场碳价",
+          "correct": true,
+          "reason": "以资料不足拒答，符合约定不载未来市场价。"
+        },
+        {
+          "fact": "不将92元演练价当预测",
+          "correct": true,
+          "reason": "没有给出明年碳价或涨幅。"
+        }
+      ],
+      "notes": "正确拒答，没有把设定参考价当实时或未来报价。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "ad1f248900214dc5983d74d3583cc495",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "货款76000元",
+          "correct": false,
+          "reason": "拒答，未计算950×80。"
+        },
+        {
+          "fact": "赔偿600元",
+          "correct": false,
+          "reason": "拒答，未按全差额50吨及12元价差计算。"
+        },
+        {
+          "fact": "担保外补赔100元",
+          "correct": false,
+          "reason": "拒答，未扣已缴担保500元。"
+        },
+        {
+          "fact": "担保不自动抵正常货款",
+          "correct": false,
+          "reason": "拒答，未说明担保划付边界。"
+        }
+      ],
+      "notes": "完整原文具备所有输入、计算和担保规则，无根据拒答，必要事实与引用均缺失。",
+      "goldIssue": null
+    },
+    {
+      "token": "959e647396fb474ab9973e0760ee7b32",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "实收当日不再计已偿本金利息",
+          "correct": true,
+          "reason": "明确只对已偿本金停止当日计息。"
+        },
+        {
+          "fact": "120元不重复加日息",
+          "correct": true,
+          "reason": "明确已含全部天数不得再加一次。"
+        }
+      ],
+      "notes": "唯一引用同时含利息口径及演算卡，直接支持两项必要事实。",
+      "goldIssue": null
+    },
+    {
+      "token": "a5ed4f934a5c42f5a27df580a7133837",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "先利息120元、再手续费300元、再本金",
+          "correct": true,
+          "reason": "抵扣顺序及两项金额完整。"
+        },
+        {
+          "fact": "抵本金7180元",
+          "correct": true,
+          "reason": "7600−120−300=7180元。"
+        },
+        {
+          "fact": "补齐820元",
+          "correct": true,
+          "reason": "8000−7180=820元，由投保人补齐。"
+        }
+      ],
+      "notes": "总应清偿8420元、本金抵扣和剩余欠款均正确，两段引用覆盖演算输入与抵扣规则。",
+      "goldIssue": null
+    },
+    {
+      "token": "54d235e135f54d23a5a5bf96c04c40c9",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "提前至少5个工作日预约",
+          "correct": true,
+          "reason": "明确至少5个工作日，未换成自然日。"
+        },
+        {
+          "fact": "预约日期提款",
+          "correct": true,
+          "reason": "明确同时须在预约日期提款。"
+        },
+        {
+          "fact": "不追溯既往借据",
+          "correct": true,
+          "reason": "明确不追溯。"
+        }
+      ],
+      "notes": "两段引用均直接包含全部优惠门槛；预约失败按常规利率也有根据。",
+      "goldIssue": null
+    },
+    {
+      "token": "5139424c14624c8ea6f0fba2e164f55d",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "清算成功当日降低计息本金",
+          "correct": true,
+          "reason": "明确清算当日生效，未拖至次日。"
+        },
+        {
+          "fact": "按笔到分四舍五入后合计",
+          "correct": true,
+          "reason": "明确先按笔取整，再合计，非整户合并取整。"
+        }
+      ],
+      "notes": "时点及取整单位顺序完整，补充的实际天数/360计算式与引文一致。",
+      "goldIssue": null
+    },
+    {
+      "token": "538a719a471e4dc390e3be1dcedcda03",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "JF-1",
+          "correct": true,
+          "reason": "9月1日合同按旧版，未按退保日期改版。"
+        },
+        {
+          "fact": "500元",
+          "correct": true,
+          "reason": "明确固定手续费500元。"
+        },
+        {
+          "fact": "更改地址不等于重签",
+          "correct": true,
+          "reason": "明确单纯地址更新不迁为新版。"
+        }
+      ],
+      "notes": "唯一引文覆盖全部版本及手续费规则；自愿退保不自动享受监管撤销豁免的补充正确。",
+      "goldIssue": null
+    },
+    {
+      "token": "3be03b9742644bd1b1ed481fbd548aac",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "本地故障不适用",
+          "correct": true,
+          "reason": "明确自家断网不适用。"
+        },
+        {
+          "fact": "登记服务方公告覆盖窗口",
+          "correct": true,
+          "reason": "明确公告须覆盖该合约交收窗口。"
+        },
+        {
+          "fact": "恢复后首工作日12:00",
+          "correct": true,
+          "reason": "明确过户新期限。"
+        },
+        {
+          "fact": "实际合格过户当日15:00付款",
+          "correct": true,
+          "reason": "明确付款以实际合格过户当日为准。"
+        }
+      ],
+      "notes": "首引文覆盖全部必要条件和期限，后两条支持服务台工单不足及本地故障区别；担保和年度资格的补充也有原文依据。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "3bcb10cfe2cf4a1b82a7ba7e37833a3d",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "TY-2026B",
+          "correct": true,
+          "reason": "明确2026年7月15日生效后采用新版释放规则。"
+        },
+        {
+          "fact": "清算成功才释放",
+          "correct": true,
+          "reason": "明确仅提交不释放，未清算不计可用。"
+        },
+        {
+          "fact": "不区分借据签署日期",
+          "correct": true,
+          "reason": "明确旧借据不能例外。"
+        }
+      ],
+      "notes": "首引文给版本过渡，次引文补足明确生效日期及一般释放规则，联合充分。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "513bbfe5c44e4109a2b2eb1211006474",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "在途设备不列可融资库存",
+          "correct": true,
+          "reason": "明确仅可备注不能列入。"
+        },
+        {
+          "fact": "确认借据金额和到账账户",
+          "correct": true,
+          "reason": "明确审批后仍须客户确认两项。"
+        },
+        {
+          "fact": "未确认次日失效",
+          "correct": true,
+          "reason": "明确次日失效且需重新核验额度。"
+        }
+      ],
+      "notes": "未混淆审批与放款，全部所问限制由唯一引用直接支持。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "c998126a8c9440c587d9fab82add563c",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "990吨在98%至102%容差内",
+          "correct": true,
+          "reason": "1000吨名义量下990吨在允许范围，年度账户匹配。"
+        },
+        {
+          "fact": "按实交量",
+          "correct": true,
+          "reason": "以990吨而非1000吨计款。"
+        },
+        {
+          "fact": "货款79200元",
+          "correct": true,
+          "reason": "990×80=79200元。"
+        }
+      ],
+      "notes": "答案数值及合格条件正确；两条引用给出演练及容差，却没有按实际合格交量支付货款的规则，联合引用不足。",
+      "goldIssue": null
+    },
+    {
+      "token": "bd3acec2cbd7412b92842e1b5bf75cee",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "完成交收且双方对账",
+          "correct": true,
+          "reason": "明确两个退担保前提均须完成。"
+        },
+        {
+          "fact": "两个工作日",
+          "correct": true,
+          "reason": "明确工作日，未写自然日。"
+        },
+        {
+          "fact": "仅保留争议部分",
+          "correct": true,
+          "reason": "明确未争议余额按期退回，不因部分争议全扣。"
+        }
+      ],
+      "notes": "退款起点、期限及争议款范围均完整，两段引用实际支持全部结论。",
+      "goldIssue": null
+    },
+    {
+      "token": "8b4e3684fffa420a81b3551eec0b178b",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供现金价值公式",
+          "correct": true,
+          "reason": "依据不足拒答，符合原文未提供险种公式。"
+        },
+        {
+          "fact": "不以融资利率猜算",
+          "correct": true,
+          "reason": "未用7.2%融资利率推算保险现金价值。"
+        }
+      ],
+      "notes": "拒答正确，未猜测保单现金价值或编造算法。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "e952eaf4ffd84369b575440dc37d8fbf",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "完成交收且双方对账",
+          "correct": true,
+          "reason": "明确完成交收和双方对账后起算。"
+        },
+        {
+          "fact": "两个工作日",
+          "correct": true,
+          "reason": "期限及工作日单位正确。"
+        },
+        {
+          "fact": "仅保留争议部分",
+          "correct": true,
+          "reason": "明确未争议余额按期退，不全扣。"
+        }
+      ],
+      "notes": "唯一引文完整支持起算条件、期限及部分争议处理。",
+      "goldIssue": null
+    },
+    {
+      "token": "31eaf05aff3945d78c809a7412b7bbf7",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "在途设备不列可融资库存",
+          "correct": true,
+          "reason": "明确只能备注。"
+        },
+        {
+          "fact": "确认借据金额和到账账户",
+          "correct": true,
+          "reason": "明确审批后客户仍须确认两项。"
+        },
+        {
+          "fact": "未确认次日失效",
+          "correct": true,
+          "reason": "明确失效时点并需重核可用额。"
+        }
+      ],
+      "notes": "两段引用均支持完整操作条件，没有把获批等同自动放款。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "d8b8fbea581c418aa147c56c6795dd15",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "清算成功当日",
+          "correct": true,
+          "reason": "明确分次还款当日降低计息本金。"
+        },
+        {
+          "fact": "按笔到分四舍五入后合计",
+          "correct": true,
+          "reason": "明确先逐笔到分取整，后合计。"
+        }
+      ],
+      "notes": "生效时点与取整单位顺序正确，两段引用均含必要规则。",
+      "goldIssue": null
+    },
+    {
+      "token": "30b65ba5302a400c9715ec44e0b9b306",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "加1.8个百分点",
+          "correct": true,
+          "reason": "明确在适用正常年利率上加百分点。"
+        },
+        {
+          "fact": "仅逾期本金",
+          "correct": true,
+          "reason": "明确排除正常本金。"
+        },
+        {
+          "fact": "不对已计利息加收",
+          "correct": true,
+          "reason": "明确利息不作为逾期附加计收对象。"
+        }
+      ],
+      "notes": "全部数值及适用范围由两段引用支持，未混淆百分点与乘以1.8%。",
+      "goldIssue": null
+    },
+    {
+      "token": "17f062ee0f2a46138dac4834eaa7a565",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "价差下限零",
+          "correct": true,
+          "reason": "正确使用max(参考价−合同价,0)。"
+        },
+        {
+          "fact": "赔偿为零",
+          "correct": true,
+          "reason": "参考价低于合同价时明确为零。"
+        },
+        {
+          "fact": "买方不倒贴",
+          "correct": true,
+          "reason": "明确无需倒贴。"
+        }
+      ],
+      "notes": "公式及非负价差处理正确，两段引用联合完整支持。",
+      "goldIssue": null
+    },
+    {
+      "token": "bb484f01b29f46b697e0aecc68294699",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "融资方不能自行宣布失效",
+          "correct": true,
+          "reason": "明确不能自行宣布。"
+        },
+        {
+          "fact": "投保人发起",
+          "correct": true,
+          "reason": "明确退保由投保人发起。"
+        },
+        {
+          "fact": "保险人确认",
+          "correct": true,
+          "reason": "明确须取得保险人确认。"
+        }
+      ],
+      "notes": "权限和程序完整，唯一引用直接包含全部必要事实。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "dc4638a7754d42219d485b5c14f46601",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": 0,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "清偿8420元",
+          "correct": true,
+          "reason": "正确合计本金8000、利息120和手续费300元。"
+        },
+        {
+          "fact": "退投保人580元",
+          "correct": false,
+          "reason": "答160元，9000−8420应为580元，核心减法错误。"
+        }
+      ],
+      "notes": "三条引用分别支持输入、清偿组成和抵扣顺序，均有实际局部支持；联合不能支持错误的160元退款，按正确口径应退580元。",
+      "goldIssue": null
+    },
+    {
+      "token": "eb80ccb04e1d4572b2f28523057e2fe7",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "本地故障不适用",
+          "correct": true,
+          "reason": "明确卖方自家断网不能顺延。"
+        },
+        {
+          "fact": "登记服务方公告覆盖窗口",
+          "correct": true,
+          "reason": "明确须服务方公告且覆盖合约交收窗口。"
+        },
+        {
+          "fact": "恢复后首工作日12:00",
+          "correct": true,
+          "reason": "过户截止时点正确。"
+        },
+        {
+          "fact": "实际合格过户当日15:00付款",
+          "correct": true,
+          "reason": "明确以实际合格过户当日为准。"
+        }
+      ],
+      "notes": "首引文直接支持全部必要期限和限制，英文引文支持工单不足以确立例外；无效年度及担保的补充正确。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "c090975223db42b8a062a3529e4c7754",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": 0,
+        "disposition": 4,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "清偿8420元",
+          "correct": true,
+          "reason": "8000＋120＋300=8420元正确。"
+        },
+        {
+          "fact": "退投保人580元",
+          "correct": false,
+          "reason": "答600元，9000−8420=580元，不存在取整为600元的规则。"
+        }
+      ],
+      "notes": "三条引文有清偿组成、演算输入及退余额规则的实际局部支持，但无法支持600元退款；核心减法错误。",
+      "goldIssue": null
+    },
+    {
+      "token": "c96d7e66180d422cba943c56b28273d1",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供未来市场碳价",
+          "correct": true,
+          "reason": "资料不足拒答，与约定信息边界一致。"
+        },
+        {
+          "fact": "不将演练参考价当预测",
+          "correct": true,
+          "reason": "未使用92元或其他设定值预测明年。"
+        }
+      ],
+      "notes": "正确简洁拒答，未猜测未来价格或编造来源。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    },
+    {
+      "token": "f9f6c087b85446e7b707548daf992e46",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "未提供健康资料",
+          "correct": true,
+          "reason": "以依据不足拒答，完整规则确未给出被保险人健康资料。"
+        },
+        {
+          "fact": "不猜测既往疾病",
+          "correct": true,
+          "reason": "未对客户有无既往疾病作推断。"
+        }
+      ],
+      "notes": "拒答处置正确，缺失字段无需逐字复述，未伪造证据。 条件维度不适用：本题仅检查资料缺失下的拒答，无需判定业务条件或版本。 数值维度不适用：无须提供数量、金额、利率、运算或取整结果；仅时点/版本归条件维度。",
+      "goldIssue": null
+    }
+  ]
+}

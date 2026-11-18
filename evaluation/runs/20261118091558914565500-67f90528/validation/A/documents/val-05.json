@@ -1,0 +1,910 @@
+{
+  "documentId" : "val-05",
+  "split" : "validation",
+  "arm" : "A",
+  "status" : "ready",
+  "latencyMs" : 4159,
+  "coverageValid" : true,
+  "error" : null,
+  "strategy" : "RULE",
+  "fallbackReason" : null,
+  "chunks" : [ {
+    "id" : "428ae155-21e7-464b-aa73-f68fbb8ac89b",
+    "documentId" : "val-05",
+    "index" : 1,
+    "text" : "栖衡碳配额远期交收约定 QH-4\n本约定为虚构企业间人民币结算业务，不是真实交易所规则。2026年10月1日起签订的合同适用。标的是指定年度碳配额，单位为吨，不能以项目减排量替代。交收量以登记系统实际划入合约约定账户的可用配额为准；转出申请截图不是交收回单。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "07a84257-9bda-4e8b-989c-21848745c2fc",
+    "documentId" : "val-05",
+    "index" : 2,
+    "text" : "业务，不是真实交易所规则。2026年10月1日起签订的合同适用。标的是指定年度碳配额，单位为吨，不能以项目减排量替代。交收量以登记系统实际划入合约约定账户的可用配额为准；转出申请截图不是交收回单。\n\n附录甲：Counterparty preparation and authority records\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "3c38d7d3-ef50-4d2e-9864-6a851a96fce9",
+    "documentId" : "val-05",
+    "index" : 3,
+    "text" : "目减排量替代。交收量以登记系统实际划入合约约定账户的可用配额为准；转出申请截图不是交收回单。\n\n附录甲：Counterparty preparation and authority records\n\nBefore a new fictional carbon forward is placed in the delivery queue, the operations team associates the legal party name on the signed contract with the party name in the registry instructions. A trading desk nickname is not sufficient to establish that association. Staff keep the signed authority record and the registry instruction together so a later reviewer can identify which party authorized the nominated receiving account. This appendix intentionally supplies no real registry account number.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "789bb2f3-b42a-425b-b987-92047220f8a9",
+    "documentId" : "val-05",
+    "index" : 4,
+    "text" : "nominated receiving account. This appendix intentionally supplies no real registry account number.\n\nThe file distinguishes authority to negotiate a trade from authority to change the account used for delivery. A trader may explain a commercial instruction while the controlled account amendment still requires verification through the agreed business channel. An attachment received in a chat is checked against the formal record instead of being treated as an executable instruction merely because it contains the correct nominal quantity.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "55c41a8d-f60c-46ea-a551-a9d63afc725c",
+    "documentId" : "val-05",
+    "index" : 5,
+    "text" : "eing treated as an executable instruction merely because it contains the correct nominal quantity.\n\nIf two companies in the same group use similar names, staff do not assume that their accounts or contracts are interchangeable. The exception is referred back for a documented party mapping or an authorized contract amendment. Neither a shared office address nor a common parent permits a clerk to reroute allowance delivery. The original instructions remain available in the archive alongside any later approved correction, with the scope of the correction stated explicitly.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "3a5c4927-dcaf-4661-ba04-0ac672c29cff",
+    "documentId" : "val-05",
+    "index" : 6,
+    "text" : "chive alongside any later approved correction, with the scope of the correction stated explicitly.\n\n交收前一工作日17:00前双方确认可交割名册。交收日12:00前卖方完成配额过户，买方在15:00前付对应已交量货款，未交量不先付款。合同允许交量在名义量的98%至102%之间（含边界），双方不另签数量变更；货款按实际合格交量乘合同单价，不能按名义量付款。年度或账户不匹配的配额一律不计合格交量。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "f59a2197-6423-44b5-a9d8-099f9e0da6da",
+    "documentId" : "val-05",
+    "index" : 7,
+    "text" : "付对应已交量货款，未交量不先付款。合同允许交量在名义量的98%至102%之间（含边界），双方不另签数量变更；货款按实际合格交量乘合同单价，不能按名义量付款。年度或账户不匹配的配额一律不计合格交量。\n\n附录乙：Vintage checks in the registry export\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "2eea2c4f-1a0b-4604-b54f-73f45f62a7c4",
+    "documentId" : "val-05",
+    "index" : 8,
+    "text" : "，双方不另签数量变更；货款按实际合格交量乘合同单价，不能按名义量付款。年度或账户不匹配的配额一律不计合格交量。\n\n附录乙：Vintage checks in the registry export\n\nThe registry export may show balances for several allowance years in neighboring columns. The allocation analyst first locates the year named by the contract, then checks whether the listed balance is available for transfer. A positive total at the bottom of the export is not proof that the contracted year has enough available units. Historical holdings and surrendered units can appear in an export for information without becoming eligible delivery inventory.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "a699375c-3d5a-4725-b3ad-36f5cd50e616",
+    "documentId" : "val-05",
+    "index" : 9,
+    "text" : "ndered units can appear in an export for information without becoming eligible delivery inventory.\n\nThe analyst stores the export time and the field definitions with the file. A spreadsheet that has lost its headers is returned for clarification rather than reconstructed from column position alone. When the registry changes the order of columns, an old spreadsheet formula may still produce a plausible total while selecting the wrong year. The reviewer therefore checks the source labels instead of relying only on the absence of a spreadsheet error message.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "19d031b4-3e6b-4ae0-8050-04c718947009",
+    "documentId" : "val-05",
+    "index" : 10,
+    "text" : "re checks the source labels instead of relying only on the absence of a spreadsheet error message.\n\nIn a training file, the seller initially supplied a balance page containing the correct company but a different vintage. Staff retained it as an incorrect submission and asked for the relevant record. The later correct-year export was assessed on its own availability and timestamp. The first submission did not reserve delivery time for a later transfer, and a correct party name could not cure the wrong allowance year.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "3af043d0-9662-433e-a996-718c36d830c0",
+    "documentId" : "val-05",
+    "index" : 11,
+    "text" : "ivery time for a later transfer, and a correct party name could not cure the wrong allowance year.\n\n数量容差仅用于交收完成的判断。若实际合格交量落在98%至102%之外，买方可选择接受实际量并以名义量和实交量的差额结算违约，或拒绝整批并启动全量平仓；须在当日16:00前通知。买方没有在期限内选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "6215a5ba-862b-4c43-b402-6213ce3d6670",
+    "documentId" : "val-05",
+    "index" : 12,
+    "text" : "02%之外，买方可选择接受实际量并以名义量和实交量的差额结算违约，或拒绝整批并启动全量平仓；须在当日16:00前通知。买方没有在期限内选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。\n\n附录丙：Nomination lists and later corrections\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "73ac1fcb-33b1-4ba3-88ce-05ff624cf16e",
+    "documentId" : "val-05",
+    "index" : 13,
+    "text" : "仓；须在当日16:00前通知。买方没有在期限内选择，不等于自动接受或自动拒绝，应进入争议挂起，不释放担保款。\n\n附录丙：Nomination lists and later corrections\n\nThe pre-delivery nomination list records which contract, allowance year and delivery instruction the parties have confirmed. Its purpose is to make the coming transfer identifiable. It is not evidence that the transfer has already happened. Operations archive the confirmed list and retain later amendments separately, so a reviewer can distinguish a planning change from an actual registry movement.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "f36e1059-fbf4-432f-a976-f6a686230379",
+    "documentId" : "val-05",
+    "index" : 14,
+    "text" : "ents separately, so a reviewer can distinguish a planning change from an actual registry movement.\n\nWhere a list contains a duplicated line, the parties correct the list by identifying the duplicated contract reference and preserving the reason for removal. Staff do not delete an actual transfer simply because the nomination spreadsheet once contained an error. Registry movement evidence and the parties' list are reconciled, and unexplained differences are escalated rather than forced to agree by changing a quantity in the bank reconciliation.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "15903d3b-ac88-438a-95ba-a2140e2c7933",
+    "documentId" : "val-05",
+    "index" : 15,
+    "text" : "ences are escalated rather than forced to agree by changing a quantity in the bank reconciliation.\n\nA seller may discuss an anticipated inventory change before delivery. That discussion is recorded as context until the formal instruction is confirmed. It does not expand the quantity tolerance or replace the contract's year requirement. The reviewer checks whether a proposed correction changes a commercial term that needs an authorized amendment, or merely fixes an obvious clerical label. A clerical label repair cannot be used to conceal a change of buyer or a substitution of a different environmental asset.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "5ae71db9-ac0c-4440-9673-d746f16c189a",
+    "documentId" : "val-05",
+    "index" : 16,
+    "text" : " cannot be used to conceal a change of buyer or a substitution of a different environmental asset.\n\n登记与资金核对分两组操作。配额组查验配额年度、账户及可用状态，资金组查验交易号、到账金额和付款户名；单组完成核对不能代替另一组结论。同一企业可能在多个年度有配额余额，导出的余额总表只可用来定位记录，不能把不同年度配额加总当作本合约可交量。过户过程中被冻结的配额不计入可用量，解除冻结后也要按实际可用时点判断是否逾期。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "a6b57eeb-e386-4359-a812-5c5f6f25c80e",
+    "documentId" : "val-05",
+    "index" : 17,
+    "text" : "另一组结论。同一企业可能在多个年度有配额余额，导出的余额总表只可用来定位记录，不能把不同年度配额加总当作本合约可交量。过户过程中被冻结的配额不计入可用量，解除冻结后也要按实际可用时点判断是否逾期。\n\n业务员可以联系客户解释缺件，但不得在对账表中手工把‘待审核’改成‘已过户’。配额组发现年度错误时应保留错误回单及更正轨迹；如果正确年度的替代配额在截止后才到账，需按迟延条款重新核对，不得把错误年度的首次提交时间移作正确到账时间。资金组发现付款户名与合约不同，先走第三方付款核验，不能因为金额刚好匹配就直接结清。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "53c8b33c-00be-49fb-9381-026d32445eb1",
+    "documentId" : "val-05",
+    "index" : 18,
+    "text" : "正轨迹；如果正确年度的替代配额在截止后才到账，需按迟延条款重新核对，不得把错误年度的首次提交时间移作正确到账时间。资金组发现付款户名与合约不同，先走第三方付款核验，不能因为金额刚好匹配就直接结清。\n\n附录丁：Transfer status and the receiving ledger\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "ad4c598e-7473-46ae-964b-95e208895487",
+    "documentId" : "val-05",
+    "index" : 19,
+    "text" : "时间移作正确到账时间。资金组发现付款户名与合约不同，先走第三方付款核验，不能因为金额刚好匹配就直接结清。\n\n附录丁：Transfer status and the receiving ledger\n\nA transfer can be prepared, submitted, under review, rejected or completed. The operations ledger uses these labels to track work without implying that every submitted transfer has reached the receiving account. Staff retrieve the registry evidence associated with the final completed movement and check the eligible available balance it created for the nominated receiver. An intermediate screen can explain a delay but does not replace completed delivery evidence.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "a61e0e90-331b-49ab-90db-2cff6f0231f1",
+    "documentId" : "val-05",
+    "index" : 20,
+    "text" : "iver. An intermediate screen can explain a delay but does not replace completed delivery evidence.\n\nIf the registry rejects a submission and the seller resubmits, the new attempt is linked to the rejected attempt. Both histories remain visible. Reusing the commercial contract reference does not make the rejected attempt a second delivery, and it does not backdate the completed attempt. The analyst avoids adding quantities from status messages that describe different stages of the same movement.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "9c6667bf-06df-4697-b627-10dc751febac",
+    "documentId" : "val-05",
+    "index" : 21,
+    "text" : "avoids adding quantities from status messages that describe different stages of the same movement.\n\nThe receiving side reconciles actual credited quantities to the contract and sends any disagreement through the agreed channel. A missing acknowledgement email is investigated using the registry record; an acknowledgement alone is not used to invent a credit that the registry cannot show. The file should allow another analyst to determine what was actually available, in which year, for which receiver and at what time, without relying on either trader's recollection of a telephone conversation.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "9b16c25f-58ab-4122-99e3-580777bf442a",
+    "documentId" : "val-05",
+    "index" : 22,
+    "text" : "ver and at what time, without relying on either trader's recollection of a telephone conversation.\n\n附录戊：Combined deliveries for separate contracts\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "dbabde3c-5473-440e-a799-1187e8566c9d",
+    "documentId" : "val-05",
+    "index" : 23,
+    "text" : "trader's recollection of a telephone conversation.\n\n附录戊：Combined deliveries for separate contracts\n\nA seller may arrange several transfers during one session, and a registry movement report may show them next to each other. The analyst matches each movement to its designated contract before comparing delivery quantities. One contract's overdelivery is not automatically credited to another contract's shortfall, even when the parties are the same. A commercial offset requires its own documented agreement rather than an arithmetic shortcut in the reconciliation workbook.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "740d3861-8935-40a5-b531-7a2fffa2d69a",
+    "documentId" : "val-05",
+    "index" : 24,
+    "text" : "es its own documented agreement rather than an arithmetic shortcut in the reconciliation workbook.\n\nWhen the parties authorize a combined operational instruction covering several contracts, the file retains the agreed allocation of the resulting quantities. The allocation should be identifiable from the instruction and completed movement evidence. Staff do not choose an allocation after seeing which contract would otherwise incur a shortfall, because that would replace the parties' agreed delivery record with an outcome-driven reconstruction.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "147dd434-9ab0-4d9c-964e-8ea59248b136",
+    "documentId" : "val-05",
+    "index" : 25,
+    "text" : "ause that would replace the parties' agreed delivery record with an outcome-driven reconstruction.\n\nA separate worksheet is kept for each contract's nominal quantity, eligible actual quantity and settlement decision. A summary can aggregate payment planning, but must leave a route back to those worksheets. The same registry units cannot be counted in two contracts. If the allocation remains disputed, the disputed contracts stay visibly unresolved and staff do not describe the portfolio as completely delivered merely because the aggregate number of units matches a portfolio total.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "bfc1d497-a182-43d0-9bfe-8a561cd9c066",
+    "documentId" : "val-05",
+    "index" : 26,
+    "text" : "io as completely delivered merely because the aggregate number of units matches a portfolio total.\n\n差额平仓：卖方少交且买方选择接受实际量时，少交差额=名义量−实际合格交量；赔偿额=少交差额×max(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "5fddf9bd-0064-4eab-8256-78fc2c9efefa",
+    "documentId" : "val-05",
+    "index" : 27,
+    "text" : "ax(替代采购参考价−合同单价,0)。参考价取约定报价页交收日16:00的可核验值。价格差为负时赔偿为零，不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。\n\n附录己：Payment instructions and separate bank evidence\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "ee154428-d236-4bea-a5b9-5d772c6dae2f",
+    "documentId" : "val-05",
+    "index" : 28,
+    "text" : "不要求买方倒贴。容差不是赔偿扣除额，跌出容差后须按全部少交差额算，不只按超出2%的部分算。\n\n附录己：Payment instructions and separate bank evidence\n\nThe funding desk prepares a payment instruction after the eligible delivered amount is known under the applicable procedure. A bank message saying an instruction was created is different from a completed account debit. The desk retains the execution evidence and matches it to the agreed commercial reference. It does not use an expected payment in a treasury forecast to close an outstanding purchase price obligation.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "37243ce3-2bb3-4e4c-8a02-80777aee9b78",
+    "documentId" : "val-05",
+    "index" : 29,
+    "text" : " use an expected payment in a treasury forecast to close an outstanding purchase price obligation.\n\nIf a bank rejects a payment because the receiving party details do not match, the rejected attempt remains in the record. The desk investigates the mismatch through controlled contact details and resubmits only after verification. A document claiming to correct a beneficiary name is treated as a proposed correction, not as automatic authority to replace the account instruction. This fictional casebook contains no real beneficiary data to be copied into an operational payment.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "cbae0df9-e548-48a7-a98a-4a0589b1f064",
+    "documentId" : "val-05",
+    "index" : 30,
+    "text" : "his fictional casebook contains no real beneficiary data to be copied into an operational payment.\n\nThe accounts team tracks ordinary purchase price, agreed compensation, late charges and security movements as distinct items. A net display can be useful for management, but its underlying components must remain reconstructible. The fact that two amounts happen to be equal does not establish that one legally extinguished the other. Staff apply only the settlement treatment supported by the contract and the documented agreement, rather than inferring a right of set-off from a convenient bank transfer amount.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "c986a0c3-59d4-43b5-b19e-eb83bfed6c28",
+    "documentId" : "val-05",
+    "index" : 31,
+    "text" : "mented agreement, rather than inferring a right of set-off from a convenient bank transfer amount.\n\n担保款划付顺序：先抵已确定违约赔偿，再抵已确定迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "ad25b5db-ea26-4b55-829f-c77783f50cf7",
+    "documentId" : "val-05",
+    "index" : 32,
+    "text" : "迟延费，余额退回缴存方，不自动抵正常货款。担保款不足时不足额仍应补付，不以没收担保款作为责任上限。正常完成交收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。\n\n附录庚：Buyer election records outside the quantity band\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "c7185dbd-a005-45dc-ae0a-956a29be6fe0",
+    "documentId" : "val-05",
+    "index" : 33,
+    "text" : "收并完成双方对账后两个工作日内退担保款；有挂起争议的，保留争议部分，未争议余额按期退回。\n\n附录庚：Buyer election records outside the quantity band\n\nWhere actual eligible delivery falls outside the permitted quantity band, operations obtain the buyer's recorded election and associate it with the specific contract and delivery snapshot. A draft written by the seller does not establish what the buyer elected. The record should be clear enough to distinguish acceptance of the actual delivered quantity with a difference settlement from rejection of the entire batch and a full closeout path.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "40974b4b-9d7e-4158-a89e-4cd93d4f0eb6",
+    "documentId" : "val-05",
+    "index" : 34,
+    "text" : "quantity with a difference settlement from rejection of the entire batch and a full closeout path.\n\nStaff retain the received time and the communication channel agreed for the election. A later discussion of possible settlement options is not silently substituted for the original election notice. If the notice is ambiguous, the ambiguity is referred to both parties for resolution and remains visible in the control log. The desk does not choose whichever interpretation produces the smaller compensation merely to close its daily report.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "3905870b-f70a-4e7c-b48d-6fb5c1c4bb73",
+    "documentId" : "val-05",
+    "index" : 35,
+    "text" : "hoose whichever interpretation produces the smaller compensation merely to close its daily report.\n\nAn election for one contract does not become a standing election for all contracts with the same seller. Likewise, acceptance of an earlier small deviation does not imply consent to a later outside-band delivery. The individual file records what was chosen for this delivery and what remained disputed. Silence is not converted into either acceptance or rejection by a spreadsheet default value, and unresolved security treatment remains subject to the original dispute procedure.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "216c4b85-d272-463f-92d9-7f960771aee5",
+    "documentId" : "val-05",
+    "index" : 36,
+    "text" : "efault value, and unresolved security treatment remains subject to the original dispute procedure.\n\n少交演练：合同名义1000吨，单价80元/吨；交收日合格到账950吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "01e5322f-1b45-42e7-81f1-142ad8be0d84",
+    "documentId" : "val-05",
+    "index" : 37,
+    "text" : "50吨，买方按时选择接受950吨并差额平仓，16:00可核验替代采购参考价92元/吨。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。\n\n附录辛：Evidence for the reference quotation\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "20f9c4f7-4a56-4f8b-a029-a1fed379c2f6",
+    "documentId" : "val-05",
+    "index" : 38,
+    "text" : "。卖方已缴担保款500元，没有迟延费。另一条正常演练到账990吨且年度账户匹配，其他条件同上；两条演练相互独立。\n\n附录辛：Evidence for the reference quotation\n\nThe quotation evidence identifies the agreed source page, its displayed date and the observation time relevant to the contract. An isolated number in a chat message cannot demonstrate that it came from that page at the required time. Analysts save enough of the original view to preserve qualifiers such as indicative, delayed or unavailable. Cropping away a qualifier can change the meaning of the quoted value and make a settlement calculation appear better supported than it is.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "5be8a00b-a31d-4d29-a8eb-95817be08578",
+    "documentId" : "val-05",
+    "index" : 39,
+    "text" : " meaning of the quoted value and make a settlement calculation appear better supported than it is.\n\nThe analyst also records the unit and currency associated with the source. A page containing several instruments can display a plausible price next to the wrong allowance year or asset type. Staff match the instrument to the agreement before using the number. This appendix does not introduce a replacement source or authorize staff to average unrelated prices when the agreed value is absent.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "10d2cd89-bc71-4ebc-9543-e606fd54fb56",
+    "documentId" : "val-05",
+    "index" : 40,
+    "text" : "replacement source or authorize staff to average unrelated prices when the agreed value is absent.\n\nWhen a quotation is corrected by the source publisher, operations keep the original capture and the correction notice, then refer the effect on settlement through the parties' documented resolution process. A clerk must not overwrite a previously used price without preserving why it changed. The calculation file needs to explain which verifiable input supported the agreed result. A numerical answer can be arithmetically correct yet unsupported if the source, time or instrument cannot be established.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "c48b6479-a90f-4397-81d0-53cb133997e0",
+    "documentId" : "val-05",
+    "index" : 41,
+    "text" : "be arithmetically correct yet unsupported if the source, time or instrument cannot be established.\n\n登记系统故障例外：只有登记服务方公告覆盖该合约交收窗口的故障，才把配额过户期限延至恢复后首个工作日12:00。卖方本地网络故障不适用。付款时限改为实际合格过户当日15:00，担保款在实际完成对账前不释放；例外只调整时点，不把无效年度配额变为合格。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "16b41542-07f1-496e-93d5-f09a7da3488f",
+    "documentId" : "val-05",
+    "index" : 42,
+    "text" : "窗口的故障，才把配额过户期限延至恢复后首个工作日12:00。卖方本地网络故障不适用。付款时限改为实际合格过户当日15:00，担保款在实际完成对账前不释放；例外只调整时点，不把无效年度配额变为合格。\n\n附录壬：Closeout calculation workbook review\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "fb1a1279-a295-4c71-a3de-192306f41a62",
+    "documentId" : "val-05",
+    "index" : 43,
+    "text" : "付款时限改为实际合格过户当日15:00，担保款在实际完成对账前不释放；例外只调整时点，不把无效年度配额变为合格。\n\n附录壬：Closeout calculation workbook review\n\nThe workbook separates the physical shortfall calculation from the price-difference calculation. Inputs are named so a reviewer can see whether the quantity is the nominal contracted amount or the actual eligible amount. This reduces the risk that an analyst uses the quantity tolerance as though it were an insurance deductible. The core closeout formula remains the governing formula; this casebook does not modify its treatment of the whole shortfall or the nonnegative price difference.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "88debb35-a400-453f-b947-f4b5f5921804",
+    "documentId" : "val-05",
+    "index" : 44,
+    "text" : "casebook does not modify its treatment of the whole shortfall or the nonnegative price difference.\n\nReviewers compare the workbook to the recorded buyer election before checking the arithmetic. A worksheet for accepted actual delivery cannot be reused without review for a rejected batch, because the commercial path is different even if some input cells have the same values. A saved spreadsheet from another contract is a template for layout only. Its price, year, quantity and election must not silently become evidence for the present contract.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "969a73e9-0962-4644-86a5-a4980960665a",
+    "documentId" : "val-05",
+    "index" : 45,
+    "text" : "Its price, year, quantity and election must not silently become evidence for the present contract.\n\nThe signed calculation retains the input sources, workbook version and review conclusion. If the analyst finds a formula that references a hidden column, the error is corrected with an explanation and the prior draft is preserved. Staff do not treat a locked spreadsheet as proof of correctness. A second reviewer should be able to reproduce the result from the recorded contract and movement evidence without depending on undocumented formulas or a trader's private notes.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "85bf1f2e-3d28-40c7-b22c-235869e3a4d6",
+    "documentId" : "val-05",
+    "index" : 46,
+    "text" : "ract and movement evidence without depending on undocumented formulas or a trader's private notes.\n\n附录癸：Security ledger and unresolved items\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "493c88cd-1e06-4697-91a2-e94ba8f600e6",
+    "documentId" : "val-05",
+    "index" : 47,
+    "text" : "ng on undocumented formulas or a trader's private notes.\n\n附录癸：Security ledger and unresolved items\n\nSecurity receipts are matched to the party and contract for which the money was lodged. A group treasury transfer may cover several contracts, but the allocation needs a traceable record. The ledger does not assume that money pledged for one buyer can be applied to another buyer's claim. Unallocated receipts remain visibly unallocated until their purpose is verified, rather than being used to make a shortfall report appear fully funded.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "abd51a2b-b2fe-4d9e-a255-df8e44141140",
+    "documentId" : "val-05",
+    "index" : 48,
+    "text" : " their purpose is verified, rather than being used to make a shortfall report appear fully funded.\n\nThe clearing officer distinguishes a claimed amount from an amount established for settlement. A claim letter may start a review without making every line immediately payable from security. The file shows which components are determined, which remain disputed and what authority supports any release or application. An operational hold is documented with its scope; staff should not expand a disputed component into a permanent retention of unrelated balances.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "70309579-6c1f-400b-a051-cdc4bd66c5c9",
+    "documentId" : "val-05",
+    "index" : 49,
+    "text" : "pe; staff should not expand a disputed component into a permanent retention of unrelated balances.\n\nFollowing resolution, the officer reconciles security received, authorized applications and the remaining balance. A security statement and a purchase price statement remain distinct even when presented in one report. The remaining obligation is not automatically capped by the cash already lodged. The original contractual responsibility and the available security are different concepts, and a reconciliation must preserve that distinction instead of simply marking the file closed when the security account reaches zero.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "cce847b3-678b-4a88-87eb-9df2879383e4",
+    "documentId" : "val-05",
+    "index" : 50,
+    "text" : "that distinction instead of simply marking the file closed when the security account reaches zero.\n\n交收档案必须能够重建一条完整时间线，包括名册确认、登记系统回单、买方数量选择通知、参考价截屏和最终资金对账表。参考价截屏要显示报价页名称、日期和时点；转发聊天中的一个数字无法证明它是约定16:00参考价。补录说明可以帮助复核，却不能改写原始回单时间。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "74d97598-264e-4935-a6d1-a5e55b4bf133",
+    "documentId" : "val-05",
+    "index" : 51,
+    "text" : "系统回单、买方数量选择通知、参考价截屏和最终资金对账表。参考价截屏要显示报价页名称、日期和时点；转发聊天中的一个数字无法证明它是约定16:00参考价。补录说明可以帮助复核，却不能改写原始回单时间。\n\n如果报价页当日没有可核验的16:00值，按合同争议流程另行确定，不允许经办员从上周平均价、客户口述价或下一日成交价中任选一个。已确定赔偿项目和仍有争议的项目分栏列示，清算人员只能对已确定部分动用担保款；双方达成新和解时须保存书面版本和对应交易号。结算表的‘计划支付’用于资金安排，不是资金到账证明；‘已匹配到账’才可进入最终清偿记录。档案查询仅限本合同，不能将另一个年度合同的价格或数量直接带入。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "24dd5f7c-b951-4370-93ea-85ccc5dce0fd",
+    "documentId" : "val-05",
+    "index" : 52,
+    "text" : "；双方达成新和解时须保存书面版本和对应交易号。结算表的‘计划支付’用于资金安排，不是资金到账证明；‘已匹配到账’才可进入最终清偿记录。档案查询仅限本合同，不能将另一个年度合同的价格或数量直接带入。\n\n附录子：Registry service interruption record\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "0f60a33e-a58a-418d-988f-9ec8d97d25dc",
+    "documentId" : "val-05",
+    "index" : 53,
+    "text" : "资金到账证明；‘已匹配到账’才可进入最终清偿记录。档案查询仅限本合同，不能将另一个年度合同的价格或数量直接带入。\n\n附录子：Registry service interruption record\n\nA reported interruption is checked against the registry service provider's notice and the contract's delivery window. A seller's workstation error, an expired local login and a service-wide outage are different events. Operations retain the provider's notice as well as the seller's incident report, so a reviewer can determine which event actually prevented processing. The presence of a help-desk ticket alone does not establish that the core service-outage exception applies.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "8d51b46a-259a-46c1-bfb6-954adc5513e1",
+    "documentId" : "val-05",
+    "index" : 54,
+    "text" : "nce of a help-desk ticket alone does not establish that the core service-outage exception applies.\n\nThe chronology records the announced service interruption, the announced restoration and the completed eligible transfer. If the seller continues to have a local problem after the service is restored, staff do not automatically extend the provider's outage period to match that local difficulty. The controlling exception remains the one in the core agreement, and the resulting payment timing is linked to actual eligible delivery.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "2a5356c6-b31d-4ae6-9102-71033cd8c9aa",
+    "documentId" : "val-05",
+    "index" : 55,
+    "text" : "one in the core agreement, and the resulting payment timing is linked to actual eligible delivery.\n\nDuring recovery, the operations team reconciles queued attempts before encouraging a resubmission. Otherwise a delayed original and a new attempt can both execute. If that happens, the extra transfer is not erased from the record; the parties identify and resolve it through the controlled correction process. Recovery work does not make the wrong allowance year eligible, eliminate the need for registry evidence or release security before the required reconciliation is complete.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "2b4a8653-93d7-46b4-9d8f-255ce5a0c6e4",
+    "documentId" : "val-05",
+    "index" : 56,
+    "text" : "the need for registry evidence or release security before the required reconciliation is complete.\n\nQH-3把少交赔偿限定为担保款金额。QH-4取消此上限，以实际公式计算并可追补。10月1日前已签合同仍用QH-3；10月1日起新签合同用QH-4，不因沿用旧交易号前缀而适用旧版。交量98%至102%的容差两版相同。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "65bea88b-49e8-45d1-a479-faeb619caa6f",
+    "documentId" : "val-05",
+    "index" : 57,
+    "text" : "限定为担保款金额。QH-4取消此上限，以实际公式计算并可追补。10月1日前已签合同仍用QH-3；10月1日起新签合同用QH-4，不因沿用旧交易号前缀而适用旧版。交量98%至102%的容差两版相同。\n\n附录丑：Year-end reporting and surrender context\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "c04eef91-7635-4b41-b6d8-8a0f1caeb75d",
+    "documentId" : "val-05",
+    "index" : 58,
+    "text" : "3；10月1日起新签合同用QH-4，不因沿用旧交易号前缀而适用旧版。交量98%至102%的容差两版相同。\n\n附录丑：Year-end reporting and surrender context\n\nAn enterprise may discuss its expected compliance needs when negotiating the forward, but those commercial forecasts do not establish the enterprise's actual annual emissions gap. The delivery team records only the contract and eligible movement facts needed for this agreement. It does not certify the buyer's environmental compliance, issue a public sustainability claim or infer a surrendered quantity from the volume bought under one fictional contract.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "42c1bfe8-14da-4238-9261-8bd1da29f013",
+    "documentId" : "val-05",
+    "index" : 59,
+    "text" : "ability claim or infer a surrendered quantity from the volume bought under one fictional contract.\n\nThe contract archive keeps delivery records separate from any later surrender records provided for context. Transfer to a buyer and surrender by that buyer are distinct registry events. A buyer can receive allowances without this casebook establishing what happens to them afterward. Staff therefore avoid describing a completed transfer as proof that a compliance obligation has been discharged, unless the relevant separate evidence is actually in the authorized file.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "5510ce71-4756-41ef-a55c-896a731e8ccd",
+    "documentId" : "val-05",
+    "index" : 60,
+    "text" : "ion has been discharged, unless the relevant separate evidence is actually in the authorized file.\n\nMarketing language about environmental benefits is not used as a price input, delivery confirmation or eligibility substitute. Analysts may quote the contractual purpose in a narrative, but must not replace the specified asset with a different environmental instrument because it appears to serve a similar purpose. This distinction is particularly important when a supporting presentation uses broad terms such as carbon units while the operative contract names a specific allowance year and receiving instruction.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "d69b45bb-3af3-46f6-8174-a4212fe2edec",
+    "documentId" : "val-05",
+    "index" : 61,
+    "text" : "rbon units while the operative contract names a specific allowance year and receiving instruction.\n\n本约定不载明实际配额登记账户号、未来市场碳价、企业年度排放履约缺口或另一个交易所的正式规则。演练参考价92元仅是设定，不是实时市场报价。\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "5fb0f9fc-f298-45e1-a3dd-2fbca2781e11",
+    "documentId" : "val-05",
+    "index" : 62,
+    "text" : "r and receiving instruction.\n\n本约定不载明实际配额登记账户号、未来市场碳价、企业年度排放履约缺口或另一个交易所的正式规则。演练参考价92元仅是设定，不是实时市场报价。\n\n附录寅：Amendments, settlement letters and historical versions\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "f1f792e7-22ca-4fca-ab95-7b59e1a083f0",
+    "documentId" : "val-05",
+    "index" : 63,
+    "text" : "约缺口或另一个交易所的正式规则。演练参考价92元仅是设定，不是实时市场报价。\n\n附录寅：Amendments, settlement letters and historical versions\n\nA proposed commercial amendment is kept as a draft until the parties have executed it through their authorized process. Operations label drafts, signed amendments and settlement letters distinctly. A draft attached to an email does not automatically replace the original contract, and a settlement letter resolving one disputed amount does not necessarily rewrite all delivery terms for future contracts. The file states the scope actually agreed rather than assuming the broadest possible effect.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "16b3fb0f-983a-4657-a603-878db55a70a9",
+    "documentId" : "val-05",
+    "index" : 64,
+    "text" : "acts. The file states the scope actually agreed rather than assuming the broadest possible effect.\n\nHistorical versions of the agreement remain available to explain older transactions. The relevant signing event is verified from the contract record, not inferred from a copied filename or a reused trading reference. A new transaction using a familiar identifier prefix can still belong to the current version. Conversely, a historical contract is not silently moved into the new regime because staff scanned it with newer software.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "d04a8ae6-88d8-403f-b346-3c4e201b7c72",
+    "documentId" : "val-05",
+    "index" : 65,
+    "text" : "l contract is not silently moved into the new regime because staff scanned it with newer software.\n\nWhen parties agree an exceptional resolution, the archive shows the original claim, the agreed outcome and the authority for that outcome. Analysts do not rewrite the original core rule to make the exceptional settlement look ordinary. This distinction allows later reviewers to understand both what the standard agreement required and what the parties subsequently resolved for a particular file. A historical compromise is not a universal precedent that staff can apply without checking its scope.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "bb50c45c-5aee-4c69-bdc0-1d285fad2ce3",
+    "documentId" : "val-05",
+    "index" : 66,
+    "text" : "istorical compromise is not a universal precedent that staff can apply without checking its scope.\n\n附录卯：Record corrections and independent reconciliation\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "22cf96b4-2421-4eb4-8b26-e73247fee7e1",
+    "documentId" : "val-05",
+    "index" : 67,
+    "text" : "staff can apply without checking its scope.\n\n附录卯：Record corrections and independent reconciliation\n\nCorrection requests identify the specific record, proposed change and supporting evidence. A clerical transposition in a narrative may be corrected without changing the underlying movement. A proposed change to actual delivered quantity is a different matter and must be supported by the registry evidence. Staff keep these categories separate so the authority to fix a typo does not become authority to change the settlement basis.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "95f53a3f-21e2-47e7-8b55-b9828cb0de93",
+    "documentId" : "val-05",
+    "index" : 68,
+    "text" : " separate so the authority to fix a typo does not become authority to change the settlement basis.\n\nThe independent reconciler follows a chain from contract to nomination, movement, election, quotation, calculation and bank execution. Missing links are recorded as missing, with the affected conclusion left unresolved where necessary. A management summary that repeats the same unsupported figure is not independent corroboration. More copies of an error do not create additional evidence for it.\n\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  }, {
+    "id" : "ff0ae6a2-e2c0-4c9e-b392-15384ffa3cf3",
+    "documentId" : "val-05",
+    "index" : 69,
+    "text" : "s not independent corroboration. More copies of an error do not create additional evidence for it.\n\nThe final closing pack identifies the state of each obligation and the source of each material input. Forecast amounts remain labeled forecasts and disputed amounts remain labeled disputed. If a late document changes a conclusion, the pack preserves the earlier version and explains the change. The object is a reproducible business record rather than a visually tidy folder. Staff should be able to demonstrate which facts were known, which were agreed and which were still unavailable when each decision was made.\n",
+    "pageStart" : null,
+    "pageEnd" : null
+  } ],
+  "spans" : [ {
+    "chunkId" : "428ae155-21e7-464b-aa73-f68fbb8ac89b",
+    "bodyStart" : 0,
+    "bodyEnd" : 131,
+    "start" : 0,
+    "end" : 131
+  }, {
+    "chunkId" : "07a84257-9bda-4e8b-989c-21848745c2fc",
+    "bodyStart" : 131,
+    "bodyEnd" : 183,
+    "start" : 31,
+    "end" : 183
+  }, {
+    "chunkId" : "3c38d7d3-ef50-4d2e-9864-6a851a96fce9",
+    "bodyStart" : 183,
+    "bodyEnd" : 689,
+    "start" : 83,
+    "end" : 689
+  }, {
+    "chunkId" : "789bb2f3-b42a-425b-b987-92047220f8a9",
+    "bodyStart" : 689,
+    "bodyEnd" : 1131,
+    "start" : 589,
+    "end" : 1131
+  }, {
+    "chunkId" : "55c41a8d-f60c-46ea-a551-a9d63afc725c",
+    "bodyStart" : 1131,
+    "bodyEnd" : 1609,
+    "start" : 1031,
+    "end" : 1609
+  }, {
+    "chunkId" : "3a5c4927-dcaf-4661-ba04-0ac672c29cff",
+    "bodyStart" : 1609,
+    "bodyEnd" : 1759,
+    "start" : 1509,
+    "end" : 1759
+  }, {
+    "chunkId" : "f59a2197-6423-44b5-a9d8-099f9e0da6da",
+    "bodyStart" : 1759,
+    "bodyEnd" : 1802,
+    "start" : 1659,
+    "end" : 1802
+  }, {
+    "chunkId" : "2eea2c4f-1a0b-4604-b54f-73f45f62a7c4",
+    "bodyStart" : 1802,
+    "bodyEnd" : 2267,
+    "start" : 1702,
+    "end" : 2267
+  }, {
+    "chunkId" : "a699375c-3d5a-4725-b3ad-36f5cd50e616",
+    "bodyStart" : 2267,
+    "bodyEnd" : 2730,
+    "start" : 2167,
+    "end" : 2730
+  }, {
+    "chunkId" : "19d031b4-3e6b-4ae0-8050-04c718947009",
+    "bodyStart" : 2730,
+    "bodyEnd" : 3153,
+    "start" : 2630,
+    "end" : 3153
+  }, {
+    "chunkId" : "3af043d0-9662-433e-a996-718c36d830c0",
+    "bodyStart" : 3153,
+    "bodyEnd" : 3282,
+    "start" : 3053,
+    "end" : 3282
+  }, {
+    "chunkId" : "6215a5ba-862b-4c43-b402-6213ce3d6670",
+    "bodyStart" : 3282,
+    "bodyEnd" : 3326,
+    "start" : 3182,
+    "end" : 3326
+  }, {
+    "chunkId" : "73ac1fcb-33b1-4ba3-88ce-05ff624cf16e",
+    "bodyStart" : 3326,
+    "bodyEnd" : 3728,
+    "start" : 3226,
+    "end" : 3728
+  }, {
+    "chunkId" : "f36e1059-fbf4-432f-a976-f6a686230379",
+    "bodyStart" : 3728,
+    "bodyEnd" : 4179,
+    "start" : 3628,
+    "end" : 4179
+  }, {
+    "chunkId" : "15903d3b-ac88-438a-95ba-a2140e2c7933",
+    "bodyStart" : 4179,
+    "bodyEnd" : 4695,
+    "start" : 4079,
+    "end" : 4695
+  }, {
+    "chunkId" : "5ae71db9-ac0c-4440-9673-d746f16c189a",
+    "bodyStart" : 4695,
+    "bodyEnd" : 4855,
+    "start" : 4595,
+    "end" : 4855
+  }, {
+    "chunkId" : "a6b57eeb-e386-4359-a812-5c5f6f25c80e",
+    "bodyStart" : 4855,
+    "bodyEnd" : 5012,
+    "start" : 4755,
+    "end" : 5012
+  }, {
+    "chunkId" : "53c8b33c-00be-49fb-9381-026d32445eb1",
+    "bodyStart" : 5012,
+    "bodyEnd" : 5058,
+    "start" : 4912,
+    "end" : 5058
+  }, {
+    "chunkId" : "ad4c598e-7473-46ae-964b-95e208895487",
+    "bodyStart" : 5058,
+    "bodyEnd" : 5526,
+    "start" : 4958,
+    "end" : 5526
+  }, {
+    "chunkId" : "a61e0e90-331b-49ab-90db-2cff6f0231f1",
+    "bodyStart" : 5526,
+    "bodyEnd" : 5927,
+    "start" : 5426,
+    "end" : 5927
+  }, {
+    "chunkId" : "9c6667bf-06df-4697-b627-10dc751febac",
+    "bodyStart" : 5927,
+    "bodyEnd" : 6427,
+    "start" : 5827,
+    "end" : 6427
+  }, {
+    "chunkId" : "9b16c25f-58ab-4122-99e3-580777bf442a",
+    "bodyStart" : 6427,
+    "bodyEnd" : 6475,
+    "start" : 6327,
+    "end" : 6475
+  }, {
+    "chunkId" : "dbabde3c-5473-440e-a799-1187e8566c9d",
+    "bodyStart" : 6475,
+    "bodyEnd" : 6951,
+    "start" : 6375,
+    "end" : 6951
+  }, {
+    "chunkId" : "740d3861-8935-40a5-b531-7a2fffa2d69a",
+    "bodyStart" : 6951,
+    "bodyEnd" : 7401,
+    "start" : 6851,
+    "end" : 7401
+  }, {
+    "chunkId" : "147dd434-9ab0-4d9c-964e-8ea59248b136",
+    "bodyStart" : 7401,
+    "bodyEnd" : 7889,
+    "start" : 7301,
+    "end" : 7889
+  }, {
+    "chunkId" : "bfc1d497-a182-43d0-9bfe-8a561cd9c066",
+    "bodyStart" : 7889,
+    "bodyEnd" : 8036,
+    "start" : 7789,
+    "end" : 8036
+  }, {
+    "chunkId" : "5fddf9bd-0064-4eab-8256-78fc2c9efefa",
+    "bodyStart" : 8036,
+    "bodyEnd" : 8089,
+    "start" : 7936,
+    "end" : 8089
+  }, {
+    "chunkId" : "ee154428-d236-4bea-a5b9-5d772c6dae2f",
+    "bodyStart" : 8089,
+    "bodyEnd" : 8510,
+    "start" : 7989,
+    "end" : 8510
+  }, {
+    "chunkId" : "37243ce3-2bb3-4e4c-8a02-80777aee9b78",
+    "bodyStart" : 8510,
+    "bodyEnd" : 8992,
+    "start" : 8410,
+    "end" : 8992
+  }, {
+    "chunkId" : "cbae0df9-e548-48a7-a98a-4a0589b1f064",
+    "bodyStart" : 8992,
+    "bodyEnd" : 9506,
+    "start" : 8892,
+    "end" : 9506
+  }, {
+    "chunkId" : "c986a0c3-59d4-43b5-b19e-eb83bfed6c28",
+    "bodyStart" : 9506,
+    "bodyEnd" : 9629,
+    "start" : 9406,
+    "end" : 9629
+  }, {
+    "chunkId" : "ad25b5db-ea26-4b55-829f-c77783f50cf7",
+    "bodyStart" : 9629,
+    "bodyEnd" : 9683,
+    "start" : 9529,
+    "end" : 9683
+  }, {
+    "chunkId" : "c7185dbd-a005-45dc-ae0a-956a29be6fe0",
+    "bodyStart" : 9683,
+    "bodyEnd" : 10129,
+    "start" : 9583,
+    "end" : 10129
+  }, {
+    "chunkId" : "40974b4b-9d7e-4158-a89e-4cd93d4f0eb6",
+    "bodyStart" : 10129,
+    "bodyEnd" : 10571,
+    "start" : 10029,
+    "end" : 10571
+  }, {
+    "chunkId" : "3905870b-f70a-4e7c-b48d-6fb5c1c4bb73",
+    "bodyStart" : 10571,
+    "bodyEnd" : 11053,
+    "start" : 10471,
+    "end" : 11053
+  }, {
+    "chunkId" : "216c4b85-d272-463f-92d9-7f960771aee5",
+    "bodyStart" : 11053,
+    "bodyEnd" : 11184,
+    "start" : 10953,
+    "end" : 11184
+  }, {
+    "chunkId" : "01e5322f-1b45-42e7-81f1-142ad8be0d84",
+    "bodyStart" : 11184,
+    "bodyEnd" : 11226,
+    "start" : 11084,
+    "end" : 11226
+  }, {
+    "chunkId" : "20f9c4f7-4a56-4f8b-a029-a1fed379c2f6",
+    "bodyStart" : 11226,
+    "bodyEnd" : 11709,
+    "start" : 11126,
+    "end" : 11709
+  }, {
+    "chunkId" : "5be8a00b-a31d-4d29-a8eb-95817be08578",
+    "bodyStart" : 11709,
+    "bodyEnd" : 12104,
+    "start" : 11609,
+    "end" : 12104
+  }, {
+    "chunkId" : "10d2cd89-bc71-4ebc-9543-e606fd54fb56",
+    "bodyStart" : 12104,
+    "bodyEnd" : 12610,
+    "start" : 12004,
+    "end" : 12610
+  }, {
+    "chunkId" : "c48b6479-a90f-4397-81d0-53cb133997e0",
+    "bodyStart" : 12610,
+    "bodyEnd" : 12735,
+    "start" : 12510,
+    "end" : 12735
+  }, {
+    "chunkId" : "16b41542-07f1-496e-93d5-f09a7da3488f",
+    "bodyStart" : 12735,
+    "bodyEnd" : 12777,
+    "start" : 12635,
+    "end" : 12777
+  }, {
+    "chunkId" : "fb1a1279-a295-4c71-a3de-192306f41a62",
+    "bodyStart" : 12777,
+    "bodyEnd" : 13269,
+    "start" : 12677,
+    "end" : 13269
+  }, {
+    "chunkId" : "88debb35-a400-453f-b947-f4b5f5921804",
+    "bodyStart" : 13269,
+    "bodyEnd" : 13719,
+    "start" : 13169,
+    "end" : 13719
+  }, {
+    "chunkId" : "969a73e9-0962-4644-86a5-a4980960665a",
+    "bodyStart" : 13719,
+    "bodyEnd" : 14194,
+    "start" : 13619,
+    "end" : 14194
+  }, {
+    "chunkId" : "85bf1f2e-3d28-40c7-b22c-235869e3a4d6",
+    "bodyStart" : 14194,
+    "bodyEnd" : 14236,
+    "start" : 14094,
+    "end" : 14236
+  }, {
+    "chunkId" : "493c88cd-1e06-4697-91a2-e94ba8f600e6",
+    "bodyStart" : 14236,
+    "bodyEnd" : 14678,
+    "start" : 14136,
+    "end" : 14678
+  }, {
+    "chunkId" : "abd51a2b-b2fe-4d9e-a255-df8e44141140",
+    "bodyStart" : 14678,
+    "bodyEnd" : 15140,
+    "start" : 14578,
+    "end" : 15140
+  }, {
+    "chunkId" : "70309579-6c1f-400b-a051-cdc4bd66c5c9",
+    "bodyStart" : 15140,
+    "bodyEnd" : 15665,
+    "start" : 15040,
+    "end" : 15665
+  }, {
+    "chunkId" : "cce847b3-678b-4a88-87eb-9df2879383e4",
+    "bodyStart" : 15665,
+    "bodyEnd" : 15792,
+    "start" : 15565,
+    "end" : 15792
+  }, {
+    "chunkId" : "74d97598-264e-4935-a6d1-a5e55b4bf133",
+    "bodyStart" : 15792,
+    "bodyEnd" : 15992,
+    "start" : 15692,
+    "end" : 15992
+  }, {
+    "chunkId" : "24dd5f7c-b951-4370-93ea-85ccc5dce0fd",
+    "bodyStart" : 15992,
+    "bodyEnd" : 16034,
+    "start" : 15892,
+    "end" : 16034
+  }, {
+    "chunkId" : "0f60a33e-a58a-418d-988f-9ec8d97d25dc",
+    "bodyStart" : 16034,
+    "bodyEnd" : 16514,
+    "start" : 15934,
+    "end" : 16514
+  }, {
+    "chunkId" : "8d51b46a-259a-46c1-bfb6-954adc5513e1",
+    "bodyStart" : 16514,
+    "bodyEnd" : 16948,
+    "start" : 16414,
+    "end" : 16948
+  }, {
+    "chunkId" : "2a5356c6-b31d-4ae6-9102-71033cd8c9aa",
+    "bodyStart" : 16948,
+    "bodyEnd" : 17431,
+    "start" : 16848,
+    "end" : 17431
+  }, {
+    "chunkId" : "2b4a8653-93d7-46b4-9d8f-255ce5a0c6e4",
+    "bodyStart" : 17431,
+    "bodyEnd" : 17540,
+    "start" : 17331,
+    "end" : 17540
+  }, {
+    "chunkId" : "65bea88b-49e8-45d1-a479-faeb619caa6f",
+    "bodyStart" : 17540,
+    "bodyEnd" : 17586,
+    "start" : 17440,
+    "end" : 17586
+  }, {
+    "chunkId" : "c04eef91-7635-4b41-b6d8-8a0f1caeb75d",
+    "bodyStart" : 17586,
+    "bodyEnd" : 18045,
+    "start" : 17486,
+    "end" : 18045
+  }, {
+    "chunkId" : "42c1bfe8-14da-4238-9261-8bd1da29f013",
+    "bodyStart" : 18045,
+    "bodyEnd" : 18517,
+    "start" : 17945,
+    "end" : 18517
+  }, {
+    "chunkId" : "5510ce71-4756-41ef-a55c-896a731e8ccd",
+    "bodyStart" : 18517,
+    "bodyEnd" : 19034,
+    "start" : 18417,
+    "end" : 19034
+  }, {
+    "chunkId" : "d69b45bb-3af3-46f6-8174-a4212fe2edec",
+    "bodyStart" : 19034,
+    "bodyEnd" : 19104,
+    "start" : 18934,
+    "end" : 19104
+  }, {
+    "chunkId" : "5fb0f9fc-f298-45e1-a3dd-2fbca2781e11",
+    "bodyStart" : 19104,
+    "bodyEnd" : 19164,
+    "start" : 19004,
+    "end" : 19164
+  }, {
+    "chunkId" : "f1f792e7-22ca-4fca-ab95-7b59e1a083f0",
+    "bodyStart" : 19164,
+    "bodyEnd" : 19663,
+    "start" : 19064,
+    "end" : 19663
+  }, {
+    "chunkId" : "16b3fb0f-983a-4657-a603-878db55a70a9",
+    "bodyStart" : 19663,
+    "bodyEnd" : 20097,
+    "start" : 19563,
+    "end" : 20097
+  }, {
+    "chunkId" : "d04a8ae6-88d8-403f-b346-3c4e201b7c72",
+    "bodyStart" : 20097,
+    "bodyEnd" : 20598,
+    "start" : 19997,
+    "end" : 20598
+  }, {
+    "chunkId" : "bb50c45c-5aee-4c69-bdc0-1d285fad2ce3",
+    "bodyStart" : 20598,
+    "bodyEnd" : 20653,
+    "start" : 20498,
+    "end" : 20653
+  }, {
+    "chunkId" : "22cf96b4-2421-4eb4-8b26-e73247fee7e1",
+    "bodyStart" : 20653,
+    "bodyEnd" : 21087,
+    "start" : 20553,
+    "end" : 21087
+  }, {
+    "chunkId" : "95f53a3f-21e2-47e7-8b55-b9828cb0de93",
+    "bodyStart" : 21087,
+    "bodyEnd" : 21486,
+    "start" : 20987,
+    "end" : 21486
+  }, {
+    "chunkId" : "ff0ae6a2-e2c0-4c9e-b392-15384ffa3cf3",
+    "bodyStart" : 21486,
+    "bodyEnd" : 22002,
+    "start" : 21386,
+    "end" : 22002
+  } ]
+}

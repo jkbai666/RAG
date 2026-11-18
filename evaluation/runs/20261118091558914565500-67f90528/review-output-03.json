@@ -1,0 +1,2045 @@
+{
+  "reviewer": "blind-review-03",
+  "independent": true,
+  "items": [
+    {
+      "token": "92a82661c3c94a479dd898ff7bf2738a",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供施工方银行账号",
+          "correct": true,
+          "reason": "完整原文的资料边界及付款执行札记均未披露实际收款账号；简洁表示依据不足可接受。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "明确表示无法回答，未生成或推测账号。"
+        }
+      ],
+      "notes": "资料不足拒答正确；无正面引用，亦无将台账金额当账号。条件和数值维度不适用。执行记录：agent ID=blind-review-03；评分指令SHA256=9f31ab3f4366537e24ff84424ef33e8daeb6f2aae17f61699f80e36456e54dac；冻结rubric SHA256=56f0b9a298e90a7c6027076d17872b8abf12c8b0b4ca25b3996a8b1059640066；输入part-03.json SHA256=5687f5fcb6db043002f50b62602a2ef2ee41791800320b8710743b39974e414d。工具未暴露底层精确模型ID及温度，均不可取得；仅使用指定三份材料，未联网或调用付费API。",
+      "goldIssue": null
+    },
+    {
+      "token": "d42513a9187c4e0ca3c62a0763f78378",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供实时外汇牌价",
+          "correct": true,
+          "reason": "原文仅给7.20演练价且明确不提供实时牌价；回答依据不足符合资料边界。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "没有将演练价当作今天价格，也未猜测实时价。"
+        }
+      ],
+      "notes": "正确拒绝确定实时牌价；简洁拒答无须复述缺失字段。无伪造正面证据；条件、数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "4f5fbf4b9316498480c3f637fe804f84",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "本行费152元",
+          "correct": true,
+          "reason": "按10000美元×7.20×0.1%得72元，加80元电讯费为152元。"
+        },
+        {
+          "fact": "折21.11美元",
+          "correct": true,
+          "reason": "按同一成交价折算并到美分四舍五入，152÷7.20为21.11美元。"
+        },
+        {
+          "fact": "实收9963.89美元",
+          "correct": true,
+          "reason": "从10000美元扣本行21.11美元及相同中间行15美元，得9963.89美元。"
+        }
+      ],
+      "notes": "BEN扣本金、手续费上下限及四舍五入口径均正确。引用1提供本金、成交价与中间行费，引用2提供本行费率和扣费规则，联合充分；未混用SHA实收。",
+      "goldIssue": null
+    },
+    {
+      "token": "bb460ba28fac41d1941e3a265382ff20",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供监管行柜员私人联系方式",
+          "correct": true,
+          "reason": "完整东苑原文明确不含柜员私人联系方式，拒答符合原文。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "只说明依据不足，没有编造手机号。"
+        }
+      ],
+      "notes": "私人手机号未披露，拒答正确。无虚构来源或正面引用；条件和数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "1d59da5fdab54eda891465f7033c0e8e",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "TH-2",
+          "correct": true,
+          "reason": "明确6月30日已受理旧指令仍适用TH-2。"
+        },
+        {
+          "fact": "不另收80元",
+          "correct": true,
+          "reason": "明确不另收80元召回电讯费。"
+        },
+        {
+          "fact": "受理日决定版本",
+          "correct": true,
+          "reason": "把TH-3限定于7月1日起受理新指令，已说明按受理日分版。"
+        }
+      ],
+      "notes": "没有把7月2日召回日当作版本依据。两条引用均包含该旧指令的明确例子，完整支持版本与费用。",
+      "goldIssue": null
+    },
+    {
+      "token": "5ac4cc49b6744de48f0fed6b7a0f9e39",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "手续费72元",
+          "correct": false,
+          "reason": "没有回答手续费；原文可算10000×7.20×0.1%=72元。"
+        },
+        {
+          "fact": "电讯费80元",
+          "correct": false,
+          "reason": "没有回答每笔80元电讯费。"
+        },
+        {
+          "fact": "总支出72152元",
+          "correct": false,
+          "reason": "没有给出72000+72+80=72152元人民币总支出。"
+        },
+        {
+          "fact": "学校实收9985美元",
+          "correct": false,
+          "reason": "没有给出SHA本金扣15美元后的9985美元实收。"
+        }
+      ],
+      "notes": "完整原文提供SHA费用承担、本行费率和演算输入，可答却整体拒答；四项必要事实及引用均缺失。未编造金额，但不构成正确作答。",
+      "goldIssue": null
+    },
+    {
+      "token": "2c8e14d230c3468bbf2c412b72381cf5",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供实时外汇牌价",
+          "correct": true,
+          "reason": "TH-3明确演练价不作即时报价且未提供实时牌价，回答依据不足正确。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未报出7.20或其他猜测价格。"
+        }
+      ],
+      "notes": "实时牌价不可由本材料确定，简洁拒答符合规则。空引用未冒充正面支持；条件、数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "13d9de88343546d1b45961d7744f3ade",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "TH-2",
+          "correct": true,
+          "reason": "明确旧指令仍用TH-2。"
+        },
+        {
+          "fact": "不另收80元",
+          "correct": true,
+          "reason": "说明召回费已包含于原电讯费，不另收80元。"
+        },
+        {
+          "fact": "受理日决定版本",
+          "correct": true,
+          "reason": "明确7月1日起受理新指令才收单列费用，受理日期决定适用版本。"
+        }
+      ],
+      "notes": "正确区分受理与召回时点；两条引用均直接支持旧版费用待遇，联合充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "cd547d87da15423784659c1f49e3d60d",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": 2,
+        "disposition": 3,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "独立申请分别计费",
+          "correct": true,
+          "reason": "按两个独立申请编号分别演算、不能合并选档，已表达独立计费原则。"
+        },
+        {
+          "fact": "各60万元用0.8%",
+          "correct": false,
+          "reason": "未指出每笔60万元适用0.8%，不能由不适用0.5%替代必要费率。"
+        },
+        {
+          "fact": "不能合并成120万元",
+          "correct": true,
+          "reason": "明确不能合并120万元套0.5%。"
+        }
+      ],
+      "notes": "独立申请不合并的结论正确，但缺必要的各笔0.8%档。引用支持独立编号和逐申请处理，却未含费率表；引用联合亦不能确定0.8%。附加限购规则没有补足此缺项。",
+      "goldIssue": null
+    },
+    {
+      "token": "6ff7504759304d798cfd59e84aaa7547",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": 2,
+        "disposition": 3,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "按60万元获配额选档",
+          "correct": true,
+          "reason": "明确用获配60万元重选，而非原120万元。"
+        },
+        {
+          "fact": "0.8%",
+          "correct": false,
+          "reason": "只说60万元对应档位，未给出0.8%这一必要费率。"
+        },
+        {
+          "fact": "未获配部分不收费并原路退回",
+          "correct": true,
+          "reason": "明确未获配部分原路退回且不收申购费。"
+        }
+      ],
+      "notes": "CY-7获配口径和退费处理正确，但没有回答具体0.8%档。引用1支持获配重选及退款，引用2支持CY-7分版；两者均缺费率表，完整支持为false。",
+      "goldIssue": null
+    },
+    {
+      "token": "9e150284238844b59e21c227fb323fd0",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "风险岗与住建联络岗双签",
+          "correct": true,
+          "reason": "明确监管行风险岗与住建联络岗双签。"
+        },
+        {
+          "fact": "计入累计已拨付",
+          "correct": true,
+          "reason": "明确排险款仍计入累计已拨付。"
+        },
+        {
+          "fact": "不得豁免20%留存",
+          "correct": true,
+          "reason": "明确不豁免20%留存且不能突破。"
+        }
+      ],
+      "notes": "专项排险通道与普通进度款暂停的边界正确，没有把双签当留存豁免。两条引用均直接覆盖三项必要事实，语义充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "baabb046be6b4fceb49ba7246a7e205f",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供监管行柜员私人联系方式",
+          "correct": true,
+          "reason": "原文资料边界不含私人联系方式；依据不足的简洁拒答可接受。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "没有输出或推测手机号。"
+        }
+      ],
+      "notes": "柜员私人手机号未披露，拒答正确；没有伪造正面引用。条件及数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "0ec7f29c50f8428db02862405d0e118f",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "0.8%",
+          "correct": false,
+          "reason": "未回答0.8%档，原文100万元以下适用此档。"
+        },
+        {
+          "fact": "净申购100000元",
+          "correct": false,
+          "reason": "未按100800÷1.008给出100000元净申购额。"
+        },
+        {
+          "fact": "费用800元",
+          "correct": false,
+          "reason": "未给出100800−100000=800元费用。"
+        },
+        {
+          "fact": "80000.00份",
+          "correct": false,
+          "reason": "未给出100000÷1.25=80000.00份。"
+        }
+      ],
+      "notes": "订单甲金额、T日净值及常规不受限购条件均在原文，全部拒答无根据。无任何引用；未给错值不等于已完成可答题。",
+      "goldIssue": null
+    },
+    {
+      "token": "3f83ab9741654ffb9ddbf40e89c8c1d4",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "退美元实收净额",
+          "correct": true,
+          "reason": "明确先退美元实收净额而非保证原人民币本金。"
+        },
+        {
+          "fact": "结汇按退汇日实际价",
+          "correct": true,
+          "reason": "明确选择换回人民币时按退汇日实际结汇价成交。"
+        },
+        {
+          "fact": "客户承担汇损益",
+          "correct": true,
+          "reason": "明确汇率变动损益由客户承担。"
+        },
+        {
+          "fact": "不选结汇留外币",
+          "correct": true,
+          "reason": "明确不换回则留外币且不自动反向购汇。"
+        }
+      ],
+      "notes": "四项处理完整、未承诺人民币原额返还。引用1支持结汇及损益处理，引用2另含完整美元净额起句，联合充分。本题无具体金额或数值演算要求，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "d8003e4e8ebe4ad1b71e6259ad6b3846",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "累计35%",
+          "correct": true,
+          "reason": "准确说明地下结构验收是累计35%。"
+        },
+        {
+          "fact": "基数建档时固定",
+          "correct": true,
+          "reason": "明确监管基数在建档时固定。"
+        },
+        {
+          "fact": "新回款不增加监管基数",
+          "correct": true,
+          "reason": "明确新销售回款不提高基数。"
+        }
+      ],
+      "notes": "未把累计35%说成本次必拨比例，也未使用现金作监管基数。引用1给比例表，引用2补充固定基数及累计口径，联合充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "57f0482bbfd24767861fbce818ee7df7",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供具体退款到账日",
+          "correct": true,
+          "reason": "原文明确退款银行处理时间另行通知，不给具体到账日。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "回答无法确定，未将T+1确认日期当退款保证日。"
+        }
+      ],
+      "notes": "具体退款日期不可答，简洁拒答正确；无伪造正面支持。条件和数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "540e719aefd544968bfab4e9a57f3644",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "风险岗与住建联络岗双签",
+          "correct": true,
+          "reason": "要求监管行风险岗及住建联络岗双签，角色准确。"
+        },
+        {
+          "fact": "计入累计已拨付",
+          "correct": true,
+          "reason": "明确排险款计入累计已拨付。"
+        },
+        {
+          "fact": "不得豁免20%留存",
+          "correct": true,
+          "reason": "保留20%留存，不允许突破。"
+        }
+      ],
+      "notes": "排险例外只改变付款通道，没有免除累计和留存限制。两条引用都含完整停工例外规则，足以支持全部必要结论。",
+      "goldIssue": null
+    },
+    {
+      "token": "67d5d1e44e64415782e308242f2ffa28",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "已发送仅申请召回不保证",
+          "correct": true,
+          "reason": "明确已发送未入账仅可申请召回且不保证成功。"
+        },
+        {
+          "fact": "通常80元本行召回费另有中间行实费",
+          "correct": true,
+          "reason": "给出本行80元召回费及中间行另有实费。"
+        },
+        {
+          "fact": "已入账须收款人同意",
+          "correct": true,
+          "reason": "明确已入账须经收款人同意退汇，不能单方撤销。"
+        }
+      ],
+      "notes": "按TH-3通常情形完整回答两种状态，并正确补充原手续费不因成功召回退回。未声称例外情形也一律收费；两条引用均直接支持实际回答。",
+      "goldIssue": null
+    },
+    {
+      "token": "b9c3b6a89bc343ba947ba10fc499692b",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 2,
+        "disposition": 3,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "节点余量450万元",
+          "correct": true,
+          "reason": "1000×65%−200=450万元的累计余量算对。"
+        },
+        {
+          "fact": "现金扣留存后500万元",
+          "correct": false,
+          "reason": "把第二限制写作现金700万元，漏掉20%留存200万元，应为700−200=500万元。"
+        },
+        {
+          "fact": "本次最多450万元",
+          "correct": true,
+          "reason": "最终450万元与原文计算结果相同。"
+        }
+      ],
+      "notes": "题目要求解释两道限制，第二道必须是现金减留存；只说明申请未超700万元现金不能替代500万元的可用现金限制。引用1支持台账，引用2支持65%节点，均未提供留存和取小规则；最终金额碰巧正确仍不通过。",
+      "goldIssue": null
+    },
+    {
+      "token": "8de04fb058cc490e9743c7058f8cd0b9",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "首次交付满90日",
+          "correct": true,
+          "reason": "准确保留首次交付满90日的时长与起算事件。"
+        },
+        {
+          "fact": "无停工处置",
+          "correct": true,
+          "reason": "以且连接无停工处置条件，两项必须同时成立。"
+        }
+      ],
+      "notes": "解除20%留存的条件完整，未将竣工或交付当日当解除时点。单条引用虽未重复引用比例表，但直接包含解除留存的全部必要事实，语义支持充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "835b7700f4844195b3075b6476eb0c4c",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "手续费72元",
+          "correct": false,
+          "reason": "没有给出按本金折人民币0.1%计算的72元手续费。"
+        },
+        {
+          "fact": "电讯费80元",
+          "correct": false,
+          "reason": "没有回答80元电讯费。"
+        },
+        {
+          "fact": "总支出72152元",
+          "correct": false,
+          "reason": "未给出人民币本金72000元加本行费用152元后的72152元。"
+        },
+        {
+          "fact": "学校实收9985美元",
+          "correct": false,
+          "reason": "未给出SHA扣15美元中间行费后的学校实收9985美元。"
+        }
+      ],
+      "notes": "本题的费用规则、承担方式与全部输入均在完整原文；整体以依据不足拒答不正确。没有引用支持任何必要结果。",
+      "goldIssue": null
+    },
+    {
+      "token": "c1137e0820d749cda80cc30ca701e28a",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供施工方银行账号",
+          "correct": true,
+          "reason": "原文不含施工方银行账号，付款执行札记也明确无实际收款资料。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "简洁表示无法回答，没有推测账号或将金额当账号。"
+        }
+      ],
+      "notes": "账号资料缺失，拒答处置正确。无伪造正面引用；条件与数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "2f2f792cc8834bb390e61e3174bbc7ac",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        false,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 2,
+        "disposition": 2,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "本行费152元",
+          "correct": true,
+          "reason": "手续费72元加电讯费80元合计152元，计算正确。"
+        },
+        {
+          "fact": "折21.11美元",
+          "correct": true,
+          "reason": "152÷7.20到美分为21.11美元，正确。"
+        },
+        {
+          "fact": "实收9963.89美元",
+          "correct": false,
+          "reason": "拒绝计算学校实收；原文BEN明确与SHA中间行扣费相同，即15美元，故实收9963.89美元。"
+        }
+      ],
+      "notes": "本行费用计算正确，但声称BEN未给中间行扣费与原文及引用2的“相同中间行扣费”矛盾。引用1、3支持折汇和扣本金额规则；引用2虽有部分正确输入，却反驳其拒算核心理由，故该项为false。三片段联合实际包含全部计算依据，completeCitationSupport为true；这不使错误拒算变正确。",
+      "goldIssue": null
+    },
+    {
+      "token": "57f9d0350e844db18b24237a1fcc0f39",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "15:00整提交顺延",
+          "correct": true,
+          "reason": "指出15:00整不属于不含边界的之前，顺延下一符合条件开放日。"
+        },
+        {
+          "fact": "15:00整不能撤单",
+          "correct": true,
+          "reason": "明确15:00整不能撤销，须在受理日该时刻之前完成。"
+        }
+      ],
+      "notes": "提交与撤单的两个边界均正确，保留到账及开放日条件。唯一引用完整载明两项规则，可充分支持结论。",
+      "goldIssue": null
+    },
+    {
+      "token": "c93af7d1f2ac4e25880702eb8308bffe",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": 0,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "0.8%",
+          "correct": false,
+          "reason": "未确定0.8%申购费档。"
+        },
+        {
+          "fact": "净申购100000元",
+          "correct": false,
+          "reason": "未回答100800÷1.008=100000元净额。"
+        },
+        {
+          "fact": "费用800元",
+          "correct": false,
+          "reason": "未回答100800−100000=800元费用。"
+        },
+        {
+          "fact": "80000.00份",
+          "correct": false,
+          "reason": "未回答100000÷1.2500=80000份的确认份额。"
+        }
+      ],
+      "notes": "完整原文的费率表和订单甲演练条件已足够，仍全部拒答。没有错误金额输出，但所有必要数值、计费口径及证据都缺失。",
+      "goldIssue": null
+    },
+    {
+      "token": "a6bc17e1c156413f8ebe6d3804e490a2",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "15:00整提交顺延",
+          "correct": true,
+          "reason": "15:00整提交不归当天，顺延满足时点与到账条件的下一开放日。"
+        },
+        {
+          "fact": "15:00整不能撤单",
+          "correct": true,
+          "reason": "明确该边界时刻亦不能撤销当天已受理单。"
+        }
+      ],
+      "notes": "没有把提交或撤单任何一项的15:00边界算入之前。引用1完整说明两项，引用2重复顺延与不能撤销规则，联合充分。",
+      "goldIssue": null
+    },
+    {
+      "token": "aaecb732734b479faf04e420edbcaa3c",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供保证到账时刻",
+          "correct": true,
+          "reason": "TH-3不提供保证学校到账时刻，OUR也不保证速度；依据不足正确。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "回答无法回答，没有虚构今天几点。"
+        }
+      ],
+      "notes": "无确切到账时刻资料，简洁拒答可接受；未冒充正面引用。条件、数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "00fd9fa0a248440f9b7ecbcce4b65302",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "CY-6",
+          "correct": true,
+          "reason": "明确10月9日受理的订单适用CY-6。"
+        },
+        {
+          "fact": "按受理日而非确认日",
+          "correct": true,
+          "reason": "说明10月10日起受理才用CY-7，晚确认不改变已受理订单版本。"
+        }
+      ],
+      "notes": "按受理日期分版，未误按10月12日确认日期套新版。两条引用均包含明确过渡规则。日期属于版本条件，无另行数量、金额或算术要求，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "81b423c6535d45a1a9f861d85cf7a263",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": null,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "监理签章进度表",
+          "correct": false,
+          "reason": "没有列出监理签章的进度表。"
+        },
+        {
+          "fact": "建设方付款指令",
+          "correct": false,
+          "reason": "没有列出建设方付款指令。"
+        },
+        {
+          "fact": "现场照片索引",
+          "correct": false,
+          "reason": "没有列出现场照片索引。"
+        }
+      ],
+      "notes": "进度确认段逐字列明每次申请同时具备的三项资料，可答而整体拒答。三项缺一不可的条件亦未保留，且没有任何引用；无数值要求，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "bd0ba54b9703442782238dab758fae3f",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "仅撤销汇款指令",
+          "correct": true,
+          "reason": "免费撤销的对象明确为待复核汇款指令。"
+        },
+        {
+          "fact": "不撤销已成交购汇",
+          "correct": true,
+          "reason": "明确不撤销已成交购汇。"
+        },
+        {
+          "fact": "外币留账户",
+          "correct": true,
+          "reason": "明确已购外币留在账户。"
+        }
+      ],
+      "notes": "正确区分汇款指令和购汇成交，不承诺原价返还人民币。引用完整含待复核及购汇处理规则；无具体数值要求，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "db6634986a4b4750afef486efdaa0983",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "首次交付满90日",
+          "correct": true,
+          "reason": "说明必须达到首次交付满90日。"
+        },
+        {
+          "fact": "无停工处置",
+          "correct": true,
+          "reason": "同时要求无停工处置，没有遗漏且关系。"
+        }
+      ],
+      "notes": "解除续建留存的两项条件和20%口径准确。单条留存原文已直接支持全部必要结论，不因未引用重复比例表而扣分。",
+      "goldIssue": null
+    },
+    {
+      "token": "194d9fc272ad4c928b731b1c84e165fb",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "主体封顶且质检备案完成",
+          "correct": true,
+          "reason": "保留主体封顶且完成质检备案的认定要求。"
+        },
+        {
+          "fact": "仅监理记载不足",
+          "correct": true,
+          "reason": "明确单有监理已封顶文字不足。"
+        },
+        {
+          "fact": "未备案沿用地下结构节点",
+          "correct": true,
+          "reason": "备案未落库仍使用地下结构节点，处置正确。"
+        }
+      ],
+      "notes": "认定条件、未备案例外及补充资料要求均符合原文，没有监理签字即享封顶比例的混淆。两条引用直接覆盖必要事实；本题不要求具体比例或运算，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "4b33adf4778c45279ec951268c084daa",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "T+1开放日确认",
+          "correct": true,
+          "reason": "T+1并在非开放日顺延，等价于T+1开放日确认。"
+        },
+        {
+          "fact": "登记确认日为收益起点",
+          "correct": true,
+          "reason": "准确把登记确认日作为收益权益起点，而非扣款日。"
+        },
+        {
+          "fact": "确认前不可赎",
+          "correct": true,
+          "reason": "明确扣款成功不等于登记确认，不能立即赎回，待定期不给可赎份额。"
+        }
+      ],
+      "notes": "答案的T+1、收益起点及确认前不可赎均正确。引用1支持支付与确认分离；引用2虽切掉确认段首句，仍载明T+1非开放日顺延及收益起点；引用3另有“T+1确认时点”及待定期不可赎，联合能够补足确认时点，故完整支持为true。",
+      "goldIssue": null
+    },
+    {
+      "token": "d7389fef1d624a7c8d4f8d6cd6d4addc",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 1,
+        "conditions": 1,
+        "numbers": 2,
+        "disposition": 2,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "LQ-3",
+          "correct": false,
+          "reason": "未认定适用LQ-3，反而称没有补正后重新审批规则。"
+        },
+        {
+          "fact": "封顶累计65%",
+          "correct": true,
+          "reason": "给出主体封顶且备案完成累计65%，此比例正确。"
+        },
+        {
+          "fact": "留存20%",
+          "correct": false,
+          "reason": "未给20%留存，且称原文未说明留存比例，与留存段及版本沿革矛盾。"
+        }
+      ],
+      "notes": "仅正确给出65%，没有完成题目要求的版本与留存判断。2026年9月1日后补正重审用LQ-3，留存20%在完整原文明确；两条引用仅支持比例表，缺过渡和留存证据。",
+      "goldIssue": null
+    },
+    {
+      "token": "fa0afcbfc59f4fc3802e572080ed43af",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供未来份额净值",
+          "correct": true,
+          "reason": "原文不提供未来净值，示例1.2500只供演算，拒答合理。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "没有报出下周三净值或借示例推测。"
+        }
+      ],
+      "notes": "未来净值未披露，简洁拒答正确，未伪造正面引用。条件和数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "e6f64953a689494c8e0e4e5aacaee43f",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "主体封顶且质检备案完成",
+          "correct": true,
+          "reason": "明确主体封顶必须完成质检备案才计节点。"
+        },
+        {
+          "fact": "仅监理记载不足",
+          "correct": true,
+          "reason": "明确仅监理写已封顶并不充分。"
+        },
+        {
+          "fact": "未备案沿用地下结构节点",
+          "correct": true,
+          "reason": "明确备案未落库仍沿用地下结构节点。"
+        }
+      ],
+      "notes": "全部认定条件与未备案处置正确，两条引用都含完整进度确认规定。未误用旧版或仅凭监理签字；题目无需比例数值，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "0ad0500460704a74bc3d56435bbdf399",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "免本行召回电讯费",
+          "correct": true,
+          "reason": "明确符合本行录入错误责任条件时免本行召回电讯费。"
+        },
+        {
+          "fact": "承担错误导致中间行召回费",
+          "correct": true,
+          "reason": "承担由该错误导致的中间行召回费，限定因果范围。"
+        },
+        {
+          "fact": "不自动补偿自选结汇损失",
+          "correct": true,
+          "reason": "保留不自动补偿客户自选结汇时点汇率损失的限制。"
+        }
+      ],
+      "notes": "原始指示正确、本行责任已复核和客户指示错不适用等条件完整；没有保证退汇同意或全额汇损补偿。两条引用均含完整责任例外；本题无具体数值要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "cdea2e5e5b624693bfa0df8df7e5f2fb",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "退美元实收净额",
+          "correct": true,
+          "reason": "明确退美元实收净额而非保证退原人民币本金。"
+        },
+        {
+          "fact": "结汇按退汇日实际价",
+          "correct": true,
+          "reason": "选换人民币时按退汇日实际结汇价。"
+        },
+        {
+          "fact": "客户承担汇损益",
+          "correct": true,
+          "reason": "汇率变动损益由客户承担。"
+        },
+        {
+          "fact": "不选结汇留外币",
+          "correct": true,
+          "reason": "未选择换回则保留外币，不自动反向购汇。"
+        }
+      ],
+      "notes": "退回币种、结汇时点、损益承担及不自动兑换均正确。引用1覆盖后三项，引用2含完整退美元净额句，联合支持全部。无具体金额演算要求，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "1e6993ef12fd4f8089222c06cd7d23c5",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 1,
+        "conditions": 0,
+        "numbers": 1,
+        "disposition": 1,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "固定费1000元",
+          "correct": false,
+          "reason": "虽复述固定费档减1000元，但没有把恰好500万元归入固定费1000元档，反称原文未明确边界。"
+        },
+        {
+          "fact": "净申购4999000元",
+          "correct": false,
+          "reason": "没有将已知500万元代入，未表达4999000元或等值的确定算式。"
+        },
+        {
+          "fact": "固定费档的通用公式为净申购金额=A−1000元",
+          "correct": true,
+          "reason": "此通用公式确实被正确复述，保留少量事实及数值得分；但未选定它用于本题。"
+        }
+      ],
+      "notes": "原文表格A≥500万元明确包含等于边界，不能以“未单独说明”拒绝选档。引用支持复述的通用两类公式，但缺费率表，不能支持本题边界选择；少量公式正确不能替代具体作答。",
+      "goldIssue": null
+    },
+    {
+      "token": "7aedc1d6a94c49068e6fae322a9b39f5",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "固定费1000元",
+          "correct": true,
+          "reason": "明确500万元属于A≥500万元固定费档，每笔1000元。"
+        },
+        {
+          "fact": "净申购4999000元",
+          "correct": true,
+          "reason": "在本题A=500万元的限定下给出A−1000元，语义等价于5000000−1000=4999000元。"
+        }
+      ],
+      "notes": "问题询问用哪个公式，已明确边界归档及正确代入公式；接受以已知A表示的等值表达，不因未再打印4999000而扣分。唯一引用同时含费率表和固定费公式，完整支持。",
+      "goldIssue": null
+    },
+    {
+      "token": "b7d563ed49ed4e03b3bf85d6a000729b",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "进入待定队列",
+          "correct": true,
+          "reason": "明确暂停确认后进入待定队列，恢复按公告处理。"
+        },
+        {
+          "fact": "扣款不等于确认",
+          "correct": true,
+          "reason": "明确不能因扣款成功自行视为已确认。"
+        },
+        {
+          "fact": "不换日重建原单",
+          "correct": true,
+          "reason": "明确不得新日期重建替代原待定单，且说明可能改变净值归属。"
+        },
+        {
+          "fact": "不给可赎份额",
+          "correct": true,
+          "reason": "明确待定期间不先给出可赎份额。"
+        }
+      ],
+      "notes": "四项必要处理及恢复后按公告处理均完整。唯一引用含暂停与已受理单的整段规则，可支持全部事实，未把扣款当确认；无数值要求，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "03e3380c6c614163926661455360ecde",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "累计35%",
+          "correct": true,
+          "reason": "给出地下结构验收累计35%。"
+        },
+        {
+          "fact": "基数建档时固定",
+          "correct": true,
+          "reason": "明确项目建档时固定监管基数。"
+        },
+        {
+          "fact": "新回款不增加监管基数",
+          "correct": true,
+          "reason": "明确当日销售回款不增加该基数。"
+        }
+      ],
+      "notes": "比例、累计口径及固定基数均准确。引用1支持35%节点，引用2补足基数与非本次比例的限定，完整支持。",
+      "goldIssue": null
+    },
+    {
+      "token": "b1c12c6d24db43dbaafbb09d6647a4e5",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供具体退款到账日",
+          "correct": true,
+          "reason": "完整原文没有具体退款到账日，银行处理时间另行通知。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "未猜测月份日期，也未以T+1确认日保证退款。"
+        }
+      ],
+      "notes": "正确以资料不足拒绝指定退款日；无正面证据伪造。条件和数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "38217a8ffc5140369814a413fd52d3cb",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        false
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 1,
+        "conditions": 2,
+        "numbers": 0,
+        "disposition": 2,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "T+1开放日确认",
+          "correct": false,
+          "reason": "称正常确认时点未明确，遗漏并否定原文常规T+1开放日登记确认规则。"
+        },
+        {
+          "fact": "登记确认日为收益起点",
+          "correct": false,
+          "reason": "称收益起始未明确，遗漏并否定登记确认日为收益起点。"
+        },
+        {
+          "fact": "确认前不可赎",
+          "correct": true,
+          "reason": "说明扣款不等于登记确认、待定期不给可赎份额，未允许立即赎回。"
+        }
+      ],
+      "notes": "仅正确回答不能因扣款立即赎回，正常确认和收益起点均有据却未答。引用1支持支付与确认分离；引用2虽支持待定期不可赎，却同时含“T+1确认时点”，与其否认明确时点的核心陈述冲突，故该项为false。联合引用缺登记确认日为收益起点，完整支持为false。",
+      "goldIssue": null
+    },
+    {
+      "token": "e2fb7b9e66d444eb8e637e960e6ffe6d",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供未来份额净值",
+          "correct": true,
+          "reason": "资料边界明确不提供未来净值，示例不能锁定下周三值。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "回答无法回答，没有编造未来净值。"
+        }
+      ],
+      "notes": "未来净值不可据本材料确定，拒答正确；没有将示例值冒充实际值或伪造支持。条件、数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "8a464bfb2aaa499b8847296e0fd20598",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": null,
+        "disposition": 3,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "进入待定队列",
+          "correct": true,
+          "reason": "说明申请进入待定队列、恢复按公告处理。"
+        },
+        {
+          "fact": "扣款不等于确认",
+          "correct": true,
+          "reason": "说明扣款成功不能自行视为已确认。"
+        },
+        {
+          "fact": "不换日重建原单",
+          "correct": true,
+          "reason": "明确不得新日期重建替代原单，并指出净值归属风险。"
+        },
+        {
+          "fact": "不给可赎份额",
+          "correct": false,
+          "reason": "答案止于原单撤回或异常流程，未说明待定期间不给可赎份额；引用包含该句不能代替实际回答。"
+        }
+      ],
+      "notes": "前三项正确，漏掉gold要求的不给可赎份额，故answerCorrect=false。唯一引用真实且完整覆盖四项规则，所以引用充分性为true、引用维度4；答案遗漏与证据充分分别判断。无数值要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "a7a6ddbd15104dd99a3733ec05f08960",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": 2,
+        "disposition": 3,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "按60万元获配额选档",
+          "correct": true,
+          "reason": "明确按照获配60万元重新选档，不用原120万元。"
+        },
+        {
+          "fact": "0.8%",
+          "correct": false,
+          "reason": "未写获配60万元适用0.8%，只用“对应的费率档”代替具体答案。"
+        },
+        {
+          "fact": "未获配部分不收费并原路退回",
+          "correct": true,
+          "reason": "明确未获配款原路退回且不收申购费。"
+        }
+      ],
+      "notes": "获配口径和未获配退款正确，但0.8%必要费率缺失。引用1支持限购处理，引用2支持CY-7按获配额选档，两者都没有具体费率表，联合不足。",
+      "goldIssue": null
+    },
+    {
+      "token": "800e2508e030413087fc2e4f650dbab5",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 1,
+        "conditions": 1,
+        "numbers": 2,
+        "disposition": 2,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "LQ-3",
+          "correct": false,
+          "reason": "没有明确LQ-3及9月1日后补正重审的适用规则。"
+        },
+        {
+          "fact": "封顶累计65%",
+          "correct": true,
+          "reason": "主体封顶且备案完成65%的累计口径正确。"
+        },
+        {
+          "fact": "留存20%",
+          "correct": false,
+          "reason": "未提供20%续建留存，反称原文未说明；完整原文留存段及版本沿革均明确。"
+        }
+      ],
+      "notes": "正确65%不足以回答版本和留存问题。未披露具体项目留存金额不妨碍回答规定的20%比例；不能将问题转为金额后拒答。引用仅支持累计比例表，未联合支持过渡条款与留存。",
+      "goldIssue": null
+    },
+    {
+      "token": "c0679fda9e2a4f70ab23d9359fc5caa6",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 3,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "260元不含中间行实费",
+          "correct": true,
+          "reason": "明确260元上限不含另有的中间行实费。"
+        },
+        {
+          "fact": "向汇款人按实追收",
+          "correct": false,
+          "reason": "没有说明中间行实费由本行向汇款人按实追收；仅说另有实费不等价于明确承担方。"
+        },
+        {
+          "fact": "不保证入账速度",
+          "correct": true,
+          "reason": "明确OUR不承诺中间行路径和学校入账速度。"
+        }
+      ],
+      "notes": "上限范围及到账不保证均正确，缺必要的向汇款人按实追收。引用片段未包含OUR费用承担表行，只载明另有实费和不保速度，因此支持已答断言但不足以覆盖全部必要事实。",
+      "goldIssue": null
+    },
+    {
+      "token": "072bdf2b07374e3299e80d2fe5b700a2",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": 2,
+        "disposition": 3,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "独立申请分别计费",
+          "correct": true,
+          "reason": "说明独立编号分别演算，逐有效申请选费率，保留分别计费原则。"
+        },
+        {
+          "fact": "各60万元用0.8%",
+          "correct": false,
+          "reason": "没有给出两笔各60万元均用0.8%费率。"
+        },
+        {
+          "fact": "不能合并成120万元",
+          "correct": true,
+          "reason": "明确不能合并120万元套0.5%档。"
+        }
+      ],
+      "notes": "不能合并的主结论正确，但必要的各0.8%档未答。引用支持独立订单及逐申请处理，却没有费率表；引入限购规则亦不能补足所问具体费率。",
+      "goldIssue": null
+    },
+    {
+      "token": "549315c6ef8745458a59a714ce3aa998",
+      "answerCorrect": null,
+      "refusalCorrect": true,
+      "citationSupported": [],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": null,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "文档未提供保证到账时刻",
+          "correct": true,
+          "reason": "原文明确不保证实际中间行路径或学校到账时刻，没有确切今天几点。"
+        },
+        {
+          "fact": "明确拒绝猜测",
+          "correct": true,
+          "reason": "回答依据不足，未基于费用方式猜测具体时间。"
+        }
+      ],
+      "notes": "资料不足拒答正确；无需复述缺失字段，无伪造正面引用。条件和数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "6a4c3921f20143e99635a520d8194f7b",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "仅撤销汇款指令",
+          "correct": true,
+          "reason": "明确免费撤销待复核的汇款指令。"
+        },
+        {
+          "fact": "不撤销已成交购汇",
+          "correct": true,
+          "reason": "明确撤销汇款不撤销已成交购汇。"
+        },
+        {
+          "fact": "外币留账户",
+          "correct": true,
+          "reason": "明确外币留在账户。"
+        }
+      ],
+      "notes": "正确区分汇款和购汇状态，没有承诺原价返人民币。引用的撤回状态段直接涵盖三项必要事实；本题无具体数值要求，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "752c91bce44f403a94d80ddd4fcb5c78",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "保留原编号",
+          "correct": true,
+          "reason": "明确退回补正保留原编号。"
+        },
+        {
+          "fact": "最后一项补正登记时间排队",
+          "correct": true,
+          "reason": "明确以最后一项补正材料登记时间重新排队，不沿用原时点。"
+        },
+        {
+          "fact": "待复核不计已拨",
+          "correct": true,
+          "reason": "明确周报待复核金额仅跟踪在途，不计已拨且不改比例。"
+        }
+      ],
+      "notes": "编号、队列与现金拨付状态区分准确，未出现编号不变即优先级不变的混淆。两条引用均直接包含完整规则；无数值要求，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "67a97f2f3ebb4419b713ee9ce4dd8dc8",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "免本行召回电讯费",
+          "correct": true,
+          "reason": "原始指示正确且本行责任经复核时，免本行召回电讯费。"
+        },
+        {
+          "fact": "承担错误导致中间行召回费",
+          "correct": true,
+          "reason": "承担由录入错误导致的中间行召回费，未扩大到任意费用。"
+        },
+        {
+          "fact": "不自动补偿自选结汇损失",
+          "correct": true,
+          "reason": "明确不自动补偿客户自选结汇时点汇率损失。"
+        }
+      ],
+      "notes": "同时说明客户原始指示错不适用、不保证收款人同意，例外边界完整。两条引用均直接支持责任和损失处理；本题无具体数值要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "15835fb5bb6349b18f966ec3f6fb6d58",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 0,
+        "conditions": 0,
+        "numbers": null,
+        "disposition": 0,
+        "citations": 0
+      },
+      "atomicFacts": [
+        {
+          "fact": "监理签章进度表",
+          "correct": false,
+          "reason": "未列出监理签章进度表。"
+        },
+        {
+          "fact": "建设方付款指令",
+          "correct": false,
+          "reason": "未列出建设方付款指令。"
+        },
+        {
+          "fact": "现场照片索引",
+          "correct": false,
+          "reason": "未列出现场照片索引。"
+        }
+      ],
+      "notes": "完整原文明确每次申请须同时具备三项资料；以依据不足整体拒答不符合可答题要求，也未保留缺一不可条件。无引用、无数值要求，数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "f2a5a7b093854c2f96ba64e6d76f8d00",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "CY-6",
+          "correct": true,
+          "reason": "明确适用CY-6。"
+        },
+        {
+          "fact": "按受理日而非确认日",
+          "correct": true,
+          "reason": "明确按10月9日已受理判断，不因确认日晚于10月10日而切换CY-7。"
+        }
+      ],
+      "notes": "受理日与确认日的版本归属判断正确。单条引用包含完整版本过渡规定；日期为版本条件，本题无另行数值运算要求。",
+      "goldIssue": null
+    },
+    {
+      "token": "8a79e9156e1744a69dd8c62adad9411e",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": null,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "保留原编号",
+          "correct": true,
+          "reason": "说明保留原编号。"
+        },
+        {
+          "fact": "最后一项补正登记时间排队",
+          "correct": true,
+          "reason": "以最后一项补正材料登记时点重新排队，明确不沿用原时间。"
+        },
+        {
+          "fact": "待复核不计已拨",
+          "correct": true,
+          "reason": "待复核金额只用于在途追踪、不计入已拨，不改累计比例。"
+        }
+      ],
+      "notes": "三个必要要点完整，两条引用都覆盖对应规则。开头“补正资料退回后”措辞略拗口，但后句清楚指向最后补正材料登记时间，不构成处置或先后条件错误；数值维度不适用。",
+      "goldIssue": null
+    },
+    {
+      "token": "2a21991e8b8047b89fac045fc7823d52",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 3,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "260元不含中间行实费",
+          "correct": true,
+          "reason": "明确260元手续费上限不包含中间行实费。"
+        },
+        {
+          "fact": "向汇款人按实追收",
+          "correct": false,
+          "reason": "没有回答按实向汇款人追收，未明确承担方与追收方式。"
+        },
+        {
+          "fact": "不保证入账速度",
+          "correct": true,
+          "reason": "明确OUR只约定费用承担，不保证路径及学校入账速度。"
+        }
+      ],
+      "notes": "漏掉必要的中间行实费承担方和按实追收规则。唯一引用确实支持上限范围和不保速度，但从BEN行附近开始，缺OUR承担方式表行，联合支持不足。",
+      "goldIssue": null
+    },
+    {
+      "token": "81e153dd3cc14daf944df8e5f3cce4bb",
+      "answerCorrect": true,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": true,
+      "dimensions": {
+        "facts": 4,
+        "conditions": 4,
+        "numbers": 4,
+        "disposition": 4,
+        "citations": 4
+      },
+      "atomicFacts": [
+        {
+          "fact": "已发送仅申请召回不保证",
+          "correct": true,
+          "reason": "已发送未入账仅申请召回且不保证成功，回答正确。"
+        },
+        {
+          "fact": "通常80元本行召回费另有中间行实费",
+          "correct": true,
+          "reason": "本行80元召回电讯费及中间行另有实费，通常收费规则准确。"
+        },
+        {
+          "fact": "已入账须收款人同意",
+          "correct": true,
+          "reason": "已入账须收款人同意退汇，不能单方撤销。"
+        }
+      ],
+      "notes": "完整回答两种状态，补充已发送原手续费不退也正确。按TH-3通常规则作答，没有用“一律”等措辞排除原文责任例外；两条引用均直接支持全部实际断言。",
+      "goldIssue": null
+    },
+    {
+      "token": "afb188a8b0a9465ca468f7a516a041bc",
+      "answerCorrect": false,
+      "refusalCorrect": null,
+      "citationSupported": [
+        true,
+        true
+      ],
+      "completeCitationSupport": false,
+      "dimensions": {
+        "facts": 2,
+        "conditions": 2,
+        "numbers": 2,
+        "disposition": 3,
+        "citations": 2
+      },
+      "atomicFacts": [
+        {
+          "fact": "节点余量450万元",
+          "correct": true,
+          "reason": "正确给出1000×65%−200=450万元节点余量。"
+        },
+        {
+          "fact": "现金扣留存后500万元",
+          "correct": false,
+          "reason": "没有计算20%留存200万元及700−200=500万元现金余量；把累计650和扣已付200拆为两道限制，实际仍只是一道。"
+        },
+        {
+          "fact": "本次最多450万元",
+          "correct": true,
+          "reason": "开头虽写300万元，末尾明确自我更正为最多450万元、而非300万元，按最终明确结论接受此项。"
+        }
+      ],
+      "notes": "仍缺题目要求的第二道现金减留存限制，答案整体不正确。保留判定口径：已明确撤回300万元，故不把它当最终数值；但前后自纠增加阅读歧义，不能掩盖必要解释缺失。引用1支持台账输入、引用2支持65%节点，均缺留存与取小规则，联合支持不足。",
+      "goldIssue": null
+    }
+  ]
+}

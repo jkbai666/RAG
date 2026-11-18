@@ -23,6 +23,8 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.function.Consumer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -49,7 +51,7 @@ public class RagService {
         """;
     private final RagRepository repo;
     private final RagProperties p;
-    private final DocumentParser parser;
+    private final ChunkingService chunkingService;
     private final ModelGateway gateway;
     private final ObjectMapper json;
     // Chat owns a read lock through generation + source validation. Delete linearizes under the write lock.
@@ -58,7 +60,12 @@ public class RagService {
     private final ThreadPoolExecutor imports=new ThreadPoolExecutor(1,1,0,TimeUnit.SECONDS,
         new ArrayBlockingQueue<>(4),r -> { Thread t=new Thread(r,"document-import"); t.setDaemon(false); return t; });
     public RagService(RagRepository repo,RagProperties p,DocumentParser parser,ModelGateway gateway,ObjectMapper json) {
-        this.repo=repo; this.p=p; this.parser=parser; this.gateway=gateway; this.json=json;
+        this(repo,p,parser,gateway,json,new ChunkingService(parser,gateway,new ChunkingProperties(),json));
+    }
+    @Autowired
+    public RagService(RagRepository repo,RagProperties p,DocumentParser parser,ModelGateway gateway,ObjectMapper json,
+                      ChunkingService chunkingService) {
+        this.repo=repo; this.p=p; this.gateway=gateway; this.json=json; this.chunkingService=chunkingService;
     }
     @PostConstruct public void recover() { repo.recoverInterrupted(); }
     @PreDestroy public void shutdown() {
@@ -113,7 +120,9 @@ public class RagService {
     }
     private void process(String id,String format,byte[] bytes) {
         try {
-            List<Chunk> chunks=parser.parse(id,format,bytes,p.chunkSize(),p.chunkOverlap());
+            ChunkingService.Result result=chunkingService.chunk(id,format,bytes,p.chunkSize(),p.chunkOverlap());
+            repo.setChunking(id,result.strategy(),result.fallbackReason());
+            List<Chunk> chunks=result.chunks();
             repo.insertChunks(chunks); // Stable IDs survive any partial or ambiguous Chroma write.
             for (int i=0;i<chunks.size();i+=16) {
                 if (Thread.currentThread().isInterrupted()) throw new IllegalStateException("Import interrupted");
@@ -179,6 +188,14 @@ public class RagService {
     }
     public Answer chat(String value) { return chat(value,List.of()); }
     public Answer chat(String value,List<HistoryTurn> previous) {
+        return chat(value,previous,ignored -> {});
+    }
+    /** Internal evaluation observation only; never exposed by an HTTP controller. */
+    public record RetrievalTrace(List<Source> retrieved,List<Source> context) {
+        public RetrievalTrace { retrieved=List.copyOf(retrieved); context=List.copyOf(context); }
+    }
+    public Answer chat(String value,List<HistoryTurn> previous,Consumer<RetrievalTrace> observer) {
+        java.util.Objects.requireNonNull(observer);
         String question=validateQuestion(value);
         List<HistoryTurn> history=new ArrayList<>(previous.subList(Math.max(0,previous.size()-HISTORY_LIMIT),previous.size()));
         lock.readLock().lock();
@@ -194,13 +211,17 @@ public class RagService {
                 Source source=repo.readySource(id);
                 if (source!=null && valid.size()<5) valid.putIfAbsent(id,source);
             }
-            if (valid.isEmpty()) return new Answer(INSUFFICIENT,false,List.of());
+            if (valid.isEmpty()) {
+                observer.accept(new RetrievalTrace(List.of(),List.of()));
+                return new Answer(INSUFFICIENT,false,List.of());
+            }
             List<Source> context=new ArrayList<>();
             // Current evidence and the current question take priority over old turns.
             for (Source candidate:valid.values()) {
                 List<Source> attempt=new ArrayList<>(context); attempt.add(candidate);
                 if (cost(SYSTEM,userPrompt(question,retrievalQuestion,attempt,List.of()))<=p.chatContextBudget()) context.add(candidate);
             }
+            observer.accept(new RetrievalTrace(new ArrayList<>(valid.values()),context));
             if (context.isEmpty()) throw new ApiException(422,"CONTEXT_LIMIT","问题和来源超出模型上下文预算，请缩短问题或提高服务端上下文配置");
             while (!history.isEmpty() && cost(SYSTEM,userPrompt(question,retrievalQuestion,context,history))>p.chatContextBudget()) history.remove(0);
             String raw=gateway.generate(SYSTEM,userPrompt(question,retrievalQuestion,context,history));

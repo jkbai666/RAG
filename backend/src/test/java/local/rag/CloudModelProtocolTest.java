@@ -161,4 +161,32 @@ class CloudModelProtocolTest {
         });
         assertThat(requests).hasSize(1);
     }
+    @Test void chunkingUsesIndependentLimitsAndReportsUsageForEachHttpRequest() throws Exception {
+        List<String> before=new ArrayList<>(), after=new ArrayList<>();
+        var observed=new LangChainGateway(properties(CHAT_KEY,EMBEDDING_KEY),new LangChainGateway.CallObserver() {
+            public void before(String stage,int input,int output) {
+                assertThat(input).isGreaterThanOrEqualTo(128);
+                before.add(stage+":"+output);
+            }
+            public void after(String stage,Integer input,Integer output,String model) {
+                after.add(stage+":"+input+":"+output+":"+model);
+            }
+        });
+        observed.generateChunk("JSON boundaries","测试😀",2048,2);
+        assertThat(takeRequest().body().path("max_tokens").asInt()).isEqualTo(2048);
+        observed.embed(IntStream.range(0,17).mapToObj(i -> "text-"+i).toList());
+        assertThat(before).containsExactly("chunk:2048","embedding:0","embedding:0","embedding:0");
+        assertThat(after).containsExactly("chunk:10:5:deepseek-v4-flash",
+            "embedding:10:0:text-embedding-v4","embedding:10:0:text-embedding-v4","embedding:10:0:text-embedding-v4");
+        assertThat(requests).hasSize(3);
+    }
+    @Test void rejectedReservationNeverSendsPaidHttp() {
+        var observed=new LangChainGateway(properties(CHAT_KEY,EMBEDDING_KEY),new LangChainGateway.CallObserver() {
+            public void before(String stage,int input,int output) { throw new IllegalStateException("budget stopped"); }
+            public void after(String stage,Integer input,Integer output,String model) { fail("No request should complete"); }
+        });
+        assertThatThrownBy(() -> observed.generateChunk("JSON","test",2048,2)).isInstanceOf(ApiException.class);
+        assertThatThrownBy(() -> observed.embed(List.of("text-0"))).isInstanceOf(ApiException.class);
+        assertThat(requests).isEmpty();
+    }
 }
